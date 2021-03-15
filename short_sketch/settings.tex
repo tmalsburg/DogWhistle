@@ -1,0 +1,33 @@
+% adapt margins so they correspond to DFG template 53_120
+\usepackage[lmargin=2.5cm, rmargin=2.5cm, tmargin=3cm, bmargin=2cm]{geometry}
+% babel wants csquotes
+\usepackage{csquotes}
+\usepackage{todonotes}
+
+\definecolor{jk}{rgb}{0.60,0.75,0.95}
+\newcommand{\jonastodo}[2][jk]{\todo[color=#1,size=\scriptsize]{\textbf{#1:} #2}}
+
+\definecolor{jt}{rgb}{1.0, 0.75, 0.0}
+\newcommand{\judithtodo}[2][jt]{\todo[color=#1,size=\scriptsize]{\textbf{#1:} #2}}
+
+\usepackage{graphicx}
+\usepackage{tipa}
+
+\usepackage{ulem}
+\normalem  % jk added this to get italics for \emph
+
+% adapt section heading font size, so they corresond to DFG template 53_120
+\usepackage{titlesec}
+\titleformat{\section}{\normalsize\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+
+\newcommand{\sfbcomments}[1]{\textcolor{blue}{#1}}
+\renewcommand{\sfbcomments}[1]{}
+
+\newcommand{\owncomment}[1]{\textcolor{red}{#1}}
+%\renewcommand{\owncomment}[1]{}
+
+\newcommand{\areaConst}{C}
+\newcommand{\areaAdapt}{A}
+\newcommand{\areaMap}{M}
+ 

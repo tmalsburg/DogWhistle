@@ -1,0 +1,214 @@
+\documentclass[11pt]{article}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{enumerate}
+\usepackage[backend=biber, style=authoryear, natbib]{biblatex}
+\addbibresource{../bibliography/bibliography.bib}
+
+\sloppy
+
+% SECTION FOR SWITCHING ON AND OFF THE HINTS FOR FILLING IN
+% INFORMATION show hints by dfg for filling in the template:
+\newcommand{\dfgcomments}[1]{\textcolor{green}{#1}}
+% un-comment to switch off hints
+\renewcommand{\dfgcomments}[1]{}
+
+% Start section numbering at 3, as in official template needs to be
+% defined here and in main document so we can compile both stand-alone
+% and the full proposal:
+\setcounter{section}{3}
+\setcounter{subsection}{0}
+
+% Read configuration code that should apply to all projects:
+\input{settings.tex}
+
+\begin{document}
+
+% Checklist:
+% - [ ] Incorporate feedback from reviewers. Especially important:
+%       Reconsider using or explain discipline-specific terminology.
+% - [ ] Mention the language varieties and corpora investigated.
+% - [X]  Section 3.2: Place PIs next to one another to save space.
+% - [ ] Section 3.3.1 ‘Summary and main research question’: Should be
+%       able to stand alone. Include specific research question, connect
+%       to broader research question, area and theme.
+% - [ ] Section 3.3.2 ‘Current state of research and preliminary
+%       work’: References to research outside the CRC will be included in
+%       general section.
+% - Section 3.4 ‘Project-related publications by participating researchers’:
+%   - [ ] 10 per project, not per PI
+%   - [ ] must be related to the project (mention in 3.3.2, if suitable)
+%   - [ ] separated into ‘published/accepted’ and other
+% - [ ] Section 3.5 ‘Project funding’: We will provide wording (3
+%       lines) after strategic meeting with the Rektorat.
+
+
+%\section{Teilprojekte}
+%\section{Projects}
+
+\subsection{Code and title}
+
+\noindent A5 -- Intended and unintended biases in language production and comprehension
+
+\subsection{Project leaders}
+
+\begin{tabular}{p{.5\textwidth}p{.5\textwidth}}
+  Jun.-Prof.\ Dr.\ Titus von der Malsburg \par
+  02.04.1977 \par
+  Department of English Linguistics \par
+  Keplerstr.\ 17, 70174 Stuttgart \par
+  0711 / 685-8xxx \par
+  titus.vondermalsburg@ling.uni-stuttgart.de
+  & 
+  Prof.\ Dr.\ Judith Tonhauser \par
+  19.11.1974 \par
+  Department of English Linguistics \par
+  Keplerstr.\ 17, 70174 Stuttgart \par
+  0711 / 685-83121 \par
+  judith.tonhauser@ling.uni-stuttgart.de
+\end{tabular}
+
+\subsection{Project description}
+
+% Describe the main research question, the current state of the art,
+% project-related preliminary work, the work programme and
+% methodology, and integration in the Collaborative Research
+% Centre. The information provided in this section should be able to
+% stand on its own and be understandable, coherent and reviewable
+% without the need to read additional documents.
+
+% Antje: The following structure of subsections of 3.3 is proposed in
+% the template, but it is said that this subsection CAN be structured
+% in this way, so it is not mandatory. The structure of all other
+% sections and subsections seems to be mandatory however.
+
+\subsubsection{Summary and main research question} % ½ page
+
+Interlocutors design utterances such that they efficiently convey intended literal and non-literal (i.e. implied) meaning when interpreted in the context of a shared reference system.  While this may seem unsurprising and even trivial, there are also well-documented scenarios where utterances systematically fail to communicate intended meaning.  One example is gendered language where it has been observed that speakers utterances consist of male-biased language even when a gender-neutral or even female-biased  meaning was plausibly intended (e.g. the speaker refers to the future president as “he” even though a female president is likely).  Likewise, it has been shown that comprehenders’ interpretations of gender neutral expressions, can be male-biased, e.g. when a comprehender assumes a “baker” to be male even though the speaker didn’t make that explicit and even though the a baker is perceived to be male as likely as female.
+
+% {\bf JT: not sure which 5 publications to include}
+
+% \noindent 
+% Speaker utterances index particular beliefs about the world,
+% societal structures, and ideologies, but also biases and
+% stereotypes...
+
+% Code words are expressions that index particular beliefs and
+% ideologies for some but, crucially, not all, language users. (other
+% terms: code words, dogwhistles, multivocality) For instance, in
+% German, so-called generic masculine forms like {\em B\"acker}
+% `baker' [...]
+
+% Long-term questions:
+
+% {\bf 1.} Which expressions index beliefs for which groups of
+% language users? Which meanings do they convey / which
+% connotations/ideologies do they index?
+
+% {\bf 2.} Which linguistic and extralinguistic properties taxonomize
+% these expressions? Which meanings/connotations/ideologies are
+% conventionally coded, which ones arise from interlocutor
+% beliefs/biases/stereotypes?
+
+% {\bf 3.} What does a predictive analysis of these expressions look
+% like? How can such an analysis be validated in large, unconstrained
+% datasets?
+
+% {\bf Questions to be addressed in phase 1:}
+
+% - German expressions around the topics of gender
+
+% code words/dogwhistle: {\em Tante, Tussi}
+
+% gendered nouns (generic masculine nouns, inclusive forms with `Binnen-I', *, :)
+
+% - Methods: annotation of naturally occurring examples
+% (Bundestagscorpus, newspapers), experiments to diagnose properties
+% of the content, social perception, language comprehension, and
+% language processing
+
+% - Computational modelling
+
+% - Project is also concerned with challenges to successful
+% communication, signaling persona and ideology, signaling intended
+% action and in/out-group building
+
+% - written or spoken language, or both?
+
+\subsubsection{Current state of research and preliminary work} % ¾ page
+
+% This is a longer text citing both external work and own work.
+
+\noindent 
+https://linguisticpulse.com/2014/06/12/demystifying-dog-whistle-racism/
+
+Works to mention: Stanley book, Beaver/Stanley 2017 article, Nunber: the social life of slurs
+
+State of the art is very theoretical, but empirical situation is impoverished (slurs, dogwhistles, code words)
+
+% these are our 10 publications
+
+\cite*{StevensEtAl2017}
+
+\nocite{TonhauserEtAl2013}
+\nocite{TonhauserEtAl2018}
+\nocite{DeMarneffeEtAl2019}
+\nocite{TonhauserEtAl2012}
+\nocite{DegenTonhauserMS}
+\nocite{KiparskyTonhauser2013}
+
+\paragraph{References to work outside the CRC}
+
+% This bibliography will list only publications that have
+% external as a keywords entry in the .bib file (see example in template):
+
+\printbibliography[heading=none,keyword={TMJT-external}]
+
+\subsubsection{Work programme and role within the proposed Collaborative Research Centre} % ¾ page
+
+\noindent
+In the first phase, we focus on the social meaning of irony in questions. {\bf WP 1:} We empirically investigate the social meanings of ironic questions through a combination of methods. {\bf WP 2:} Literary and linguistic perspectives on reference systems involved in irony, social meaning, and the social meaning of irony will be integrated. {\bf WP 3:} Building on our findings from WPs 1 and 2, we will develop a predictive model of the social meanings of irony in questions.
+
+By investigating the social meanings of irony as a literary and linguistic phenomenon, the project considers cognitive, social and aesthetic perspectives on reference systems. Because multiple reference systems need to be considered, our project contributes to the understanding of the interconnection and transformation of reference systems. Our empirical work will lay the foundation for exploring Machine Learning techniques in future phases of the CRC. We also plan to collaborate closely with projects that investigate figurative language and work with naturally occurring corpora.
+
+\newpage
+\subsection{Project-related publications by participating researchers} % ¾ page
+
+%{\bf List only publications by the participating researchers whose topics are directly related to the proposed individual project and which are publicly available. max 10 total}
+
+\dfgcomments{\begin{enumerate}[a)]
+  \item articles which at the time of draft proposal submission have been published or officially accepted  by  publication  outlets  with  scientific  quality  assurance,  and  book  publications;
+  \item other publications;
+  \item patents (subdivided into pending and issued).
+  \end{enumerate}}
+
+\dfgcomments{  The total number of works listed under a) and b) combined may not exceed ten. When listing papers that have been officially accepted for publication but not yet published, the manuscript  and  the  publisher’s  dated  acknowledgement  of  acceptance  must  be  submitted  via  elan. The DFG will forward an electronic copy of the draft proposal -- and a print copy upon request -- to the consultation panel.}
+
+\paragraph{a) Peer-reviewed published or accepted articles}
+% this bibliography will list only publications that have
+% own as a keywords entry in the .bib file (see example in template)
+% publications that have not been cited already above can be inserted by:
+% \nocite{Scientist/Researcher:2019}
+% redundant if they have been cited in the preliminary work session above
+\printbibliography[heading=none,keyword={TMJT-own}]
+
+\paragraph{b) Other publications}
+% this bibliography will list only publications that have
+% own-other as a keywords entry in the .bib file (see example in template)
+% publications that have not been cited already above can be inserted by:
+% \nocite{Mohler:2001}
+% redundant if they have been cited in the preliminary work session above
+\nocite{Scientist:2018}
+\printbibliography[heading=none,keyword={TMJT-own-other}]
+
+\subsection{Project funding} % 3 lines
+
+\dfgcomments{Is the project currently being funded by the DFG or other institution? Describe the CRC’s proposed budget with regard to personnel and larger-scale instrumentation.}
+
+
+\noindent (to be filled in at a later date)
+
+\end{document}
