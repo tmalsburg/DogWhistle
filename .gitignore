@@ -8,17 +8,9 @@
 *.aux
 *.synctex.gz
 *.toc
-papers/prior-paper/prior.pdf
-papers/factives-paper/factives-paper.pdf
 
 # potentially large zoib model files
 *.rds
-
-# SALT 2018 submission
-/salt2018
-
-# MIT talk outline
-/mit2018
 
 # Other files */node_modules/
 *.RData
@@ -40,5 +32,7 @@ papers/factives-paper/factives-paper.pdf
 *mturk/
 *.gitattributes
 
-# Rds files of models (too big)
-*models/
+/TMJT.bcf
+/TMJT.run.xml
+/auto/
+/bibliography/auto/
