@@ -5,7 +5,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 \usepackage{enumerate}
-\usepackage[backend=biber, style=authoryear, natbib]{biblatex}
+\usepackage[backend=biber, style=authoryear, maxnames=10, url=false, doi=false, eprint=false, natbib]{biblatex}
 \addbibresource{../bibliography/bibliography.bib}
 
 \sloppy
@@ -31,27 +31,13 @@
 % - [ ] Incorporate feedback from reviewers. Especially important:
 %       Reconsider using or explain discipline-specific terminology.
 % - [ ] Mention the language varieties and corpora investigated.
-% - [X]  Section 3.2: Place PIs next to one another to save space.
-% - [ ] Section 3.3.1 ‘Summary and main research question’: Should be
-%       able to stand alone. Include specific research question, connect
-%       to broader research question, area and theme.
-% - [ ] Section 3.3.2 ‘Current state of research and preliminary
-%       work’: References to research outside the CRC will be included in
-%       general section.
-% - Section 3.4 ‘Project-related publications by participating researchers’:
-%   - [ ] 10 per project, not per PI
-%   - [ ] must be related to the project (mention in 3.3.2, if suitable)
-%   - [ ] separated into ‘published/accepted’ and other
-% - [ ] Section 3.5 ‘Project funding’: We will provide wording (3
-%       lines) after strategic meeting with the Rektorat.
-
 
 %\section{Teilprojekte}
 %\section{Projects}
 
 \subsection{Code and title}
 
-\noindent A5 -- Intended and unintended biases in language production and comprehension
+A5 -- Subjective beliefs and misaligned reference systems: A unifying theory of gender biases and dog whistles
 
 \subsection{Project leaders}
 
@@ -80,102 +66,93 @@
 % stand on its own and be understandable, coherent and reviewable
 % without the need to read additional documents.
 
-% Antje: The following structure of subsections of 3.3 is proposed in
-% the template, but it is said that this subsection CAN be structured
-% in this way, so it is not mandatory. The structure of all other
-% sections and subsections seems to be mandatory however.
+% Section 3.3.1 (½ page)
+\subsubsection{Summary and main research question}
+% Should be able to stand alone. Include specific research question,
+% connect to broader research question, area and theme.
 
-\subsubsection{Summary and main research question} % ½ page
+This project investigates the hypothesis that two superficially distinct cases of non-literal social meaning, gender biases and so-called dog whistles, naturally arise from mismatches in the reference systems participating in a discourse and unter rational pragmatic inference.
 
-Interlocutors design utterances such that they efficiently convey intended literal and non-literal (i.e. implied) meaning when interpreted in the context of a shared reference system.  While this may seem unsurprising and even trivial, there are also well-documented scenarios where utterances systematically fail to communicate intended meaning.  One example is gendered language where it has been observed that speakers utterances consist of male-biased language even when a gender-neutral or even female-biased  meaning was plausibly intended (e.g. the speaker refers to the future president as “he” even though a female president is likely).  Likewise, it has been shown that comprehenders’ interpretations of gender neutral expressions, can be male-biased, e.g. when a comprehender assumes a “baker” to be male even though the speaker didn’t make that explicit and even though the a baker is perceived to be male as likely as female.
+Utterances are designed to convey intended meanings, literal and non-literal alike, accurately and efficiently when interpreted in the context of a shared reference system.  Utterances can, however, also systematically fail to achieve this when the interlocutors’ reference systems are miscalibrated.  One example are linguistic gender biases, for example, when a speaker refers to the future president as “he” even though the future president is expected to be female.  Another example are so-called dog whistles, expressions that are typically characterized as communicating a literal, typically harmless, meaning while also carrying a hidden and more controversial non-literal meaning that only a subset of the audience is receptive to.  A classic example is the use of “inner city crime” in the United States which is superficially harmless but has been argued to carry racial overtones by implying crime committed predominantly by black people.
 
-% {\bf JT: not sure which 5 publications to include}
+These phenomena appear dissimilar since gender biases are assumed to be unintended and unconscious whereas dog whistles are believed to be a conscious strategy that exploits the audience’s blind spots.  This analysis, however, may not hold up to scrutiny.  Gendered language can be intentionally used to signal potentially controversial social views (e.g., German “Fräulein”, roughly \textit{missy}) and dog whistles can be unintentional expressions of unconscious biases (e.g., German “Clan-Kriminalität”, organized crime conducted by extended families, often Arabic).
 
-% \noindent 
-% Speaker utterances index particular beliefs about the world,
-% societal structures, and ideologies, but also biases and
-% stereotypes...
+This project contends that both phenomena, gender biases and dog whistles, can be understood as products of the same underlying pragmatic principles when combined with the assumption of misalgined and/or miscalibrated reference systems.  The overarching goal of this project is then to investigate whether an existing formal account of pragmatic inference, namely the rational speech act model \parencite[RSA model,][]{GoodmanStuhlmueller2013}, can accommodate gender biases and dog whistles and explain them as naturally arising from the framework’s independently motivated assumptions.  Both gender biases as well as dog whistles have been primarily studied in English and in the context of US culture.  A secondary goal of this project is therefore to empirically investigate both phenomena in German using corpus and experimental methods.
 
-% Code words are expressions that index particular beliefs and
-% ideologies for some but, crucially, not all, language users. (other
-% terms: code words, dogwhistles, multivocality) For instance, in
-% German, so-called generic masculine forms like {\em B\"acker}
-% `baker' [...]
+% Section 3.3.2 (¾ page)
+\subsubsection{Current state of research and preliminary work}
+% This is a longer text citing both external work and own work .
+% References to research outside the CRC will be included in general
+% section.
+
+% Something on gender biases:
+
+The utterances that we produce and the way we respond to them both index particular beliefs about the world, societal structures, and ideologies, but also biases and stereotypes.  For instance, readers slow down when they see the gender-marked reflexive pronoun in the sentence “The tough soldier pricked \textit{herself} with a needle” showing that readers eagerly make inferences about a referent’s gender based on stereotypical knowledge \parencite{Sturt2003, KennisonTrofe2003}.  While this behavior may seem rational and in a sense unbiased (if the stereotype reflects real-world statistics), there is also evidence for intrinsic linguistic biases that are reflected in language use that does neither faithfully reflect speakers’ beliefs about the world (biased or unbiased) nor real-world statistics.  In a large-scale online experiment during the 2016 US presidential campaign, \textcite{MalsburgEtAl2020} investigated how speakers refer to the future president (Clinton or Trump) and found that speakers tended to avoid feminine pronouns even when they believed that the female candidate was going to win.  Similarly, readers struggled to process “she” pronouns refering to the future president.  These results suggest that language users relied on reference systems that were out of touch with the current state of the world and even with their own beliefs (see also \cite{PozniakBurnett2021, PoppelsEtAl2021CUNY}).  \textcite{BoyceEtAl2019LSA} generalized these results and demonstrated that feminine pronouns are systematically under-used (compared to masculine pronons) and that comprehenders systematically under-infer female gender (both relative to perceived real-world statistics), again showing that gender information is not transparently transmitted.  In German, the most contention issue with regard to linguistic gender bias is the use and interpretation of the generic masculine, e.g., German “die Lehrer” when talking about male and female teachers.  Many studies have demonstrated that these expressions are interpreted with a bias toward male referents regardless of real-world statistics \parencite[e.g.,][]{GygaxEtAl2008}, which led to the proposal to introduce artificial gender-neutral forms, e.g., those using the so-called gender star (“Lehrer*innen”).
+
+There are three main unresolved open problems in this area of research that this project aims to address.  1. There is a considerable amount of empricial evidence showing that gender biases exist but no clearly articulated theory that explains where in the system these biases arise and how.  2. The whole debate about linguistic gender biases and the German generic masculine in particular does not stand on solid empirical footing:  Studies that assessed the interpretation of the generic masculine (and its alternatives) used repeated measurement designs in which participants likely became aware of the topic of the study and observed biases may therefore be under- or overestimates.  3. All studies known to us were conducted with small samples of participants from local student populations.  Very little is therefore known about how gender biases vary as a function of age, gender, political affiliation, and other relevant factors.  
+
+The situation with regard to research on dog whistles is the opposite: There is an interesting theoretical literature but little empricial and no experimental data (none known to us).  One clearly articualated proposal situates dog whistles in the framework of Bayesian signalling games \parencite{Burnett2017} and contents that dog whistles are used to signal one’s persona and ideologies to a subset of the audience while keeping another part of the audience in the dark \parencite{HendersonMcCready2018, HendersonMcCready2019}.  This hypothesis has been evaluated using a set of hand-picked and examples from the US political discourse, e.g., the use of “family values” as code for \textit{Christian values}.  This proposal, while theoretically attractive and precisely formulated, has not yet been experimentally evaluated.  It is also not clear to us that it necessarily captures the full breadth of the dog whistle phenomenon.  For instance, when George Bush says “family values”, one could argue that he is not plausbily denying  his Christian identity which is widely known.  One alternative interpretation is that the author’s choice of words rather displays their biases much like the choice of masculine expressions does in the case of gender biases.  A third alternative is that the use of expressions like “inner city crime” arise naturally when the speaker intends to communicate racist ideas but when overtly racist language is off limits.  In this project we will formally implement these hypotheses as variants of the RSA model and compare them using corpus and experimental data combined with Bayesian model comparison.
+
+% https://linguisticpulse.com/2014/06/12/demystifying-dog-whistle-racism/
+% 
+% Works to mention: Stanley book, Beaver/Stanley 2017 article, Nunber: the social life of slurs
+
+\paragraph{References to work outside the CRC}
+
+% This bibliography will list only publications that do not have
+% TMJT-own or TMJT-own-other keywords in the .bib file (see example in
+% template):
+
+\printbibliography[heading=none,notkeyword={TMJT-own},notkeyword={TMJT-own-other}]
+
+% Section 3.3.3 (¾ page)
+\subsubsection{Work programme and role within the proposed Collaborative Research Centre}
 
 % Long-term questions:
-
-% {\bf 1.} Which expressions index beliefs for which groups of
+%
+% 1. Which expressions index beliefs for which groups of
 % language users? Which meanings do they convey / which
 % connotations/ideologies do they index?
-
-% {\bf 2.} Which linguistic and extralinguistic properties taxonomize
+%
+% 2. Which linguistic and extralinguistic properties taxonomize
 % these expressions? Which meanings/connotations/ideologies are
 % conventionally coded, which ones arise from interlocutor
 % beliefs/biases/stereotypes?
-
-% {\bf 3.} What does a predictive analysis of these expressions look
+%
+% 3. What does a predictive analysis of these expressions look
 % like? How can such an analysis be validated in large, unconstrained
 % datasets?
-
-% {\bf Questions to be addressed in phase 1:}
-
+%
+% Questions to be addressed in phase 1:
+%
 % - German expressions around the topics of gender
-
+%
 % code words/dogwhistle: {\em Tante, Tussi}
-
+%
 % gendered nouns (generic masculine nouns, inclusive forms with `Binnen-I', *, :)
-
+%
 % - Methods: annotation of naturally occurring examples
 % (Bundestagscorpus, newspapers), experiments to diagnose properties
 % of the content, social perception, language comprehension, and
 % language processing
-
+%
 % - Computational modelling
-
+%
 % - Project is also concerned with challenges to successful
 % communication, signaling persona and ideology, signaling intended
 % action and in/out-group building
-
+%
 % - written or spoken language, or both?
 
-\subsubsection{Current state of research and preliminary work} % ¾ page
+This project will address points 1. and 2. through large-scale online experiments that tap into a much wider participant population than typical lab-based studies.  Online experiments also open the door to so-called one-shot designs in which each participant sees just one stimulis item and hence cannot develop an experiment-specific strategy.  Point 3. will be adressed by extending the rational speech act model to see which assumptions are necessary to explain the observed data.  Given the fully spelled-out mathematical nature of this model, we will be able to deploy the full arsenal of Bayesian model comparison tools for this purpose.
 
-% This is a longer text citing both external work and own work.
+The goals of this project with respect to dog whistle are therefore the following: 1. We will address the thin empricial foundation for studying dog whistles in German by establishing a corpus of real-world examples from political speeches and public discourse.  2. We formulate a model explaining the use and interpretation of dog whistles.  The aim is to treat dog whistles within the same model as will be use for gender biases (see above) and to contrast it with other models, again using the tools of Bayesian model comparison.  3. Finally, we will evaluate the model predictions with regard to the production and interpretation of dog whistles through psycholinguistic experiments.  
 
-\noindent 
-https://linguisticpulse.com/2014/06/12/demystifying-dog-whistle-racism/
-
-Works to mention: Stanley book, Beaver/Stanley 2017 article, Nunber: the social life of slurs
-
-State of the art is very theoretical, but empirical situation is impoverished (slurs, dogwhistles, code words)
-
-% these are our 10 publications
-
-\cite*{StevensEtAl2017}
-
-\nocite{TonhauserEtAl2013}
-\nocite{TonhauserEtAl2018}
-\nocite{DeMarneffeEtAl2019}
-\nocite{TonhauserEtAl2012}
-\nocite{DegenTonhauserMS}
-\nocite{KiparskyTonhauser2013}
-
-\paragraph{References to work outside the CRC}
-
-% This bibliography will list only publications that have
-% external as a keywords entry in the .bib file (see example in template):
-
-\printbibliography[heading=none,keyword={TMJT-external}]
-
-\subsubsection{Work programme and role within the proposed Collaborative Research Centre} % ¾ page
-
-\noindent
-In the first phase, we focus on the social meaning of irony in questions. {\bf WP 1:} We empirically investigate the social meanings of ironic questions through a combination of methods. {\bf WP 2:} Literary and linguistic perspectives on reference systems involved in irony, social meaning, and the social meaning of irony will be integrated. {\bf WP 3:} Building on our findings from WPs 1 and 2, we will develop a predictive model of the social meanings of irony in questions.
-
-By investigating the social meanings of irony as a literary and linguistic phenomenon, the project considers cognitive, social and aesthetic perspectives on reference systems. Because multiple reference systems need to be considered, our project contributes to the understanding of the interconnection and transformation of reference systems. Our empirical work will lay the foundation for exploring Machine Learning techniques in future phases of the CRC. We also plan to collaborate closely with projects that investigate figurative language and work with naturally occurring corpora.
-
-\newpage
-\subsection{Project-related publications by participating researchers} % ¾ page
+% Section 3.4 (¾ page)
+\subsection{Project-related publications by participating researchers}
+% - [ ] 10 per project, not per PI.
+% - [ ] Must be related to the project (mention in 3.3.2, if suitable).
+% - [ ] Separated into ‘published/accepted’ and other.
 
 %{\bf List only publications by the participating researchers whose topics are directly related to the proposed individual project and which are publicly available. max 10 total}
 
@@ -185,30 +162,45 @@ By investigating the social meanings of irony as a literary and linguistic pheno
   \item patents (subdivided into pending and issued).
   \end{enumerate}}
 
-\dfgcomments{  The total number of works listed under a) and b) combined may not exceed ten. When listing papers that have been officially accepted for publication but not yet published, the manuscript  and  the  publisher’s  dated  acknowledgement  of  acceptance  must  be  submitted  via  elan. The DFG will forward an electronic copy of the draft proposal -- and a print copy upon request -- to the consultation panel.}
+\dfgcomments{The total number of works listed under a) and b) combined may not exceed ten. When listing papers that have been officially accepted for publication but not yet published, the manuscript  and  the  publisher’s  dated  acknowledgement  of  acceptance  must  be  submitted  via  elan. The DFG will forward an electronic copy of the draft proposal -- and a print copy upon request -- to the consultation panel.}
 
 \paragraph{a) Peer-reviewed published or accepted articles}
-% this bibliography will list only publications that have
-% own as a keywords entry in the .bib file (see example in template)
-% publications that have not been cited already above can be inserted by:
-% \nocite{Scientist/Researcher:2019}
-% redundant if they have been cited in the preliminary work session above
+
+% This bibliography will list only publications that have TMJT-own as
+% a keywords entry in the .bib file (see example in template)
+% publications that have not been cited already above can be inserted
+% by: \nocite{Scientist/Researcher:2019} redundant if they have been
+% cited in the preliminary work session above.
+
+% Judith:
+\nocite{StevensEtAl2017}
+\nocite{TonhauserEtAl2013}
+\nocite{TonhauserEtAl2018}
+\nocite{DeMarneffeEtAl2019}
+\nocite{Tonhauser2012}
+\nocite{DegenTonhauserMS}
+\nocite{KiparskyTonhauser2013}
+
+% Titus:
+\nocite{MalsburgEtAl2020}
+\nocite{MalsburgVasishth2013}
+\nocite{MalsburgAngele2017}
+
 \printbibliography[heading=none,keyword={TMJT-own}]
 
 \paragraph{b) Other publications}
-% this bibliography will list only publications that have
-% own-other as a keywords entry in the .bib file (see example in template)
+% This bibliography will list only publications that have
+% TMJT-own-other as a keywords entry in the .bib file (see example in template)
 % publications that have not been cited already above can be inserted by:
 % \nocite{Mohler:2001}
 % redundant if they have been cited in the preliminary work session above
-\nocite{Scientist:2018}
+
 \printbibliography[heading=none,keyword={TMJT-own-other}]
 
+% Section 3.5 ‘Project funding’ (3 lines)
 \subsection{Project funding} % 3 lines
+% We will provide wording after strategic meeting with the Rektorat.
 
-\dfgcomments{Is the project currently being funded by the DFG or other institution? Describe the CRC’s proposed budget with regard to personnel and larger-scale instrumentation.}
-
-
-\noindent (to be filled in at a later date)
+(To be filled in at a later date.)
 
 \end{document}
