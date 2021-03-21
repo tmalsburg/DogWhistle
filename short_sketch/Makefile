@@ -1,5 +1,5 @@
 
-.PHONY: clean
+.PHONY: clean refreshloop
 
 TMJT.pdf: TMJT.bbl
 	pdflatex TMJT
@@ -11,4 +11,8 @@ TMJT.bbl: TMJT.tex ../bibliography/bibliography.bib
 
 clean:
 	rm -f TMJT.aux TMJT.bbl TMJT.bcf TMJT.blg TMJT.fff TMJT.log TMJT.out TMJT.pdf TMJT.run.xml
+
+refreshloop:
+	while inotifywait -e close_write TMJT.tex; do make; done
+
 
