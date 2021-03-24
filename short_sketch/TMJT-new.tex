@@ -1,0 +1,177 @@
+\documentclass[11pt]{article}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{enumerate}
+\usepackage[backend=biber, style=authoryear, maxnames=10, url=false, doi=false, eprint=false, natbib]{biblatex}
+\addbibresource{../bibliography/bibliography.bib}
+
+\sloppy
+
+% SECTION FOR SWITCHING ON AND OFF THE HINTS FOR FILLING IN
+% INFORMATION show hints by dfg for filling in the template:
+\newcommand{\dfgcomments}[1]{\textcolor{green}{#1}}
+% un-comment to switch off hints
+\renewcommand{\dfgcomments}[1]{}
+
+% Start section numbering at 3, as in official template needs to be
+% defined here and in main document so we can compile both stand-alone
+% and the full proposal:
+\setcounter{section}{3}
+\setcounter{subsection}{0}
+
+% Read configuration code that should apply to all projects:
+\input{settings.tex}
+
+\begin{document}
+
+% Checklist:
+% - [ ] Incorporate feedback from reviewers. Especially important:
+%       Reconsider using or explain discipline-specific terminology.
+% - [ ] Mention the language varieties and corpora investigated.
+% - [ ] Make sure we connect to the main topics of the CRC, ref
+%   systems (check), but also their transformation.  What else?
+
+%\section{Teilprojekte}
+%\section{Projects}
+
+\subsection{Code and title}
+
+\noindent A5 -- Dog Whistle Content and Gender Biases in a Rational Model of Language Interpretation
+
+\subsection{Project leader(s)}
+
+\dfgcomments{List the academic title, first name, last name, date of birth, work address, telephone number and e-mail address.}
+
+\noindent 
+\begin{tabular}{p{.5\textwidth}p{.5\textwidth}}
+  Jun.-Prof.\ Dr.\ Titus von der Malsburg \par
+  02.04.1977 \par
+  Department of English Linguistics \par
+  Keplerstr.\ 17, 70174 Stuttgart \par
+  0711 / 685-8xxx \par
+  titus.vondermalsburg@ling.uni-stuttgart.de
+  &
+  Prof.\ Dr.\ Judith Tonhauser \par
+  19.11.1974 \par
+  Department of English Linguistics \par
+  Keplerstr.\ 17, 70174 Stuttgart \par
+  0711 / 685-83121 \par
+  judith.tonhauser@ling.uni-stuttgart.de
+\end{tabular}
+
+
+\subsection{Project description}
+
+%{\bf \textcolor{blue}{Describe the main research question, the current state of the art, project-related preliminary work, the work programme and methodology, and integration in the Collaborative Research Centre. The information provided in this section should be able to stand on its own and be understandable, coherent and reviewable without the need to read additional documents.}}
+
+\dfgcomments{Antje: The following structure of subsections of 3.3 is proposed in the template, but it is said that this subsection CAN be structured in this way, so it is not mandatory. The structure of all other sections and subsections seems to be mandatory however.}
+
+\subsubsection{Summary and main research question}
+% Should be able to stand alone. Include specific research question,
+% connect to broader research question, area and theme.
+
+This project investigates empirical phenomena that arise from the misalignment of interlocutors' reference systems, namely dog whistle content and gender biases. Dog whistles are expressions that literally encode a benign meaning, while also being associated with a controversial, if not offensive, meaning that only a subset of the audience is receptive to. An example from the US American context is {\em inner city crime}, which may carry racial overtones by implying crime committed by African Americans. Gender biases are exemplified by listeners experiencing processing difficulty when reading the pronoun {\em she} in reference to a likely female future president.
+
+Our working hypothesis is that the two phenomena can arise unintendedly (e.g., when the speaker is not aware of possibly misaligned reference systems), but can also be consciously employed by the speaker to signal their stance towards a particular issue. The  social meaning of dog whistle expressions and gendered language thus arises from the complex interplay of the literal content, the utterance context, and the producers' and interpreters' beliefs, both about the world and each other. In this project, we empirically investigate and formally model the social meanings of  dog whistle expressions and gendered language, by combining corpus annotation, experimental methods, and computational modeling techniques. Our empirical focus is on German, a language in which dog whistles remain largely unexplored. Our specific research questions are as follows:
+
+{\bf 1.} Which German expressions are dog whistles? Which social meanings are indexed by dog whistles and gendered language in German?
+
+{\bf 2.} How do interpreters' beliefs about the producer and the world modulate their comprehension of dog whistles and gendered language across different utterance contexts? 
+
+{\bf 3.} What does a predictive analysis of German dog whistles and gendered language look like? 
+
+\subsubsection{Current state of research and preliminary work}
+% This is a longer text citing both external work and own work .
+% References to research outside the CRC will be included in general
+% section.
+
+% TODO:
+% - [ ] Clarify that plain RSA can handle neither dog whistles nor
+%   gender biases, a clear shortcoming of the model that we will address.
+
+% Something on gender biases:
+
+The state of research on German gendered language is very different from that on German dog whistle expressions. Gendered language in German is a hot button topic, with polarizing positions permeating both public and academic discourse (REFERENCES). Some empirical studies have demonstrated that so-called 'generic masculine' nouns like, like the {\em Studenten} `student.{\sc masc}.{\sc pl}', are interpreted with a bias towards male referents \parencite[e.g.,][]{GygaxEtAl2008, Kusterle2011}. Such observations have inspired the use of nominalized participial `gender-neutral' forms, like {\em Studierende} `study.{\sc ptcp}.{\sc nmlz}', or 'gender-inclusive' forms, like {\em Student*innen} or {\em Student:innen}, which formally combine the masculine and feminine plural endings (taken to refer to individuals with those genders) with special diacritics that are taken to refer to non-binary individuals. Other works maintain that masculine nouns suffice for inclusive reference, pointing out natural language gender categories are distinct from human gender: {\em Kind} `child.{\sc neut}', for instance, is formally neuter (REFERENCES).\judithtodo{Missing: which biases arise?}
+
+However, this area of research is marred by the lack of a clearly articulated theory that explains how these biases arise.\judithtodo{Mention a work that comes closest to a theory and point out what is missing?} Furthermore, there are at least two methodological concerns about the empirical measures that have been used to investigate the biases. First, experiments typically expose participants to many instances of generic masculine, gender-neutral, and feminine forms (REFERENCES). This may result in participants developing awareness of what is being tested which, in turn, may influence their behavior. For instance, a salient gender-neutral alternative may lead participants to interpret a generic masculine noun as more male-oriented than they usually would, or participants might interpret the generic masculine more neutral due to social pressure (REFERENCE). A second methodological concern arises from the fact that most studies tested local undergraduate populations. That such results may not generalize to the wider German population is suggested by the observation that the strength of gender biases in English vary with interpreters' age, education, and political alignment (\cite{MalsburgEtAl2020})\judithtodo{warum nicht ``von der'' Malsburg?} 
+
+The starting point with dog whistles is very different, as research to date has been largely limited to American English. Linguistic research on the meaning and use of individual dog whistles in the US American socio-political context has resulted theoretical proposals that differ in the status ascribed to dog whistle content as well as its predicted interaction with interlocutors' beliefs about the world and each other (e.g., \cite{stanleyxxx,burnett2017,khoo2017,HendersonMcCready2018,saul2018}). While these proposals are based almost exclusively on researchers' intuitions and have, to date, not been subjected to large-scale experimental testing, they make empirically testable predictions. Complementing the linguistic research, experiment-based research in the social and political sciences suggests that the perception of dog whistle content varies by social group (e.g., \cite{Calfano and Djupe 2008,albertson2015,goodwin-saward2005,hurwitz-peffley2005,wetts-willer2019}). 
+
+In this project, we build on the prior empirical and theoretical research on gender biases and dog whistle content to empirically investigate and formally model the two phenomena in German. Both PIs have extensive experience in conducting empirical research on meaning based on naturally occurring data and large-scale experimental investigations (\cite{demarneffe-etal-sub23,degen-tonhauser-managing:to-appear}). Von der Malsburg used large-scale online experimentation to study gender biases in English during the 2016 US presidential campaign using both comprehension and processing measures (e.g., \cite{BoyceEtAl2019LSA,MalsburgEtAl2020}). Tonhauser is an expert on the empirical investigation and theoretical modeling of secondary content, which include gender biases and dog whistle content (e.g., \cite{tonhauser-sula6,brst-lang11,tbd-variability}).
+
+\paragraph{References to work outside the CRC}\judithtodo{make sure this works, then it will not count against page numbers}
+% this bibliography will list only publications that have
+% external as a keywords entry in the .bib file (see example in template)
+\printbibliography[heading=none,keyword={TMJT-external}]
+
+\subsubsection{Work programme and role within the proposed Collaborative Research Centre}
+
+{\bf WP 1:} theoretical work: predictions of previous work, Von der Malsburg is also an expert for Bayesian inference \parencite{MorganEtAl2020, MeziereEtAl2021} which puts us in an ideal the position to formally implement our theoretical ideas and to evaluate them using state-of-the-art Bayesian model comparison tools.
+\citealt{stevens-etal2017} Point 3. will be adressed by extending the rational speech act model to see which assumptions are necessary to explain the observed data.  Given the fully spelled-out mathematical nature of this model, we will be able to deploy the full arsenal of Bayesian model comparison tools for this purpose. The theoretical goal is to develop a predictive analysis of German dog whistles and gendered language on the basis of the empirical results. Our working hypothesis is that both phenomena can be understood as products of the same underlying dynamic, namely the interaction of rational pragmatic inference with misaligned reference systems, evaluate model predictions wrt production and comprehension through psycholinguistic experiments
+
+Specifically, we will embed this issue in the RSA model of rational pragmatic inference and evaluate it using corpus data and experimental comprehension and production data.  Within this framework we will also investigate the alternatives to the generic masculine since there is no strong a priori reason to believe that they are necessarily neutral (e.g., “Lehrer*innen” may still be male-biased, or female-biased).
+
+
+The overarching goal of the project is to investigate whether an existing formal account of pragmatic inference, namely the rational speech act model \parencite[RSA, ][]{FrankGoodman2012} can explain gender biases and dog whistles as naturally arising from the framework's independently motivated assumptions about efficient communication.  
+
+ One clearly articulated proposal situates dog whistles in the framework of Bayesian signaling games \parencite{Burnett2017} and contents that dog whistles are used to signal one’s persona and ideologies to a subset of the audience while keeping others in the dark \parencite{HendersonMcCready2018, HendersonMcCready2019}.  While theoretically attractive and precisely formulated, this proposal has not yet been thoroughly evaluated.  It is also not clear to us that it captures the full breadth of the phenomenon.  For instance, when George Bush says “family values”, one could argue that he is not plausibly denying his Christian identity which is widely known.  One alternative interpretation is that speakers’ choice of language rather displays their biases much like the choice of masculine expressions does in the case of gender biases especially when explicit (e.g., racist) language is off limits.  In this project we will formally implement this hypothesis as a variant of the RSA model and compare it to the \citeauthor{HendersonMcCready2019} proposal using corpus data and experimental data combined with Bayesian model comparison.
+
+{\bf WP 2:} corpus work, with annotations: to identify German dog whistles, but also build rich empirical foundation for dog whistles and gendered language; establishing a corpus of real-world examples from political speeches and public discourse; Bundestagscorpus (link to A2 and shared use case) but also naturally occurring examples
+
+{\bf WP 3:} experimental work: constructed and naturally occurring examples; large-scale online experiments that tap into wide participant population; online experiments also open the door to so-called one-shot designs in which each participant sees just one stimulis item and hence cannot develop an experiment-specific strategy.  to understand how interpreters' beliefs about the producer and the world modulate their comprehension of dog whistles and gendered language across different utterance contexts.
+
+[Paragraph on the role within the proposed CRC: Project is concerned with challenges to successful communication, signaling persona and ideology, signaling intended action and in/out-group building. blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla blabla bla blablabla.] 
+
+%Gendered language can be intentionally used to signal potentially controversial social views (e.g., German {\em Tante} `aunt', {\em Fr\"aulein}, roughly `missy')) and dog whistles can be unintentional expressions of unconscious biases (e.g., German {\em Clan-Kriminalit\"at} when referring to organized crime conducted by extended Arabic families).
+
+
+% https://linguisticpulse.com/2014/06/12/demystifying-dog-whistle-racism/
+%
+% Works to mention: Stanley book, Beaver/Stanley 2017 article, Nunber: the social life of slurs
+
+\subsection{Project-related publications by participating researchers}
+
+%{\bf List only publications by the participating researchers whose topics are directly related to the proposed individual project and which are publicly available. max 10 total}
+
+\dfgcomments{\begin{enumerate}[a)]
+  \item articles which at the time of draft proposal submission have been published or officially accepted  by  publication  outlets  with  scientific  quality  assurance,  and  book  publications;
+  \item other publications;
+  \item patents (subdivided into pending and issued).
+  \end{enumerate}}
+
+\dfgcomments{  The total number of works listed under a) and b) combined may not exceed ten. When listing papers that have been officially accepted for publication but not yet published, the manuscript  and  the  publisher?s  dated  acknowledgement  of  acceptance  must  be  submitted  via  elan. The DFG will forward an electronic copy of the draft proposal -- and a print copy upon request -- to the consultation panel.}
+
+\paragraph{a) Peer-reviewed published or accepted articles}\judithtodo{I have 1 publication too many}
+% this bibliography will list only publications that have
+% own as a keywords entry in the .bib file (see example in template)
+% publications that have not been cited already above can be inserted by:
+% \nocite{Scientist/Researcher:2019}
+% redundant if they have been cited in the preliminary work session above
+\printbibliography[heading=none,keyword={TMJT-own}]
+
+
+
+\paragraph{b) Other publications}
+% this bibliography will list only publications that have
+% own-other as a keywords entry in the .bib file (see example in template)
+% publications that have not been cited already above can be inserted by:
+% \nocite{Mohler:2001}
+% redundant if they have been cited in the preliminary work session above
+\nocite{Scientist:2018}
+\printbibliography[heading=none,keyword={TMJT-own-other}]
+
+
+\subsection{Project funding}
+
+\dfgcomments{Is the project currently being funded by the DFG or other institution? Describe the CRC?s proposed budget with regard to personnel and larger-scale instrumentation.}
+
+
+\noindent [This information will be filled in at a later date. These sentences only serve to keep sufficient space free, for the information that will be filled in at a later date. I repeat: These sentences only serve to keep sufficient space free, for the information that will be filled in at a later date.]
+
+
+
+
+\end{document}
