@@ -4,13 +4,26 @@ Complication: even people in the outgroup may recognize the message, which may i
 
 Requires consideration of the groups that the speaker and the various parts of the audience belong to. We expect:
 1. if the speaker is part of the in-group, the in-group perceives a message that the out-group does not perceive (but may know about).
-2. if the speaker is not known to be part of the in-group, the speaker is considered to be part of the in-group. 
+2. if the speaker is not known to be part of the in-group, the speaker may be considered to be part of the in-group. 
 
 Maybe our first goal should be to see if we can find expressions that suggest that the speaker has a particular socio-political bias/alignment. The message that the speaker would then be sending with their use of the expression is that they have this alignment. For some expressions, the message may be stronger, e.g., alignment with Hitler with the use of “Kampf”.
 
-Unser Kampf für Deutschland geht weiter
+Unser/Der Kampf für Deutschland geht weiter
 vs
-Unser Einsatz für Deutschland geht weiter
+Unser/Der Einsatz für Deutschland geht weiter
+vs
+Unser Kampf gegen den Klimawandel weiter
+Potentially present the speaker as somebody from the AfD vs the left
+
+Dogwhistle is an expression that is used by one party but not by another (lower bar, necessary condition, but perhaps not sufficient). The phenomenon itself may be probabilistic, rather than categorical. Perhaps this should be part of an improved definition of the term. It may also be that the term isn't neutral/message, but rather may also send a message for everybody to different degrees, and that message, when integrated with the person's ideology, results in different effects. We need quantifiable criteria. 
+
+Interesting observation: We're more sensitive to dogwhistles that are outgroup!
+
+Whether something is a dogwhistle depends on the speaker: e.g., what "Freiheit" means depends on who utters it (AfD, Grün, FDP), but it may also depend on what Freiheit typically co-occurs with. This may not be a dogwhistle, but involve a mismatch in reference systems.
+
+Dogwhistle: an expression like Klankriminalität is used to convey Ausländerkriminalität, which is obviously taboo or controversial, but the former allows one to convey the same meaning without being explicit. What is sanctioned? the particular expression, or the message. Is this a dogwhistle according to the definitions? Kampf für Deutschland seems different: no paraphrase that makes the intended meaning explicit. When authors use Klankriminalität, they are not hiding that they are talking about "foreigner", but it is difficult to use the word "Ausländer" in Germany. A Klan could also be a Klan of German.
+
+Corpus method could done on Wahl- and Parteiprogramm, Bundestagscorpus, etc. 
 
 afd.de
 Kampf für Deutschland
@@ -21,17 +34,31 @@ deutsches Staatsvolk
 identitätswahrende Migrationspolitik
 Familienclan
 
+FDP
+
+BUNDESTAGSCORPUS UND REDEN DER AFD
+
 die-linke.de
 Mindestsicherung
 Polizeistaat
 
-Wo stehen Sie im politischen Spektrum? Links / eher links / neutral / eher rechts / rechts
-Wenn am Sonntag Wahl wäre, wen würden Sie wählen? 
+Ausdrücke in Anführungszeichen bei der AfD / Annotation von dogwhistles?
+gender-gerechte Sprache
 
+To ask participants:
+Wo stehen Sie im politischen Spektrum? Links / eher links / neutral / eher rechts / rechts
+(not a good idea because the middle might be somewhere different)
+Wenn am Sonntag Wahl wäre, wen würden Sie wählen? 
+Wahlomat-inspirierte Fragen zu ganz bestimmten Fragen? André fragen! zu Fragen, die eine kategorisierung erlauben
+
+
+Potential tasks:
 Sind diese Worte politisch behaftet? Links / eher links / neutral / eher rechts / rechts
+Würden Sie diesen Satz anders formulieren?
+Wer ist der Sprecher?
 
 Evidence for a dogwhistle: the expression conveys a message, not part of its compositional/conventional meaning, but only for the in-group
 E.g., in the socio-political realm, the expression conveys a political alignment, but only for the in-group (e.g., identitätswahrende Migrationspolitik)
 Also include 
-- expressions that are clearly polarizing, but for everybody (e.g., 
-- expressions that are not polarizing (e.g., )
+- expressions that are clearly inflamatory, but for everybody (e.g., Ausländerratte)
+- expressions that are not inflamatory though politically charged (e.g., Steuererhöhung)
