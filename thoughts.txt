@@ -1,0 +1,37 @@
+Henderson & McCready: “language that sends one message to an outgroup while at the same time sending a second (often taboo, controversial, or inflammatory) message to an in group”
+
+Complication: even people in the outgroup may recognize the message, which may influence the results of the experiment. Albertson 2015 didn’t ask straight up about the message, but about whether they would be more likely to vote for the candidate, with the utterances of the candidate varying. But she also asked directly about whether they were familiar with “wonder-working power” and allowed them an open ended answer.
+
+Requires consideration of the groups that the speaker and the various parts of the audience belong to. We expect:
+1. if the speaker is part of the in-group, the in-group perceives a message that the out-group does not perceive (but may know about).
+2. if the speaker is not known to be part of the in-group, the speaker is considered to be part of the in-group. 
+
+Maybe our first goal should be to see if we can find expressions that suggest that the speaker has a particular socio-political bias/alignment. The message that the speaker would then be sending with their use of the expression is that they have this alignment. For some expressions, the message may be stronger, e.g., alignment with Hitler with the use of “Kampf”.
+
+Unser Kampf für Deutschland geht weiter
+vs
+Unser Einsatz für Deutschland geht weiter
+
+afd.de
+Kampf für Deutschland
+Volk
+Brauchtum
+Massenzuwanderung
+deutsches Staatsvolk
+identitätswahrende Migrationspolitik
+Familienclan
+
+die-linke.de
+Mindestsicherung
+Polizeistaat
+
+Wo stehen Sie im politischen Spektrum? Links / eher links / neutral / eher rechts / rechts
+Wenn am Sonntag Wahl wäre, wen würden Sie wählen? 
+
+Sind diese Worte politisch behaftet? Links / eher links / neutral / eher rechts / rechts
+
+Evidence for a dogwhistle: the expression conveys a message, not part of its compositional/conventional meaning, but only for the in-group
+E.g., in the socio-political realm, the expression conveys a political alignment, but only for the in-group (e.g., identitätswahrende Migrationspolitik)
+Also include 
+- expressions that are clearly polarizing, but for everybody (e.g., 
+- expressions that are not polarizing (e.g., )
