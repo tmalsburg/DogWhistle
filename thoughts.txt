@@ -25,16 +25,24 @@ Dogwhistle: an expression like Klankriminalität is used to convey Ausländerkri
 
 Corpus method could done on Wahl- and Parteiprogramm, Bundestagscorpus, etc. 
 
-afd.de
-Kampf für Deutschland
-Volk
-Brauchtum
-Massenzuwanderung
-deutsches Staatsvolk
-identitätswahrende Migrationspolitik
-Familienclan
+**afd.de
+Kampf für Deutschland: Auch 2022 geht unser Kampf für Deutschland weiter.
+
+** https://www.afd.de/wahlprogramm-asyl-einwanderung/
+- Volk: Kinder sind die Zukunft unseres Volkes.
+- Hilfe vor Ort: Hilfe vor Ort hat für die AfD höchste Priorität
+- Brauchtum
+- Massenzuwanderung: Die desaströsen Folgen der unregulierten Massenzuwanderung seit 2015 sind unübersehbar und verschärfen sich weiter: überproportionale Zuwandererkriminalität, Terroranschläge und islamischer Separatismus belegen dies ebenso wie dreistellige Milliardenkosten, Wohnraummangel und die hohe Arbeitslosigkeit unter den Zuwanderern.
+- deutsches Staatsvolk
+- identitätswahrende Migrationspolitik: Vorbild einer identitätswahrenden Migrationspolitik können für Deutschland nicht klassische Einwanderungsländer von der Größe Kanadas oder Australiens sein, sondern eher Länder wie Japan, die eine ihrer Landesstruktur entsprechende Begrenzung und Steuerung der Migration verfolgen.
+- Familienclan
+
+Clan-Kriminalität (https://www.presseportal.de/pm/130241/5040654)
+
 
 FDP
+
+https://www.tagesschau.de/ausland/amerika/usa-brandon-trump-republikaner-schlachtruf-101.html
 
 BUNDESTAGSCORPUS UND REDEN DER AFD
 
@@ -51,14 +59,93 @@ Wo stehen Sie im politischen Spektrum? Links / eher links / neutral / eher recht
 Wenn am Sonntag Wahl wäre, wen würden Sie wählen? 
 Wahlomat-inspirierte Fragen zu ganz bestimmten Fragen? André fragen! zu Fragen, die eine kategorisierung erlauben
 
+Which German expressions are dogwhistles, i.e., which German expressions are such that they have a secondary meaning in addition to their conventional content that only some speakers of German recognize?
+
+Test the expressions in neutral carrier sentences:
+[speaker] sagte "X". 
+Welche Eigenschaften würden Sie [speaker] zuschreiben?
+
+Is it always a dogwhistle, or just when used by a particular type of person, or in a particular context?
 
 Potential tasks:
 Sind diese Worte politisch behaftet? Links / eher links / neutral / eher rechts / rechts
 Würden Sie diesen Satz anders formulieren?
-Wer ist der Sprecher?
+Wer ist der Sprecher? THIS IS A VERY DIRECT QUESTION, MAY BE TOO MUCH ON THE NOSE
+Perhaps better: Würden Sie diese Person wählen?
 
 Evidence for a dogwhistle: the expression conveys a message, not part of its compositional/conventional meaning, but only for the in-group
 E.g., in the socio-political realm, the expression conveys a political alignment, but only for the in-group (e.g., identitätswahrende Migrationspolitik)
 Also include 
-- expressions that are clearly inflamatory, but for everybody (e.g., Ausländerratte)
+- expressions that are clearly inflamatory, but for everybody (e.g., Ausländer sind gewalttätig)
 - expressions that are not inflamatory though politically charged (e.g., Steuererhöhung)
+
+In these first experiments, we are interested in identifying dogwhistles: which expressions are such that some but not all German speakers perceive a message that is not part of the conventional content? Even better: the in-group perceives the content, but the out-group does not.
+
+In later experiments, we might then also be interested in how these expressions can be used to frame an issue and to subtle influence people on particular matters.
+
+To identify dogwhistles, we need to identify issues in German socio-political life that are controversial and associated with biases. Easiest: Naziism, migration
+
+So, for now, we don't want to do an investigation with minimal variants, but rather we want to present participants with lots of expressions, to get their impressions on these. More like an annotation task than an experiment designed to investigate a hypothesis.
+
+Questionnaire:
+- age
+- gender: männlich, weiblich, divers, möchte ich nicht antworten
+- höchster Abschluss: kein Schulabschluss, Hauptschule, Realschule, Gymnasium, Bachelor, Master
+
+Wahl-O-Mat Fragen (stimme zu, neutral, stimme nicht zu)
+1) Das Recht anerkannter Flüchtlinge auf Familiennachzug soll abgeschafft werden.
+stimme zu: AfD
+neutral: FDP
+stimme nicht zu: CDU/CSU, SPD, Links, Grün
+
+2) Das Tragen eines Kopftuchs soll Beamtinnen im Dienst generell erlaubt sein.
+stimme zu: Links, Grün
+neutral: FDP
+stimme nicht zu: CDU/CSU, SPD, AfD, 
+
+3) In Deutschland soll es generell möglich sein, neben der deutschen eine zweite Staatsbürgerschaft zu haben.
+stimme zu: SPD, Links, Grün
+neutral: FDP
+stimme nicht zu: CDU/CSU, AfD
+
+4) Islamische Verbände sollen als Religionsgemeinschaften staatlich anerkannt werden können.
+stimme zu: SPD, Links, Grün, FDP
+neutral: CDU/CSU
+stimme nicht zu: AfD
+
+5) Asyl soll weiterhin nur politisch Verfolgten gewährt werden.
+stimme zu: CDU/CSU, SPD, AFD,
+stimme nicht zu: Links, Grün
+
+====> Fragen 1)-5) erlauben es uns Menschen, die Ausländern und Migration kritisch gegenüber stehen zu identifizieren (Quantifizierung: +1 (wie AfD), 0 neutral, -1 (wie Grün/Links)
+
+Weitere Wahl-O-Mat Fragen:
+Unternehmen sollen selbst entscheiden, ob sie ihren Beschäftigten das Arbeiten im Homeoffice erlauben.
+Der kontrollierte Verkauf von Cannabis soll generell erlaubt sein.
+Der Staat soll weiterhin für Religionsgemeinschaften die Kirchensteuer einziehen.
+Spenden von Unternehmen an Parteien sollen weiterhin erlaubt sein.
+Der für das Jahr 2038 geplante Ausstieg aus der Kohleverstromung soll vorgezogen werden.
+
+Materials: [speaker] sagte: "X"
+
+Response task:
+- Wie rassistisch ist [speaker]?
+
+
+
+
+
+## Tasks used in previous empirical research on dogwhistles
+
+- Albertson 2015: religious dogwhistle "wonder-working power"; three conditions (dogwhistle, obvious religious content+dogwhistle, neither); participants viewed videos w speeches by candidate; response tasks: attitude toward candidate and whether they would vote for candidate (5-point Likert scale), emotion ratings regarding candidate (interested, upset, proud, moral...) on sliding scale, participants' religious denomination and beliefs about the Bible; outgroup was unfamiliar with religious connotation of "wonder-working power", they gave less favorable ratings with obvious religious appeal but not with WWP; for ingroup, both WWP and the obvious religious appeal lead to more favorable ratings of the candidate, the former resulted in even more favorable ratings.
+
+- White 2007: conditions in experiment were explicitly racial ("poor, Black and Hispanic families"), implicitly racial ("poverty, ...layoffs, ...healthcare...affordable housing"), and non-racial; participants read articles (fictitious debate between two Ohio congressmen—–one Democrat and one Republican—–on the proposed war in Iraq. All of the experimental conditions presented two-sided messages about the war: the Republican expressed a consistent statement in support of using force to remove Saddam Hussein from power, and the Democrat voiced opposition. What changed across the conditions were the terms in which the Democrat articulated his argument against the war); answered an extensive battery of post-test questions that included questions about their support for the war in Iraq, issue importance ratings, and racial and political attitudes; results: COMPLICATED DESIGN, NEED TO SPEND MORE TIME READING THIS 
+
+- Calfano & Djupe 2009: participants were asked a series of questions concerning their demographics, political interests, political knowledge, and political attitudes; they were  exposed to a picture and brief biographical sketch of a male candidate that included basic personal information (including age, family status, career background); candidates varied by race (white/black) and statement (land, worth, WWP, none); participants were asked to identify the candidate’s party (all candidates were male) and whether they would vote for him; results: white evangelicals identify candidates using the code as Republicans and indicate their likely support for such candidates. Roman Catholics and mainline Protestants are generally not affected by the code, although mainline Protestants do link candidates using the code to the GOP. Instead, support for such candidates among mainline Protestants is driven largely by party affiliation and other concerns, not by the code itself. This is almost precisely the way the code is intended to work—to gain the recognition and support of the in-group evangelicals and pass unnoticed by others, or at least not engender opposition from other likely supporters
+
+- Wetts & Willer 2019: Participants assigned to the implicit racial appeal condition reported significantly less support for welfare than those assigned to the no racial appeal condition (p = .02). Participants in the explicit racial appeal condition were in between, not differing significantly from either the control condition or the implicit racial appeal condition; participants assigned to the implicit racial appeal condition reported significantly lower levels of the view that welfare recipients are deserving of aid (p = .02). Again, participants in the explicit racial appeal did not report significantly higher levels of this view than participants in either the control or implicit racial appeal conditions. After reading an antiwelfare message where racial cues were subtly implied, liberals high in racial resent- ment expressed less support for welfare programs than those who read an excerpt about global warming, while liberals low in racial resentment voiced approximately equivalent support across condition (Figure 1a). In contrast, moderates and conservatives high in racial resentment showed little effect of the implicit racial appeal condition on welfare sup- port relative to the control condition. THIS STUDY DOES NOT ASSUME THAT DOGWHISTLES ARE A MESSAGE THAT ONLY SOME PERCEIVE
+
+
+References from Wetts & Willer 2019: welfare (Mendelberg 1997, 2001; Peffley, Hurwitz, and Sniderman 1997), food stamps (White 2007), government spending (Valentino et al. 2002), crime (Domke 2001; Gilliam and Iyengar 2000; Hurwitz and Peffley 2005; Mendelberg 1997, 2001), and health care (Tesler 2012). Other research, however, has called into ques- tion whether implicit racial appeals are more effective than explicit appeals, including two studies employing experi- mental designs and large, nationally representative samples (Huber and Lapinski 2006; Valentino, Neuner, and Vandenbroek 2018). These studies suggest that racial appeals may no longer need to be implicit to engage white prejudice as explicit references to racial stereotypes may have become more socially acceptable (Valentino et al. 2018). Still other work suggests that implicit appeals may be more effective than explicit or race-neutral appeals in harnessing white prej- udice but only among particular demographic groups (Hutchings, Walton, and Benjamin 2010).
+
+- 
