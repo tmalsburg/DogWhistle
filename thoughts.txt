@@ -1,3 +1,101 @@
+## Proposal for a pilot experiment to identify German dogwhistle
+
+Which expressions are such that some but not all speakers of German perceive a message that is not part of the conventional content? In this pilot project, we focus broadly on the topic of migration/foreigners. Thus, the research question more specifically is: Which expressions are such that some speakers of German perceive that an expression conveys that the speaker has a racist attitude towards migrants/foreigners/refugees/asylum seekers?
+
+We need to figure out:
+- Questionnaire: What do we want to ask the participants, to be able to identify whether the ingroup is more likely to perceive the dogwhistle than the outgroup? (We are not assuming that only the ingroup perceives the dogwhistle, so it's OK if left-leaning people perceive an expression as having a racist undertone, even if right-leaning people don't).
+- Materials
+- Response task
+
+Questionnaire:
+- age
+- gender: männlich, weiblich, divers, möchte ich nicht antworten
+- höchster Abschluss: kein Schulabschluss, Hauptschule, Realschule, Gymnasium, Bachelor, Master
+
+Wahl-O-Mat Fragen (stimme zu, neutral, stimme nicht zu)
+1) Das Recht anerkannter Flüchtlinge auf Familiennachzug soll abgeschafft werden.
+stimme zu: AfD
+neutral: FDP
+stimme nicht zu: CDU/CSU, SPD, Links, Grün
+
+2) Das Tragen eines Kopftuchs soll Beamtinnen im Dienst generell erlaubt sein.
+stimme zu: Links, Grün
+neutral: FDP
+stimme nicht zu: CDU/CSU, SPD, AfD, 
+
+3) In Deutschland soll es generell möglich sein, neben der deutschen eine zweite Staatsbürgerschaft zu haben.
+stimme zu: SPD, Links, Grün
+neutral: FDP
+stimme nicht zu: CDU/CSU, AfD
+
+4) Islamische Verbände sollen als Religionsgemeinschaften staatlich anerkannt werden können.
+stimme zu: SPD, Links, Grün, FDP
+neutral: CDU/CSU
+stimme nicht zu: AfD
+
+5) Asyl soll weiterhin nur politisch Verfolgten gewährt werden.
+stimme zu: CDU/CSU, SPD, AFD,
+stimme nicht zu: Links, Grün
+
+====> Fragen 1)-5) erlauben es uns Menschen, die Ausländern und Migration kritisch gegenüber stehen zu identifizieren (Quantifizierung: +1 (wie AfD), 0 neutral, -1 (wie Grün/Links)
+
+Weitere Wahl-O-Mat Fragen:
+Unternehmen sollen selbst entscheiden, ob sie ihren Beschäftigten das Arbeiten im Homeoffice erlauben.
+Der kontrollierte Verkauf von Cannabis soll generell erlaubt sein.
+Der Staat soll weiterhin für Religionsgemeinschaften die Kirchensteuer einziehen.
+Spenden von Unternehmen an Parteien sollen weiterhin erlaubt sein.
+Der für das Jahr 2038 geplante Ausstieg aus der Kohleverstromung soll vorgezogen werden.
+
+Target materials: 
+
+[speaker] sagte: "X"
+
+Each stimulus X has a potential DW embedded in a carrier sentence. For each stimulus there is a minimally different variant in which the potential DW is replaced by a different expression. This allows us to better pinpoint the source of the ratings without having to present the potential DW without a carrier sentence, or in a very bland carrier sentence.
+
+Potential stimuli (original with PDW / minimal variant without PWD)
+
+- Volk: Kinder sind die Zukunft unseres Volkes / Kinder sind die Zukunft unserer Gesellschaft.
+
+- Hilfe vor Ort: Hilfe vor Ort hat für die AfD höchste Priorität. ==> Hilfe vor Ort hat für uns höchste Priorität. / Menschen zu helfen hat für uns höchste Priorität.
+
+- identitätswahrende Migrationspolitik: Vorbild einer identitätswahrenden Migrationspolitik können für Deutschland nicht klassische Einwanderungsländer von der Größe Kanadas oder Australiens sein, sondern eher Länder wie Japan, die eine ihrer Landesstruktur entsprechende Begrenzung und Steuerung der Migration verfolgen.
+==> Vorbild einer identitätswahrenden Migrationspolitik sind Länder wie Japan. / Vorbild einer funktionierenden Migrationspolitik sind Länder wie Japan.
+
+- Clan-Criminalität: Wenn die Linke die Razzien gegen die Clan-Kriminalität in Berlin-Neukölln beenden will... ==> Wer will Razzien gegen die Clan-Kriminalität beenden? / Wer will Razzien gegen organisierte Kriminalität beenden?
+
+- deutsches Staatsvolk: die Aufnahme in das deutsche Staatsvolk, die definitiven Charakter hat, an strenge Bedingungen zu knüpfen
+==> Die Aufnahme in das deutsche Staatsvolk ist an strenge Bedingungen geknüpft. / Der Erwerb der deutschen Staatsbürgerschaft ist an strenge Bedingungen geknüpft.
+
+Control materials:
+
+We need to include a couple of target materials that we can use to exclude participants who are not taking the task seriously. E.g., clearly racist statements (exclude participants that do not give high-enough "racist" ratings; clearly green statements (exclude participants that do not give high-enough "green" ratings))
+
+Response task:
+
+Each participant reads
+- target stimuli with PDWs
+- target stimuli without PDWs
+- control stimuli (for exclusion)
+- filler stimuli (for distraction)
+
+The response questions are a bunch of boxes that can be selected and slider ratings:
+
+PERHAPS WE SHOULD FIRST PRESENT THE TARGET STIM WITH PDW AND COLLECT LABELS!
+
+- Wie rassistisch ist [speaker]? rassistisch -- neutral -- nicht rassistisch
+- Wie umweltbewusst ist [speaker]? umweltbewusst -- neutral -- nicht umweltbewusst
+- Wie wie gebildet ist [speaker]? 
+
+
+
+
+
+
+
+
+
+#######
+
 Henderson & McCready: “language that sends one message to an outgroup while at the same time sending a second (often taboo, controversial, or inflammatory) message to an in group”
 
 Complication: even people in the outgroup may recognize the message, which may influence the results of the experiment. Albertson 2015 didn’t ask straight up about the message, but about whether they would be more likely to vote for the candidate, with the utterances of the candidate varying. But she also asked directly about whether they were familiar with “wonder-working power” and allowed them an open ended answer.
@@ -39,6 +137,9 @@ Kampf für Deutschland: Auch 2022 geht unser Kampf für Deutschland weiter.
 
 Clan-Kriminalität (https://www.presseportal.de/pm/130241/5040654)
 
+https://www.afd.de/beatrix-von-storch-linkspartei-auch-unterstuetzer-der-organisierten-clan-kriminalitaet/
+
+https://www.afd.de/staatsvolk/ die Aufnahme in das deutsche Staatsvolk, die definitiven Charakter hat, an strenge Bedingungen zu knüpfen
 
 FDP
 
@@ -78,61 +179,6 @@ E.g., in the socio-political realm, the expression conveys a political alignment
 Also include 
 - expressions that are clearly inflamatory, but for everybody (e.g., Ausländer sind gewalttätig)
 - expressions that are not inflamatory though politically charged (e.g., Steuererhöhung)
-
-In these first experiments, we are interested in identifying dogwhistles: which expressions are such that some but not all German speakers perceive a message that is not part of the conventional content? Even better: the in-group perceives the content, but the out-group does not.
-
-In later experiments, we might then also be interested in how these expressions can be used to frame an issue and to subtle influence people on particular matters.
-
-To identify dogwhistles, we need to identify issues in German socio-political life that are controversial and associated with biases. Easiest: Naziism, migration
-
-So, for now, we don't want to do an investigation with minimal variants, but rather we want to present participants with lots of expressions, to get their impressions on these. More like an annotation task than an experiment designed to investigate a hypothesis.
-
-Questionnaire:
-- age
-- gender: männlich, weiblich, divers, möchte ich nicht antworten
-- höchster Abschluss: kein Schulabschluss, Hauptschule, Realschule, Gymnasium, Bachelor, Master
-
-Wahl-O-Mat Fragen (stimme zu, neutral, stimme nicht zu)
-1) Das Recht anerkannter Flüchtlinge auf Familiennachzug soll abgeschafft werden.
-stimme zu: AfD
-neutral: FDP
-stimme nicht zu: CDU/CSU, SPD, Links, Grün
-
-2) Das Tragen eines Kopftuchs soll Beamtinnen im Dienst generell erlaubt sein.
-stimme zu: Links, Grün
-neutral: FDP
-stimme nicht zu: CDU/CSU, SPD, AfD, 
-
-3) In Deutschland soll es generell möglich sein, neben der deutschen eine zweite Staatsbürgerschaft zu haben.
-stimme zu: SPD, Links, Grün
-neutral: FDP
-stimme nicht zu: CDU/CSU, AfD
-
-4) Islamische Verbände sollen als Religionsgemeinschaften staatlich anerkannt werden können.
-stimme zu: SPD, Links, Grün, FDP
-neutral: CDU/CSU
-stimme nicht zu: AfD
-
-5) Asyl soll weiterhin nur politisch Verfolgten gewährt werden.
-stimme zu: CDU/CSU, SPD, AFD,
-stimme nicht zu: Links, Grün
-
-====> Fragen 1)-5) erlauben es uns Menschen, die Ausländern und Migration kritisch gegenüber stehen zu identifizieren (Quantifizierung: +1 (wie AfD), 0 neutral, -1 (wie Grün/Links)
-
-Weitere Wahl-O-Mat Fragen:
-Unternehmen sollen selbst entscheiden, ob sie ihren Beschäftigten das Arbeiten im Homeoffice erlauben.
-Der kontrollierte Verkauf von Cannabis soll generell erlaubt sein.
-Der Staat soll weiterhin für Religionsgemeinschaften die Kirchensteuer einziehen.
-Spenden von Unternehmen an Parteien sollen weiterhin erlaubt sein.
-Der für das Jahr 2038 geplante Ausstieg aus der Kohleverstromung soll vorgezogen werden.
-
-Materials: [speaker] sagte: "X"
-
-Response task:
-- Wie rassistisch ist [speaker]?
-
-
-
 
 
 ## Tasks used in previous empirical research on dogwhistles
