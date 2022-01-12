@@ -6,9 +6,18 @@ This file is a record of ongoing thinking about how to experimentally investigat
 
 But even people in the outgroup may recognize the message. 
 
+- Khoo 2017, footnote: Code words are sometimes called “dog whistles” because (so the received view goes) they involve sending a message that can only be heard by audience members with suitably sensitive ears. Richard Morin is credited with introducing the term. He writes, “Subtle changes in question- wording sometimes produce remarkably different results . . . researchers call this the ‘Dog Whistle Effect’: Respondents hear something in the question that researchers do not.” (Morin 1998).
+
+No other definition, only examples. Similar to Henderson & McCready definition.
+
+- Tali Mendelberg proposes that using a code word allows the speaker and her audience to violate certain social norms while plausibly denying doing so (Mendelberg 2001)
+
+This does not involve in/outgroup distinction, highlights plausible deniability.
+
 - Albertson 2015: "multivocal appeals, meaning appeals that have distinct meanings to different audiences''
 
 Here the ingroup/outgroup distinction is avoided, "distinct'' meanings is pretty vague, ``different audiences'' is also pretty vague (no requirement that the additional meaning is taboo, controversial, or inflammatory)
+
 
 - Wetts & Willer 2019: ``messages...in which race is not explicitly mentioned but instead is cued through coded language or accompanying visuals subtly connect racial prejudice to whites’ views of policies and candidates, a process commonly referred to as “dog whis- tling” (Haney-López 2014; Mendelberg 2001; Valentino, Hutchings, and White 2002).''
 
@@ -35,8 +44,16 @@ We're more sensitive to dogwhistles that are outgroup!
 
 References from Wetts & Willer 2019: welfare (Mendelberg 1997, 2001; Peffley, Hurwitz, and Sniderman 1997), food stamps (White 2007), government spending (Valentino et al. 2002), crime (Domke 2001; Gilliam and Iyengar 2000; Hurwitz and Peffley 2005; Mendelberg 1997, 2001), and health care (Tesler 2012). Other research, however, has called into ques- tion whether implicit racial appeals are more effective than explicit appeals, including two studies employing experi- mental designs and large, nationally representative samples (Huber and Lapinski 2006; Valentino, Neuner, and Vandenbroek 2018). These studies suggest that racial appeals may no longer need to be implicit to engage white prejudice as explicit references to racial stereotypes may have become more socially acceptable (Valentino et al. 2018). Still other work suggests that implicit appeals may be more effective than explicit or race-neutral appeals in harnessing white prej- udice but only among particular demographic groups (Hutchings, Walton, and Benjamin 2010).
 
+### Starting point for an empirical investigation of German dogwhistle expressions
+
+- No clear definition of dogwhistle content/expressions (in any language).
+- No empirical investigation exists for German. 
+- A few expressions have been discussed: e.g., Klankriminalität.
+
 
 ### Proposal for a pilot experiment to identify German dogwhistle
+
+
 
 Which expressions are such that some but not all speakers of German perceive a message that is not part of the conventional content? In this pilot project, we focus broadly on the topic of migration/foreigners. Thus, the research question more specifically is: Which expressions are such that some speakers of German perceive that an expression conveys that the speaker has a racist attitude towards migrants/foreigners/refugees/asylum seekers?
 
