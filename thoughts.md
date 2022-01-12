@@ -2,7 +2,7 @@ This file is a record of ongoing thinking about how to experimentally investigat
 
 ### Defining dogwhistle content
 
-Henderson & McCready: “language that sends one message to an outgroup while at the same time sending a second (often taboo, controversial, or inflammatory) message to an in group”
+- Henderson & McCready: “language that sends one message to an outgroup while at the same time sending a second (often taboo, controversial, or inflammatory) message to an in group”
 
 Complication: even people in the outgroup may recognize the message, which may influence the results of the experiment. Albertson 2015 didn’t ask straight up about the message, but about whether they would be more likely to vote for the candidate, with the utterances of the candidate varying. But she also asked directly about whether they were familiar with “wonder-working power” and allowed them an open ended answer.
 
@@ -28,7 +28,7 @@ Whether something is a dogwhistle depends on the speaker: e.g., what "Freiheit" 
 Dogwhistle: an expression like Klankriminalität is used to convey Ausländerkriminalität, which is obviously taboo or controversial, but the former allows one to convey the same meaning without being explicit. What is sanctioned? the particular expression, or the message. Is this a dogwhistle according to the definitions? Kampf für Deutschland seems different: no paraphrase that makes the intended meaning explicit. When authors use Klankriminalität, they are not hiding that they are talking about "foreigner", but it is difficult to use the word "Ausländer" in Germany. A Klan could also be a Klan of German.
 
 
-## Proposal for a pilot experiment to identify German dogwhistle
+### Proposal for a pilot experiment to identify German dogwhistle
 
 Which expressions are such that some but not all speakers of German perceive a message that is not part of the conventional content? In this pilot project, we focus broadly on the topic of migration/foreigners. Thus, the research question more specifically is: Which expressions are such that some speakers of German perceive that an expression conveys that the speaker has a racist attitude towards migrants/foreigners/refugees/asylum seekers?
 
@@ -192,7 +192,7 @@ Also include
 Phase 1 des SFB (der in der Literatur ausgelassen wurde): taxonomy of dogwhistle content
 
 
-## Tasks used in previous empirical research on dogwhistles
+### Tasks used in previous empirical research on dogwhistles
 
 - Albertson 2015: religious dogwhistle "wonder-working power"; three conditions (dogwhistle, obvious religious content+dogwhistle, neither); participants viewed videos w speeches by candidate; response tasks: attitude toward candidate and whether they would vote for candidate (5-point Likert scale), emotion ratings regarding candidate (interested, upset, proud, moral...) on sliding scale, participants' religious denomination and beliefs about the Bible; outgroup was unfamiliar with religious connotation of "wonder-working power", they gave less favorable ratings with obvious religious appeal but not with WWP; for ingroup, both WWP and the obvious religious appeal lead to more favorable ratings of the candidate, the former resulted in even more favorable ratings.
 
