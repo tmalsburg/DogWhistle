@@ -8,7 +8,7 @@ Complication: even people in the outgroup may recognize the message.
 
 - Albertson 2015: ``multivocal appeals, meaning appeals that have distinct meanings to different audiences''
 
-Here the ingroup/outgroup distinction is avoided; ``distinct'' meanings is pretty vague, ``different audiences'' is also pretty vague (no requirement that the additional meaning is taboo, controversial, or inflammatory)
+Here the ingroup/outgroup distinction is avoided, ``distinct'' meanings is pretty vague, ``different audiences'' is also pretty vague (no requirement that the additional meaning is taboo, controversial, or inflammatory)
 
 - Wetts & Willer 2019: ``messages...in which race is not explicitly mentioned but instead is cued through coded language or accompanying visuals subtly connect racial prejudice to whites’ views of policies and candidates, a process commonly referred to as “dog whis- tling” (Haney-López 2014; Mendelberg 2001; Valentino, Hutchings, and White 2002).''
 
