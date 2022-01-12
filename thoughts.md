@@ -7,7 +7,10 @@ We need to figure out:
 - Materials
 - Response task
 
-Questionnaire:
+voteswiper für Kontexte für PDW stimuli
+and also to replace Wahlomat Fragen
+
+Questionnaire (present at the end)
 - age
 - gender: männlich, weiblich, divers, möchte ich nicht antworten
 - höchster Abschluss: kein Schulabschluss, Hauptschule, Realschule, Gymnasium, Bachelor, Master
@@ -34,7 +37,7 @@ neutral: CDU/CSU
 stimme nicht zu: AfD
 
 5) Asyl soll weiterhin nur politisch Verfolgten gewährt werden.
-stimme zu: CDU/CSU, SPD, AFD,
+stimme zu: CDU/CSU, SPD, AFD, FDP
 stimme nicht zu: Links, Grün
 
 ====> Fragen 1)-5) erlauben es uns Menschen, die Ausländern und Migration kritisch gegenüber stehen zu identifizieren (Quantifizierung: +1 (wie AfD), 0 neutral, -1 (wie Grün/Links)
@@ -56,7 +59,9 @@ Potential stimuli (original with PDW / minimal variant without PWD)
 
 - Volk: Kinder sind die Zukunft unseres Volkes / Kinder sind die Zukunft unserer Gesellschaft.
 
-- Hilfe vor Ort: Hilfe vor Ort hat für die AfD höchste Priorität. ==> Hilfe vor Ort hat für uns höchste Priorität. / Menschen zu helfen hat für uns höchste Priorität.
+- Hilfe vor Ort: Hilfe vor Ort hat für die AfD höchste Priorität. ==> Hilfe vor Ort hat für uns höchste Priorität. / Menschen zu helfen hat für uns höchste Priorität. BENÖTIGT CONTEXT UM ZU VERSTEHEN (hochwasser vs flüchtlinge) Bei der Flüchtlingsfrage hat/ist...Ohne Kontext hat dieser Ausdruck keinen DW Bedeutung (wichtig für Taxonomy of DW) "let's go Brandon" is conventionalized, "Hilfe vor Ort" ist nicht conventionalized
+
+- Kampf für Deutschland: Auch 2022 geht unser Kampf für Deutschland weiter. / Auch 2022 geht unser Kampf für den Klimaschutz weiter.
 
 - identitätswahrende Migrationspolitik: Vorbild einer identitätswahrenden Migrationspolitik können für Deutschland nicht klassische Einwanderungsländer von der Größe Kanadas oder Australiens sein, sondern eher Länder wie Japan, die eine ihrer Landesstruktur entsprechende Begrenzung und Steuerung der Migration verfolgen.
 ==> Vorbild einer identitätswahrenden Migrationspolitik sind Länder wie Japan. / Vorbild einer funktionierenden Migrationspolitik sind Länder wie Japan.
@@ -67,6 +72,8 @@ Potential stimuli (original with PDW / minimal variant without PWD)
 ==> Die Aufnahme in das deutsche Staatsvolk ist an strenge Bedingungen geknüpft. / Der Erwerb der deutschen Staatsbürgerschaft ist an strenge Bedingungen geknüpft.
 
 Control materials:
+
+Also include stims where everybody agrees on racism.
 
 We need to include a couple of target materials that we can use to exclude participants who are not taking the task seriously. E.g., clearly racist statements (exclude participants that do not give high-enough "racist" ratings; clearly green statements (exclude participants that do not give high-enough "green" ratings))
 
@@ -86,13 +93,7 @@ PERHAPS WE SHOULD FIRST PRESENT THE TARGET STIM WITH PDW AND COLLECT LABELS!
 - Wie umweltbewusst ist [speaker]? umweltbewusst -- neutral -- nicht umweltbewusst
 - Wie wie gebildet ist [speaker]? 
 
-
-
-
-
-
-
-
+Attribute: Alter, Geschlecht, Bildung, Wahl-O-Mat Fragen (sowohl rassistisch-relevante wie auch irrelevante)
 
 #######
 
@@ -179,6 +180,9 @@ E.g., in the socio-political realm, the expression conveys a political alignment
 Also include 
 - expressions that are clearly inflamatory, but for everybody (e.g., Ausländer sind gewalttätig)
 - expressions that are not inflamatory though politically charged (e.g., Steuererhöhung)
+
+
+Phase 1 des SFB (der in der Literatur ausgelassen wurde): taxonomy of dogwhistle content
 
 
 ## Tasks used in previous empirical research on dogwhistles
