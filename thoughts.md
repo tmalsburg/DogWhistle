@@ -117,29 +117,34 @@ Der für das Jahr 2038 geplante Ausstieg aus der Kohleverstromung soll vorgezoge
 	- deutsches Staatsvolk: die Aufnahme in das deutsche Staatsvolk, die definitiven Charakter hat, an strenge Bedingungen zu knüpfen
 ==> Die Aufnahme in das deutsche Staatsvolk ist an strenge Bedingungen geknüpft. / Der Erwerb der deutschen Staatsbürgerschaft ist an strenge Bedingungen geknüpft.
 
-Control materials:
+- Controls: 
+	- Type 1: stimuli where everybody would agree that the expression is racist; this will allow us to exclude participants not attending to the task, but it also provides a point of comparison for PDWs
+	- Type 2: stimuli where everybody would agree that the expression is, e.g., green (exclude participants not giving high enough "green" ratings)
+	
+- Fillers: to distract participants from the target stims
 
-Also include stims where everybody agrees on racism.
+- Each participant reads
+	- target stimuli with PDWs
+	- target stimuli without PDWs
+	- control stimuli (for exclusion)
+	- filler stimuli (for distraction)
+	
+#### Procedure
 
-We need to include a couple of target materials that we can use to exclude participants who are not taking the task seriously. E.g., clearly racist statements (exclude participants that do not give high-enough "racist" ratings; clearly green statements (exclude participants that do not give high-enough "green" ratings))
+- On each trial, a participant reads a stimulus and rates the following:
+	- speakers' age, gender, education
+	- which attributes (on a slider?)? **establish through pretest?**
+		- rassistisch
+		- umweltbewusst
+		- gebildet
+	- what would the speaker answer on the following questions
+		- Das Recht anerkannter Flüchtlinge auf Familiennachzug soll abgeschafft werden.
+		- Das Tragen eines Kopftuchs soll Beamtinnen im Dienst generell erlaubt sein.
+		- In Deutschland soll es generell möglich sein, neben der deutschen eine zweite Staatsbürgerschaft zu haben.
+		- Islamische Verbände sollen als Religionsgemeinschaften staatlich anerkannt werden können.
+		- Asyl soll weiterhin nur politisch Verfolgten gewährt werden.
 
-Response task:
 
-Each participant reads
-- target stimuli with PDWs
-- target stimuli without PDWs
-- control stimuli (for exclusion)
-- filler stimuli (for distraction)
-
-The response questions are a bunch of boxes that can be selected and slider ratings:
-
-PERHAPS WE SHOULD FIRST PRESENT THE TARGET STIM WITH PDW AND COLLECT LABELS!
-
-- Wie rassistisch ist [speaker]? rassistisch -- neutral -- nicht rassistisch
-- Wie umweltbewusst ist [speaker]? umweltbewusst -- neutral -- nicht umweltbewusst
-- Wie wie gebildet ist [speaker]? 
-
-Attribute: Alter, Geschlecht, Bildung, Wahl-O-Mat Fragen (sowohl rassistisch-relevante wie auch irrelevante)
 
 #######
 
