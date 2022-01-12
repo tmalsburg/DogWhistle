@@ -65,6 +65,7 @@ Which expressions are such that some but not all speakers of German perceive a m
 	- age
 	- gender: männlich, weiblich, divers, möchte ich nicht antworten
 	- höchster Abschluss: kein Schulabschluss, Hauptschule, Realschule, Gymnasium, Bachelor, Master
+	- Wenn am Sonntag Wahl wäre, wen würden Sie wählen? 
 	- Wahl-O-Mat Fragen (stimme zu, neutral, stimme nicht zu)
 	
 1) Das Recht anerkannter Flüchtlinge auf Familiennachzug soll abgeschafft werden.
@@ -118,8 +119,8 @@ Der für das Jahr 2038 geplante Ausstieg aus der Kohleverstromung soll vorgezoge
 ==> Die Aufnahme in das deutsche Staatsvolk ist an strenge Bedingungen geknüpft. / Der Erwerb der deutschen Staatsbürgerschaft ist an strenge Bedingungen geknüpft.
 
 - Controls: 
-	- Type 1: stimuli where everybody would agree that the expression is racist; this will allow us to exclude participants not attending to the task, but it also provides a point of comparison for PDWs
-	- Type 2: stimuli where everybody would agree that the expression is, e.g., green (exclude participants not giving high enough "green" ratings)
+	- Type 1: stimuli where everybody would agree that the expression is racist; this will allow us to exclude participants not attending to the task, but it also provides a point of comparison for PDWs (e.g., Ausländer sind gewalttätig)
+	- Type 2: stimuli where everybody would agree that the expression is, e.g., green (exclude participants not giving high enough "green" ratings), inflammatory though not DW: e.g., Steuererhöhung
 	
 - Fillers: to distract participants from the target stims
 
@@ -133,6 +134,7 @@ Der für das Jahr 2038 geplante Ausstieg aus der Kohleverstromung soll vorgezoge
 
 - On each trial, a participant reads a stimulus and rates the following:
 	- speakers' age, gender, education
+	- Wenn am Sonntag Wahl wäre, wen würde Sprecher wählen? 
 	- which attributes (on a slider?)? **establish through pretest?**
 		- rassistisch
 		- umweltbewusst
@@ -144,13 +146,12 @@ Der für das Jahr 2038 geplante Ausstieg aus der Kohleverstromung soll vorgezoge
 		- Islamische Verbände sollen als Religionsgemeinschaften staatlich anerkannt werden können.
 		- Asyl soll weiterhin nur politisch Verfolgten gewährt werden.
 
+#### Analysis
 
+Not yet started
 
-#######
+### Sources for PDWs
 
-
-
-Corpus method could done on Wahl- and Parteiprogramm, Bundestagscorpus, etc. 
 
 **afd.de
 Kampf für Deutschland: Auch 2022 geht unser Kampf für Deutschland weiter.
@@ -183,33 +184,8 @@ Polizeistaat
 Ausdrücke in Anführungszeichen bei der AfD / Annotation von dogwhistles?
 gender-gerechte Sprache
 
-To ask participants:
-Wo stehen Sie im politischen Spektrum? Links / eher links / neutral / eher rechts / rechts
-(not a good idea because the middle might be somewhere different)
-Wenn am Sonntag Wahl wäre, wen würden Sie wählen? 
-Wahlomat-inspirierte Fragen zu ganz bestimmten Fragen? André fragen! zu Fragen, die eine kategorisierung erlauben
+### Taxonomy (develop in phase 1)
 
-Which German expressions are dogwhistles, i.e., which German expressions are such that they have a secondary meaning in addition to their conventional content that only some speakers of German recognize?
-
-Test the expressions in neutral carrier sentences:
-[speaker] sagte "X". 
-Welche Eigenschaften würden Sie [speaker] zuschreiben?
-
-Is it always a dogwhistle, or just when used by a particular type of person, or in a particular context?
-
-Potential tasks:
-Sind diese Worte politisch behaftet? Links / eher links / neutral / eher rechts / rechts
-Würden Sie diesen Satz anders formulieren?
-Wer ist der Sprecher? THIS IS A VERY DIRECT QUESTION, MAY BE TOO MUCH ON THE NOSE
-Perhaps better: Würden Sie diese Person wählen?
-
-Evidence for a dogwhistle: the expression conveys a message, not part of its compositional/conventional meaning, but only for the in-group
-E.g., in the socio-political realm, the expression conveys a political alignment, but only for the in-group (e.g., identitätswahrende Migrationspolitik)
-Also include 
-- expressions that are clearly inflamatory, but for everybody (e.g., Ausländer sind gewalttätig)
-- expressions that are not inflamatory though politically charged (e.g., Steuererhöhung)
-
-
-Phase 1 des SFB (der in der Literatur ausgelassen wurde): taxonomy of dogwhistle content
-
-
+- conventionalized dog whistle (independent of context or speaker, inner city)
+- speaker-dependent dog whistle (?)
+- content-dependent dog whistle (Hilfe vor Ort)
