@@ -59,21 +59,14 @@ Which expressions are such that some but not all speakers of German perceive a m
 
 #### Participants
 
-- recruit on Prolific
-- questionnaire to identify relevant aspects of their socio-political profile
-
-#### Materials
-
-
-voteswiper für Kontexte für PDW stimuli
-and also to replace Wahlomat Fragen
-
-Questionnaire (present at the end)
-- age
-- gender: männlich, weiblich, divers, möchte ich nicht antworten
-- höchster Abschluss: kein Schulabschluss, Hauptschule, Realschule, Gymnasium, Bachelor, Master
-
-Wahl-O-Mat Fragen (stimme zu, neutral, stimme nicht zu)
+- recruit native speakers of German living in Germany on Prolific
+- how many?
+- questionnaire to identify relevant aspects of their socio-political profile, present at the end of the experiment
+	- age
+	- gender: männlich, weiblich, divers, möchte ich nicht antworten
+	- höchster Abschluss: kein Schulabschluss, Hauptschule, Realschule, Gymnasium, Bachelor, Master
+	- Wahl-O-Mat Fragen (stimme zu, neutral, stimme nicht zu)
+	
 1) Das Recht anerkannter Flüchtlinge auf Familiennachzug soll abgeschafft werden.
 stimme zu: AfD
 neutral: FDP
@@ -106,6 +99,16 @@ Der kontrollierte Verkauf von Cannabis soll generell erlaubt sein.
 Der Staat soll weiterhin für Religionsgemeinschaften die Kirchensteuer einziehen.
 Spenden von Unternehmen an Parteien sollen weiterhin erlaubt sein.
 Der für das Jahr 2038 geplante Ausstieg aus der Kohleverstromung soll vorgezogen werden.
+
+	
+
+#### Materials
+
+
+voteswiper für Kontexte für PDW stimuli
+and also to replace Wahlomat Fragen
+
+
 
 Target materials: 
 
