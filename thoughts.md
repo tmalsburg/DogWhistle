@@ -1,3 +1,33 @@
+This file is a record of ongoing thinking about how to experimentally investigate dogwhistle content.
+
+## Defining dogwhistle content
+
+Henderson & McCready: “language that sends one message to an outgroup while at the same time sending a second (often taboo, controversial, or inflammatory) message to an in group”
+
+Complication: even people in the outgroup may recognize the message, which may influence the results of the experiment. Albertson 2015 didn’t ask straight up about the message, but about whether they would be more likely to vote for the candidate, with the utterances of the candidate varying. But she also asked directly about whether they were familiar with “wonder-working power” and allowed them an open ended answer.
+
+Requires consideration of the groups that the speaker and the various parts of the audience belong to. We expect:
+1. if the speaker is part of the in-group, the in-group perceives a message that the out-group does not perceive (but may know about).
+2. if the speaker is not known to be part of the in-group, the speaker may be considered to be part of the in-group. 
+
+Maybe our first goal should be to see if we can find expressions that suggest that the speaker has a particular socio-political bias/alignment. The message that the speaker would then be sending with their use of the expression is that they have this alignment. For some expressions, the message may be stronger, e.g., alignment with Hitler with the use of “Kampf”.
+
+Unser/Der Kampf für Deutschland geht weiter
+vs
+Unser/Der Einsatz für Deutschland geht weiter
+vs
+Unser Kampf gegen den Klimawandel weiter
+Potentially present the speaker as somebody from the AfD vs the left
+
+Dogwhistle is an expression that is used by one party but not by another (lower bar, necessary condition, but perhaps not sufficient). The phenomenon itself may be probabilistic, rather than categorical. Perhaps this should be part of an improved definition of the term. It may also be that the term isn't neutral/message, but rather may also send a message for everybody to different degrees, and that message, when integrated with the person's ideology, results in different effects. We need quantifiable criteria. 
+
+Interesting observation: We're more sensitive to dogwhistles that are outgroup!
+
+Whether something is a dogwhistle depends on the speaker: e.g., what "Freiheit" means depends on who utters it (AfD, Grün, FDP), but it may also depend on what Freiheit typically co-occurs with. This may not be a dogwhistle, but involve a mismatch in reference systems.
+
+Dogwhistle: an expression like Klankriminalität is used to convey Ausländerkriminalität, which is obviously taboo or controversial, but the former allows one to convey the same meaning without being explicit. What is sanctioned? the particular expression, or the message. Is this a dogwhistle according to the definitions? Kampf für Deutschland seems different: no paraphrase that makes the intended meaning explicit. When authors use Klankriminalität, they are not hiding that they are talking about "foreigner", but it is difficult to use the word "Ausländer" in Germany. A Klan could also be a Klan of German.
+
+
 ## Proposal for a pilot experiment to identify German dogwhistle
 
 Which expressions are such that some but not all speakers of German perceive a message that is not part of the conventional content? In this pilot project, we focus broadly on the topic of migration/foreigners. Thus, the research question more specifically is: Which expressions are such that some speakers of German perceive that an expression conveys that the speaker has a racist attitude towards migrants/foreigners/refugees/asylum seekers?
@@ -97,30 +127,7 @@ Attribute: Alter, Geschlecht, Bildung, Wahl-O-Mat Fragen (sowohl rassistisch-rel
 
 #######
 
-Henderson & McCready: “language that sends one message to an outgroup while at the same time sending a second (often taboo, controversial, or inflammatory) message to an in group”
 
-Complication: even people in the outgroup may recognize the message, which may influence the results of the experiment. Albertson 2015 didn’t ask straight up about the message, but about whether they would be more likely to vote for the candidate, with the utterances of the candidate varying. But she also asked directly about whether they were familiar with “wonder-working power” and allowed them an open ended answer.
-
-Requires consideration of the groups that the speaker and the various parts of the audience belong to. We expect:
-1. if the speaker is part of the in-group, the in-group perceives a message that the out-group does not perceive (but may know about).
-2. if the speaker is not known to be part of the in-group, the speaker may be considered to be part of the in-group. 
-
-Maybe our first goal should be to see if we can find expressions that suggest that the speaker has a particular socio-political bias/alignment. The message that the speaker would then be sending with their use of the expression is that they have this alignment. For some expressions, the message may be stronger, e.g., alignment with Hitler with the use of “Kampf”.
-
-Unser/Der Kampf für Deutschland geht weiter
-vs
-Unser/Der Einsatz für Deutschland geht weiter
-vs
-Unser Kampf gegen den Klimawandel weiter
-Potentially present the speaker as somebody from the AfD vs the left
-
-Dogwhistle is an expression that is used by one party but not by another (lower bar, necessary condition, but perhaps not sufficient). The phenomenon itself may be probabilistic, rather than categorical. Perhaps this should be part of an improved definition of the term. It may also be that the term isn't neutral/message, but rather may also send a message for everybody to different degrees, and that message, when integrated with the person's ideology, results in different effects. We need quantifiable criteria. 
-
-Interesting observation: We're more sensitive to dogwhistles that are outgroup!
-
-Whether something is a dogwhistle depends on the speaker: e.g., what "Freiheit" means depends on who utters it (AfD, Grün, FDP), but it may also depend on what Freiheit typically co-occurs with. This may not be a dogwhistle, but involve a mismatch in reference systems.
-
-Dogwhistle: an expression like Klankriminalität is used to convey Ausländerkriminalität, which is obviously taboo or controversial, but the former allows one to convey the same meaning without being explicit. What is sanctioned? the particular expression, or the message. Is this a dogwhistle according to the definitions? Kampf für Deutschland seems different: no paraphrase that makes the intended meaning explicit. When authors use Klankriminalität, they are not hiding that they are talking about "foreigner", but it is difficult to use the word "Ausländer" in Germany. A Klan could also be a Klan of German.
 
 Corpus method could done on Wahl- and Parteiprogramm, Bundestagscorpus, etc. 
 
