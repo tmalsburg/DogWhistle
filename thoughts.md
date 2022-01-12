@@ -100,36 +100,21 @@ Der Staat soll weiterhin für Religionsgemeinschaften die Kirchensteuer einziehe
 Spenden von Unternehmen an Parteien sollen weiterhin erlaubt sein.
 Der für das Jahr 2038 geplante Ausstieg aus der Kohleverstromung soll vorgezogen werden.
 
-	
 
 #### Materials
 
+- Materials are of the form [Sprecher] sagte: "X", where X is a short passage with a potential dogwhistle (PDW), or a minimally different version without the PDW
 
-voteswiper für Kontexte für PDW stimuli
-and also to replace Wahlomat Fragen
+- Materials include PDWs that are conventionalized ("Volk", "Let's go Brandom", "inner city") as well as ones that are not conventionalized but need context to be PDWs ("Hilfe vor Ort"); TAXONOMY
 
-
-
-Target materials: 
-
-[speaker] sagte: "X"
-
-Each stimulus X has a potential DW embedded in a carrier sentence. For each stimulus there is a minimally different variant in which the potential DW is replaced by a different expression. This allows us to better pinpoint the source of the ratings without having to present the potential DW without a carrier sentence, or in a very bland carrier sentence.
-
-Potential stimuli (original with PDW / minimal variant without PWD)
-
-- Volk: Kinder sind die Zukunft unseres Volkes / Kinder sind die Zukunft unserer Gesellschaft.
-
-- Hilfe vor Ort: Hilfe vor Ort hat für die AfD höchste Priorität. ==> Hilfe vor Ort hat für uns höchste Priorität. / Menschen zu helfen hat für uns höchste Priorität. BENÖTIGT CONTEXT UM ZU VERSTEHEN (hochwasser vs flüchtlinge) Bei der Flüchtlingsfrage hat/ist...Ohne Kontext hat dieser Ausdruck keinen DW Bedeutung (wichtig für Taxonomy of DW) "let's go Brandon" is conventionalized, "Hilfe vor Ort" ist nicht conventionalized
-
-- Kampf für Deutschland: Auch 2022 geht unser Kampf für Deutschland weiter. / Auch 2022 geht unser Kampf für den Klimaschutz weiter.
-
-- identitätswahrende Migrationspolitik: Vorbild einer identitätswahrenden Migrationspolitik können für Deutschland nicht klassische Einwanderungsländer von der Größe Kanadas oder Australiens sein, sondern eher Länder wie Japan, die eine ihrer Landesstruktur entsprechende Begrenzung und Steuerung der Migration verfolgen.
+- Potential target stimuli (original with PDW / minimal variant without PWD)
+	 - Volk: Kinder sind die Zukunft unseres Volkes / Kinder sind die Zukunft unserer Gesellschaft.
+	 - Hilfe vor Ort: Hilfe vor Ort hat für die AfD höchste Priorität. ==> Hilfe vor Ort hat für uns höchste Priorität. / Menschen zu helfen hat für uns höchste Priorität. NEED TO ADD CONTEXT THAT MAKES CLEAR THAT THIS IS ABOUT FLüCHTLINGE: Bei der Flüchtlingsfrage hat/ist...
+	 - Kampf für Deutschland: Auch 2022 geht unser Kampf für Deutschland weiter. / Auch 2022 geht unser Kampf für den Klimaschutz weiter.
+	- identitätswahrende Migrationspolitik: Vorbild einer identitätswahrenden Migrationspolitik können für Deutschland nicht klassische Einwanderungsländer von der Größe Kanadas oder Australiens sein, sondern eher Länder wie Japan, die eine ihrer Landesstruktur entsprechende Begrenzung und Steuerung der Migration verfolgen.
 ==> Vorbild einer identitätswahrenden Migrationspolitik sind Länder wie Japan. / Vorbild einer funktionierenden Migrationspolitik sind Länder wie Japan.
-
-- Clan-Criminalität: Wenn die Linke die Razzien gegen die Clan-Kriminalität in Berlin-Neukölln beenden will... ==> Wer will Razzien gegen die Clan-Kriminalität beenden? / Wer will Razzien gegen organisierte Kriminalität beenden?
-
-- deutsches Staatsvolk: die Aufnahme in das deutsche Staatsvolk, die definitiven Charakter hat, an strenge Bedingungen zu knüpfen
+	- Clan-Criminalität: Wenn die Linke die Razzien gegen die Clan-Kriminalität in Berlin-Neukölln beenden will... ==> Wer will Razzien gegen die Clan-Kriminalität beenden? / Wer will Razzien gegen organisierte Kriminalität beenden?
+	- deutsches Staatsvolk: die Aufnahme in das deutsche Staatsvolk, die definitiven Charakter hat, an strenge Bedingungen zu knüpfen
 ==> Die Aufnahme in das deutsche Staatsvolk ist an strenge Bedingungen geknüpft. / Der Erwerb der deutschen Staatsbürgerschaft ist an strenge Bedingungen geknüpft.
 
 Control materials:
