@@ -53,14 +53,12 @@ References from Wetts & Willer 2019: welfare (Mendelberg 1997, 2001; Peffley, Hu
 
 ### Proposal for a pilot experiment to identify German dogwhistle
 
+#### Research question: Which expressions are such that some but not all speakers of German perceive a message that is not part of the conventional content? In this pilot project, we focus broadly on the topic of migration/foreigners. Thus, the research question more specifically is: Which expressions are such that some speakers of German perceive that an expression conveys that the speaker has a racist attitude towards migrants/foreigners/refugees/asylum seekers?
 
+#### Participants: recruited on Prolific
 
-Which expressions are such that some but not all speakers of German perceive a message that is not part of the conventional content? In this pilot project, we focus broadly on the topic of migration/foreigners. Thus, the research question more specifically is: Which expressions are such that some speakers of German perceive that an expression conveys that the speaker has a racist attitude towards migrants/foreigners/refugees/asylum seekers?
+#### Materials
 
-We need to figure out:
-- Questionnaire: What do we want to ask the participants, to be able to identify whether the ingroup is more likely to perceive the dogwhistle than the outgroup? (We are not assuming that only the ingroup perceives the dogwhistle, so it's OK if left-leaning people perceive an expression as having a racist undertone, even if right-leaning people don't).
-- Materials
-- Response task
 
 voteswiper für Kontexte für PDW stimuli
 and also to replace Wahlomat Fragen
