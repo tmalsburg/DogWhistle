@@ -1,6 +1,6 @@
 This file is a record of ongoing thinking about how to experimentally investigate dogwhistle content.
 
-## Defining dogwhistle content
+### Defining dogwhistle content
 
 Henderson & McCready: “language that sends one message to an outgroup while at the same time sending a second (often taboo, controversial, or inflammatory) message to an in group”
 
