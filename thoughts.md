@@ -2,6 +2,8 @@ This file is a record of ongoing thinking about how to experimentally investigat
 
 ### Defining dogwhistle content (to develop quantifiable criteria)
 
+- HTTPS://WWW.MERRIAM-WEBSTER.COM/DICTIONARY/DOG%20WHISTLE
+
 - Henderson & McCready: “language that sends one message to an outgroup while at the same time sending a second (often taboo, controversial, or inflammatory) message to an in group”
 
 But even people in the outgroup may recognize the message. 
