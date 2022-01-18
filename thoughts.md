@@ -1,5 +1,7 @@
 This file is a record of ongoing thinking about how to experimentally investigate dogwhistle content.
 
+A compile PDF version can be found [here](https://github.com/tmalsburg/DogWhistle/blob/master/thoughts.pdf).
+
 # Guidelines for this document
 
 1. Let’s cite the relevant papers using LaTeX and the BibTeX keys in our [bibliography](bibliography/bibliography.bib).  We can then compile this document using Pandoc and get a nice bibliography at the end.  (I’ll figure out the Pandoc command and will add it here.)
