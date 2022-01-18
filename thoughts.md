@@ -33,6 +33,8 @@ in/outgroup difference is made, cues can be recognized by outgroup, signal belon
 
 We're more sensitive to dogwhistles that are outgroup!
 
+- "Sex is real" is a dogwhistle
+
 ### Tasks used in previous empirical research on dogwhistles
 
 - Albertson 2015: religious dogwhistle "wonder-working power"; three conditions (dogwhistle, obvious religious content+dogwhistle, neither); participants viewed videos w speeches by candidate; response tasks: attitude toward candidate and whether they would vote for candidate (5-point Likert scale), emotion ratings regarding candidate (interested, upset, proud, moral...) on sliding scale, participants' religious denomination and beliefs about the Bible; outgroup was unfamiliar with religious connotation of "wonder-working power", they gave less favorable ratings with obvious religious appeal but not with WWP; for ingroup, both WWP and the obvious religious appeal lead to more favorable ratings of the candidate, the former resulted in even more favorable ratings.
