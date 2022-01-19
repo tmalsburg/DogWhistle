@@ -216,6 +216,10 @@ Implied meaning:
 
 But does any of that require plausible deniability?  Do we expect sensitivity to meaning to differ between in- and outgroup?
 
+## “Kerneuropa” (Gysi, Bundestagsrede, 2015-06-18)
+
+- Potentially alluding to the idea that France and Germany are trying to dominate the rest of the EU.
+
 ## Hilfe vor Ort.
 
 - Dog whistly when used in the context of immigration from the middle east.
