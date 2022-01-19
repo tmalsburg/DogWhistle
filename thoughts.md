@@ -12,9 +12,10 @@ A compile PDF version can be found [here](https://github.com/tmalsburg/DogWhistl
 
 - Ultimately, we aim to develop quantifiable criteria.
 - Better understanding of discriminatory speech.
-- May also inform research on de-biasing AI language models.  Current approaches seem simplistic and will let more subtle expressions slip through.  Potentially an interesting connection to work in computational linguistics $\Rightarrow$ idea for second stage of the SFB.  (Inspired by Anne Lauscher talk at IMS.)
 
 ## Second phase of SFB
+
+- May also inform research on de-biasing AI language models.  Current approaches seem simplistic and will let more subtle expressions slip through.  Potentially an interesting connection to work in computational linguistics $\Rightarrow$ idea for second stage of the SFB.  (Inspired by Anne Lauscher talk at IMS.)
 
 # Definitions of dog whistle content
 
@@ -227,6 +228,7 @@ Not yet started
 ## Sex is real
 
 - Implied meaning (?): *Gender is not*
+- Implied meaning: Only people assigned female at birth (based on sex markers) are women.
 
 # References
 
