@@ -204,7 +204,7 @@ Not yet started
 
 ## “Sex is real”
 
-- Implied meaning (?): “Gender is not”
+- Implied meaning: Only people assigned female at birth (based on sex markers) are women.
 
 ## “Das muss man auch einmal klar sagen.” (Gysi, Bundestagsrede)
 
@@ -268,33 +268,5 @@ But does any of that require plausible deniability?  Do we expect sensitivity to
 - Covid-Skeptizismus, Debatten zur Impfpflicht
 - Stuttgart 21 Debatte?
 
-<<<<<<< HEAD
-# Taxonomy (develop in phase 1)
-
-- Conventionalized dog whistle: independent of context or speaker, “inner city (crime)”
-- Speaker-dependent dog whistle: “Clankriminalität”?  Used to activate stereotypes about certain ethnicities but Wikipedia (relatively neutral source) also has an entry for that term.  Quote from Wikipedia: “Ein paar Wissenschaftler wiesen auf eine „stigmatisierende“ Verwendung des Begriffs „Clankriminalität“ hin und erklärten, dass staatliche Maßnahmen gegen Clankriminalität vorrangig politisch motiviert seien und sich negativ auf präventive Maßnahmen und auf die Integration von dem noch nicht kriminell gewordenen Teil in den Familien auswirken würden.[14]”  So it’s supposedly only certain uses that are stigmatizing, not the term itself?
-- Content-dependent dog whistle: “Hilfe vor Ort” harmless in the context of the 2021 floodings in Germany, loaded when talking about migration.
-
-# Specific examples of dog whistles
-
-## Clankriminalität
-
-- Potentially stigmatizing certain ethnic groups.
-- Contrary to dog whistle definition often not covert.  The fact that it is used to refer to certain ethnicities and subcultures is rarely hidden.
-- Definition by the [Bund deutscher Kriminalbeamter](https://www.bdk.de/der-bdk/wer-wir-sind/positionen/2019-04-29-bdk-positionspapier-clankriminalitaet.pdf): „Definition: Clankriminalität ist die Begehung von Straftaten durch Angehörige ethnisch abgeschotteter Subkulturen.  Sie ist bestimmt von verwandtschaftlichen Beziehungen, einer gemeinsamen ethnischen Herkunft und einem hohen Maß an Abschottung der Täter, wodurch die Tatbegehung gefördert oder die Aufklärung der Tat erschwert wird. Dies geht einher mit einer eigenen Werteordnung und der grundsätzlichen Ablehnung der deutschen Rechtsordnung.  Dabei kann Clankriminalität einen oder mehrere der folgenden Indikatoren aufweisen: 1. Eine starke Ausrichtung auf die zumeist patriarchalisch-hierarchisch geprägte Familienstruktur.  2. Eine mangelnde Integrationsbereitschaft mit Aspekten einer räumlichen Konzentration.  3. Das Provozieren von Eskalationen auch bei nichtigen Anlässen oder geringfügigen Rechtsverstößen.  4. Die Ausnutzung gruppenimmanenter Mobilisierungs- und Bedrohungspotenziale.”  See also section 3 in this document which adds more details (Heiratsregeln, Ehrverständnis, Paralleljustiz).  This document assumes that this is a clearly distinguished phenomenon that requires dedicated responses, and perhaps that’s also the justification for using the term (but that’s not made explicit).
-- "Clan" is also used in the context of the Sicilian Mafia, see e.g. [Wikipedia](https://de.wikipedia.org/wiki/Italienische_Mafia).
-- "Clan" is also used in the context of Corsican organized crime, e.g. [Süddeutsche Zeitung](https://www.sueddeutsche.de/panorama/mafia-auf-korsika-moerderische-meeresbrise-1.61303) (2010, i.e. before Arab organized crime became a hot topic in Germany).  A Google search for `Korsische Clans` produces 1.2M hits.
-
-### Resources:
-
-- Bund Deutscher Kriminalbeamter, "Clankriminalität bekämpfen: Strategische Ausrichtung – nachhaltige Erfolge", https://www.bdk.de/der-bdk/wer-wir-sind/positionen/2019-04-29-bdk-positionspapier-clankriminalitaet.pdf
-
-## Sex is real
-
-- Implied meaning (?): *Gender is not*
-- Implied meaning: Only people assigned female at birth (based on sex markers) are women.
-
-=======
->>>>>>> d7bb68fdc19494311abe9495ec1e6fb09447d805
 # References
 
