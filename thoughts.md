@@ -195,9 +195,12 @@ Not yet started
 - “Clan” is also used in the context of the Sicilian Mafia, see e.g. [Wikipedia](https://de.wikipedia.org/wiki/Italienische_Mafia).
 - “Clan” is also used in the context of Corsican organized crime, e.g. [Süddeutsche Zeitung](https://www.sueddeutsche.de/panorama/mafia-auf-korsika-moerderische-meeresbrise-1.61303) (2010, i.e. before Arab organized crime became a hot topic in Germany).  A Google search for “Korsische Clans” produces 1.2M hits.
 
-### Resources:
+### Sources:
 
 - Bund Deutscher Kriminalbeamter, “Clankriminalität bekämpfen: Strategische Ausrichtung – nachhaltige Erfolge”, https://www.bdk.de/der-bdk/wer-wir-sind/positionen/2019-04-29-bdk-positionspapier-clankriminalitaet.pdf
+- Clankriminalität (https://www.presseportal.de/pm/130241/5040654)
+- https://www.afd.de/beatrix-von-storch-linkspartei-auch-unterstuetzer-der-organisierten-clan-kriminalitaet/
+- AfD Wahlprogramm
 
 ## “Sex is real”
 
@@ -221,30 +224,42 @@ But does any of that require plausible deniability?  Do we expect sensitivity to
 
 - Potentially alluding to the idea that France and Germany are trying to dominate the rest of the EU.
 
-## Hilfe vor Ort.
+## “Hilfe vor Ort”
 
 - Dog whistly when used in the context of immigration from the middle east.
 - Not dog whistly when used in the context of 2021 floodings in Rhineland-Palatinate and North Rhine-Westphalia.
+- Hilfe vor Ort: “Hilfe vor Ort hat für die AfD höchste Priorität” (AfD Wahlprogramm)
+
+## “Volk”
+
+- “Kinder sind die Zukunft unseres Volkes.” (AdD Wahlprogramm)
+
+## “Brauchtum”
+
+- AfD Wahlprogramm
+
+## “Massenzuwanderung”
+
+- “Die desaströsen Folgen der unregulierten Massenzuwanderung seit 2015 sind unübersehbar und verschärfen sich weiter: überproportionale Zuwandererkriminalität, Terroranschläge und islamischer Separatismus belegen dies ebenso wie dreistellige Milliardenkosten, Wohnraummangel und die hohe Arbeitslosigkeit unter den Zuwanderern.” (AfD Wahlprogramm)
+
+## “Deutsches Staatsvolk”
+
+- “die Aufnahme in das deutsche Staatsvolk, die definitiven Charakter hat, an strenge Bedingungen zu knüpfen” (https://www.afd.de/staatsvolk)
+
+## “Identitätswahrende Migrationspolitik”
+- “Vorbild einer identitätswahrenden Migrationspolitik können für Deutschland nicht klassische Einwanderungsländer von der Größe Kanadas oder Australiens sein, sondern eher Länder wie Japan, die eine ihrer Landesstruktur entsprechende Begrenzung und Steuerung der Migration verfolgen.” (AfD Wahlprogramm)
+
+## “Kampf (für Deutschland)”
+
+- “Auch 2022 geht unser Kampf für Deutschland weiter.”  (https://afd.de)
 
 # Sources of PDWs
 
-- afd.de
-  - Kampf für Deutschland: Auch 2022 geht unser Kampf für Deutschland weiter.
-  - https://www.afd.de/wahlprogramm-asyl-einwanderung/
-    - Volk: Kinder sind die Zukunft unseres Volkes.
-    - Hilfe vor Ort: Hilfe vor Ort hat für die AfD höchste Priorität
-    - Brauchtum
-    - Massenzuwanderung: Die desaströsen Folgen der unregulierten Massenzuwanderung seit 2015 sind unübersehbar und verschärfen sich weiter: überproportionale Zuwandererkriminalität, Terroranschläge und islamischer Separatismus belegen dies ebenso wie dreistellige Milliardenkosten, Wohnraummangel und die hohe Arbeitslosigkeit unter den Zuwanderern.
-    - Deutsches Staatsvolk
-    - Identitätswahrende Migrationspolitik: Vorbild einer identitätswahrenden Migrationspolitik können für Deutschland nicht klassische Einwanderungsländer von der Größe Kanadas oder Australiens sein, sondern eher Länder wie Japan, die eine ihrer Landesstruktur entsprechende Begrenzung und Steuerung der Migration verfolgen.
-    - Familienclan
-- Clankriminalität (https://www.presseportal.de/pm/130241/5040654)
-- https://www.afd.de/beatrix-von-storch-linkspartei-auch-unterstuetzer-der-organisierten-clan-kriminalitaet/
-- https://www.afd.de/staatsvolk/ die Aufnahme in das deutsche Staatsvolk, die definitiven Charakter hat, an strenge Bedingungen zu knüpfen
+- https://www.afd.de/wahlprogramm-asyl-einwanderung/
 - FDP
 - https://www.tagesschau.de/ausland/amerika/usa-brandon-trump-republikaner-schlachtruf-101.html
-- Bundestagscorpus und Reden der Afd
-- die-linke.de
+- Bundestagscorpus und Reden der AfD
+- https://die-linke.de
 - Mindestsicherung
 - Polizeistaat
 - Ausdrücke in Anführungszeichen bei der AfD / Annotation von dog whistles?
