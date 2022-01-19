@@ -1,10 +1,11 @@
 This file is a record of ongoing thinking about how to experimentally investigate dogwhistle content.
 
-A compile PDF version can be found [here](https://github.com/tmalsburg/DogWhistle/blob/master/thoughts.pdf).
+A compiled PDF version can be found [here](https://github.com/tmalsburg/DogWhistle/blob/master/thoughts.pdf).
 
 # Guidelines for this document
 
-1. Let’s cite the relevant papers using LaTeX and the BibTeX keys in our [bibliography](bibliography/bibliography.bib).  We can then compile this document using Pandoc and get a nice bibliography at the end.  (I’ll figure out the Pandoc command and will add it here.)
+1. Let’s cite the relevant papers using LaTeX and the BibTeX keys in our [bibliography](bibliography/bibliography.bib).
+2. To compile this document using Pandoc and LaTeX open a command line shell and enter `make`.  This requires that the Pandoc utility and LaTeX are installed.
 
 # Goals
 
@@ -132,23 +133,23 @@ Further Wahl-O-Mat questions (purpose?):
 
 ## Materials
 
-- Materials are of the form [Sprecher] sagte: "X", where X is a short passage with a potential dog whistle (PDW), or a minimally different version without the PDW.
+- Materials are of the form [Sprecher] sagte: “X”, where X is a short passage with a potential dog whistle (PDW), or a minimally different version without the PDW.
 
-- Materials include PDWs that are conventionalized ("Volk", "Let's go Brandon", "inner city") as well as ones that are not conventionalized but need context to be PDWs ("Hilfe vor Ort"); TAXONOMY
+- Materials include PDWs that are conventionalized (“Volk”, “Let's go Brandon”, “inner city”) as well as ones that are not conventionalized but need context to be PDWs (“Hilfe vor Ort”); TAXONOMY
 
 Potential target stimuli (original with PDW / minimal variant without PWD):
-- Volk: *Kinder sind die Zukunft unseres Volkes* / *Kinder sind die Zukunft unserer Gesellschaft*.
-- Hilfe vor Ort: *Hilfe vor Ort hat für die AfD höchste Priorität.* $\Rightarrow$ *Hilfe vor Ort hat für uns höchste Priorität.* / *Menschen zu helfen hat für uns höchste Priorität.* Needs context that makes clear that this is about refugees: *Bei der Flüchtlingsfrage hat/ist …*
-- Kampf für Deutschland: *Auch 2022 geht unser Kampf für Deutschland weiter.* / *Auch 2022 geht unser Kampf für den Klimaschutz weiter.*
-- Identitätswahrende Migrationspolitik: *Vorbild einer identitätswahrenden Migrationspolitik können für Deutschland nicht klassische Einwanderungsländer von der Größe Kanadas oder Australiens sein, sondern eher Länder wie Japan, die eine ihrer Landesstruktur entsprechende Begrenzung und Steuerung der Migration verfolgen.*
-$\Rightarrow$ *Vorbild einer identitätswahrenden Migrationspolitik sind Länder wie Japan.* / *Vorbild einer funktionierenden Migrationspolitik sind Länder wie Japan.*
-- Clankriminalität: *Wenn die Linke die Razzien gegen die Clankriminalität in Berlin-Neukölln beenden will …* $\Rightarrow$ *Wer will Razzien gegen die Clankriminalität beenden?* / *Wer will Razzien gegen organisierte Kriminalität beenden?*
-- Deutsches Staatsvolk: *die Aufnahme in das deutsche Staatsvolk, die definitiven Charakter hat, an strenge Bedingungen zu knüpfen*
-$\Rightarrow$ *Die Aufnahme in das deutsche Staatsvolk ist an strenge Bedingungen geknüpft.* / *Der Erwerb der deutschen Staatsbürgerschaft ist an strenge Bedingungen geknüpft.*
+- Volk: “Kinder sind die Zukunft unseres Volkes” / “Kinder sind die Zukunft unserer Gesellschaft”.
+- Hilfe vor Ort: “Hilfe vor Ort hat für die AfD höchste Priorität.” $\Rightarrow$ “Hilfe vor Ort hat für uns höchste Priorität.” / “Menschen zu helfen hat für uns höchste Priorität.” Needs context that makes clear that this is about refugees: “Bei der Flüchtlingsfrage hat/ist …”
+- Kampf für Deutschland: “Auch 2022 geht unser Kampf für Deutschland weiter.” / “Auch 2022 geht unser Kampf für den Klimaschutz weiter.”
+- Identitätswahrende Migrationspolitik: “Vorbild einer identitätswahrenden Migrationspolitik können für Deutschland nicht klassische Einwanderungsländer von der Größe Kanadas oder Australiens sein, sondern eher Länder wie Japan, die eine ihrer Landesstruktur entsprechende Begrenzung und Steuerung der Migration verfolgen.”
+$\Rightarrow$ “Vorbild einer identitätswahrenden Migrationspolitik sind Länder wie Japan.” / “Vorbild einer funktionierenden Migrationspolitik sind Länder wie Japan.”
+- Clankriminalität: “Wenn die Linke die Razzien gegen die Clankriminalität in Berlin-Neukölln beenden will …” $\Rightarrow$ “Wer will Razzien gegen die Clankriminalität beenden?” / “Wer will Razzien gegen organisierte Kriminalität beenden?”
+- Deutsches Staatsvolk: “die Aufnahme in das deutsche Staatsvolk, die definitiven Charakter hat, an strenge Bedingungen zu knüpfen”
+$\Rightarrow$ “Die Aufnahme in das deutsche Staatsvolk ist an strenge Bedingungen geknüpft.” / “Der Erwerb der deutschen Staatsbürgerschaft ist an strenge Bedingungen geknüpft.”
 
 Controls: 
-- Type 1: Stimuli where everybody would agree that the expression is racist; this will allow us to exclude participants not attending to the task, but it also provides a point of comparison for PDWs (e.g., *Ausländer sind gewalttätig*)
-- Type 2: Stimuli where everybody would agree that the expression is, e.g., green (exclude participants not giving high enough "green" ratings), inflammatory though not DW: e.g., *Steuererhöhung*
+- Type 1: Stimuli where everybody would agree that the expression is racist; this will allow us to exclude participants not attending to the task, but it also provides a point of comparison for PDWs (e.g., “Ausländer sind gewalttätig”)
+- Type 2: Stimuli where everybody would agree that the expression is, e.g., green (exclude participants not giving high enough “green” ratings), inflammatory though not DW: e.g., “Steuererhöhung”.
   
 Fillers: to distract participants from the target stimuli.
 
@@ -178,7 +179,54 @@ Each participant reads:
 
 Not yet started
 
-# Sources for PDWs
+# Taxonomy (develop in phase 1)
+
+- Conventionalized dog whistle: independent of context or speaker, “inner city (crime)”
+- Speaker-dependent dog whistle: “Clankriminalität”?  Used to activate stereotypes about certain ethnicities but Wikipedia (relatively neutral source) also has an entry for that term.  Quote from Wikipedia: “Ein paar Wissenschaftler wiesen auf eine ’stigmatisierende’ Verwendung des Begriffs ’Clankriminalität’ hin und erklärten, dass staatliche Maßnahmen gegen Clankriminalität vorrangig politisch motiviert seien und sich negativ auf präventive Maßnahmen und auf die Integration von dem noch nicht kriminell gewordenen Teil in den Familien auswirken würden.[14]”  So it’s supposedly only certain uses that are stigmatizing, not the term itself?
+- Content-dependent dog whistle: “Hilfe vor Ort” harmless in the context of the 2021 floodings in Germany, loaded when talking about migration.
+
+# Specific examples of dog whistles
+
+## Clankriminalität
+
+- Potentially stigmatizing certain ethnic groups.
+- Contrary to dog whistle definition often not covert.  The fact that it is used to refer to certain ethnicities and subcultures is rarely hidden.
+- Definition by the [Bund deutscher Kriminalbeamter](https://www.bdk.de/der-bdk/wer-wir-sind/positionen/2019-04-29-bdk-positionspapier-clankriminalitaet.pdf): “Definition: Clankriminalität ist die Begehung von Straftaten durch Angehörige ethnisch abgeschotteter Subkulturen.  Sie ist bestimmt von verwandtschaftlichen Beziehungen, einer gemeinsamen ethnischen Herkunft und einem hohen Maß an Abschottung der Täter, wodurch die Tatbegehung gefördert oder die Aufklärung der Tat erschwert wird. Dies geht einher mit einer eigenen Werteordnung und der grundsätzlichen Ablehnung der deutschen Rechtsordnung.  Dabei kann Clankriminalität einen oder mehrere der folgenden Indikatoren aufweisen: 1. Eine starke Ausrichtung auf die zumeist patriarchalisch-hierarchisch geprägte Familienstruktur.  2. Eine mangelnde Integrationsbereitschaft mit Aspekten einer räumlichen Konzentration.  3. Das Provozieren von Eskalationen auch bei nichtigen Anlässen oder geringfügigen Rechtsverstößen.  4. Die Ausnutzung gruppenimmanenter Mobilisierungs- und Bedrohungspotenziale.” See also section 3 in this document which adds more details (Heiratsregeln, Ehrverständnis, Paralleljustiz).  This document assumes that this is a clearly distinguished phenomenon that requires dedicated responses, and perhaps that’s also the justification for using the term (but that’s not made explicit).  Note that the existence of a clear and transparent definition (in the context of police work) is incompatible with plausible deniability.  Other uses of “Clankriminalität” may still have a payload that requires plausible deniability.
+- “Clan” is also used in the context of the Sicilian Mafia, see e.g. [Wikipedia](https://de.wikipedia.org/wiki/Italienische_Mafia).
+- “Clan” is also used in the context of Corsican organized crime, e.g. [Süddeutsche Zeitung](https://www.sueddeutsche.de/panorama/mafia-auf-korsika-moerderische-meeresbrise-1.61303) (2010, i.e. before Arab organized crime became a hot topic in Germany).  A Google search for “Korsische Clans” produces 1.2M hits.
+
+### Resources:
+
+- Bund Deutscher Kriminalbeamter, “Clankriminalität bekämpfen: Strategische Ausrichtung – nachhaltige Erfolge”, https://www.bdk.de/der-bdk/wer-wir-sind/positionen/2019-04-29-bdk-positionspapier-clankriminalitaet.pdf
+
+## “Sex is real”
+
+- Implied meaning (?): “Gender is not”
+
+## “Das muss man auch einmal klar sagen.” (Gysi, Bundestagsrede)
+
+Similarly: “Jede Wahrheit braucht einen Mutigen, der sie ausspricht.”  (Campaign of the Bild-Zeitung, allegedly an Einstein quote but not substantiated, [many times caricatured](https://www.google.com/search?q=jede+wahrheit+braucht+einen+mutigen+der+sie+ausspricht&hl=en&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjKmcao5r31AhUn57sIHUHzBj8Q_AUoAXoECAEQAw&biw=1704&bih=856&dpr=1.5)).
+
+Implied meaning:
+- They speak the truth.
+- Others don’t speak the truth.
+- The truth is suppressed.
+- Speaking this truth breaks a taboo is an inconvenient truth.
+- The one speaking those truths is virtuous and courageous.
+- Bild attributed their slogan to Einstein, Gandhi, ML King, which adds more layers of meaning.
+
+But does any of that require plausible deniability?  Do we expect sensitivity to meaning to differ between in- and outgroup?
+
+## “Kerneuropa” (Gysi, Bundestagsrede, 2015-06-18)
+
+- Potentially alluding to the idea that France and Germany are trying to dominate the rest of the EU.
+
+## Hilfe vor Ort.
+
+- Dog whistly when used in the context of immigration from the middle east.
+- Not dog whistly when used in the context of 2021 floodings in Rhineland-Palatinate and North Rhine-Westphalia.
+
+# Sources of PDWs
 
 - afd.de
   - Kampf für Deutschland: Auch 2022 geht unser Kampf für Deutschland weiter.
@@ -205,6 +253,7 @@ Not yet started
 - Covid-Skeptizismus, Debatten zur Impfpflicht
 - Stuttgart 21 Debatte?
 
+<<<<<<< HEAD
 # Taxonomy (develop in phase 1)
 
 - Conventionalized dog whistle: independent of context or speaker, “inner city (crime)”
@@ -230,5 +279,7 @@ Not yet started
 - Implied meaning (?): *Gender is not*
 - Implied meaning: Only people assigned female at birth (based on sex markers) are women.
 
+=======
+>>>>>>> d7bb68fdc19494311abe9495ec1e6fb09447d805
 # References
 
