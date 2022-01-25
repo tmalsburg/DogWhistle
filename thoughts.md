@@ -86,6 +86,25 @@ References from Wetts & Willer 2019: Welfare (Mendelberg 1997, 2001; Peffley, Hu
 - No empirical investigation exists for German. 
 - A few expressions have been discussed: e.g., Clankriminalität.
 
+# Concrete proposal for first mini-pilot with "Volk":
+- Hypothesis: "Volk" is a dogwhistle: its literal meaning is merely 'people', but it has a conservative connotation, evoking admiration for Nazi Germany; speakers who use it thereby signal alignment with conservative/nazi values 
+- Expectation: participants overall will be more likely to attribute right-wing stances to speakers using "Volk" than to speakers using the alternative formulations (no expectation that only participants with right-wing stances will attribute right-wing stances)
+- Target materials:
+	- Kinder sind die Zukunft unseres Volkes / Kinder sind die Zukunft unserer Gesellschaft. (we need to specify that speaker is German politician)
+	- Die Aufnahme in das deutsche Staatsvolk ist an strenge Bedingungen geknüpft / Der Erwerb der deutschen Staatsbürgerschaft ist an strenge Bedingungen geknüpft.
+- Each participant sees one target with "Volk" and one replacement
+- 2 Controls (everybody sees these two, used to remove data from participants not attending to the task?)
+	- Alle Ausländer sind gewalttätig. (clearly racist, serves as baseline?)
+	- In Deutschland leben circa 22 Millionen Menschen mit Migrationshintergrund.
+- 6 Fillers (to distract from the 4 items concerning immigration, everybody sees these)
+	- Klimaschutz muss sozial gerecht sein.
+	- Jedes Kind hat ein Recht auf gute Kitas und Schulen, egal wo es lebt.
+	- Die Digitalisierung ist eine der zentralen Infrastrukturen unseres Lebens.
+	- Klimaschutz darf nicht zu Nachteilen im internationalen Wettbewerb führen.
+	- Gesundheitsschutz und Pflege brauchen einen größeren Stellenwert.
+	- Die Kulturlandschaft soll nach der Pandemie zu neuer Lebendigkeit finden.
+
+
 # Proposal for a pilot experiment to identify German dog whistles
 
 ## Research question
@@ -140,7 +159,7 @@ Further Wahl-O-Mat questions (purpose?):
 Potential target stimuli (original with PDW / minimal variant without PWD):
 - Volk: “Kinder sind die Zukunft unseres Volkes” / “Kinder sind die Zukunft unserer Gesellschaft”.
 - Hilfe vor Ort: “Hilfe vor Ort hat für die AfD höchste Priorität.” $\Rightarrow$ “Hilfe vor Ort hat für uns höchste Priorität.” / “Menschen zu helfen hat für uns höchste Priorität.” Needs context that makes clear that this is about refugees: “Bei der Flüchtlingsfrage hat/ist …”
-- Kampf für Deutschland: “Auch 2022 geht unser Kampf für Deutschland weiter.” / “Auch 2022 geht unser Kampf für den Klimaschutz weiter.”
+- Kampf für Deutschland: “Auch 2022 geht unser Kampf für Deutschland weiter.” / “Auch 2022 geht unser Kampf für den Klimaschutz weiter.” / Auch 2022 setzen wir uns weiter für Deutschland ein (better, because same content)
 - Identitätswahrende Migrationspolitik: “Vorbild einer identitätswahrenden Migrationspolitik können für Deutschland nicht klassische Einwanderungsländer von der Größe Kanadas oder Australiens sein, sondern eher Länder wie Japan, die eine ihrer Landesstruktur entsprechende Begrenzung und Steuerung der Migration verfolgen.”
 $\Rightarrow$ “Vorbild einer identitätswahrenden Migrationspolitik sind Länder wie Japan.” / “Vorbild einer funktionierenden Migrationspolitik sind Länder wie Japan.”
 - Clankriminalität: “Wenn die Linke die Razzien gegen die Clankriminalität in Berlin-Neukölln beenden will …” $\Rightarrow$ “Wer will Razzien gegen die Clankriminalität beenden?” / “Wer will Razzien gegen organisierte Kriminalität beenden?”
