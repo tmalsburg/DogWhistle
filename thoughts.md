@@ -252,6 +252,13 @@ But does any of that require plausible deniability?  Do we expect sensitivity to
 ## “Volk”
 
 - “Kinder sind die Zukunft unseres Volkes.” (AdD Wahlprogramm)
+- “Wir sind das Volk”, Georg Büchner, /Dantons Tod/, 1. Akt, 2. Szene (1835)
+- “Wir sind das Volk”, DDR-Protestbewegung, 1989/190.
+- “Wir sind ein Volk”, Wendezeit, 1990-
+- “Wir sind das Volk”, PEGIDA-Bewegung, 2014-, Suggestion, dass PEGIDA die Mehrheit der Gesellschaft repräsentiert, aber auch Abgrenzung von Migranten.
+- “Das Volk ist jeder, der in diesem Land lebt.”
+Merkel speaking out against individual groups appropriating the concept of the people for themselves.  Also Merkel’s response to PEGIDA and possibly her rejection of the Dog Whistle use of the term.  NZZ Article about Merkel’s statement, its context, and the history of the concept and related concepts (e.g., “Staatsvolk”).
+- “Wirr ist das Volk!”, Titanic, Die Partei, 2016.
 
 ## “Brauchtum”
 
