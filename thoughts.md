@@ -87,23 +87,22 @@ References from Wetts & Willer 2019: Welfare (Mendelberg 1997, 2001; Peffley, Hu
 - A few expressions have been discussed: e.g., Clankriminalität.
 
 # Concrete proposal for first mini-pilot with "Volk":
-- Hypothesis: "Volk" is a dogwhistle: its literal meaning is merely 'people', but it has a conservative connotation, evoking admiration for Nazi Germany; speakers who use it thereby signal alignment with conservative/nazi values 
-- Expectation: participants overall will be more likely to attribute right-wing stances to speakers using "Volk" than to speakers using the alternative formulations (no expectation that only participants with right-wing stances will attribute right-wing stances)
+- Hypothesis: "Volk" is a dogwhistle: It’s literal meaning is merely ’people’, but it has a conservative connotation, evoking admiration for Nazi Germany; speakers who use it thereby signal alignment with conservative/nazi values. 
+- Expectation: Participants overall will be more likely to attribute right-wing stances to speakers using “Volk” than to speakers using the alternative formulations (no expectation that only participants with right-wing stances will attribute right-wing stances).
 - Target materials:
-	- Kinder sind die Zukunft unseres Volkes / Kinder sind die Zukunft unserer Gesellschaft. (we need to specify that speaker is German politician)
-	- Die Aufnahme in das deutsche Staatsvolk ist an strenge Bedingungen geknüpft / Der Erwerb der deutschen Staatsbürgerschaft ist an strenge Bedingungen geknüpft.
-- Each participant sees one target with "Volk" and one replacement
-- 2 Controls (everybody sees these two, used to remove data from participants not attending to the task?)
-	- Alle Ausländer sind gewalttätig. (clearly racist, serves as baseline?)
-	- In Deutschland leben circa 22 Millionen Menschen mit Migrationshintergrund.
-- 6 Fillers (to distract from the 4 items concerning immigration, everybody sees these)
-	- Klimaschutz muss sozial gerecht sein.
-	- Jedes Kind hat ein Recht auf gute Kitas und Schulen, egal wo es lebt.
-	- Die Digitalisierung ist eine der zentralen Infrastrukturen unseres Lebens.
-	- Klimaschutz darf nicht zu Nachteilen im internationalen Wettbewerb führen.
-	- Gesundheitsschutz und Pflege brauchen einen größeren Stellenwert.
-	- Die Kulturlandschaft soll nach der Pandemie zu neuer Lebendigkeit finden.
-
+  - “Kinder sind die Zukunft unseres Volkes.” / “Kinder sind die Zukunft unserer Gesellschaft.” (We need to specify that speaker is German politician.)
+  - “Die Aufnahme in das deutsche Staatsvolk ist an strenge Bedingungen geknüpft” / “Der Erwerb der deutschen Staatsbürgerschaft ist an strenge Bedingungen geknüpft.”
+- Each participant sees one target with “Volk” and one replacement.
+- 2 Controls (everybody sees these two, used to remove data from participants not attending to the task?):
+  - “Alle Ausländer sind gewalttätig.” Clearly racist, serves as baseline and sanity check.
+  - “In Deutschland leben circa 22 Millionen Menschen mit Migrationshintergrund.” Clearly harmless / unbiased.
+- 6 Fillers (to distract from the 4 items concerning immigration, everybody sees these):
+  - “Klimaschutz muss sozial gerecht sein.”
+  - “Jedes Kind hat ein Recht auf gute Kitas und Schulen, egal wo es lebt.”
+  - “Die Digitalisierung ist eine der zentralen Infrastrukturen unseres Lebens.”
+  - “Klimaschutz darf nicht zu Nachteilen im internationalen Wettbewerb führen.”
+  - “Gesundheitsschutz und Pflege brauchen einen größeren Stellenwert.”
+  - “Die Kulturlandschaft soll nach der Pandemie zu neuer Lebendigkeit finden.”
 
 # Proposal for a pilot experiment to identify German dog whistles
 
@@ -115,7 +114,7 @@ Which expressions are such that some but not all speakers of German perceive a m
 
 - Recruit native speakers of German living in Germany on Prolific.
 - How many?
-- Questionnaire to identify relevant aspects of their socio-political profile, present at the end of the experiment
+- Questionnaire to identify relevant aspects of their socio-political profile, present at the end of the experiment.
   - Age
   - Gender: männlich, weiblich, divers, möchte ich nicht antworten
   - Höchster Bildungsabschluss: kein Schulabschluss, Hauptschule, Realschule, Gymnasium, Bachelor, Master, Promotion
