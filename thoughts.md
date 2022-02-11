@@ -86,6 +86,17 @@ References from Wetts & Willer 2019: Welfare (Mendelberg 1997, 2001; Peffley, Hu
 - No empirical investigation exists for German. 
 - A few expressions have been discussed: e.g., Clankriminalität.
 
+# Study to build test scales (from Beltrama & Staum-Casasanto 2017)
+- We first conducted a preliminary study to construct the evaluation scales to be used to measure social meaning in the experiment. 
+- Sixty subjects, who self-declared to be native speakers of American English and between 18 and 35 years old, were recruited and paid $0.50 for participating. 
+- First, each subject saw a written sentence containing either an instance of lexical totally or speaker-oriented totally. The subjects were asked to provide four adjectives to describe the imagined speaker of the sentence. 
+- Based on the most frequently recurring adjectives in the responses, a total of eight evaluation dimensions were selected as particularly salient in connection with the use of the intensifier. 
+- Four of these dimensions, based on the participants’ responses, appear to be positively associated with the use of the intensifier. Following the literature on language attitudes (Lambert et al. 1960), we call them ‘Solidarity’ attributes. 
+- The other four dimensions express identity categories that feature a negative association with totally. We label them ‘Status’ attributes. 
+- The resulting eight scales are summarized as follows:
+	- Solidarity: Friendliness, Coolness, Outgoingness, Excitability 
+	- Status: Articulateness, Maturity, Intelligence, Seriousness
+
 # Concrete proposal for first mini-pilot with "Volk":
 - Hypothesis: "Volk" is a dogwhistle: its literal meaning is merely 'people', but it has a conservative connotation, evoking admiration for Nazi Germany; speakers who use it thereby signal alignment with conservative/nazi values 
 - Expectation: participants overall will be more likely to attribute right-wing stances to speakers using "Volk" than to speakers using the alternative formulations (no expectation that only participants with right-wing stances will attribute right-wing stances)
