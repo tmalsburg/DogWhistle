@@ -68,6 +68,8 @@ Dog whistle is an expression that is used by one party but not by another (lower
 
 We're more sensitive to dog whistles that are outgroup!
 
+Different aspect potentially contributing to a definition: Dog whistles are not necessarily expressions that carries secondary meaning but a strategy where a semantic/pragmatic gap is artificially created and to be filled by the listener using their social and contextual knowledge.  For instance, when Gauland says “people don’t want a Boateng as their neighbor”, it’s technically not clear what he means by “a Boateng”.  Does he mean a soccer player or a black person?  But using social knowledge about the speaker, the audience can fill that missing meaning in.  Compare to some soccer fan saying “people would love to have a Boateng as their neighbor”, this would potentially be interpreted as meaning “a famous soccer player”.  In that way, dog whistles may be very similar to the rhetorical device where the speaker does not finish a controversial sentence because they know that the audience will be able to complete it in their minds without the speaker actually having to say the words: “If we let more migrants into the country, next new year’s eve in Cologne will …”  Another closely related rhetorical device is where the offensive part of the statement is replaced by something that’s effectively the opposite of the intended meaning and absurd given social knowledge about the speaker:  “If we let more migrants in the country, next new year’s eve in Cologne is going to be fun.”  What dog whistles offer in contrast to these rhetorical device is plausible deniability, because with dog whistles the (to-be-filled) gap meaning is not as obvious.  Seen in this way dog whistles are the result of a natural evolution of ways to circumvent taboo speech.  If true, this would explain why dog whistles are so difficult to characterize:  The properties of the dog whistle expression are irrelevant.  What matters is merely whether that expression leaves a meaning vacuum when used in a certain context.  Corollary: “Clankriminalität” is a dog whistle in the presence of a meaning vacuum, but the same expression immediately looses its dog whistle property in the absence of such a vacuum, e.g. when the text is otherwise openly xenophobic.  Question: How can we test for the presence of a meaning vacuum/gap?
+
 # Tasks used in previous empirical research on dog whistles
 
 \textcite{Albertson2015}: Religious dog whistle "wonder-working power"; three conditions (dog whistle, obvious religious content+dog whistle, neither); participants viewed videos w speeches by candidate; response tasks: attitude toward candidate and whether they would vote for candidate (5-point Likert scale), emotion ratings regarding candidate (interested, upset, proud, moral...) on sliding scale, participants' religious denomination and beliefs about the Bible; outgroup was unfamiliar with religious connotation of "wonder-working power", they gave less favorable ratings with obvious religious appeal but not with WWP; for ingroup, both WWP and the obvious religious appeal lead to more favorable ratings of the candidate, the former resulted in even more favorable ratings.
@@ -98,23 +100,22 @@ References from Wetts & Willer 2019: Welfare (Mendelberg 1997, 2001; Peffley, Hu
 	- Status: Articulateness, Maturity, Intelligence, Seriousness
 
 # Concrete proposal for first mini-pilot with "Volk":
-- Hypothesis: "Volk" is a dogwhistle: its literal meaning is merely 'people', but it has a conservative connotation, evoking admiration for Nazi Germany; speakers who use it thereby signal alignment with conservative/nazi values 
-- Expectation: participants overall will be more likely to attribute right-wing stances to speakers using "Volk" than to speakers using the alternative formulations (no expectation that only participants with right-wing stances will attribute right-wing stances)
+- Hypothesis: "Volk" is a dogwhistle: It’s literal meaning is merely ’people’, but it has a conservative connotation, evoking admiration for Nazi Germany; speakers who use it thereby signal alignment with conservative/nazi values. 
+- Expectation: Participants overall will be more likely to attribute right-wing stances to speakers using “Volk” than to speakers using the alternative formulations (no expectation that only participants with right-wing stances will attribute right-wing stances).
 - Target materials:
-	- Kinder sind die Zukunft unseres Volkes / Kinder sind die Zukunft unserer Gesellschaft. (we need to specify that speaker is German politician)
-	- Die Aufnahme in das deutsche Staatsvolk ist an strenge Bedingungen geknüpft / Der Erwerb der deutschen Staatsbürgerschaft ist an strenge Bedingungen geknüpft.
-- Each participant sees one target with "Volk" and one replacement
-- 2 Controls (everybody sees these two, used to remove data from participants not attending to the task?)
-	- Alle Ausländer sind gewalttätig. (clearly racist, serves as baseline?)
-	- In Deutschland leben circa 22 Millionen Menschen mit Migrationshintergrund.
-- 6 Fillers (to distract from the 4 items concerning immigration, everybody sees these)
-	- Klimaschutz muss sozial gerecht sein.
-	- Jedes Kind hat ein Recht auf gute Kitas und Schulen, egal wo es lebt.
-	- Die Digitalisierung ist eine der zentralen Infrastrukturen unseres Lebens.
-	- Klimaschutz darf nicht zu Nachteilen im internationalen Wettbewerb führen.
-	- Gesundheitsschutz und Pflege brauchen einen größeren Stellenwert.
-	- Die Kulturlandschaft soll nach der Pandemie zu neuer Lebendigkeit finden.
-
+  - “Kinder sind die Zukunft unseres Volkes.” / “Kinder sind die Zukunft unserer Gesellschaft.” (We need to specify that speaker is German politician.)
+  - “Die Aufnahme in das deutsche Staatsvolk ist an strenge Bedingungen geknüpft” / “Der Erwerb der deutschen Staatsbürgerschaft ist an strenge Bedingungen geknüpft.”
+- Each participant sees one target with “Volk” and one replacement.
+- 2 Controls (everybody sees these two, used to remove data from participants not attending to the task?):
+  - “Alle Ausländer sind gewalttätig.” Clearly racist, serves as baseline and sanity check.
+  - “In Deutschland leben circa 22 Millionen Menschen mit Migrationshintergrund.” Clearly harmless / unbiased.
+- 6 Fillers (to distract from the 4 items concerning immigration, everybody sees these):
+  - “Klimaschutz muss sozial gerecht sein.”
+  - “Jedes Kind hat ein Recht auf gute Kitas und Schulen, egal wo es lebt.”
+  - “Die Digitalisierung ist eine der zentralen Infrastrukturen unseres Lebens.”
+  - “Klimaschutz darf nicht zu Nachteilen im internationalen Wettbewerb führen.”
+  - “Gesundheitsschutz und Pflege brauchen einen größeren Stellenwert.”
+  - “Die Kulturlandschaft soll nach der Pandemie zu neuer Lebendigkeit finden.”
 
 # Proposal for a pilot experiment to identify German dog whistles
 
@@ -126,7 +127,7 @@ Which expressions are such that some but not all speakers of German perceive a m
 
 - Recruit native speakers of German living in Germany on Prolific.
 - How many?
-- Questionnaire to identify relevant aspects of their socio-political profile, present at the end of the experiment
+- Questionnaire to identify relevant aspects of their socio-political profile, present at the end of the experiment.
   - Age
   - Gender: männlich, weiblich, divers, möchte ich nicht antworten
   - Höchster Bildungsabschluss: kein Schulabschluss, Hauptschule, Realschule, Gymnasium, Bachelor, Master, Promotion
@@ -263,6 +264,13 @@ But does any of that require plausible deniability?  Do we expect sensitivity to
 ## “Volk”
 
 - “Kinder sind die Zukunft unseres Volkes.” (AdD Wahlprogramm)
+- “Wir sind das Volk”, Georg Büchner, /Dantons Tod/, 1. Akt, 2. Szene (1835)
+- “Wir sind das Volk”, DDR-Protestbewegung, 1989/190.
+- “Wir sind ein Volk”, Wendezeit, 1990-
+- “Wir sind das Volk”, PEGIDA-Bewegung, 2014-, Suggestion, dass PEGIDA die Mehrheit der Gesellschaft repräsentiert, aber auch Abgrenzung von Migranten.
+- “Das Volk ist jeder, der in diesem Land lebt.”
+Merkel speaking out against individual groups appropriating the concept of the people for themselves.  Also Merkel’s response to PEGIDA and possibly her rejection of the Dog Whistle use of the term.  NZZ Article about Merkel’s statement, its context, and the history of the concept and related concepts (e.g., “Staatsvolk”).
+- “Wirr ist das Volk!”, Titanic, Die Partei, 2016.
 
 ## “Brauchtum”
 
