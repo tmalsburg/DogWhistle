@@ -131,3 +131,15 @@ nrow(p1)
 nrow(p2)
 
 intersect(p1$participant_id, p2$participant_id) %>% length()
+
+# Demographics:
+
+d %>%
+  select(subj, age, gender, vote) %>%
+  unique() -> x
+
+hist(x$age)
+table(x$gender)
+table(x$vote)
+
+
