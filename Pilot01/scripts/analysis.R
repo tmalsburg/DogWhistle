@@ -119,3 +119,15 @@ d %>%
     difference = dogwhistle - control) %>%
   arrange(-difference) %>%
   write_csv(file="Pilot01/generated/data/attribute_count_dogwhistle_vs_control_staatsvolk.csv")
+
+# Participant overlap:
+
+read_delim("Pilot01/data/study1_participants.csv", delim=";") %>%
+  filter(status=="APPROVED") -> p1
+read_delim("Pilot01/data/study2_participants.csv", delim=";") %>%
+  filter(status=="APPROVED") -> p2
+
+nrow(p1)
+nrow(p2)
+
+intersect(p1$participant_id, p2$participant_id) %>% length()
