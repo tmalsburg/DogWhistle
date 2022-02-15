@@ -1,10 +1,12 @@
-
+# set working directory to directory of script
+this.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
+setwd(this.dir)
 
 library(tidyverse)
 library(magrittr)
 
 
-read_csv("Pilot01/data/Einschätzungen_zu_Politikern_1.csv") %>%
+read_csv("../data/Einschätzungen_zu_Politikern_1.csv") %>%
   filter(Timestamp != "2022/02/14 10:40:56 AM GMT+1") %>%  # That's Titus' test run.
   mutate(subj = 1:n()) %>%
   rename(
@@ -28,7 +30,7 @@ read_csv("Pilot01/data/Einschätzungen_zu_Politikern_1.csv") %>%
   select(-response) %>%
   select(subj, time, sentence, a.index, attr, age, gender, vote) -> d1
 
-read_csv("Pilot01/data/Einschätzungen_zu_Politikern_2.csv") %>%
+read_csv("../data/Einschätzungen_zu_Politikern_2.csv") %>%
   mutate(subj = 1:n()) %>%
   rename(
     a3.1 = `Eigenschaft #1...2`,
@@ -61,7 +63,36 @@ d %>%
   group_by(attr) %>%
   summarize(count = n()) %>%
   arrange(-count) %>%
-  write_csv(file="Pilot01/generated/data/attribute_ranking_overall.csv")
+  write_csv(file="../generated/data/attribute_ranking_overall.csv")
+
+# annotation to develop scales ----
+
+d <- read_csv(file="../generated/data/attribute_ranking_overall.csv")
+View(d)
+# visual inspection of the named properties (at least 2 mentions) suggests the following scales
+# Question to participants: Wie...ist der Sprecher? (gar nicht...total)
+alt <- c("jung") 
+fortschrittlich <- c("konservativ", "traditionell", "altmodisch", "progressiv","bürgerlich","rückwärtsgewandt", "zukunftsorientiert", "weitsichtig", "vorausschauend", "zukunftsgewand")
+rassistisch <- c("patriotisch", "patriotistisch", "nationalistisch", "rechts", "rassistisch", "rechts/konservativ","xenophob")
+ehrlich <- c("ehrlich","souverän","heuchlerisch","verantwortungsvoll", "zuverlässig", "vernünftig","kalkulierend")
+hilfsbereit <- c("sozial","fair","altruistisch","geizig","intolerant","unmenschlich","offen", "verschlossen", "abweisend", "egoistisch", "engstirnig", "ausschliessend","streng", "strikt", "dominant")
+intelligent <- c("intelligent","gebildet","klug","kompetent","erfahren", "selbstsicher")
+religioes <- c("christlich")
+freundlich <- c("freundlich, nett, unfreundlich","unsympatisch","kalt","schroff", "sympatisch","warm","kritisch","zuversichtlich")
+
+## properties that don't appear relevant (e.g., about a different topic, not about the speaker)
+irrelevant <- c("unkonventionell","stärkend","langweilig", "nichtssagend","nachhaltig","redegewandt","fokussiert","kinderlieb","familiär","familienmensch","familienorientiert","familienfreundlich","kinderfreundlich","umweltbewusst","bürokratisch", "juristisch","realistisch", "informiert", "mitdenkend")
+
+d$scale <- ifelse(d$attr %in% alt, "alt",
+                  ifelse(d$attr %in% fortschrittlich, "fortschrittlich",
+                         ifelse(d$attr %in% rassistisch, "rassistisch",
+                                ifelse(d$attr %in% ehrlich, "ehrlich",
+                                       ifelse(d$attr %in% hilfsbereit, "hilfsbereit",
+                                              ifelse(d$attr %in% intelligent, "intelligent",
+                                                     ifelse(d$attr %in% religioes, "religioes",
+                                                            ifelse(d$attr %in% freundlich, "freundlich", 
+                                                                   "other"))))))))
+
 
 # Ranking by item:
 
@@ -79,7 +110,7 @@ x %>% filter(sentence==4) %>% select(attr.4=attr, count.4=count)-> x4
 min.n <- min(nrow(x1), nrow(x2), nrow(x3), nrow(x4))
 
 bind_cols(x1[1:min.n,], x2[1:min.n,], x3[1:min.n,], x4[1:min.n,]) %>%
-  write_csv(file="Pilot01/generated/data/attribute_ranking_by_sentence.csv")
+  write_csv(file="../generated/data/attribute_ranking_by_sentence.csv")
 
 # Attributes that appear more often in DogWhistle condition:
 
@@ -99,7 +130,7 @@ d %>%
     dogwhistle = ifelse(is.na(dogwhistle), 0, dogwhistle),
     difference = dogwhistle - control) %>%
   arrange(-difference) %>%
-  write_csv(file="Pilot01/generated/data/attribute_count_dogwhistle_vs_control_kinder.csv")
+  write_csv(file="../generated/data/attribute_count_dogwhistle_vs_control_kinder.csv")
   
 ## Der Erwerb der deutschen Staatsbürgerschaft / Die Aufnahme in das
 ## deutsche Staatsvolk ist an strenge Bedingungen geknüpft:
@@ -118,13 +149,13 @@ d %>%
     dogwhistle = ifelse(is.na(dogwhistle), 0, dogwhistle),
     difference = dogwhistle - control) %>%
   arrange(-difference) %>%
-  write_csv(file="Pilot01/generated/data/attribute_count_dogwhistle_vs_control_staatsvolk.csv")
+  write_csv(file="../generated/data/attribute_count_dogwhistle_vs_control_staatsvolk.csv")
 
 # Participant overlap:
 
-read_delim("Pilot01/data/study1_participants.csv", delim=";") %>%
+read_delim("../data/study1_participants.csv", delim=";") %>%
   filter(status=="APPROVED") -> p1
-read_delim("Pilot01/data/study2_participants.csv", delim=";") %>%
+read_delim("../data/study2_participants.csv", delim=";") %>%
   filter(status=="APPROVED") -> p2
 
 nrow(p1)
