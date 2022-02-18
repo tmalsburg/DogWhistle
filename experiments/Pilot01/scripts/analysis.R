@@ -61,6 +61,8 @@ rbind(d1, d2) %>%
   mutate(attr = str_squish(attr),
          attr = str_to_lower(attr)) -> d
 
+# FIXME: subj starts from 1 in both parts.
+
 # Ranking of attributes across items and conditions:
 
 d %>%
