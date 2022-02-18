@@ -155,49 +155,8 @@ stringdistmatrix(x$party, names(colors.party), method="jw") -> m
 
 x$party2 <- names(colors.party)[apply(m, 1, which.min)]
 
-## Age:
-
-ggplot(x, aes(age)) +
-  geom_histogram(breaks=seq(0, 100, 3)) +
-  scale_x_continuous("Age",
-    limits=c(0, 100),
-    breaks=seq(0, 100, 10)) +
-  scale_y_continuous(
-    breaks=seq(0, 100, 2)) +
-  geom_vline(xintercept=18, col="red") -> p.age
-
-## Gender:
-
-x %>%
-  group_by(gender) %>%
-  summarize(count=n()) %>%
-  arrange(desc(count)) %>%
-  mutate(gender=factor(gender,
-                     levels=move.to.end(gender, "keine Angabe"),
-                     labels=move.to.end(gender, "keine Angabe"))) %>%
-  ggplot(aes(x=gender, y=count, fill=gender)) +
-  geom_bar(stat="identity", width=1, color="white") +
-  scale_x_discrete("Gender") +
-  scale_fill_manual(values=colors.gender) +
-  theme(axis.text.x=element_text(angle = 45, hjust=1),
-        legend.position="none") -> p.gender
-
-## Party:
-
-x %>%
-  group_by(party) %>%
-  summarize(count=n()) %>%
-  arrange(desc(count)) %>%
-  mutate(party=factor(party, levels=party, labels=party)) %>%
-  ggplot(aes(x=party, y=count, fill=party)) +
-  geom_bar(stat="identity", width=1, color="white") +
-  scale_fill_manual(values=colors.party) +
-  scale_x_discrete("Party") +
-  theme(axis.text.x=element_text(angle = 45, hjust=1),
-        legend.position="none") -> p.party
-
 pdf("../generated/plots/demographics.pdf", 12, 4)
-p.age + p.gender + p.party
+plot.demographics(x)
 dev.off()
 
 # Annotation to develop scales:
