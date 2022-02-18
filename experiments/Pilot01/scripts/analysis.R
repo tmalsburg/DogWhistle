@@ -1,12 +1,14 @@
 
-library(tidyverse)
-library(magrittr)
-
 # Set working directory to directory of script:
 
 tryCatch(
   setwd(dirname(rstudioapi::getSourceEditorContext()$path)),
   error = function(e) setwd("experiments/Pilot01/scripts/"))
+
+# Load general definitions (also loads standard packages such as
+# tidyverse):
+
+source("../../../scripts/general.R")
 
 # Read data and whip into shape:
 
@@ -24,15 +26,15 @@ read_csv("../data/responses_1.csv") %>%
     a2.4 = `Eigenschaft #4...9`) %>%
   pivot_longer(2:9, names_to="response", values_to="attr") %>%
   rename(
-    time = Timestamp,
-    age = `Wie alt sind Sie?`,
+    time   = Timestamp,
+    age    = `Wie alt sind Sie?`,
     gender = `Was ist Ihr Geschlecht?`,
-    vote = `Wenn nächsten Sonntag Wahl wäre, welche Partei würden Sie wählen?`) %>%
+    party  = `Wenn nächsten Sonntag Wahl wäre, welche Partei würden Sie wählen?`) %>%
   mutate(
     sentence = gsub("a(.)\\.(.)", "\\1", response),
     a.index  = gsub("a(.)\\.(.)", "\\2", response)) %>%
   select(-response) %>%
-  select(subj, time, sentence, a.index, attr, age, gender, vote) -> d1
+  select(subj, time, sentence, a.index, attr, age, gender, party) -> d1
 
 read_csv("../data/responses_2.csv") %>%
   mutate(subj = 1:n()) %>%
@@ -47,15 +49,15 @@ read_csv("../data/responses_2.csv") %>%
     a4.4 = `Eigenschaft #4...9`) %>%
   pivot_longer(2:9, names_to="response", values_to="attr") %>%
   rename(
-    time = Timestamp,
-    age = `Wie alt sind Sie?`,
+    time   = Timestamp,
+    age    = `Wie alt sind Sie?`,
     gender = `Was ist Ihr Geschlecht?`,
-    vote = `Wenn nächsten Sonntag Wahl wäre, welche Partei würden Sie wählen?`) %>%
+    party  = `Wenn nächsten Sonntag Wahl wäre, welche Partei würden Sie wählen?`) %>%
   mutate(
     sentence = gsub("a(.)\\.(.)", "\\1", response),
     a.index  = gsub("a(.)\\.(.)", "\\2", response)) %>%
   select(-response) %>%
-  select(subj, time, sentence, a.index, attr, age, gender, vote) -> d2
+  select(subj, time, sentence, a.index, attr, age, gender, party) -> d2
 
 rbind(d1, d2) %>%
   mutate(attr = str_squish(attr),
@@ -140,15 +142,61 @@ nrow(p2)
 
 intersect(p1$participant_id, p2$participant_id) %>% length()
 
-# Demographics:
+# Participant demographics:
+
+library(stringdist)
 
 d %>%
-  select(subj, age, gender, vote) %>%
+  select(subj, age, gender, party) %>%
+  mutate(party = str_squish(party)) %>%
   unique() -> x
 
-hist(x$age)
-table(x$gender)
-table(x$vote)
+stringdistmatrix(x$party, names(colors.party), method="jw") -> m
+
+x$party2 <- names(colors.party)[apply(m, 1, which.min)]
+
+## Age:
+
+ggplot(x, aes(age)) +
+  geom_histogram(breaks=seq(0, 100, 3)) +
+  scale_x_continuous("Age",
+    limits=c(0, 100),
+    breaks=seq(0, 100, 10)) +
+  scale_y_continuous(
+    breaks=seq(0, 100, 2)) +
+  geom_vline(xintercept=18, col="red") -> p.age
+
+## Gender:
+
+x %>%
+  group_by(gender) %>%
+  summarize(count=n()) %>%
+  arrange(desc(count)) %>%
+  mutate(gender=factor(gender,
+                     levels=move.to.end(gender, "keine Angabe"),
+                     labels=move.to.end(gender, "keine Angabe"))) %>%
+  ggplot(aes(x=gender, y=count, fill=gender)) +
+  geom_bar(stat="identity", width=1, color="white") +
+  scale_x_discrete("Gender") +
+  scale_fill_manual(values=colors.gender) +
+  theme(axis.text.x=element_text(angle = 45, hjust=1),
+        legend.position="none") -> p.gender
+
+## Party:
+
+x %>%
+  group_by(party) %>%
+  summarize(count=n()) %>%
+  arrange(desc(count)) %>%
+  mutate(party=factor(party, levels=party, labels=party)) %>%
+  ggplot(aes(x=party, y=count, fill=party)) +
+  geom_bar(stat="identity", width=1, color="white") +
+  scale_fill_manual(values=colors.party) +
+  scale_x_discrete("Party") +
+  theme(axis.text.x=element_text(angle = 45, hjust=1),
+        legend.position="none") -> p.party
+
+p.age + p.gender + p.party
 
 # Annotation to develop scales:
 
