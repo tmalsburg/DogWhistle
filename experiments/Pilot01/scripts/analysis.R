@@ -1,10 +1,14 @@
-# set working directory to directory of script
-this.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
-setwd(this.dir)
 
 library(tidyverse)
 library(magrittr)
 
+# Set working directory to directory of script:
+
+tryCatch(
+  setwd(dirname(rstudioapi::getSourceEditorContext()$path)),
+  error = function(e) setwd("experiments/Pilot01/scripts/"))
+
+# Read data and whip into shape:
 
 read_csv("../data/Einschätzungen_zu_Politikern_1.csv") %>%
   filter(Timestamp != "2022/02/14 10:40:56 AM GMT+1") %>%  # That's Titus' test run.
