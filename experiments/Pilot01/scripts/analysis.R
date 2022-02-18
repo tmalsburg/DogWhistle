@@ -69,38 +69,6 @@ d %>%
   arrange(-count) %>%
   write_csv(file="../generated/data/attribute_ranking_overall.csv")
 
-<<<<<<< HEAD
-# annotation to develop scales ----
-
-d <- read_csv(file="../generated/data/attribute_ranking_overall.csv")
-View(d)
-# visual inspection of the named properties (at least 2 mentions) suggests the following scales
-# Question to participants: Wie...ist der Sprecher? (gar nicht...total)
-alt <- c("jung") 
-fortschrittlich <- c("konservativ", "traditionell", "altmodisch", "progressiv","bürgerlich","rückwärtsgewandt", "zukunftsorientiert", "weitsichtig", "vorausschauend", "zukunftsgewand")
-rassistisch <- c("patriotisch", "patriotistisch", "nationalistisch", "rechts", "rassistisch", "rechts/konservativ","xenophob")
-ehrlich <- c("ehrlich","souverän","heuchlerisch","verantwortungsvoll", "zuverlässig", "vernünftig","kalkulierend")
-hilfsbereit <- c("sozial","fair","altruistisch","geizig","intolerant","unmenschlich","offen", "verschlossen", "abweisend", "egoistisch", "engstirnig", "ausschliessend","streng", "strikt", "dominant")
-intelligent <- c("intelligent","gebildet","klug","kompetent","erfahren", "selbstsicher")
-christlich <- c("christlich")
-freundlich <- c("freundlich, nett, unfreundlich","unsympatisch","kalt","schroff", "sympatisch","warm","kritisch","zuversichtlich")
-
-## properties that don't appear relevant (e.g., about a different topic, not about the speaker)
-irrelevant <- c("unkonventionell","stärkend","langweilig", "nichtssagend","nachhaltig","redegewandt","fokussiert","kinderlieb","familiär","familienmensch","familienorientiert","familienfreundlich","kinderfreundlich","umweltbewusst","bürokratisch", "juristisch","realistisch", "informiert", "mitdenkend")
-
-d$scale <- ifelse(d$attr %in% alt, "alt",
-                  ifelse(d$attr %in% fortschrittlich, "fortschrittlich",
-                         ifelse(d$attr %in% rassistisch, "rassistisch",
-                                ifelse(d$attr %in% ehrlich, "ehrlich",
-                                       ifelse(d$attr %in% hilfsbereit, "hilfsbereit",
-                                              ifelse(d$attr %in% intelligent, "intelligent",
-                                                     ifelse(d$attr %in% religioes, "christlich",
-                                                            ifelse(d$attr %in% freundlich, "freundlich", 
-                                                                   "other"))))))))
-
-=======
->>>>>>> bfc5b93f515cc22a0fb8af3bb91374498213b318
-
 # Ranking by item:
 
 d %>%
@@ -194,7 +162,7 @@ rassistisch     <- c("patriotisch", "patriotistisch", "nationalistisch", "rechts
 ehrlich         <- c("ehrlich", "souverän", "heuchlerisch", "verantwortungsvoll", "zuverlässig", "vernünftig", "kalkulierend")
 hilfsbereit     <- c("sozial", "fair", "altruistisch", "geizig", "intolerant", "unmenschlich", "offen", "verschlossen", "abweisend", "egoistisch", "engstirnig", "ausschliessend", "streng", "strikt", "dominant")
 intelligent     <- c("intelligent", "gebildet", "klug", "kompetent", "erfahren", "selbstsicher")
-religioes       <- c("christlich")
+christlich      <- c("christlich")
 freundlich      <- c("freundlich, nett, unfreundlich", "unsympatisch", "kalt", "schroff", "sympatisch", "warm", "kritisch", "zuversichtlich")
 
 # Properties that don't appear relevant (e.g., about a different
