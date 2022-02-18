@@ -196,7 +196,9 @@ x %>%
   theme(axis.text.x=element_text(angle = 45, hjust=1),
         legend.position="none") -> p.party
 
+pdf("../generated/plots/demographics.pdf", 12, 4)
 p.age + p.gender + p.party
+dev.off()
 
 # Annotation to develop scales:
 
