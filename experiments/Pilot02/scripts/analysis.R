@@ -1,12 +1,14 @@
 
-library(tidyverse)
-library(magrittr)
-
 # Set working directory to directory of script:
 
 tryCatch(
   setwd(dirname(rstudioapi::getSourceEditorContext()$path)),
   error = function(e) setwd("experiments/Pilot02/scripts/"))
+
+# Load general definitions (also loads standard packages such as
+# tidyverse):
+
+source("../../../scripts/general.R")
 
 # Read data and whip into shape:
 
@@ -37,10 +39,69 @@ rbind(
          age             = `Wie alt sind Sie?`,
          gender          = `Ihr Geschlecht`,
          education       = `Was ist Ihr höchster Bildungsabschluss?`,
-         vote            = `Wenn am Sonntag Bundestagswahl wäre, welche Partei würden Sie wählen?`,
+         party           = `Wenn am Sonntag Bundestagswahl wäre, welche Partei würden Sie wählen?`,
          wom.refugees    = `Wie bewerten Sie persönlich folgende Aussage: “Das Recht anerkannter Flüchtlinge auf Familiennachzug soll abgeschafft werden.”`,
          wom.headscarf   = `Wie bewerten Sie persönlich folgende Aussage: “Das Tragen eines Kopftuchs soll Beamtinnen im Dienst generell erlaubt sein.”`,
          wom.citizenship = `Wie bewerten Sie persönlich folgende Aussage: “In Deutschland soll es generell möglich sein, neben der deutschen eine zweite Staatsbürgerschaft zu haben.”`,
          wom.islam       = `Wie bewerten Sie persönlich folgende Aussage: “Islamische Verbände sollen als Religionsgemeinschaften staatlich anerkannt werden können.”`,
          wom.asylum      = `Wie bewerten Sie persönlich folgende Aussage: “Asyl soll weiterhin nur politisch Verfolgten gewährt werden.”`,
          comment         = `Haben Sie Kommentare zu unserer Umfrage?`) -> d
+
+# Participant demographics:
+
+library(stringdist)
+
+d %>%
+  select(subj, age, gender, party) %>%
+  mutate(party = str_squish(party)) %>%
+  unique() -> x
+
+stringdistmatrix(x$party, names(colors.party), method="jw") -> m
+
+x$party <- names(colors.party)[apply(m, 1, which.min)]
+
+## Age:
+
+ggplot(x, aes(age)) +
+  geom_histogram(breaks=seq(0, 100, 3)) +
+  scale_x_continuous("Age",
+    limits=c(0, 100),
+    breaks=seq(0, 100, 10)) +
+  scale_y_continuous(
+    breaks=seq(0, 100, 2)) +
+  geom_vline(xintercept=18, col="red") -> p.age
+
+## Gender:
+
+x %>%
+  group_by(gender) %>%
+  summarize(count=n()) %>%
+  arrange(desc(count)) %>%
+  mutate(gender=factor(gender,
+                     levels=move.to.end(gender, "keine Angabe"),
+                     labels=move.to.end(gender, "keine Angabe"))) %>%
+  ggplot(aes(x=gender, y=count, fill=gender)) +
+  geom_bar(stat="identity", width=1, color="white") +
+  scale_x_discrete("Gender") +
+  scale_fill_manual(values=colors.gender) +
+  theme(axis.text.x=element_text(angle = 45, hjust=1),
+        legend.position="none") -> p.gender
+
+## Party:
+
+x %>%
+  group_by(party) %>%
+  summarize(count=n()) %>%
+  arrange(desc(count)) %>%
+  mutate(party=factor(party,
+                     levels=move.to.end(party, "keine Angabe"),
+                     labels=move.to.end(party, "keine Angabe"))) %>%
+  ggplot(aes(x=party, y=count, fill=party)) +
+  geom_bar(stat="identity", width=1, color="white") +
+  scale_fill_manual(values=colors.party) +
+  scale_x_discrete("Party") +
+  theme(axis.text.x=element_text(angle = 45, hjust=1),
+        legend.position="none") -> p.party
+
+p.age + p.gender + p.party
+
