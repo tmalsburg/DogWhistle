@@ -1,10 +1,14 @@
-# set working directory to directory of script
-this.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
-setwd(this.dir)
 
 library(tidyverse)
 library(magrittr)
 
+# Set working directory to directory of script:
+
+tryCatch(
+  setwd(dirname(rstudioapi::getSourceEditorContext()$path)),
+  error = function(e) setwd("experiments/Pilot01/scripts/"))
+
+# Read data and whip into shape:
 
 read_csv("../data/Einschätzungen_zu_Politikern_1.csv") %>%
   filter(Timestamp != "2022/02/14 10:40:56 AM GMT+1") %>%  # That's Titus' test run.
@@ -65,6 +69,7 @@ d %>%
   arrange(-count) %>%
   write_csv(file="../generated/data/attribute_ranking_overall.csv")
 
+<<<<<<< HEAD
 # annotation to develop scales ----
 
 d <- read_csv(file="../generated/data/attribute_ranking_overall.csv")
@@ -93,6 +98,8 @@ d$scale <- ifelse(d$attr %in% alt, "alt",
                                                             ifelse(d$attr %in% freundlich, "freundlich", 
                                                                    "other"))))))))
 
+=======
+>>>>>>> bfc5b93f515cc22a0fb8af3bb91374498213b318
 
 # Ranking by item:
 
@@ -173,4 +180,35 @@ hist(x$age)
 table(x$gender)
 table(x$vote)
 
+# Annotation to develop scales:
 
+d <- read_csv(file="../generated/data/attribute_ranking_overall.csv")
+
+# Visual inspection of the named properties (at least 2 mentions)
+# suggests the following scales:
+# Question to participants: Wie...ist der Sprecher? (gar nicht...total)
+
+alt             <- c("jung")
+fortschrittlich <- c("konservativ", "traditionell", "altmodisch", "progressiv", "bürgerlich", "rückwärtsgewandt", "zukunftsorientiert", "weitsichtig", "vorausschauend", "zukunftsgewand")
+rassistisch     <- c("patriotisch", "patriotistisch", "nationalistisch", "rechts", "rassistisch", "rechts/konservativ", "xenophob")
+ehrlich         <- c("ehrlich", "souverän", "heuchlerisch", "verantwortungsvoll", "zuverlässig", "vernünftig", "kalkulierend")
+hilfsbereit     <- c("sozial", "fair", "altruistisch", "geizig", "intolerant", "unmenschlich", "offen", "verschlossen", "abweisend", "egoistisch", "engstirnig", "ausschliessend", "streng", "strikt", "dominant")
+intelligent     <- c("intelligent", "gebildet", "klug", "kompetent", "erfahren", "selbstsicher")
+religioes       <- c("christlich")
+freundlich      <- c("freundlich, nett, unfreundlich", "unsympatisch", "kalt", "schroff", "sympatisch", "warm", "kritisch", "zuversichtlich")
+
+# Properties that don't appear relevant (e.g., about a different
+# topic, not about the speaker):
+
+irrelevant <- c("unkonventionell","stärkend","langweilig", "nichtssagend","nachhaltig","redegewandt","fokussiert","kinderlieb","familiär","familienmensch","familienorientiert","familienfreundlich","kinderfreundlich","umweltbewusst","bürokratisch", "juristisch","realistisch", "informiert", "mitdenkend")
+
+d$scale <- with(d, case_when(
+  attr %in% alt             ~ "alt",
+  attr %in% fortschrittlich ~ "fortschrittlich",
+  attr %in% rassistisch     ~ "rassistisch",
+  attr %in% ehrlich         ~ "ehrlich",
+  attr %in% hilfsbereit     ~ "hilfsbereit",
+  attr %in% intelligent     ~ "intelligent",
+  attr %in% religioes       ~ "religioes",
+  attr %in% freundlich      ~ "freundlich",
+  TRUE                        ~ "other"))
