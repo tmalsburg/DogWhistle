@@ -20,7 +20,7 @@ Two Google forms:
 2. https://docs.google.com/forms/d/1-Z-3APJWdMD13HwqlC-FhvDjaGhsTYtPybdqlZKYcTw/edit
 
 # Participants
-Data collection was on Prolific.  Filters were:
+Data collection was on Prolific.  30 participants for each form.  Filters were:
 - native language German
 - resides in Germany
 - didn’t live abroad for more than 6 months
