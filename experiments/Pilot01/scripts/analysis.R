@@ -77,7 +77,7 @@ rassistisch <- c("patriotisch", "patriotistisch", "nationalistisch", "rechts", "
 ehrlich <- c("ehrlich","souverän","heuchlerisch","verantwortungsvoll", "zuverlässig", "vernünftig","kalkulierend")
 hilfsbereit <- c("sozial","fair","altruistisch","geizig","intolerant","unmenschlich","offen", "verschlossen", "abweisend", "egoistisch", "engstirnig", "ausschliessend","streng", "strikt", "dominant")
 intelligent <- c("intelligent","gebildet","klug","kompetent","erfahren", "selbstsicher")
-religioes <- c("christlich")
+christlich <- c("christlich")
 freundlich <- c("freundlich, nett, unfreundlich","unsympatisch","kalt","schroff", "sympatisch","warm","kritisch","zuversichtlich")
 
 ## properties that don't appear relevant (e.g., about a different topic, not about the speaker)
@@ -89,7 +89,7 @@ d$scale <- ifelse(d$attr %in% alt, "alt",
                                 ifelse(d$attr %in% ehrlich, "ehrlich",
                                        ifelse(d$attr %in% hilfsbereit, "hilfsbereit",
                                               ifelse(d$attr %in% intelligent, "intelligent",
-                                                     ifelse(d$attr %in% religioes, "religioes",
+                                                     ifelse(d$attr %in% religioes, "christlich",
                                                             ifelse(d$attr %in% freundlich, "freundlich", 
                                                                    "other"))))))))
 
