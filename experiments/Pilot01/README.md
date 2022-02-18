@@ -39,7 +39,7 @@ Based on visual inspection, Judith identified the following dimensions:
 4. ehrlich: ehrlich, souverän, heuchlerisch, verantwortungsvoll, zuverlässig, vernünftig, kalkulierend
 5. hilfsbereit: sozial, fair, altruistisch, geizig, intolerant, unmenschlich, offen, verschlossen, abweisend, egoistisch, engstirnig, ausschliessend, streng, strikt, dominant
 6. intelligent: intelligent, gebildet, klug, kompetent, erfahren, selbstsicher
-7. religiös: christlich
+7. christlich: christlich
 8. freundlich: freundlich, nett, unfreundlich, unsympatisch, kalt, schroff, sympatisch, warm, kritisch, zuversichtlich
 
 Properties that don't appear relevant (e.g., about a different topic, not about the speaker): unkonventionell, stärkend, langweilig, nichtssagend, nachhaltig, redegewandt, fokussiert, kinderlieb, familiär, familienmensch, familienorientiert, familienfreundlich, kinderfreundlich, umweltbewusst, bürokratisch, juristisch, realistisch, informiert, mitdenkend.
