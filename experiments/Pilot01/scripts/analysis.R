@@ -10,7 +10,7 @@ tryCatch(
 
 # Read data and whip into shape:
 
-read_csv("../data/Einschätzungen_zu_Politikern_1.csv") %>%
+read_csv("../data/responses_1.csv") %>%
   filter(Timestamp != "2022/02/14 10:40:56 AM GMT+1") %>%  # That's Titus' test run.
   mutate(subj = 1:n()) %>%
   rename(
@@ -34,7 +34,7 @@ read_csv("../data/Einschätzungen_zu_Politikern_1.csv") %>%
   select(-response) %>%
   select(subj, time, sentence, a.index, attr, age, gender, vote) -> d1
 
-read_csv("../data/Einschätzungen_zu_Politikern_2.csv") %>%
+read_csv("../data/responses_2.csv") %>%
   mutate(subj = 1:n()) %>%
   rename(
     a3.1 = `Eigenschaft #1...2`,
@@ -160,9 +160,9 @@ d %>%
 
 # Participant overlap:
 
-read_delim("../data/study1_participants.csv", delim=";") %>%
+read_delim("../data/participants_1.csv", delim=";") %>%
   filter(status=="APPROVED") -> p1
-read_delim("../data/study2_participants.csv", delim=";") %>%
+read_delim("../data/participants_2.csv", delim=";") %>%
   filter(status=="APPROVED") -> p2
 
 nrow(p1)
@@ -211,4 +211,4 @@ d$scale <- with(d, case_when(
   attr %in% intelligent     ~ "intelligent",
   attr %in% religioes       ~ "religioes",
   attr %in% freundlich      ~ "freundlich",
-  TRUE                        ~ "other"))
+  TRUE                      ~ "other"))
