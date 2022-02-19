@@ -45,6 +45,12 @@ The analysis is [here](scripts/analysis.R).
 
 # Key findings
 
+Question 1: What’s the impact of (presumed) dog whistles on how a hypothetical politician is evaluated?
+- [Plots](generated/plots/social_dimensions.pdf)
+- Summary: Dog whistles affects some dimensions (age, progressiveness, racism) but not much in others (christianity, friendlyness).  The clearest in effect is seen in party affiliation.  The effects differ depending on item.  For instance, the politician is perceived as older in the Kinder item, but there was no age difference in the Staatsbürgerschaft item (even in the control condition the age was estimated to be high, perhaps ceiling effect).
+
 # Obvervations, open problems, ideas
+
+- A next step should be to show that the evaluation depends on not just the use of a dog whistles but also on the participant’s identity.  However, the present data set likely provides insufficient data for that (very few conservative participants).  There are also many different ways in which such an analysis could be approached.  Need to think about which is most promising.
 
 
