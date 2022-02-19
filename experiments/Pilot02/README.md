@@ -37,6 +37,9 @@ Data collection was on Prolific.  30 participants for each form.  Filters were:
 - didn’t live abroad for more than 6 months
 - People who participated in previous pilots?
 
+## Demographics
+![demographics](generated/plots/demographics.png)
+
 # Analysis
 The analysis is [here](scripts/analysis.R).
 

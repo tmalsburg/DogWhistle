@@ -27,6 +27,9 @@ Data collection was on Prolific.  30 participants for each form.  Filters were:
 
 Note: That participation in part (form 1) was not an exclusion criterion for the participation in the other part (form 2).  14 participants (or so) did both forms, which likely influenced the results (dog whistle more obvious in form 2).
 
+## Demographics
+![demographics](generated/plots/demographics.png)
+
 # Analysis
 The analysis is [here](scripts/analysis.R).
 

@@ -60,8 +60,6 @@ stringdistmatrix(x$party, names(colors.party), method="jw") -> m
 
 x$party <- names(colors.party)[apply(m, 1, which.min)]
 
-pdf("../generated/plots/demographics.pdf", 12, 4)
-plot.demographics(x)
-dev.off()
-
+ggsave("../generated/plots/demographics.pdf", plot.demographics(x), width=21, height=7, unit="cm")
+ggsave("../generated/plots/demographics.png", plot.demographics(x), width=1500, height=500, unit="px", dpi=150)
 
