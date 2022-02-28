@@ -12,6 +12,7 @@ source("../../../scripts/general.R")
 
 # Read data and whip into shape:
 
+
 rbind(
   read_csv("../data/responses_1.csv") %>% mutate(list=1),
   read_csv("../data/responses_2.csv") %>% mutate(list=2)) %>%
@@ -65,14 +66,14 @@ d %>%
 rbind(d1, d2) %>%
   arrange(subj, sentence) %>%
   mutate(
-    sentence.label = ifelse(sentence==1, "Kinder", "Staatsbürgerschaft")) -> d
+    sentence.label = ifelse(sentence==1, "Zukunft-unseres-Volkes", "Aufnahme-in-dt-Staatsvolk")) -> d
 
 # Participant demographics:
 
 library(stringdist)
 
 d %>%
-  select(subj, age, gender, party) %>%
+  select(subj, age, gender, education, party) %>%
   mutate(party = str_squish(party)) %>%
   unique() -> x
 
@@ -80,8 +81,61 @@ stringdistmatrix(x$party, names(colors.party), method="jw") -> m
 
 x$party <- names(colors.party)[apply(m, 1, which.min)]
 
-ggsave("../generated/plots/demographics.pdf", plot.demographics(x), width=21, height=7, unit="cm")
+ggsave("../generated/plots/demographics.pdf", plot.demographics(x), width=20, height=10, unit="cm")
 ggsave("../generated/plots/demographics.png", plot.demographics(x), width=1500, height=500, unit="px", dpi=150)
+
+# Do the Wahlomat questions correlate with the party that the participants would have voted for?
+
+d %>%
+  select(subj, age, gender, party,wom.citizenship,wom.refugees,wom.headscarf,wom.asylum,wom.islam) %>%
+  mutate(party = str_squish(party)) %>%
+  unique() -> x
+
+stringdistmatrix(x$party, names(colors.party), method="jw") -> m
+
+x$party <- names(colors.party)[apply(m, 1, which.min)]
+
+c("CDU"                  = "black",
+  "SPD"                  = "red",
+  "AfD"                  = "blue",
+  "FDP"                  = "yellow",
+  "Linke"                = "purple",
+  "Grüne"                = "darkgreen",
+  "Die Partei"           = "#B92837",
+  "Humanisten"           = "#d90368",
+  "Volt"                 = "#562883",
+  "keine Angabe"         = "grey") -> colors.party
+
+ggplot(x,aes(x=wom.citizenship, fill=party)) +
+  geom_bar(stat="count", width=1) +
+  scale_fill_manual(values=colors.party) + 
+  scale_x_discrete("In Deutschland soll es generell möglich sein, neben der deutschen eine zweite Staatsbürgerschaft zu haben.")
+ggsave("../generated/plots/wom.citizenship-by-party.pdf",height=4,width=9)
+
+
+ggplot(x,aes(x=wom.refugees , fill=party)) +
+  geom_bar(stat="count", width=1) +
+  scale_fill_manual(values=colors.party) + 
+  scale_x_discrete("Asyl soll weiterhin nur politisch Verfolgten gewährt werden.")
+ggsave("../generated/plots/wom.refugees-by-party.pdf",height=4,width=9)
+
+ggplot(x,aes(x=wom.headscarf , fill=party)) +
+  geom_bar(stat="count", width=1) +
+  scale_fill_manual(values=colors.party) + 
+  scale_x_discrete("Das Tragen eines Kopftuchs soll Beamtinnen im Dienst generell erlaubt sein.")
+ggsave("../generated/plots/wom.headscarf-by-party.pdf",height=4,width=9)
+
+ggplot(x,aes(x=wom.islam , fill=party)) +
+  geom_bar(stat="count", width=1) +
+  scale_fill_manual(values=colors.party) + 
+  scale_x_discrete("Islamische Verbände sollen als Religionsgemeinschaften staatlich anerkannt werden können.")
+ggsave("../generated/plots/wom.islam-by-party.pdf",height=4,width=9)
+
+ggplot(x,aes(x=wom.asylum , fill=party)) +
+  geom_bar(stat="count", width=1) +
+  scale_fill_manual(values=colors.party) + 
+  scale_x_discrete("Das Recht anerkannter Flüchtlinge auf Familiennachzug soll abgeschafft werden.")
+ggsave("../generated/plots/wom.asylum-by-party.pdf",height=4,width=9)
 
 # Analysis:
 
@@ -98,7 +152,7 @@ d %>%
   mutate(p = n / sum(n)) %>%
   ggplot(aes(page, p)) +
   geom_col() +
-  scale_x_discrete("Politician Age") +
+  scale_x_discrete("How old (alt) is the politician?") +
   scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
   facet_grid(vars(dog.whistle), vars(sentence.label))
 
@@ -110,7 +164,7 @@ d %>%
   mutate(p = n / sum(n)) %>%
   ggplot(aes(pprog, p)) +
   geom_col() +
-  scale_x_discrete("Politician Progressive") +
+  scale_x_discrete("How progressive (fortschrittlich) is the politician?") +
   scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
   facet_grid(vars(dog.whistle), vars(sentence.label))
 
@@ -122,7 +176,7 @@ d %>%
   mutate(p = n / sum(n)) %>%
   ggplot(aes(pracism, p)) +
   geom_col() +
-  scale_x_discrete("Politician Racism") +
+  scale_x_discrete("How racist (rassistisch) is the politician?") +
   scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
   facet_grid(vars(dog.whistle), vars(sentence.label))
 
@@ -134,7 +188,7 @@ d %>%
   mutate(p = n / sum(n)) %>%
   ggplot(aes(phonesty, p)) +
   geom_col() +
-  scale_x_discrete("Politician Honesty") +
+  scale_x_discrete("How honest (ehrlich) is the politician?") +
   scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
   facet_grid(vars(dog.whistle), vars(sentence.label))
 
@@ -146,7 +200,7 @@ d %>%
   mutate(p = n / sum(n)) %>%
   ggplot(aes(phelpful, p)) +
   geom_col() +
-  scale_x_discrete("Politician Helpfulness") +
+  scale_x_discrete("How helpful (hilfsbereit) is the politician?") +
   scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
   facet_grid(vars(dog.whistle), vars(sentence.label))
 
@@ -158,7 +212,7 @@ d %>%
   mutate(p = n / sum(n)) %>%
   ggplot(aes(pintel, p)) +
   geom_col() +
-  scale_x_discrete("Politician Intelligence") +
+  scale_x_discrete("How intelligent (intelligent) is the politician?") +
   scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
   facet_grid(vars(dog.whistle), vars(sentence.label))
 
@@ -170,7 +224,7 @@ d %>%
   mutate(p = n / sum(n)) %>%
   ggplot(aes(pchristian, p)) +
   geom_col() +
-  scale_x_discrete("Politician Christianity") +
+  scale_x_discrete("How christian (christlich) is the politician?") +
   scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
   facet_grid(vars(dog.whistle), vars(sentence.label))
 
@@ -182,7 +236,7 @@ d %>%
   mutate(p = n / sum(n)) %>%
   ggplot(aes(pfriendly, p)) +
   geom_col() +
-  scale_x_discrete("Politician Friendliness") +
+  scale_x_discrete("How friendly (freundlich) is the politician?") +
   scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
   facet_grid(vars(dog.whistle), vars(sentence.label))
 
@@ -195,7 +249,7 @@ d %>%
   ggplot(aes(pparty, p, fill=pparty)) +
   geom_col() +
   scale_fill_manual(values=colors.party) +
-  scale_x_discrete("Politician Party") +
+  scale_x_discrete("To which party does the politican belong?") +
   scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
   theme(axis.text.x=element_text(angle = 45, hjust=1),
         legend.position="none") +

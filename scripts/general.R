@@ -79,7 +79,23 @@ plot.demographics <- function(x) {
     scale_x_discrete("Party") +
     theme(axis.text.x=element_text(angle = 45, hjust=1),
           legend.position="none") -> p.party
+  
+  ## Education:
+  
+  x %>%
+    group_by(education) %>%
+    summarize(count=n()) %>%
+    arrange(desc(count)) %>%
+    mutate(education=factor(education,
+                        levels=move.to.end(education, "keine Angabe"),
+                        labels=move.to.end(education, "keine Angabe"))) %>%
+    ggplot(aes(x=education, y=count, fill=education)) +
+    geom_bar(stat="identity", width=1, color="white") +
+    #scale_fill_manual(values=color.education) +
+    scale_x_discrete("Education") +
+    theme(axis.text.x=element_text(angle = 45, hjust=1),
+          legend.position="none") -> p.education  
 
-  p.age + p.gender + p.party
+  p.age + p.gender + p.party + p.education
 
 }

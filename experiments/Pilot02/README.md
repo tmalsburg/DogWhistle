@@ -35,7 +35,7 @@ Data collection was on Prolific.  30 participants for each form.  Filters were:
 - native language German
 - resides in Germany
 - didn’t live abroad for more than 6 months
-- People who participated in previous pilots?
+- People who participated in previous pilots
 
 ## Demographics
 ![demographics](generated/plots/demographics.png)
@@ -47,7 +47,7 @@ The analysis is [here](scripts/analysis.R).
 
 Question 1: What’s the impact of (presumed) dog whistles on how a hypothetical politician is evaluated?
 - [Plots](generated/plots/social_dimensions.pdf)
-- Summary: Dog whistles affects some dimensions (age, progressiveness, racism) but not much in others (christianity, friendlyness).  The clearest in effect is seen in party affiliation.  The effects differ depending on item.  For instance, the politician is perceived as older in the Kinder item, but there was no age difference in the Staatsbürgerschaft item (even in the control condition the age was estimated to be high, perhaps ceiling effect).
+- Summary: Dog whistles affects some dimensions (age, progressiveness, racism) but not much in others (christianity, friendlyness).  The clearest in effect is seen in party affiliation.  The effects differ depending on item.  For instance, the politician is perceived as older in the Zukunft-unseres-Volkes item, but there was no age difference in the Aufnahme-in-dt-Staatsvolk item (even in the control condition the age was estimated to be high, perhaps ceiling effect).
 
 # Obvervations, open problems, ideas
 
