@@ -313,7 +313,7 @@ Merkel speaking out against individual groups appropriating the concept of the p
 - Summary:
   1. Presence of a taboo. 🗹
   2. Violation of maxim of quantity. 🗹
-  3. Meaning can be enriched with a controversial meaning that’s violating the taboo (i.e. literal meaning is not incompatible with implied meaning). 🗹
+  3. Meaning can be enriched with a controversial meaning that’s violating the taboo, i.e. literal meaning is not incompatible with pragmatically (not logically) implied meaning. 🗹
   4. Plausible deniability. 🗹
 - Observation: It’s not dogwhistly in the original sense because his outgroup immediately attacked him for this statement.  This is perhaps more an instance of political persuasion than covert communication.
 
