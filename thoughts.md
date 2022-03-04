@@ -1,3 +1,11 @@
+
+---
+header-includes: |
+            \usepackage{pifont}
+            \usepackage{newunicodechar}
+            \newunicodechar{🗹}{\ding{51}}
+---
+
 This file is a record of ongoing thinking about how to experimentally investigate dogwhistle content.
 
 A compiled PDF version can be found [here](https://github.com/tmalsburg/DogWhistle/blob/master/thoughts.pdf).
@@ -311,6 +319,17 @@ Merkel speaking out against individual groups appropriating the concept of the p
 - Klimadebatte
 - Covid-Skeptizismus, Debatten zur Impfpflicht
 - Stuttgart 21 Debatte?
+
+# Saxony’s prime minister Michael Kretschmer demands “vernünftiges Verhältniss zu Russland” (reasonable relationship with Russia).
+- https://www.zeit.de/news/2022-03/02/kretschmer-fordert-vernuenftiges-verhaeltnis-zu-russland?utm_referrer=https%3A%2F%2Fwww.google.com%2F
+- Pragmatic Analysis: The literal content is self-evidently true because nobody would argue for an unreasonable relationship to any country.  So there is a content gap / ambiguity / violation of maxim of quantity.  Intended meaning not clear.
+- Some might fill this gap with something like “we should not confront Russia over what they are doing in Ukraine”.  But this can’t be said explicitly in the first week of war, it’s a taboo.
+- Further, Kretschmer can claim plausible deniability and pretend that he meant something more benign than what his accusers are saying.
+- Summary:
+  1. Presence of a taboo. 🗹
+  2. Violation of maxim of quantity. 🗹
+  3. Meaning can be enriched with a controversial meaning that’s violating the taboo (i.e. literal meaning is not incompatible with implied meaning). 🗹
+  4. Plausible deniability. 🗹
 
 # References
 
