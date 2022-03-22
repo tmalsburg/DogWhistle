@@ -26,6 +26,16 @@ A compiled PDF version can be found [here](https://github.com/tmalsburg/DogWhist
 
 - May also inform research on de-biasing AI language models.  Current approaches seem simplistic and will let more subtle expressions slip through.  Potentially an interesting connection to work in computational linguistics $\Rightarrow$ idea for second stage of the SFB.  (Inspired by Anne Lauscher talk at IMS.)
 
+# Examples of dog whistles
+
+wonder-working power: Henderson/McCready 2019
+
+big pharma: Henderson/McCready 2019
+
+inner city: Henderson/McCready 2019, Stanley 2015
+
+welfare: Henderson/McCready 2019, Stanley 2015
+
 # Definitions of dog whistle content
 
 ## Merriam Webster
@@ -34,21 +44,88 @@ A compiled PDF version can be found [here](https://github.com/tmalsburg/DogWhist
 
 > An expression or statement that has a secondary meaning intended to be understood only by a particular group of people.
 
+## Stanley 2015 "How propaganda works", chapter 4
+
+> p.94: The third norma- tive ideal for public reason is that it is guided by equal respect for the perspective of everyone subject to the policy under de- bate. Following the recent political philosophy tradition, we shall call this the norm of reasonableness.
+
+> p.126: One moral of the previous chapter is that demagoguery in a liberal democracy takes the form of a contribution to public debate that is presented as embodying reasonableness yet in fact contributes a content that clearly erodes reasonableness. This form of propaganda is not merely a deceitful attempt to bypass theoretical rationality, on this view. It functions via an initial selection of a target within the population.
+
+> p.129: We should expect there to be linguistic means by use of which one can make an apparently reasonable claim, while simultaneously, merely by using the relevant vocabulary, wearing down the ideal of reasonableness.
+
+> p.138: One kind of linguistic propaganda involves repeated asso- ciation between words and social meanings. Repeated associ- ation is also the mechanism by which conventional meaning is formed; it is because people use “dogs” to refer to dogs, re- peatedly, that “dogs” comes to refer to dogs. My claim in this chapter is that when propagandists use repeated association between words and images, they are forming connections that serve as the basis of conventional meaning.
+
+> p.138: When the news media connects images of urban Blacks repeatedly with mentions of the term “welfare,” the term “wel- fare” comes to have the not-at-issue content that Blacks are lazy. At some point, the repeated associations are part of the mean- ing, the not-at-issue content. ... This does not mean that someone hearing the term “welfare” automatically comes to believe that Blacks are lazy. It does mean that they may have to shift to different vo- cabulary, or consciously resist the effects of the association, in conversation or otherwise, to deter the propagandistic effect.
+
+> p.139: The fact that the not-at-issue content cannot be can- celed is what makes it so effective.
+
+> p.140: According to the content model, one kind of paradigmatic propaganda in a liberal democracy would have a normal at-issue content that seems reasonable, and would also have a not-at-issue content that is not reasonable. Here is another way of thinking of the mechanism by which a contribution could lead to an erosion of empathy for a group. The contribution could express a perfectly ordinary at-issue content, but cause a decrease in empathy or respect directly, as part of its not-at-issue function. The idea here is not, as on the content model of propaganda, that there is a not-at-issue content, acceptance of which decreases empathy for a group. It is rather that words have direct not-at-issue emo- tional effects. Let us call this the expressive model of propaganda. According to the expressive model, one kind of paradigmatic propaganda in a liberal democracy would have a normal at- issue content that seems reasonable, and would also have a not-at-issue effect that would decrease empathy for a group. Since decreasing empathy for a group runs counter to reason- ability, its not-at-issue effects would be unreasonable.
+
+> p.151f: not only politics but also ev- eryday discourse involve apparently innocent words that have the feature of slurs, namely, that whenever the words occur in a sentence, they convey the problematic content. The word “welfare,” in the American context, is not on any list of prohib- ited words. Yet the word “welfare” always conveys a problem- atic social meaning, whenever it is used. A sentence like “John believes that Bill is on welfare” still communicates a problem- atic social meaning.
+
+> p.154: Mendelberg and her Princeton colleague Martin Gilens have both studied the effects of the use of the term “welfare” on political opinions. They have discovered that the use of the term “welfare” leads to a priming of white racial bias. In other words, the mere use of “welfare,” and presumably also “food stamps,” as well as some other expressions referencing social spending programs, primes racial bias against Blacks. A con- clusion from this research is that “any allusion to a racially tinged issue like welfare may racialize a campaign, even if it alludes to white recipients.”30 Most interestingly for the topic of slurs, Mendelberg, via a compelling experiment with non- students in Michigan, shows that the racial-bias effects actu- ally decrease if a candidate’s message is made explicitly racial in character.
+
+> p.156: On the picture I am sketching, certain words are imbued, by a mechanism of repeated association, with problematic im- ages or stereotypes. One can use these words to express ordi- nary contents, and explicitly deny complicity with the associ- ated problematic image or stereotype. ... Gingrich was allowed to act responsible just for the at-issue content of his utterance, and feign ignorance of the racial overtones of the expressions.
+
+> p.157f: Propaganda character- istically involves attaching problematic social meanings to seemingly innocuous words that are used to describe policy, in effect making the word “welfare” like the word “prostitution.” The social meanings of these words are not-at-issue content. Because they are not-at-issue contents, they are “not negotia- ble, not directly challengeable, and are added [to the common ground] even if the at-issue proposition is rejected.” In short, even evaluating the proposal means that one must accept the social meaning. It is odd to challenge the social meaning; the social meaning associated with a word is accepted even if the claim made with the associated word is rejected.
+
+> p.165: When President Obama is described as being Muslim, the not-at-issue content, or social meaning, of the use of the term “Muslim” is of course related to terrorism, or some kind of anti-American sentiment. This is an attempt to challenge the president’s sincerity,
+
+
 ## \textcite[][p. 2]{HendersonMcCready2019}
 
-> language that sends one message to an outgroup while at the same time sending a second (often taboo, controversial, or inflammatory) message to an in group
+> language that sends one message to an outgroup while at the same time sending a second (often taboo, controversial, or inflammatory) message to an ingroup
 
 But even people in the outgroup may recognize the message. 
 
+> In broad strokes, we make the novel proposal that dogwhistles come in two types. The first concerns covert signals that the speaker has a certain persona...The second involves sending a message with an enriched meaning whose recovery is contingent on recognizing the speaker’s covertly signalled persona
+
+> The use of dogwhistles is prompted by a desire to ‘veil’ a bit of content, but still to convey it in some manner. Deniability is essential. If a bit of content is conventional, it’s not deniable any longer.
+
+> ``What do you have against...?'' diagnostic in (7) and (8); problem: does (8) give rise to DW content? Also: ``It's not cool to say Z'' -- ``I didn't say Z'' diagnostic on p.4.
+
+> Dogwhistles, by definition, are not needed when talking to an in-group and can be disposed of, which wouldn’t make sense if the subtext of dogwhistle were part of its conventional meaning for the in-group.
+
+> (i) dogwhistles are not part of conventional content, so speakers are able to avoid (complete) responsibility for what they convey, (ii) dogwhistles are semi-cooperative—that is, they are meant to convey part of their meaning to to only one segment of the audience while hiding it from the rest of the audience, and (iii) while deniable, dogwhistles are risky. Being detected using a dogwhistle by the wrong party should cost the speaker in some way.
+
+> knowledge about social personae can play a role in recovering intended meanings
+
+> a broader continuum of cases in which the rational use of language is utilized or manipulated by speakers for reasons of strategy, efficiency, or style
+
+> Dogwhistles share with conversational implicatures the property of being can- cellable (deniable), but differ from standard views of them in not following from anything but an extremely nonstandard construal of the Gricean maxims Grice 1975.
+
+> their interpretation arises from background assumptions about social meaning and how personae are linguistically expressed makes them quite different from ordinary implicatures. They are simultaneously conventional and socially dependent. In this sense, dogwhistles seem to occupy a genuinely new niche in the characterization of not-at-issue meaning.
+
+> There is a sense in which dogwhistles are an ubiquitous phenomenon: much communication involves underspecified meanings which can in part be resolved by learning more about the speaker and her intentions. Informa- tion about social categories often informs how such underspecification is resolved, but possibly in quite different ways in different contexts; this area is also a rich and complex one ripe for investigation.
+
+
 ## \textcite[][footnote]{Khoo2017}
 
-> Code words are sometimes called “dog whistles” because (so the received view goes) they involve sending a message that can only be heard by audience members with suitably sensitive ears. Richard Morin is credited with introducing the term. He writes, “Subtle changes in question-wording sometimes produce remarkably different results . . . researchers call this the ‘Dog Whistle Effect’: Respondents hear something in the question that researchers do not.” (Morin 1998).
+> footnote 1: Code words are sometimes called “dog whistles” because (so the received view goes) they involve sending a message that can only be heard by audience members with suitably sensitive ears. Richard Morin is credited with introducing the term. He writes, “Subtle changes in question-wording sometimes produce remarkably different results . . . researchers call this the ‘Dog Whistle Effect’: Respondents hear something in the question that researchers do not.” (Morin 1998).
 
-No other definition, only examples.  Similar to Henderson & McCready definition.
+> p.33: Recently, a more subversive phenomenon has been noted and discussed in the social sciences— the use of code words to subvert norms of democratic deliberation.
+
+> p.34: The standard thought is that politicians use code words because they stand to gain from conveying certain messages implicitly, rather than stating them explic- itly. 
+
+> p.34f: Both Mendelberg and Stanley propose varia- tions on the idea that code words encode as part of their meaning a hidden, or implicit, message, which the user of a code word communicates, along with some other explicit message. This idea keeps with the received view of dog whistles as devices of communicating secret messages to the suitably trained ear.
+
+> p.35: I think this kind of view is on the wrong track: what we identify as “code words” do not encode additional, implicit, meanings. Put oxymoronically, code words are not code for anything. Instead, someone using a code word exploits (intentionally or otherwise) their audience’s stereotypical beliefs about what they are talking about, without explicitly communicating these beliefs. Thus, using a “code word” allows (or leads) the audience to draw additional inferences from the speech without it being clear that they are doing so—and this is what dis- tinguishes coded speech from speech where the relevant stereotypical beliefs are explicitly asserted. In a slogan: code words don’t work by being vehicles of implicit communication; they work by triggering inferences which they are not used to communicate.
+
+> p.47: code words carry no “implicit” meaning at all. This theory offers the most straightforward account of why code words afford plausible deniability as discussed above.
+
+> p.48: though he does not communicate anything about race, since many hearers have preexisting beliefs about the subject matter of what he does say, Politician Z’s speech has the result that hearers will infer some racial belief about the policy from what he says.
+
+> p.48: Notice here that the politician may or may not have conversationally implicated that the food stamp program will primarily benefit poor African Americans— whether he does will depend on whether he intended his hearers to come to infer (C) on the basis of his saying (A). ... It seems then that nothing implicit need be communicated by a code word for a use of it to create space for plausible deniability regarding the violation of the norm of racial equality
+
+> p.48: I should emphasize that the beliefs which drive these inferences need not be about the subject matter of the word—they could be about the word itself. Thus, in the case of “wonder-working power,” a hearer who recognizes the expression might come to believe that the speaker uttering it is a Christian.
+
+> p.50: Explicit Statement: x is C.
+Existing Belief: If something is C, then it is R. Inferred: x is R.
+
+This schema is too narrow. The existing belief can be not just about x but also about the speaker or the topic matter at hand.
 
 ## \textcite{Mendelberg2001}
 
-Tali Mendelberg proposes that using a code word allows the speaker and her audience to violate certain social norms while plausibly denying doing so.
+> (from Khoo 2017) Tali Mendelberg proposes that using a code word allows the speaker and her audience to violate certain social norms while plausibly denying doing so.
 
 This does not involve in/outgroup distinction, highlights plausible deniability.
 
