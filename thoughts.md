@@ -401,6 +401,7 @@ Merkel speaking out against individual groups appropriating the concept of the p
 
 # Sources of PDWs
 
+- Here’s someone’s (failed IMO) attempt to elicit left-wing dog whistles on the “Ask the Donald” subreddit: https://www.reddit.com/r/AskThe_Donald/comments/b4qc5d/what_are_the_leftist_dog_whistle_words_you_can/
 - https://www.afd.de/wahlprogramm-asyl-einwanderung/
 - FDP
 - https://www.tagesschau.de/ausland/amerika/usa-brandon-trump-republikaner-schlachtruf-101.html
