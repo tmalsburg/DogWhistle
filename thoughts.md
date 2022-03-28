@@ -164,7 +164,18 @@ Factors that distinguish types of dog whistles (incomplete list):
 - Whether the dog whistle expression is conventionalized (“let’s go Brandon”, chiffre, requires that parties negotiate code beforehand) or ad-hoc (“einen Boateng”, no prior negotiation of code necessary, addressee can infer meaning just using cultural common ground).
 
 ## Related phenomena
-Virtue signaling, e.g. gender neutral language: Virtue signaling and dog whistles are related in that they are both ways to convey social meaning.  But they are different in that the social meaning is covert with dog whistles whereas virtue signaling is quite overt.  One defining property of dog whistles seems to be that they provide plausible deniability, which makes them useful for subliminal persuasion.  Virtue signaling like the use of gender neutral language is also a tool for persuasion, but it’s not subliminal and offers no plausible deniability.  The user of a dog whistle is working around a social taboo but the virtue signaler doesn't need to do that.
+**Virtue signaling**, e.g. gender neutral language: Virtue signaling and dog whistles are related in that they are both ways to convey social meaning.  But they are different in that the social meaning is covert with dog whistles whereas virtue signaling is quite overt.  One defining property of dog whistles seems to be that they provide plausible deniability, which makes them useful for subliminal persuasion.  Virtue signaling like the use of gender neutral language is also a tool for persuasion, but it’s not subliminal and offers no plausible deniability.  The user of a dog whistle is working around a social taboo but the virtue signaler doesn't need to do that.
+
+**Taboos, sanctioned language, and degrees of explicitness**:  [Seen on Twitter](https://twitter.com/enn_nafnlaus/status/1507912803859972097) in response to a Tweet by Elon Musk asking for more free speech on Twitter:
+
+> Do you really think there should be NO limits on speech?  Like, would *all* of these be acceptable on your platform? You wouldn't draw the line ANYWHERE?
+> 1. Jews suck.
+> 2. Jews deserve to die.
+> 3. Jews should be murdered.
+> 4. Jews in Cleveland should be murdered.
+> 5. We should murder Jews in Cleveland.
+> 6. We should murder Jews in Cleveland next Thusday at 3:00.
+> 7. We should meet next Thursday at 3:00 at the Fountain of Eternal Life in Cleveland and go around murdering Jews.  Bring a gun.
 
 # Tasks used in previous empirical research on dog whistles
 
@@ -414,7 +425,6 @@ Merkel speaking out against individual groups appropriating the concept of the p
 - Klimadebatte
 - Covid-Skeptizismus, Debatten zur Impfpflicht
 - Stuttgart 21 Debatte?
-
 
 # References
 
