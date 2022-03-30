@@ -282,7 +282,7 @@ Potential target stimuli (original with PDW / minimal variant without PWD):
 - Identitätswahrende Migrationspolitik: “Vorbild einer identitätswahrenden Migrationspolitik können für Deutschland nicht klassische Einwanderungsländer von der Größe Kanadas oder Australiens sein, sondern eher Länder wie Japan, die eine ihrer Landesstruktur entsprechende Begrenzung und Steuerung der Migration verfolgen.”
 $\Rightarrow$ “Vorbild einer identitätswahrenden Migrationspolitik sind Länder wie Japan.” / “Vorbild einer funktionierenden Migrationspolitik sind Länder wie Japan.”
 - Clankriminalität: “Wenn die Linke die Razzien gegen die Clankriminalität in Berlin-Neukölln beenden will …” $\Rightarrow$ “Wer will Razzien gegen die Clankriminalität beenden?” / “Wer will Razzien gegen organisierte Kriminalität beenden?”
-- Deutsches Staatsvolk: “die Aufnahme in das deutsche Staatsvolk, die definitiven Charakter hat, an strenge Bedingungen zu knüpfen”
+- Deutsches Staatsvolk: “die Aufnahme in das deutsche Staatsvolk, die definitiven Charakter hat, an strenge Bedingungen zu knüpfen”.  Source: https://www.afd.de/staatsvolk/
 $\Rightarrow$ “Die Aufnahme in das deutsche Staatsvolk ist an strenge Bedingungen geknüpft.” / “Der Erwerb der deutschen Staatsbürgerschaft ist an strenge Bedingungen geknüpft.”
 
 Controls: 
@@ -322,6 +322,17 @@ Not yet started
 - Conventionalized dog whistle: independent of context or speaker, “inner city (crime)”
 - Speaker-dependent dog whistle: “Clankriminalität”?  Used to activate stereotypes about certain ethnicities but Wikipedia (relatively neutral source) also has an entry for that term.  Quote from Wikipedia: “Ein paar Wissenschaftler wiesen auf eine ’stigmatisierende’ Verwendung des Begriffs ’Clankriminalität’ hin und erklärten, dass staatliche Maßnahmen gegen Clankriminalität vorrangig politisch motiviert seien und sich negativ auf präventive Maßnahmen und auf die Integration von dem noch nicht kriminell gewordenen Teil in den Familien auswirken würden.[14]”  So it’s supposedly only certain uses that are stigmatizing, not the term itself?
 - Content-dependent dog whistle: “Hilfe vor Ort” harmless in the context of the 2021 floodings in Germany, loaded when talking about migration.
+
+# Modeling
+A formalization of reference systems that could be a suitable basis for modeling work:
+
+1. A reference system $P$ is a probability model that assigns a probability to each possible meaning $m$ from a set $M$ of meanings given a sign $s$ from a set of signs $S$: $$P(m|s)$$
+2. Meanings can be discrete in which case $P$ is a probability mass function, or continuous (e.g. vectors in some semantic space) in which case $P$ is a probability density function.
+3. Given a reference system $P$, we can quantify its confidence about the meaning of sign $s$ as the entropy (discrete case): $$H(M|s) = -\sum_{m\in M} p(m|s) \log p(m|s)$$
+4. Given two reference systems $P$ and $Q$, we can quantify their agreement on the meaning of $s$ as the Bhattacharyya coefficient (discrete case): $$BC(P, Q) = \sum_{m\in M} \sqrt{P(m|s)Q(m|s)}$$
+5. Two reference systems $P$ and $Q$ can be combined (discrete case): $$(P\circ Q)(m|s) = \frac{P(m|s)Q(m|s)}{\sum_{m\in M} P(m|s)Q(m|s)}$$
+
+One interesting consequence of these definitions: We may have the intuition that the combination of two reference that disagree strongly results in a reference system that has low confidence about the meaning of a word, but that’s not necessarily the case.  For instance, for a sign $s$, reference system $A$ may assign high probability to meanings $a$, $b$, and $c$, whereas reference system $B$ may assign high probability to $c$, $d$, and $e$.  The two reference system then disagree rather strongly, but their combination is really confident that the meaning must be $c$.  Whether people combine references like that is of course an empirical question.
 
 # Specific examples of dog whistles
 
@@ -364,8 +375,8 @@ But does any of that require plausible deniability?  Do we expect sensitivity to
 
 ## “Hilfe vor Ort”
 
-- Dog whistly when used in the context of immigration from the middle east.
-- Not dog whistly when used in the context of 2021 floodings in Rhineland-Palatinate and North Rhine-Westphalia.
+- Dog-whistly when used in the context of immigration from the middle east.
+- Not dog-whistly when used in the context of 2021 floodings in Rhineland-Palatinate and North Rhine-Westphalia.
 - Hilfe vor Ort: “Hilfe vor Ort hat für die AfD höchste Priorität” (AfD Wahlprogramm)
 
 ## “Volk”
@@ -408,7 +419,7 @@ Merkel speaking out against individual groups appropriating the concept of the p
   2. Violation of maxim of quantity. 🗹
   3. Meaning can be enriched with a controversial meaning that’s violating the taboo, i.e. literal meaning is not incompatible with pragmatically (not logically) implied meaning. 🗹
   4. Plausible deniability. 🗹
-- Observation: It’s not dogwhistly in the original sense because his outgroup immediately attacked him for this statement.  This is perhaps more an instance of political persuasion than covert communication.
+- Observation: It’s not dog-whistly in the original sense because his outgroup immediately attacked him for this statement.  This is perhaps more an instance of political persuasion than covert communication.
 
 # Sources of PDWs
 
