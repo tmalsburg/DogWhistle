@@ -389,6 +389,7 @@ But does any of that require plausible deniability?  Do we expect sensitivity to
 - “Das Volk ist jeder, der in diesem Land lebt.”
 Merkel speaking out against individual groups appropriating the concept of the people for themselves.  Also Merkel’s response to PEGIDA and possibly her rejection of the Dog Whistle use of the term.  NZZ Article about Merkel’s statement, its context, and the history of the concept and related concepts (e.g., “Staatsvolk”).
 - “Wirr ist das Volk!”, Titanic, Die Partei, 2016.
+- [Zu den Begriffen „deutsches Volk“, „Deutsche“ und „deutsche Volkszugehörigkeit“ im Grundgesetz]( https://www.bundestag.de/resource/blob/643190/7855da277bbd3311dcf26fb17774d711/WD-3-026-19-pdf-data.pdf)
 
 ## “Brauchtum”
 
