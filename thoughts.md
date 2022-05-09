@@ -278,7 +278,14 @@ Further Wahl-O-Mat questions (purpose?):
 Potential target stimuli (original with PDW / minimal variant without PWD):
 - Volk: “Kinder sind die Zukunft unseres Volkes” / “Kinder sind die Zukunft unserer Gesellschaft”.
 - Hilfe vor Ort: “Hilfe vor Ort hat für die AfD höchste Priorität.” $\Rightarrow$ “Hilfe vor Ort hat für uns höchste Priorität.” / “Menschen zu helfen hat für uns höchste Priorität.” Needs context that makes clear that this is about refugees: “Bei der Flüchtlingsfrage hat/ist …”
-- Kampf für Deutschland: “Auch 2022 geht unser Kampf für Deutschland weiter.” / “Auch 2022 geht unser Kampf für den Klimaschutz weiter.” / Auch 2022 setzen wir uns weiter für Deutschland ein (better, because same content)
+"Eine neue Migrationspolitik, die [...] für mehr Hilfe vor Ort in den Krisenregionen dieser Welt sorgt."
+--> Diese Migrationspolitik sorgt für mehr Hilfe vor Ort in Krisenregionen."
+--> Diese Migrationspolitik sorgt für mehr lokale Unterstützung in Krisenregionen."
+
+- Kampf für Deutschland: Auch 2022 geht unser Kampf für Deutschland weiter.
+--> Auch 2022 geht unser Kampf für Deutschland weiter.
+--> Auch 2022 setzen wir uns weiter für Deutschland ein.
+
 - Identitätswahrende Migrationspolitik: “Vorbild einer identitätswahrenden Migrationspolitik können für Deutschland nicht klassische Einwanderungsländer von der Größe Kanadas oder Australiens sein, sondern eher Länder wie Japan, die eine ihrer Landesstruktur entsprechende Begrenzung und Steuerung der Migration verfolgen.”
 $\Rightarrow$ “Vorbild einer identitätswahrenden Migrationspolitik sind Länder wie Japan.” / “Vorbild einer funktionierenden Migrationspolitik sind Länder wie Japan.”
 - Clankriminalität: “Wenn die Linke die Razzien gegen die Clankriminalität in Berlin-Neukölln beenden will …” $\Rightarrow$ “Wer will Razzien gegen die Clankriminalität beenden?” / “Wer will Razzien gegen organisierte Kriminalität beenden?”
@@ -439,4 +446,31 @@ Merkel speaking out against individual groups appropriating the concept of the p
 - Stuttgart 21 Debatte?
 
 # References
+
+# Preliminary results of pilots
+
+SUMMARY after looking at “Hilfe vor Ort”, “Kampf für Deutschland”, “deutsches Staatsvolk”, and “Volk”
+
+- “Hilfe vor Ort”: less conservative participants rate DW speaker as less progressive, more racist, less helpful than more conservative participants (no difference between the two groups on control)
+- “Hilfe vor Ort” exhibits trends: 
+    - DW speaker is judged younger and more friendly than control speaker (in both groups)
+    - less conservative give lower intelligence and lower honesty rating than more conservative
+- “Kampf für Deutschland”: mostly no difference between more and less conservative participants!
+    - both groups take DW speaker to be older, more racist, less helpful, less intelligent, and less friendly than control speaker
+    - more conservative gave lower honesty rating to DW than control (no diff for less conservative)
+    - more conservative gave higher christian rating to DW than less conservative
+- “deutsches Staatsvolk”: less conservative participants give lower progressive, lower helpful, and lower friendliness rating than more conservative participants (no differences on the control)
+- “deutsches Staatsvolk” exhibits trends:
+    - less conservative participants give higher racism, lower honesty, lower intelligence, and lower christian ratings than more conservative participants
+- “Zukunft unseres Volkes”: less conservative participants give lower honesty, lower helpful rating than more conservative
+    - trends: less conservative gave lower intelligence and lower friendly rating than more conservative, 
+    - both groups gave low racism ratings, didn’t differ in how progressive the speakers are
+- Overall lessons:
+    - “Hilfe vor Ort” is the clearest case of a DW: less and more conservative participants rate speakers who use this expression differently (especially relevant: progressive, racism)
+    - “Kampf für Deutschland” is not a DW; it is obviously racist
+    - “Volk” is not a conventionalized DW: “Zukunft unseres Volkes” didn’t sound racist to either group, a trend towards a DW was observed for “deutsches Staatsvolk” (progressive; trend: racism)
+
+NEXT: 
+	- embed the four sentences under clause-embedding predicates and manipulate speaker identity, how projective are the contents?
+	- test for plausible deniability with the “S but not racist” diagnostic
 

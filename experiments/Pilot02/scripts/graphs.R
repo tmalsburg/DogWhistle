@@ -181,132 +181,6 @@ d %>%
 
 dev.off()
 
-# how did the anti-immigration vs non-anti-immigration participants behave? ----
-
-cons = d %>%
-  filter(party != "keine Angabe") %>%
-  mutate(
-    conservative = ifelse(party == "CDU" | party == "AfD", "anti-immigration","not anti-immigration"))
-
-length(unique(cons$subj)) #51 participants
-
-table(cons$conservative)
-table(cons$dog.whistle)
-
-pdf("../generated/plots/social_dimensions-by-immigration-stance.pdf", 6, 6)
-
-### Age:
-
-cons %>%
-  group_by(conservative, dog.whistle, page) %>%
-  summarize(n = n()) %>%
-  mutate(p = n / sum(n)) %>%
-  ggplot(aes(page, p)) +
-  geom_col() +
-  scale_x_discrete("How old (alt) is the politician?") +
-  scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
-  facet_grid(vars(dog.whistle), vars(conservative))
-
-### Progressive:
-
-cons %>%
-  group_by(conservative, dog.whistle, pprog) %>%
-  summarize(n = n()) %>%
-  mutate(p = n / sum(n)) %>%
-  ggplot(aes(pprog, p)) +
-  geom_col() +
-  scale_x_discrete("How progressive (fortschrittlich) is the politician?") +
-  scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
-  facet_grid(vars(dog.whistle), vars(conservative))
-
-### Racism:
-
-cons %>%
-  group_by(conservative, dog.whistle, pracism) %>%
-  summarize(n = n()) %>%
-  mutate(p = n / sum(n)) %>%
-  ggplot(aes(pracism, p)) +
-  geom_col() +
-  scale_x_discrete("How racist (rassistisch) is the politician?") +
-  scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
-  facet_grid(vars(dog.whistle), vars(conservative))
-
-### Honesty:
-
-cons %>%
-  group_by(conservative, dog.whistle, phonesty) %>%
-  summarize(n = n()) %>%
-  mutate(p = n / sum(n)) %>%
-  ggplot(aes(phonesty, p)) +
-  geom_col() +
-  scale_x_discrete("How honest (ehrlich) is the politician?") +
-  scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
-  facet_grid(vars(dog.whistle), vars(conservative))
-
-### Helpfulness:
-
-cons %>%
-  group_by(conservative, dog.whistle, phelpful) %>%
-  summarize(n = n()) %>%
-  mutate(p = n / sum(n)) %>%
-  ggplot(aes(phelpful, p)) +
-  geom_col() +
-  scale_x_discrete("How helpful (hilfsbereit) is the politician?") +
-  scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
-  facet_grid(vars(dog.whistle), vars(conservative))
-
-### Intelligence:
-
-cons %>%
-  group_by(conservative, dog.whistle, pintel) %>%
-  summarize(n = n()) %>%
-  mutate(p = n / sum(n)) %>%
-  ggplot(aes(pintel, p)) +
-  geom_col() +
-  scale_x_discrete("How intelligent (intelligent) is the politician?") +
-  scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
-  facet_grid(vars(dog.whistle), vars(conservative))
-
-### Christianity:
-
-cons %>%
-  group_by(conservative, dog.whistle, pchristian) %>%
-  summarize(n = n()) %>%
-  mutate(p = n / sum(n)) %>%
-  ggplot(aes(pchristian, p)) +
-  geom_col() +
-  scale_x_discrete("How christian (christlich) is the politician?") +
-  scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
-  facet_grid(vars(dog.whistle), vars(conservative))
-
-### Friendliness:
-
-cons %>%
-  group_by(conservative, dog.whistle, pfriendly) %>%
-  summarize(n = n()) %>%
-  mutate(p = n / sum(n)) %>%
-  ggplot(aes(pfriendly, p)) +
-  geom_col() +
-  scale_x_discrete("How friendly (freundlich) is the politician?") +
-  scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
-  facet_grid(vars(dog.whistle), vars(conservative))
-
-### Party:
-
-cons %>%
-  group_by(conservative, dog.whistle, pparty) %>%
-  summarize(n = n()) %>%
-  mutate(p = n / sum(n)) %>%
-  ggplot(aes(pparty, p, fill=pparty)) +
-  geom_col() +
-  scale_fill_manual(values=colors.party) +
-  scale_x_discrete("To which party does the politican belong?") +
-  scale_y_continuous("", labels = scales::percent, limits=c(0, 1)) +
-  theme(axis.text.x=element_text(angle = 45, hjust=1),
-        legend.position="none") +
-  facet_grid(vars(dog.whistle), vars(conservative))
-
-dev.off()
 
 # how did the participants answer the 5 WOM questions? ----
 
@@ -640,27 +514,32 @@ cons %>%
 
 dev.off()
 
-# results:
-# age: less cons participants judge PDW speakers to be older than NDW speakers, opposite for more cons participants; 
-# effect stronger for "deutsches Staatsvolk" than "Volk"
-# progressive: less cons participants judge PDW speakers to be less progressive than NDW speakers, opposite for more cons participants
-# rassistisch: less cons participants judge PDW speakers to be more racist than NDW speakers, effect smaller for more cons participants
-# and for "Volk" than "deutsches Staatsvolk"
-# ehrlich: mixed results (perhaps the term is too vague/ambiguous)
-# hilfsbereit: less cons participants judge PDW speakers to be less helpful than NDW speakers, opposite for more cons participants
-# intelligent: less cons participants judge PDW speakers to be less intelligent than NDW speakers, opposite for more cons participants
-# christian: ? (perhaps not a good term)
-# friendly: less cons participants judge PDW speakers to be less intelligent than NDW speakers, opposite for more cons participants
-# party: with Staatsvolk, both less and more conservative participants take PDW speaker to be more likely to be AfD than NDW speakers
-# no clear party effect for Volk
-
 # plot mean scores rather than percentages ----
 
+# age
+table(d$page,d$conservative,d$dog.whistle,d$sentence.label)
+
+# recode politician age as numeric
 d = d %>%
   mutate(
-    conservative = ifelse(mean.wom.score > .99, "more conservative","less conservative"))
+    page_num = ifelse(page == "20-39", 0,
+                      ifelse(page == "40-59",1,2)))
 
+mean.age = d %>%
+  group_by(conservative,dog.whistle,sentence.label) %>%
+  summarize(Mean = mean(page_num), CILow = ci.low(page_num), CIHigh = ci.high(page_num)) %>%
+  ungroup() %>%
+  mutate(YMin = Mean - CILow, YMax = Mean + CIHigh)  
+mean.age
 
+ggplot(mean.age, aes(x=dog.whistle, y=Mean, color = conservative)) +
+  geom_point(shape=20, size=3, alpha=1) +
+  geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25) +
+  scale_color_manual(values=c("black","blue")) +
+  xlab("Condition") +
+  ylab("Mean numeric age rating (higher = older)") +
+  facet_grid(. ~ sentence.label)
+ggsave("../generated/plots/age.pdf",height=5,width=5)
 
 # progressive
 mean.prog = d %>%
@@ -677,6 +556,7 @@ ggplot(mean.prog, aes(x=dog.whistle, y=Mean, color = conservative)) +
   xlab("Condition") +
   ylab("Mean progressive rating (higher = more progressive)") +
   facet_grid(. ~ sentence.label)
+ggsave("../generated/plots/progressive.pdf",height=5,width=5)
 
 # racist
 mean.racism = d %>%
@@ -693,6 +573,7 @@ ggplot(mean.racism, aes(x=dog.whistle, y=Mean, color = conservative)) +
   xlab("Condition") +
   ylab("Mean racism rating (higher = more racist)") +
   facet_grid(. ~ sentence.label)
+ggsave("../generated/plots/racism.pdf",height=5,width=5)
 
 # honest
 mean.honest = d %>%
@@ -709,6 +590,7 @@ ggplot(mean.honest, aes(x=dog.whistle, y=Mean, color = conservative)) +
   xlab("Condition") +
   ylab("Mean honesty rating (higher = more honest)") +
   facet_grid(. ~ sentence.label)
+ggsave("../generated/plots/honesty.pdf",height=5,width=5)
 
 # helpful
 mean.helpful = d %>%
@@ -725,6 +607,7 @@ ggplot(mean.helpful, aes(x=dog.whistle, y=Mean, color = conservative)) +
   xlab("Condition") +
   ylab("Mean helpful rating (higher = more helpful)") +
   facet_grid(. ~ sentence.label)
+ggsave("../generated/plots/helpful.pdf",height=5,width=5)
 
 # intelligent
 mean.intelligent = d %>%
@@ -741,6 +624,7 @@ ggplot(mean.intelligent, aes(x=dog.whistle, y=Mean, color = conservative)) +
   xlab("Condition") +
   ylab("Mean intelligence rating (higher = more intelligent)") +
   facet_grid(. ~ sentence.label)
+ggsave("../generated/plots/intelligent.pdf",height=5,width=5)
 
 # christian
 mean.christian = d %>%
@@ -757,6 +641,7 @@ ggplot(mean.christian, aes(x=dog.whistle, y=Mean, color = conservative)) +
   xlab("Condition") +
   ylab("Mean christian rating (higher = more christian)") +
   facet_grid(. ~ sentence.label)
+ggsave("../generated/plots/christian.pdf",height=5,width=5)
 
 # friendly
 mean.friendly = d %>%
@@ -773,11 +658,46 @@ ggplot(mean.friendly, aes(x=dog.whistle, y=Mean, color = conservative)) +
   xlab("Condition") +
   ylab("Mean friendliness rating (higher = more friendly)") +
   facet_grid(. ~ sentence.label)
+ggsave("../generated/plots/friendly.pdf",height=5,width=5)
 
 # party
-table(d$dog.whistle,d$conservative,d$pparty)
+table(d$dog.whistle,d$conservative,d$pparty,d$sentence.label)
 
-#AfD
+
+
+# results for Aufnahme in das deutsche Staatsvolk:
+# age: no difference
+# progressive: less conservative give lower progressive rating on DW than more conservative
+# rassistisch: trend: less conservative give higher racism rating for DW than more conservative 
+# ehrlich: trend: less conservative give lower honesty rating on DW than more conservative
+# hilfsbereit: less conservative give lower helpful ratings than more conservative on DW
+# intelligent: trend: less conservative give lower intelligence rating on DW than more conservative
+# christian: trend: more conservative give higher christian rating on DW than less conservative 
+# friendly: more conservative give higher friendly ratings than less conservative
+# party: with Staatsvolk, both less and more conservative participants take PDW speaker to be more likely to be AfD than NDW speakers
+
+# AfD,  = Aufnahme-in-dt-Staatsvolk
+
+
+#            less conservative more conservative
+#Control                     7                 2
+#Dog whistle                12                 5
+
+# results for Zukunft unseres Volkes:
+# age: no difference
+# progressive: no difference
+# rassistisch: no difference (both groups don't think this is racist)
+# and for "Volk" than "deutsches Staatsvolk"
+# ehrlich: more conservative give higher honesty rating on DW than less conservative
+# hilfsbereit: more conservative give higher helpful rating than less conservative
+# intelligent: trend: less conservative give lower intelligence rating than more conservative
+# christian: no difference
+# friendly: trend: more conservative give higher friendly rating than less conservative
+# party: 
+
+#= AfD,  = Zukunft-unseres-Volkes
+
+
 #             less conservative more conservative
-#Control                     8                 2
-#Dog whistle                13                 5
+#Control                     1                 0
+#Dog whistle                 1                 0
