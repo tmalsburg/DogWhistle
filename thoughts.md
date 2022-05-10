@@ -155,7 +155,25 @@ We're more sensitive to dog whistles that are outgroup!
 
 Different aspect potentially contributing to a definition: Dog whistles are not necessarily expressions that carries secondary meaning but a strategy where a semantic/pragmatic gap is artificially created and to be filled by the listener using their social and contextual knowledge.  For instance, when Gauland says “people don’t want a Boateng as their neighbor”, it’s technically not clear what he means by “a Boateng”.  Does he mean a soccer player or a black person?  But using social knowledge about the speaker, the audience can fill that missing meaning in.  Compare to some soccer fan saying “people would love to have a Boateng as their neighbor”, this would potentially be interpreted as meaning “a famous soccer player”.  In that way, dog whistles may be very similar to the rhetorical device where the speaker does not finish a controversial sentence because they know that the audience will be able to complete it in their minds without the speaker actually having to say the words: “If we let more migrants into the country, next new year’s eve in Cologne will …”  Another closely related rhetorical device is where the offensive part of the statement is replaced by something that’s effectively the opposite of the intended meaning and absurd given social knowledge about the speaker:  “If we let more migrants in the country, next new year’s eve in Cologne is going to be fun.”  What dog whistles offer in contrast to these rhetorical device is plausible deniability, because with dog whistles the (to-be-filled) gap meaning is not as obvious.  Seen in this way dog whistles are the result of a natural evolution of ways to circumvent taboo speech.  If true, this would explain why dog whistles are so difficult to characterize:  The properties of the dog whistle expression are irrelevant.  What matters is merely whether that expression leaves a meaning vacuum when used in a certain context.  Corollary: “Clankriminalität” is a dog whistle in the presence of a meaning vacuum, but the same expression immediately looses its dog whistle property in the absence of such a vacuum, e.g. when the text is otherwise openly xenophobic.  Question: How can we test for the presence of a meaning vacuum/gap?
 
+### Function(s) of dog whistles
+
 One function of dog whistles is to communicate controversial ideas to ingroup members while having plausible deniability.  Here’s a related but different function:  Anna Prysłopska made me aware of the wonderful world of alt-right mom blogs.  Superficially, these blogs are about benign topics like childcare and cooking, but the true aim is to sneak ideological content into the readers’ minds.  (One author of such a blog, [Mrs. Mid-west](https://www.mrsmidwest.com/), admitted this openly.)  Cooking recipes and parenting advice are just the honeypot.  These blogs, according to Anna, are chock-full with dog whistle material.  However, the purpose of dog whistles is not to hide controversial views from an outgroup but rather to accustom readers to these views in a subliminal way and to assimilate them ideologically.  These dog whistles do not just work with pre-defined in/outgroups, but they are used to redefine these groups (= propaganda).  The persuasion component is actually present in many of the examples that we considered, e.g., Gauland saying “einen Boateng”.  In sum, the core property, once again, seems to be plausible deniability.  And the functions of dog whistles are: 1. Covert communication with an ingroup.  2. Persuade outgroup members to become ingroup.
+
+### “Besonderheit” of dog whistles (Lukau)
+
+Lukau wrote “dog whistles sind eine sprachwissenschaftliche Besonderheit”.  She’s right and that’s actually an interesting observation.  Dog whistles are special in that their scope is very limited to political speech and perhaps even to some parts of the political spectrum (not sure).  But why would that be?  If dog whistles are such a clever communication strategy, they should be more common.  They should even be taught in school.  None of our considerations so far can explain why dog whistles are so special and limited.  I think there’s potentially an important aspect here that we (and perhaps others) have overlooked so far.  Are dog whistles cognitively difficult?  Are there social norms that dog whistles are violating?
+
+### Scope of dog whistles really limited to political speech?
+
+Dog whistles are usually portrayed as a phenomenon occurring only in political speech.  This is actually strange because if dog whistles are an effective communication strategy, they should also have uses in other areas.  Raises the question: What are other areas where dog whistles may be used?  And, if we don’t find them in those areas, why are they not used there?  One candidate may be advertising.  In advertisements, companies are looking to convey potentially controversial ideas (e.g., some processed food is healthy when it’s not) and where companies need plausible deniability because they might otherwise get sued.
+
+### Influence of discourse dynamics (in lack of a better term) / polarization of society
+
+One of Lukau’s examples is Jill Stein’s use of the term “big pharma”.
+
+- “By the same token, being ’tested’ and ’reviewed’ by agencies tied to big pharma and the chemical industry, who sell unsafe vaccines to make a buck, is also problematic.”
+
+The claim is that “big pharma” signals anti-vaxx views.  Personally, I didn’t get that inference.  “Big pharma” is certainly meant to be negative, but anti-vaxx?  The fact that pharmaceutical companies are profit-oriented does not exclude the possibility that vaccines are effective.  I think the US tendency to polarize may play a role here.  Implicit criticism of the pharmaceutical industry is perhaps interpreted as a complete rejection of the pharmaceutical industry and its products.  In this light, I wonder whether the peculiar discourse dynamics in the U.S. and the tendency to polarize may be a particularly fertile ground for dog whistles.  Is this already discussed somewhere?  Could be useful in motivating the investigation of dog whistles in German (where society and politics are not as polarized as in the U.S.).
 
 ## Attempt at a taxonomy
 Factors that distinguish types of dog whistles (incomplete list):
@@ -164,9 +182,12 @@ Factors that distinguish types of dog whistles (incomplete list):
 - Whether the dog whistle expression is conventionalized (“let’s go Brandon”, chiffre, requires that parties negotiate code beforehand) or ad-hoc (“einen Boateng”, no prior negotiation of code necessary, addressee can infer meaning just using cultural common ground).
 
 ## Related phenomena
-**Virtue signaling**, e.g. gender neutral language: Virtue signaling and dog whistles are related in that they are both ways to convey social meaning.  But they are different in that the social meaning is covert with dog whistles whereas virtue signaling is quite overt.  One defining property of dog whistles seems to be that they provide plausible deniability, which makes them useful for subliminal persuasion.  Virtue signaling like the use of gender neutral language is also a tool for persuasion, but it’s not subliminal and offers no plausible deniability.  The user of a dog whistle is working around a social taboo but the virtue signaler doesn't need to do that.
 
-**Taboos, sanctioned language, and degrees of explicitness**:  [Seen on Twitter](https://twitter.com/enn_nafnlaus/status/1507912803859972097) in response to a Tweet by Elon Musk asking for more free speech on Twitter:
+### Virtue signaling
+E.g. gender neutral language: Virtue signaling and dog whistles are related in that they are both ways to convey social meaning.  But they are different in that the social meaning is covert with dog whistles whereas virtue signaling is quite overt.  One defining property of dog whistles seems to be that they provide plausible deniability, which makes them useful for subliminal persuasion.  Virtue signaling like the use of gender neutral language is also a tool for persuasion, but it’s not subliminal and offers no plausible deniability.  The user of a dog whistle is working around a social taboo but the virtue signaler doesn't need to do that.
+
+### Taboos, sanctioned language, and degrees of explicitness:
+[Seen on Twitter](https://twitter.com/enn_nafnlaus/status/1507912803859972097) in response to a Tweet by Elon Musk asking for more free speech on Twitter:
 
 > Do you really think there should be NO limits on speech?  Like, would *all* of these be acceptable on your platform? You wouldn't draw the line ANYWHERE?
 > 1. Jews suck.
@@ -176,6 +197,10 @@ Factors that distinguish types of dog whistles (incomplete list):
 > 5. We should murder Jews in Cleveland.
 > 6. We should murder Jews in Cleveland next Thusday at 3:00.
 > 7. We should meet next Thursday at 3:00 at the Fountain of Eternal Life in Cleveland and go around murdering Jews.  Bring a gun.
+
+### Code words (Chiffren) vs. steganography
+
+Lukau distinguishes code words from dog whistles.  Main difference: a code word requires that the parties agree on it in advance.  Dog whistles seem to be more dynamic.  Actually, as soon as a dog whistle is codified, it’s no longer effective because it no linger provides plausible deniability.  Code words are also overtly encrypted.  When I write “88” on my t-Shirt, it’s clear that there is a hidden meaning (“Heil Hitler”), but a dog whistle is more like [steganography](https://en.wikipedia.org/wiki/Steganography) in that it’s not even clear that a hidden message is present.
 
 # Tasks used in previous empirical research on dog whistles
 
