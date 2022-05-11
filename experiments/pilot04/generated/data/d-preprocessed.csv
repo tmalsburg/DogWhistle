@@ -1,0 +1,49 @@
+"","subj","time","age","gender","education","party","wom.refugees","wom.headscarf","wom.citizenship","wom.islam","wom.asylum","comment","item","rating"
+"1",1,"2022/05/11 10:05:39 AM GMT+2",29,"weiblich","Studium","Grüne","Ich stimme nicht zu","Ich stimme zu","Neutral","Neutral","Ich stimme nicht zu",NA,"control.c",4
+"2",1,"2022/05/11 10:05:39 AM GMT+2",29,"weiblich","Studium","Grüne","Ich stimme nicht zu","Ich stimme zu","Neutral","Neutral","Ich stimme nicht zu",NA,"control.nc",2
+"3",1,"2022/05/11 10:05:39 AM GMT+2",29,"weiblich","Studium","Grüne","Ich stimme nicht zu","Ich stimme zu","Neutral","Neutral","Ich stimme nicht zu",NA,"target",3
+"4",2,"2022/05/11 10:15:56 AM GMT+2",38,"weiblich","Realschule","Grüne","Ich stimme nicht zu","Ich stimme zu","Neutral","Neutral","Neutral",NA,"control.c",4
+"5",2,"2022/05/11 10:15:56 AM GMT+2",38,"weiblich","Realschule","Grüne","Ich stimme nicht zu","Ich stimme zu","Neutral","Neutral","Neutral",NA,"control.nc",1
+"6",2,"2022/05/11 10:15:56 AM GMT+2",38,"weiblich","Realschule","Grüne","Ich stimme nicht zu","Ich stimme zu","Neutral","Neutral","Neutral",NA,"target",2
+"7",3,"2022/05/11 10:17:04 AM GMT+2",20,"männlich","Abitur","keine Angabe","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Ich stimme zu",NA,"control.c",4
+"8",3,"2022/05/11 10:17:04 AM GMT+2",20,"männlich","Abitur","keine Angabe","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Ich stimme zu",NA,"control.nc",2
+"9",3,"2022/05/11 10:17:04 AM GMT+2",20,"männlich","Abitur","keine Angabe","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Ich stimme zu",NA,"target",2
+"10",5,"2022/05/11 10:21:13 AM GMT+2",21,"männlich","Abitur","keine Angabe","Neutral","Neutral","Ich stimme zu","Neutral","Ich stimme zu",NA,"control.c",4
+"11",5,"2022/05/11 10:21:13 AM GMT+2",21,"männlich","Abitur","keine Angabe","Neutral","Neutral","Ich stimme zu","Neutral","Ich stimme zu",NA,"control.nc",1
+"12",5,"2022/05/11 10:21:13 AM GMT+2",21,"männlich","Abitur","keine Angabe","Neutral","Neutral","Ich stimme zu","Neutral","Ich stimme zu",NA,"target",3
+"13",6,"2022/05/11 10:21:36 AM GMT+2",30,"weiblich","Studium","Grüne","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Neutral","Ich stimme nicht zu",NA,"control.c",4
+"14",6,"2022/05/11 10:21:36 AM GMT+2",30,"weiblich","Studium","Grüne","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Neutral","Ich stimme nicht zu",NA,"control.nc",1
+"15",6,"2022/05/11 10:21:36 AM GMT+2",30,"weiblich","Studium","Grüne","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Neutral","Ich stimme nicht zu",NA,"target",2
+"16",7,"2022/05/11 10:22:17 AM GMT+2",25,"männlich","Realschule","Die Partei","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Neutral",NA,"control.c",5
+"17",7,"2022/05/11 10:22:17 AM GMT+2",25,"männlich","Realschule","Die Partei","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Neutral",NA,"control.nc",1
+"18",7,"2022/05/11 10:22:17 AM GMT+2",25,"männlich","Realschule","Die Partei","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Neutral",NA,"target",1
+"19",9,"2022/05/11 1:15:38 PM GMT+2",35,"männlich","Abitur","Linke","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Ich stimme nicht zu",NA,"control.c",4
+"20",9,"2022/05/11 1:15:38 PM GMT+2",35,"männlich","Abitur","Linke","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Ich stimme nicht zu",NA,"control.nc",2
+"21",9,"2022/05/11 1:15:38 PM GMT+2",35,"männlich","Abitur","Linke","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Ich stimme nicht zu",NA,"target",3
+"22",10,"2022/05/11 1:15:40 PM GMT+2",22,"weiblich","Abitur","Linke","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Ich stimme nicht zu",NA,"control.c",4
+"23",10,"2022/05/11 1:15:40 PM GMT+2",22,"weiblich","Abitur","Linke","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Ich stimme nicht zu",NA,"control.nc",2
+"24",10,"2022/05/11 1:15:40 PM GMT+2",22,"weiblich","Abitur","Linke","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Ich stimme nicht zu",NA,"target",3
+"25",11,"2022/05/11 1:15:41 PM GMT+2",24,"weiblich","Studium","Linke","Neutral","Ich stimme zu","Neutral","Neutral","Ich stimme nicht zu",NA,"control.c",5
+"26",11,"2022/05/11 1:15:41 PM GMT+2",24,"weiblich","Studium","Linke","Neutral","Ich stimme zu","Neutral","Neutral","Ich stimme nicht zu",NA,"control.nc",1
+"27",11,"2022/05/11 1:15:41 PM GMT+2",24,"weiblich","Studium","Linke","Neutral","Ich stimme zu","Neutral","Neutral","Ich stimme nicht zu",NA,"target",1
+"28",12,"2022/05/11 1:16:14 PM GMT+2",27,"weiblich","Realschule","Linke","Ich stimme nicht zu","Neutral","Ich stimme zu","Ich stimme zu","Neutral",NA,"control.c",5
+"29",12,"2022/05/11 1:16:14 PM GMT+2",27,"weiblich","Realschule","Linke","Ich stimme nicht zu","Neutral","Ich stimme zu","Ich stimme zu","Neutral",NA,"control.nc",1
+"30",12,"2022/05/11 1:16:14 PM GMT+2",27,"weiblich","Realschule","Linke","Ich stimme nicht zu","Neutral","Ich stimme zu","Ich stimme zu","Neutral",NA,"target",2
+"31",13,"2022/05/11 1:16:26 PM GMT+2",52,"männlich","Realschule","Grüne","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Ich stimme nicht zu",NA,"control.c",5
+"32",13,"2022/05/11 1:16:26 PM GMT+2",52,"männlich","Realschule","Grüne","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Ich stimme nicht zu",NA,"control.nc",1
+"33",13,"2022/05/11 1:16:26 PM GMT+2",52,"männlich","Realschule","Grüne","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Ich stimme nicht zu",NA,"target",3
+"34",14,"2022/05/11 1:16:32 PM GMT+2",32,"männlich","Abitur","Grüne","Neutral","Ich stimme zu","Ich stimme zu","Ich stimme zu","Neutral",NA,"control.c",5
+"35",14,"2022/05/11 1:16:32 PM GMT+2",32,"männlich","Abitur","Grüne","Neutral","Ich stimme zu","Ich stimme zu","Ich stimme zu","Neutral",NA,"control.nc",1
+"36",14,"2022/05/11 1:16:32 PM GMT+2",32,"männlich","Abitur","Grüne","Neutral","Ich stimme zu","Ich stimme zu","Ich stimme zu","Neutral",NA,"target",2
+"37",15,"2022/05/11 1:16:37 PM GMT+2",34,"männlich","Studium","CDU","Ich stimme nicht zu","Ich stimme zu","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu",NA,"control.c",5
+"38",15,"2022/05/11 1:16:37 PM GMT+2",34,"männlich","Studium","CDU","Ich stimme nicht zu","Ich stimme zu","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu",NA,"control.nc",2
+"39",15,"2022/05/11 1:16:37 PM GMT+2",34,"männlich","Studium","CDU","Ich stimme nicht zu","Ich stimme zu","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu",NA,"target",2
+"40",16,"2022/05/11 1:16:39 PM GMT+2",24,"männlich","Studium","Linke","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Ich stimme nicht zu",NA,"control.c",5
+"41",16,"2022/05/11 1:16:39 PM GMT+2",24,"männlich","Studium","Linke","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Ich stimme nicht zu",NA,"control.nc",2
+"42",16,"2022/05/11 1:16:39 PM GMT+2",24,"männlich","Studium","Linke","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Ich stimme zu","Ich stimme nicht zu",NA,"target",5
+"43",20,"2022/05/11 1:18:35 PM GMT+2",46,"weiblich","Studium","Grüne","Ich stimme nicht zu","Neutral","Ich stimme zu","Neutral","Neutral",NA,"control.c",5
+"44",20,"2022/05/11 1:18:35 PM GMT+2",46,"weiblich","Studium","Grüne","Ich stimme nicht zu","Neutral","Ich stimme zu","Neutral","Neutral",NA,"control.nc",1
+"45",20,"2022/05/11 1:18:35 PM GMT+2",46,"weiblich","Studium","Grüne","Ich stimme nicht zu","Neutral","Ich stimme zu","Neutral","Neutral",NA,"target",3
+"46",21,"2022/05/11 1:19:37 PM GMT+2",23,"männlich","Abitur","FDP","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Neutral","Neutral",NA,"control.c",4
+"47",21,"2022/05/11 1:19:37 PM GMT+2",23,"männlich","Abitur","FDP","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Neutral","Neutral",NA,"control.nc",2
+"48",21,"2022/05/11 1:19:37 PM GMT+2",23,"männlich","Abitur","FDP","Ich stimme nicht zu","Ich stimme zu","Ich stimme zu","Neutral","Neutral",NA,"target",1
