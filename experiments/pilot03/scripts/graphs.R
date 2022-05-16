@@ -1,3 +1,4 @@
+# pilot 03
 
 # Set working directory to directory of script:
 
@@ -13,56 +14,26 @@ source("../../../scripts/helpers.R")
 
 # load clean data ----
 
-d = read.csv("../generated/data/d-preprocessed.csv")
-nrow(d) #20
+d1 = read.csv("../generated/data/d-preprocessed.csv")
+nrow(d1) #120
+length(unique(d1$subj)) #60
+table(d$subj)
 
-# do the Wahlomat questions correlate with the party that the participants would have voted for? ----
+# also load the data from the other pilot (pilot 02)
+d2 = read.csv("../../Pilot02/generated/data/d-preprocessed.csv")
+nrow(d2) #110
+length(unique(d2$subj)) #55
+table(d2$subj)
 
-stringdistmatrix(d$party, names(colors.party), method="jw") -> m
+head(d1)
+head(d2)
 
-d$party <- names(colors.party)[apply(m, 1, which.min)]
+# bind the data
+d = rbind(d1,d2)
+head(d)
+nrow(d) #230
 
-c("CDU"                  = "black",
-  "SPD"                  = "red",
-  "AfD"                  = "blue",
-  "FDP"                  = "yellow",
-  "Linke"                = "purple",
-  "Grüne"                = "darkgreen",
-  "Die Partei"           = "#B92837",
-  "Humanisten"           = "#d90368",
-  "Volt"                 = "#562883",
-  "keine Angabe"         = "grey") -> colors.party
-
-ggplot(d,aes(x=wom.citizenship, fill=party)) +
-  geom_bar(stat="count", width=1) +
-  scale_fill_manual(values=colors.party) + 
-  scale_x_discrete("In Deutschland soll es generell möglich sein, neben der deutschen eine zweite Staatsbürgerschaft zu haben.")
-ggsave("../generated/plots/wom.citizenship-by-party.pdf",height=4,width=9)
-
-
-ggplot(d,aes(x=wom.refugees , fill=party)) +
-  geom_bar(stat="count", width=1) +
-  scale_fill_manual(values=colors.party) + 
-  scale_x_discrete("Asyl soll weiterhin nur politisch Verfolgten gewährt werden.")
-ggsave("../generated/plots/wom.refugees-by-party.pdf",height=4,width=9)
-
-ggplot(d,aes(x=wom.headscarf , fill=party)) +
-  geom_bar(stat="count", width=1) +
-  scale_fill_manual(values=colors.party) + 
-  scale_x_discrete("Das Tragen eines Kopftuchs soll Beamtinnen im Dienst generell erlaubt sein.")
-ggsave("../generated/plots/wom.headscarf-by-party.pdf",height=4,width=9)
-
-ggplot(d,aes(x=wom.islam , fill=party)) +
-  geom_bar(stat="count", width=1) +
-  scale_fill_manual(values=colors.party) + 
-  scale_x_discrete("Islamische Verbände sollen als Religionsgemeinschaften staatlich anerkannt werden können.")
-ggsave("../generated/plots/wom.islam-by-party.pdf",height=4,width=9)
-
-ggplot(d,aes(x=wom.asylum , fill=party)) +
-  geom_bar(stat="count", width=1) +
-  scale_fill_manual(values=colors.party) + 
-  scale_x_discrete("Das Recht anerkannter Flüchtlinge auf Familiennachzug soll abgeschafft werden.")
-ggsave("../generated/plots/wom.asylum-by-party.pdf",height=4,width=9)
+length(unique(d$subj)) #115
 
 # how did the participants answer the 5 WOM questions? ----
 
@@ -99,24 +70,23 @@ d = d %>%
   mutate(
     conservative = ifelse(mean.wom.score > .99, "more conservative","less conservative"))
 
-length(unique(d$subj)) #60 participants
+length(unique(d$subj)) #115 participants
 
 table(d$conservative)
-# less conservative  96 (48 participants)
-# more conservative 24 (12 participants)
+# less conservative  174 (87 participants)
+# more conservative 56 (28 participants)
 
 d = d %>%
   mutate(subj = fct_reorder(as.factor(subj),mean.wom.score))  
 
 ggplot(d, aes(x=subj, y=mean.wom.score,color=party,fill=party)) +
-  geom_point(shape=21, size=3, alpha=1,color="black") +
+  geom_jitter(shape=21, size=3, alpha=1,color="black") +
   scale_fill_manual(values=colors.party) +
   xlab("Participant") +
   ylab("Mean wom score (higher = more conservative)")
 ggsave("../generated/plots/mean-response-to-wom-questions-by-participant.pdf",height=4,width=9)
 
 # highest mean score is 2 (out of 2)!
-
 
 # plot mean scores by how conservative the participants are----
 
@@ -158,10 +128,11 @@ ggplot(mean.prog, aes(x=dog.whistle, y=Mean, color = conservative)) +
   geom_point(shape=20, size=3, alpha=1) +
   geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25) +
   scale_color_manual(values=c("black","blue")) +
+  theme(legend.position="top") +
   xlab("Condition") +
   ylab("Mean progressive rating (higher = more progressive)") +
   facet_grid(. ~ sentence.label)
-ggsave("../generated/plots/progressive.pdf",height=5,width=5)
+ggsave("../generated/plots/progressive.pdf",height=4,width=8)
 
 
 # racist
@@ -176,10 +147,11 @@ ggplot(mean.racism, aes(x=dog.whistle, y=Mean, color = conservative)) +
   geom_point(shape=20, size=3, alpha=1) +
   geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25) +
   scale_color_manual(values=c("black","blue")) +
+  theme(legend.position="top") +
   xlab("Condition") +
-  ylab("Mean racism rating (higher = more racist)") +
+  ylab("Mean racist rating (higher = more racist)") +
   facet_grid(. ~ sentence.label)
-ggsave("../generated/plots/racist.pdf",height=5,width=5)
+ggsave("../generated/plots/racist.pdf",height=4,width=8)
 
 
 # honest
@@ -213,9 +185,10 @@ ggplot(mean.helpful, aes(x=dog.whistle, y=Mean, color = conservative)) +
   geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25) +
   scale_color_manual(values=c("black","blue")) +
   xlab("Condition") +
+  theme(legend.position="top") +
   ylab("Mean helpful rating (higher = more helpful)") +
   facet_grid(. ~ sentence.label)
-ggsave("../generated/plots/helpful.pdf",height=5,width=5)
+ggsave("../generated/plots/helpful.pdf",height=4,width=8)
 
 
 # intelligent
@@ -273,7 +246,7 @@ ggsave("../generated/plots/friendly.pdf",height=5,width=5)
 
 
 # party
-table(d$dog.whistle,d$conservative,d$pparty,d$sentence.label)
+table(d$dog.whistle,d$pparty,d$sentence.label)
 
 
 # results for "Hilfe vor Ort"
@@ -308,4 +281,53 @@ table(d$dog.whistle,d$conservative,d$pparty,d$sentence.label)
 # less conservative more conservative
 # Control                     2                 0
 # Dog whistle                11                 5
+
+
+# do the Wahlomat questions correlate with the party that the participants would have voted for? ----
+
+stringdistmatrix(d$party, names(colors.party), method="jw") -> m
+
+d$party <- names(colors.party)[apply(m, 1, which.min)]
+
+c("CDU"                  = "black",
+  "SPD"                  = "red",
+  "AfD"                  = "blue",
+  "FDP"                  = "yellow",
+  "Linke"                = "purple",
+  "Grüne"                = "darkgreen",
+  "Die Partei"           = "#B92837",
+  "Humanisten"           = "#d90368",
+  "Volt"                 = "#562883",
+  "keine Angabe"         = "grey") -> colors.party
+
+ggplot(d,aes(x=wom.citizenship, fill=party)) +
+  geom_bar(stat="count", width=1) +
+  scale_fill_manual(values=colors.party) + 
+  scale_x_discrete("In Deutschland soll es generell möglich sein, neben der deutschen eine zweite Staatsbürgerschaft zu haben.")
+ggsave("../generated/plots/wom.citizenship-by-party.pdf",height=4,width=9)
+
+
+ggplot(d,aes(x=wom.refugees , fill=party)) +
+  geom_bar(stat="count", width=1) +
+  scale_fill_manual(values=colors.party) + 
+  scale_x_discrete("Asyl soll weiterhin nur politisch Verfolgten gewährt werden.")
+ggsave("../generated/plots/wom.refugees-by-party.pdf",height=4,width=9)
+
+ggplot(d,aes(x=wom.headscarf , fill=party)) +
+  geom_bar(stat="count", width=1) +
+  scale_fill_manual(values=colors.party) + 
+  scale_x_discrete("Das Tragen eines Kopftuchs soll Beamtinnen im Dienst generell erlaubt sein.")
+ggsave("../generated/plots/wom.headscarf-by-party.pdf",height=4,width=9)
+
+ggplot(d,aes(x=wom.islam , fill=party)) +
+  geom_bar(stat="count", width=1) +
+  scale_fill_manual(values=colors.party) + 
+  scale_x_discrete("Islamische Verbände sollen als Religionsgemeinschaften staatlich anerkannt werden können.")
+ggsave("../generated/plots/wom.islam-by-party.pdf",height=4,width=9)
+
+ggplot(d,aes(x=wom.asylum , fill=party)) +
+  geom_bar(stat="count", width=1) +
+  scale_fill_manual(values=colors.party) + 
+  scale_x_discrete("Das Recht anerkannter Flüchtlinge auf Familiennachzug soll abgeschafft werden.")
+ggsave("../generated/plots/wom.asylum-by-party.pdf",height=4,width=9)
 

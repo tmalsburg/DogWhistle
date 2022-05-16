@@ -15,7 +15,7 @@ source("../../../scripts/general.R")
 rbind(
   read_csv("../data/responses_1.csv") %>% mutate(list=1),
   read_csv("../data/responses_2.csv") %>% mutate(list=2)) %>%
-  mutate(subj = 1:n()) %>%
+  mutate(subj = 1:n()+60) %>% #start at 60 since we already collected data from other participants
   select(subj,
          list,
          time            = Timestamp,
