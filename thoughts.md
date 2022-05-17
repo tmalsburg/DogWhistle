@@ -469,6 +469,7 @@ Merkel speaking out against individual groups appropriating the concept of the p
 - Klimadebatte
 - Covid-Skeptizismus, Debatten zur Impfpflicht
 - Stuttgart 21 Debatte?
+- [The Rhetoric Tricks, Traps, and Tactics of White Nationalism](https://medium.com/@DeoTasDevil/the-rhetoric-tricks-traps-and-tactics-of-white-nationalism-b0bca3caeb84)
 
 # References
 
