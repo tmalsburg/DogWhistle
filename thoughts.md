@@ -454,6 +454,19 @@ Merkel speaking out against individual groups appropriating the concept of the p
   4. Plausible deniability. 🗹
 - Observation: It’s not dog-whistly in the original sense because his outgroup immediately attacked him for this statement.  This is perhaps more an instance of political persuasion than covert communication.
 
+## “Flüchtlingswelle” (2015 events)
+- Dogwhistle according to Lisa Hofmann.
+- [Entry in Glossar Neue Deutsche Medienmacher](https://glossar.neuemedienmacher.de/glossar/fluechtlingsstrom-zustrom-fluechtlingswelle)
+  - Not clear how “Flüchtlingswelle” puts the blame on refugees.  Alternative term “Fluchtmigration” also deviates considerably in meaning (doesn’t capture dynamics and order or magnitude).
+- [SZ article](https://www.sueddeutsche.de/kultur/framing-check-fluechtlingswelle-wenn-menschen-zur-naturkatastrophe-werden-1.4038753): Main argument: Makes migration sound threatening.  There’s something to it, but it’s not clear that the word “Welle” necessarily invokes the pictures of destroyed cities as the article suggests.  For comparison, the word “Hitzewelle” is not strictily positive but not strictly negative either.  But it’s clearly not meant to evoke the image of destroyed cities.  Similarly, “Kündigungswelle” is negative but not catastrophic.  Like these terms, “Flüchtlingswelle” does have some negative connotation; it’s not clear, though, that it’s a connotation that the user of the term would deny.  A Flüchtlingswelle is matter of factly a challenge and associated with risks if not managed properly, and saying so is not a taboo.
+- Checklist:
+  1. Presence of a taboo: Possibly, with the taboo being: refugees are potentially a threat.
+  2. Violation of maxim of quantity: I’d say no.
+  3. Meaning can be enriched with a controversial meaning: It can, but it feels a bit constructed and it’s not necessarily clear that people regularly do it.
+  4. Plausible deniability: I think no, but it depends on what precisely the implied meaning is supposed to be.
+  5. Not clear who in- and outgroups are supposed to be because the term was broadly used in Germany.
+- Conclusion (TM): “Flüchtlingswelle” is perhaps more a case of framing which is a closely related phenomenon but also sufficiently different.
+
 # Sources of PDWs
 
 - Here’s someone’s (failed IMO) attempt to elicit left-wing dog whistles on the “Ask the Donald” subreddit: https://www.reddit.com/r/AskThe_Donald/comments/b4qc5d/what_are_the_leftist_dog_whistle_words_you_can/
@@ -472,7 +485,7 @@ Merkel speaking out against individual groups appropriating the concept of the p
 - [The Rhetoric Tricks, Traps, and Tactics of White Nationalism](https://medium.com/@DeoTasDevil/the-rhetoric-tricks-traps-and-tactics-of-white-nationalism-b0bca3caeb84)
 
 # Other resources
-- [Glossar | Neue Deutsche Medienmacher*innen](https://glossar.neuemedienmacher.de/glossar/filter:a/)
+- [Glossar | Neue Deutsche Medienmacher*innen](https://glossar.neuemedienmacher.de/glossar/)
 
 # References
 
