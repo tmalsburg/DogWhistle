@@ -471,6 +471,9 @@ Merkel speaking out against individual groups appropriating the concept of the p
 - Stuttgart 21 Debatte?
 - [The Rhetoric Tricks, Traps, and Tactics of White Nationalism](https://medium.com/@DeoTasDevil/the-rhetoric-tricks-traps-and-tactics-of-white-nationalism-b0bca3caeb84)
 
+# Other resources
+- [Glossar | Neue Deutsche Medienmacher*innen](https://glossar.neuemedienmacher.de/glossar/filter:a/)
+
 # References
 
 # Preliminary results of pilots
