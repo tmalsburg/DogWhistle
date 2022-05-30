@@ -467,6 +467,10 @@ Merkel speaking out against individual groups appropriating the concept of the p
   5. Not clear who in- and outgroups are supposed to be because the term was broadly used in Germany.
 - Conclusion (TM): “Flüchtlingswelle” is perhaps more a case of framing which is a closely related phenomenon but also sufficiently different.
 
+## War in Ukraine
+- “Stand with Ukraine”: Potential dogwhistle meaning: Support Ukraine militarily regardless of the consequences.
+- “Zeitenwende”: Potential dogwhistle meaning: Germany needs to spend a lot more money on the military and engage in wars alongside NATO partners.  This is nonnegotiable and a necessary consequence of unchangeable historic events.
+
 # Sources of PDWs
 
 - Here’s someone’s (failed IMO) attempt to elicit left-wing dog whistles on the “Ask the Donald” subreddit: https://www.reddit.com/r/AskThe_Donald/comments/b4qc5d/what_are_the_leftist_dog_whistle_words_you_can/
