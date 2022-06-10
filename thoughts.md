@@ -26,15 +26,6 @@ A compiled PDF version can be found [here](https://github.com/tmalsburg/DogWhist
 
 - May also inform research on de-biasing AI language models.  Current approaches seem simplistic and will let more subtle expressions slip through.  Potentially an interesting connection to work in computational linguistics $\Rightarrow$ idea for second stage of the SFB.  (Inspired by Anne Lauscher talk at IMS.)
 
-# Examples of dog whistles
-
-wonder-working power: Henderson/McCready 2019
-
-big pharma: Henderson/McCready 2019
-
-inner city: Henderson/McCready 2019, Stanley 2015
-
-welfare: Henderson/McCready 2019, Stanley 2015
 
 # Definitions of dog whistle content
 

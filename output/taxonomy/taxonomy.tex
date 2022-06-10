@@ -1,0 +1,494 @@
+\documentclass[11pt,fleqn]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{tikz}
+\usepackage{mathtools}
+\usepackage{longtable}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+%\usepackage[dvips]{graphics}
+%\usepackage[table]{xcolor}
+%\usepackage{amssymb}
+\usepackage{float}
+%\usepackage{subfig}
+\usepackage{booktabs}
+\usepackage{subcaption}
+\usepackage{booktabs}
+
+\usepackage[normalem]{ulem}
+
+\usepackage{multicol}
+\usepackage{txfonts}
+\usepackage{amsfonts}
+\usepackage{natbib}
+%\usepackage{apacite}
+\usepackage{gb4e}
+\usepackage[all]{xy}
+\usepackage{rotating}
+\usepackage{tipa}
+\usepackage{multirow}
+\usepackage{authblk}
+%\usepackage{url}
+\usepackage{pdflscape}
+\usepackage{rotating}
+\usepackage{adjustbox}
+\usepackage{array}
+
+\definecolor{Pink}{RGB}{255,50,170}
+\newcommand{\jd}[1]{\textcolor{Pink}{[jd: 1]}}  
+
+\newcommand{\jt}[1]{\textbf{\color{blue}JT: 1}}
+
+\newcommand{\tableref}[1]{Tab.~\ref{1}}
+\newcommand{\figref}[1]{Fig.~\ref{1}}
+
+\def\bad{{\leavevmode\llap{*}}}
+\def\marginal{{\leavevmode\llap{?}}}
+\def\verymarginal{{\leavevmode\llap{??}}}
+\def\swmarginal{{\leavevmode\llap{4}}}
+\def\infelic{{\leavevmode\llap{\#}}}
+
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+%\definecolor{gray}{rgb}{0.36, 0.54, 0.66}
+
+\newcommand{\dashrule}[1][black]{%
+  \color{1}\rule[\dimexpr.5ex-.2pt]{4pt}{.4pt}\xleaders\hbox{\rule{4pt}{0pt}\rule[\dimexpr.5ex-.2pt]{4pt}{.4pt}}\hfill\kern0pt%
+}
+
+\setlength{\parindent}{.3in}
+\setlength{\parskip}{0ex}
+
+\newcommand{\yi}{\'{\symbol{16}}}
+\newcommand{\nasi}{\~{\symbol{16}}}
+\newcommand{\hina}{h\nasi na}
+\newcommand{\ina}{\nasi na}
+
+\newcommand{\foc}{$_{\mbox{\small F}}$}
+
+\hyphenation{par-ti-ci-pa-tion}
+
+\hypersetup{
+    colorlinks=false
+    }
+
+%\setlength{\bibhang}{0.5in}
+%\setlength{\bibsep}{0mm}
+%\bibpunct[:]{(}{)}{,}{a}{}{,}
+
+\newcommand{\6}{\mbox{$[\hspace*{-.6mm}[$}} 
+\newcommand{\9}{\mbox{$]\hspace*{-.6mm}]$}}
+\newcommand{\sem}[2]{\61\9$^{2}$}
+\renewcommand{\ni}{\~{\i}}
+
+\newcommand{\citepos}[1]{\citeauthor{1}'s \citeyear{1}}
+\newcommand{\citeposs}[1]{\citeauthor{1}'s}
+\newcommand{\citetpos}[1]{\citeauthor{1}'s \citeyear{1}}
+
+\newcolumntype{R}[2]{%
+    \item {\adjustbox{angle=1,lap=\width-(2)}\bgroup}%
+    l%
+    <{\egroup}%
+}
+\newcommand*\rot{\multicolumn{1}{R{90}{0em}}}% no optional argument here, please!
+
+\title{Towards a taxonomy of dogwhistle and related content}
+
+\author{Judith Tonhauser}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Which dogwhistles are discussed?}
+
+\begin{itemize}
+
+\item {\em wonder-working power}: \citealt{henderson-mccready2019, santana2021}
+
+\item {\em big pharma}: \citealt{henderson-mccready2019}
+
+\item {\em inner city}: \citealt{hurwitz-peffley2005,henderson-mccready2019,stanley2015} 
+
+\item {\em welfare}: \citealt{henderson-mccready2019,stanley2015} 
+
+\item {\em welfare queen}: \citealt{santana2021}
+
+\item {\em family values}: \citealt{santana2021}
+
+\item {\em men's rights}: \citealt{santana2021}
+
+\end{itemize}
+
+\section{Which properties are ascribed to dogwhistle content?}
+
+{\bf READ: https://niemanreports.org/articles/the-welfare-queen-experiment/}
+
+{\bf READ: Gilens 1996}
+
+{\bf READ: Lake 2018}
+
+
+
+\subsection{Merriam Webster}
+
+ Merriam Webster (\url{https://www.merriam-webster.com/dictionary/dog%20whistle})
+
+``An expression or statement that has a secondary meaning intended to be understood only by a particular group of people.''
+
+\subsection{\citealt{mendelberg2001}}
+
+\begin{itemize}
+
+\item  (from Khoo 2017) Tali Mendelberg proposes that using a code word allows the speaker and her audience to violate certain social norms while plausibly denying doing so.
+
+This does not involve in/outgroup distinction, highlights plausible deniability.
+
+\end{itemize}
+
+
+\subsection{\citealt{goodin-saward2005}}
+
+\begin{itemize}
+
+\item p.??: Dogwhistle politics is ``a way of sending a message to certain potential supporters in such a way as to make it inaudible to others whom it might alienate or deniable for still others who would find any explicit appeal along those lines offensive.''
+
+\end{itemize}
+
+
+\subsection{\citealt{hurwitz-peffley2005}}
+
+\begin{itemize}
+
+\item abstract: inner city is ``believed by many to carry strong racial connotations''
+
+\item p.100: implicitness requirement (from \citealt{mendelberg2001})
+
+\item p.101: ``norm of political correctness and the fear of being accused of racialization"
+
+\item p.101: words that are fundamentally nonracial in nature that have, through the process of association, assumed a strong racial component
+
+\item p.101: strategic words or phrases with racial connotations
+
+\item p.104: ``if this simple phrase is found to effectively frame responses to the crime problem, we will know how easily public opinion can be shaped''
+
+\item From Santana: What Hurwitz and Peffley found was that ``the use of the racially coded phrase inner city appears to be as much of a cue to racial liberals to reject punitive solutions as it is to conservatives to endorse them''. In other words, both sets of audiences hear and are influenced by the dogwhistle inner city violence, contrary to the secret code account. So, Hurwitz and Pefley's result is surprising from the standpoint of standard definitions of dogwhistles. But as they point out, their result is coherent with the broader literature on racial framing in political speech (e.g., Valentino et al 2002), which typically finds that racial framing in political speech effects both ingroup and outgroup members, just in different ways.
+
+\end{itemize}
+
+\subsection{\citealt{white2007}}
+
+\subsection{\citealt{calfano-djupe2009}}
+
+\begin{itemize}
+
+\item  These cues, or what we term ?the code,? signal the in-group status of a GOP candidate to white evangelical voters. However, because the cues are so specific to evangelical culture, they are intended to pass unnoticed by other voters and therefore allow GOP candidates to avoid broadcasting very conservative issue positions that might alienate more moderate voters. Thus, the code is a highly sophisticated communication strategy that is designed to appeal to an in-group without rousing an out-group?s suspicions.
+
+In/outgroup difference is made, cues can be recognized by outgroup, signal belonging to ingroup without being explicit.
+
+\end{itemize}
+
+\subsection{\citealt{albertson2015}}
+
+\begin{itemize}
+
+\item  multivocal appeals, meaning appeals that have distinct meanings to different audiences
+
+Here the ingroup/outgroup distinction is avoided, ?distinct? meanings is pretty vague, ?different audiences? is also pretty vague (no requirement that the additional meaning is taboo, controversial, or inflammatory)
+
+\end{itemize}
+
+\subsection{\citealt[ch.4]{stanley2015}}
+
+\begin{itemize}
+
+\item p.94: The third norma- tive ideal for public reason is that it is guided by equal respect for the perspective of everyone subject to the policy under de- bate. Following the recent political philosophy tradition, we shall call this the norm of reasonableness.
+
+\item p.126: One moral of the previous chapter is that demagoguery in a liberal democracy takes the form of a contribution to public debate that is presented as embodying reasonableness yet in fact contributes a content that clearly erodes reasonableness. This form of propaganda is not merely a deceitful attempt to bypass theoretical rationality, on this view. It functions via an initial selection of a target within the population.
+
+\item p.129: We should expect there to be linguistic means by use of which one can make an apparently reasonable claim, while simultaneously, merely by using the relevant vocabulary, wearing down the ideal of reasonableness.
+
+\item p.138: One kind of linguistic propaganda involves repeated asso- ciation between words and social meanings. Repeated associ- ation is also the mechanism by which conventional meaning is formed; it is because people use ?dogs? to refer to dogs, re- peatedly, that ?dogs? comes to refer to dogs. My claim in this chapter is that when propagandists use repeated association between words and images, they are forming connections that serve as the basis of conventional meaning.
+
+\item p.138: When the news media connects images of urban Blacks repeatedly with mentions of the term ?welfare,? the term ?wel- fare? comes to have the not-at-issue content that Blacks are lazy. At some point, the repeated associations are part of the mean- ing, the not-at-issue content. ... This does not mean that someone hearing the term ?welfare? automatically comes to believe that Blacks are lazy. It does mean that they may have to shift to different vocabulary, or consciously resist the effects of the association, in conversation or otherwise, to deter the propagandistic effect.
+
+\item p.139: The fact that the not-at-issue content cannot be canceled is what makes it so effective.
+
+\item p.140: According to the content model, one kind of paradigmatic propaganda in a liberal democracy would have a normal at-issue content that seems reasonable, and would also have a not-at-issue content that is not reasonable. Here is another way of thinking of the mechanism by which a contribution could lead to an erosion of empathy for a group. The contribution could express a perfectly ordinary at-issue content, but cause a decrease in empathy or respect directly, as part of its not-at-issue function. The idea here is not, as on the content model of propaganda, that there is a not-at-issue content, acceptance of which decreases empathy for a group. It is rather that words have direct not-at-issue emo- tional effects. Let us call this the expressive model of propaganda. According to the expressive model, one kind of paradigmatic propaganda in a liberal democracy would have a normal at- issue content that seems reasonable, and would also have a not-at-issue effect that would decrease empathy for a group. Since decreasing empathy for a group runs counter to reason- ability, its not-at-issue effects would be unreasonable.
+
+\item  p.151f: not only politics but also ev- eryday discourse involve apparently innocent words that have the feature of slurs, namely, that whenever the words occur in a sentence, they convey the problematic content. The word ?welfare,? in the American context, is not on any list of prohib- ited words. Yet the word ?welfare? always conveys a problem- atic social meaning, whenever it is used. A sentence like ?John believes that Bill is on welfare? still communicates a problem- atic social meaning.
+
+\item p.154: Mendelberg and her Princeton colleague Martin Gilens have both studied the effects of the use of the term ?welfare? on political opinions. They have discovered that the use of the term ?welfare? leads to a priming of white racial bias. In other words, the mere use of ?welfare,? and presumably also ?food stamps,? as well as some other expressions referencing social spending programs, primes racial bias against Blacks. A con- clusion from this research is that ?any allusion to a racially tinged issue like welfare may racialize a campaign, even if it alludes to white recipients.?30 Most interestingly for the topic of slurs, Mendelberg, via a compelling experiment with non- students in Michigan, shows that the racial-bias effects actu- ally decrease if a candidate?s message is made explicitly racial in character.
+
+\item p.156: On the picture I am sketching, certain words are imbued, by a mechanism of repeated association, with problematic im- ages or stereotypes. One can use these words to express ordi- nary contents, and explicitly deny complicity with the associ- ated problematic image or stereotype. ... Gingrich was allowed to act responsible just for the at-issue content of his utterance, and feign ignorance of the racial overtones of the expressions.
+
+\item  p.157f: Propaganda character- istically involves attaching problematic social meanings to seemingly innocuous words that are used to describe policy, in effect making the word ?welfare? like the word ?prostitution.? The social meanings of these words are not-at-issue content. Because they are not-at-issue contents, they are ?not negotia- ble, not directly challengeable, and are added [to the common ground] even if the at-issue proposition is rejected.? In short, even evaluating the proposal means that one must accept the social meaning. It is odd to challenge the social meaning; the social meaning associated with a word is accepted even if the claim made with the associated word is rejected.
+
+\item  p.165: When President Obama is described as being Muslim, the not-at-issue content, or social meaning, of the use of the term ?Muslim? is of course related to terrorism, or some kind of anti-American sentiment. This is an attempt to challenge the president?s sincerity,
+
+\end{itemize}
+
+\subsection{\citealt{khoo2017}}
+
+\begin{itemize}
+
+\item  footnote 1: Code words are sometimes called ?dog whistles? because (so the received view goes) they involve sending a message that can only be heard by audience members with suitably sensitive ears. Richard Morin is credited with introducing the term. He writes, ?Subtle changes in question-wording sometimes produce remarkably different results . . . researchers call this the ?Dog Whistle Effect?: Respondents hear something in the question that researchers do not.? (Morin 1998).
+
+\item  p.33: Recently, a more subversive phenomenon has been noted and discussed in the social sciences? the use of code words to subvert norms of democratic deliberation.
+
+\item  p.34: The standard thought is that politicians use code words because they stand to gain from conveying certain messages implicitly, rather than stating them explic- itly. 
+
+\item  p.34f: Both Mendelberg and Stanley propose varia- tions on the idea that code words encode as part of their meaning a hidden, or implicit, message, which the user of a code word communicates, along with some other explicit message. This idea keeps with the received view of dog whistles as devices of communicating secret messages to the suitably trained ear.
+
+\item  p.35: I think this kind of view is on the wrong track: what we identify as ?code words? do not encode additional, implicit, meanings. Put oxymoronically, code words are not code for anything. Instead, someone using a code word exploits (intentionally or otherwise) their audience?s stereotypical beliefs about what they are talking about, without explicitly communicating these beliefs. Thus, using a ?code word? allows (or leads) the audience to draw additional inferences from the speech without it being clear that they are doing so?and this is what dis- tinguishes coded speech from speech where the relevant stereotypical beliefs are explicitly asserted. In a slogan: code words don?t work by being vehicles of implicit communication; they work by triggering inferences which they are not used to communicate.
+
+\item  p.47: code words carry no ?implicit? meaning at all. This theory offers the most straightforward account of why code words afford plausible deniability as discussed above.
+
+\item  p.48: though he does not communicate anything about race, since many hearers have preexisting beliefs about the subject matter of what he does say, Politician Z?s speech has the result that hearers will infer some racial belief about the policy from what he says.
+
+\item  p.48: Notice here that the politician may or may not have conversationally implicated that the food stamp program will primarily benefit poor African Americans? whether he does will depend on whether he intended his hearers to come to infer (C) on the basis of his saying (A). ... It seems then that nothing implicit need be communicated by a code word for a use of it to create space for plausible deniability regarding the violation of the norm of racial equality
+
+\item  p.48: I should emphasize that the beliefs which drive these inferences need not be about the subject matter of the word?they could be about the word itself. Thus, in the case of ?wonder-working power,? a hearer who recognizes the expression might come to believe that the speaker uttering it is a Christian.
+
+\item  p.50: Explicit Statement: x is C.
+Existing Belief: If something is C, then it is R. Inferred: x is R.
+
+This schema is too narrow. The existing belief can be not just about x but also about the speaker or the topic matter at hand.
+
+\item The nonracial meaning of {\em inner city} is not cancelable, but the racial one is: Smith is an inner-city pastor who is not African American. So the word is not properly ambiguous.
+
+\end{itemize}
+
+\subsection{\citealt{saul2018}}
+
+\begin{itemize}
+
+\item A[n explicit intentional] dogwhistle is a speech act designed, with intent, to allow two plausible interpretations, with one interpretation being a private, coded message targeted for a subset of the general audience, and concealed in such a way that this general audience is unaware of the existence of the second, coded interpretation.
+
+\end{itemize}
+
+\subsection{\citealt{henderson-mccready2018}}
+
+
+\subsection{\citealt{henderson-mccready2019}}
+
+\begin{itemize} 
+
+\item p.3: language that sends one message to an outgroup while at the same time sending a second (often taboo, controversial, or inflammatory) message to an ingroup
+
+
+\item  In broad strokes, we make the novel proposal that dogwhistles come in two types. The first concerns covert signals that the speaker has a certain persona...The second involves sending a message with an enriched meaning whose recovery is contingent on recognizing the speaker?s covertly signalled persona
+
+\item  The use of dogwhistles is prompted by a desire to ?veil? a bit of content, but still to convey it in some manner. Deniability is essential. If a bit of content is conventional, it?s not deniable any longer.
+
+\item  ``What do you have against...?'' diagnostic in (7) and (8); problem: does (8) give rise to DW content? Also: ``It's not cool to say Z'' -- ``I didn't say Z'' diagnostic on p.4.
+
+\item  Dogwhistles, by definition, are not needed when talking to an in-group and can be disposed of, which wouldn?t make sense if the subtext of dogwhistle were part of its conventional meaning for the in-group.
+
+\item  (i) dogwhistles are not part of conventional content, so speakers are able to avoid (complete) responsibility for what they convey, (ii) dogwhistles are semi-cooperative?that is, they are meant to convey part of their meaning to to only one segment of the audience while hiding it from the rest of the audience, and (iii) while deniable, dogwhistles are risky. Being detected using a dogwhistle by the wrong party should cost the speaker in some way.
+
+\item  knowledge about social personae can play a role in recovering intended meanings
+
+\item  a broader continuum of cases in which the rational use of language is utilized or manipulated by speakers for reasons of strategy, efficiency, or style
+
+\item  Dogwhistles share with conversational implicatures the property of being can- cellable (deniable), but differ from standard views of them in not following from anything but an extremely nonstandard construal of the Gricean maxims Grice 1975.
+
+\item  their interpretation arises from background assumptions about social meaning and how personae are linguistically expressed makes them quite different from ordinary implicatures. They are simultaneously conventional and socially dependent. In this sense, dogwhistles seem to occupy a genuinely new niche in the characterization of not-at-issue meaning.
+
+\item  There is a sense in which dogwhistles are an ubiquitous phenomenon: much communication involves underspecified meanings which can in part be resolved by learning more about the speaker and her intentions. Informa- tion about social categories often informs how such underspecification is resolved, but possibly in quite different ways in different contexts; this area is also a rich and complex one ripe for investigation.
+
+\end{itemize}
+
+
+\subsection{\citealt{beaver-stanley2019}}
+
+\begin{itemize}
+
+\item p.511: The word ?welfare? seems to signal a problematic racial message, despite its innocent explicit content. Words that have a seemingly neutral explicit content but have the effect, among certain audiences, of representing things in a decidedly non-neutral fashion, in ways that are disconnected from their literal meanings?for example, words that connote strongly negative associations?are called dogwhis- tles. A dogwhistle is an utterance that signals one apparently harmless thing to one audience and something very different, usually harmful, to a different audience.
+
+\item p.511: Describing a program as a ?welfare program? gives rise to a strongly negative reaction to that program among one audience (those with at least some racial bias), and considerably less negative reactions among a different audience (composed of members with few indicators of racial bias). Racial bias is a value system; it is a way of valuing things?or, in this case, persons?on a metric of value at least partly determined by race. The word ?welfare? signals one very negative message to an audience that endorses a racist value system and lacks this negative force with audiences who do not share that value system.
+
+\item p.512f.: Trump has claimed that he ?wouldn?t be surprised? if George Soros, a prominent Jewish financier, was behind a caravan of Central and South American migrants headed toward the United States,46 and he has explicitly proclaimed his allegiance to nation- alism and his rejection of ?globalism.?47 He has denounced supposedly nefarious meddling by the Federal Reserve as the source of various eco- nomic problems, calling the Federal Reserve his ?biggest threat.?48 The thought that there is a shadowy conspiracy of ?globalists? seeking to destroy the ethnic purity of individual nations is associated with common value systems in fascist and neo-Nazi movements. The idea that the Federal Reserve is part of this conspiracy has long been central to American versions of this ideology dating back to the 1930s.49 Trump has been increasingly aligning himself with a classical form of anti-Semitism, but without mentioning Jewish people as behind this putative conspiracy. To anyone familiar with this version of anti-Semitism, including of course those who accept it, these are clear dogwhistles.
+
+\item p.521: Code words are precisely a class of expres- sions that are used to convey controversial messages while allowing the speaker to maintain plausible deniability over communicating that con- troversial message. More generally, in communication, we often seek to instill in our audience a belief, or perhaps just a suspicion, without hav- ing them ?pin? that communicative intention on us.
+
+\item p.521f: Literally expressing the belief you want your interlocutor to adopt in a sincere assertion, on the one hand, and on the other, uttering a sentence with the intention of causing your interlocutor to adopt a belief without having any sense of a connection between the newly formed belief and your intention, lie on different ends of a continuum. The idealizations of the contemporary theory of meaning restrict our attention to one extreme of this continuum. ... In other words, the idealizations of contemporary theory of meaning restrict our attention to cases in which there is no plausible deniability. This is another needlessly restrictive ide- alization for the theorist who seeks to explain political speech or indeed human communication more generally.
+
+\item p.523: The word ?jock? is part of a speech practice that represents a school in a certain way. By engaging in the speech practice that uses ?jock? in that way, one is endorsing, whether consciously or not, the value system represented by this speech practice.
+
+\item p.524f: Take, for example, Hungarian Prime Minister Viktor Orbán?s claim in a campaign speech in Budapest in March 2018, that
+
+we are fighting an enemy that is different from us. Not open, but hiding; not straightforward but crafty; not honest but base; not national but international; does not believe in working but specu- lates with money; does not have its own homeland but feels it owns the whole world.
+
+It is dubious that he was ignorant of the way in which his words evoked anti-Semitic tropes. Debates about whether a particular demagogue is aware of the problematic effects of their rhetoric tend to be a waste of time. Nevertheless, the effects of rhetoric independent of the intention with which they are delivered are core data for non-ideal theories of meaning.
+
+\item p.524: If speech practices can convey value systems without the speaker being aware of them, then it is easy to envisage someone who naturally engages in such practices without being aware of their overall structure or signifi- cance. Someone may just be inculcated into authoritarian modes of speech, ones that structure the world into in-groups and out-groups, with- out being consciously aware of the links between the language they use and these value systems. Successful authoritarians, from Viktor Orbán to Idi Amin to Jair Bolsonaro, need not be aware of why and how they are successful any more than someone who uses ?elms? and ?beeches? to refer to distinct kinds of trees needs to be able to tell them apart themselves. On the other hand, feigned ignorance of the message of their ways of speaking is itself part of the repertoire of politics.
+
+\end{itemize}
+
+\subsection{\citealt{wetts-willer2019}}
+
+\begin{itemize}
+
+\item  messages...in which race is not explicitly mentioned but instead is cued through coded language or accompanying visuals subtly connect racial prejudice to whites? views of policies and candidates, a process commonly referred to as ?dog whistling? (Haney-López 2014; Mendelberg 2001; Valentino, Hutchings, and White 2002).
+
+Dog whistles limited to racial prejudice?  Controversial message is component of this definition, no in/outgroup, controversial message is not explicit but subtly coded.
+
+\end{itemize}
+
+
+\subsection{\citealt{denigot-burnett2020}}
+
+\begin{itemize}
+
+\item abstract: ``Dogwhistles are a class of expressions often used in political discourse that aim at being interpreted in different ways by listeners of different communities.''
+
+\item p.18: ``the goal in using them is to convey two different messages to two different communities.''
+
+\item p.18: ``Dogwhistle politics is generally defined as sending a message to an audience in such a way that a subset of the audience will understand the message differently from the rest of the audience.''
+
+\item p.18: ``dogwhistle speech reinforces the support of core supporters while being ignored by moderates, in situations where explicit reference to religion or race has negative effects on moderates.''
+
+\item A first approach consists in saying that dogwhistle words have an explicit meaning and an implicit meaning: \citealt{mendelberg2001,stanley2015,henderson-mccready2018,saul2018}; e.g., ambiguity: ``each word would have several meanings, for example one racial and the other nonracial, and the use of that term would trigger (or not) one or both of the interpretations in the audience'' (see \citealt{khoo2017} for problems)
+
+\item \citealt{stanley2015}: DWs are not ambiguous but have a secondary not-at-issue meaning; problems discussed in \citealt{henderson-mccready2018} and \citealt{khoo2017}: conventional meanings are non-cancelable, but DWs are deniable {\bf Did Stanley really say conventional or just not-at-issue?}
+
+\item The secondary meaning is conventional and cannot be canceled; examples from \citealt{henderson-mccready2018}
+
+\begin{itemize}
+\ex 
+\begin{xlist}
+\ex A: Angela Merkel is a kraut!
+\ex B: What do you have against Germans?
+\ex A: \# I don't have anything against Germans. Why do you think I might?
+\end{xlist}
+\ex
+\begin{xlist}
+\ex A: Donald is on welfare.
+\ex B: What do you have against social programs?
+\ex A: I don't have anything against social programs. Why do you think I might?
+\end{xlist}
+\end{itemize}
+
+p.19: ``deniability is a key point of dogwhistles that differentiates them from slurs or other lexical items imbued with added conventional meaning.''
+
+{\bf THEY ASSUME THAT THE ADDED MEANING IS CONVENTIONAL?!?}
+
+\item Properties: 
+
+\begin{itemize}
+
+\item interpretative variability: different listeners should assign different interpretations to a speaker's single utterance
+
+\item political conflict: dogwhistles are most common in situations of political conflict between conversation participants
+
+\item identity-based: interpretative variability is identity-based: listeners who attribute a religious identity, or persona...similar to theirs to the speaker will be more likely to interpret the dogwhistle in the religious way than those who believe the speaker holds no specific religious beliefs
+
+\item plausible deniability for the speaker
+
+\item a savvy opponent, someone who does not share the speaker's political ideology but who understands the racist way the dogwhistle can be used, can call the speaker out for this use (\citealt{stanley2015,saul2018})
+
+\item specific form: expressions that are truth-conditionally equivalent are not semantically variable in the same way (\citealt{khoo2017})
+
+\end{itemize}
+
+\item p.20: politically informed non-racist listeners can detect dogwhistles without them (critique of \citealt{henderson-mccready2018})
+
+\end{itemize}
+
+\subsection{\citealt{pozniak-burnett2021}}
+
+\subsection{\citealt{santana2021}}
+
+\begin{itemize}
+
+\item p.1: ``the term dogwhistle refers to speech, usually political speech, which conveys controversial content without explicitly committing to it."
+
+\item p.1: ``with political dogwhistles, outgroup members frequently comprehend the secondary content''
+
+\item p.1: ``political dogwhistles hide loaded meanings under more innocuous surface contents''
+
+\item p.1: ``dogwhistles can work in a variety of ways''
+
+\item p.1: ``dogwhistles involve a deniable violation of egalitarian norms. Foregrounding this property of deniability, instead of requiring the secondary meaning to be accessible primarily to an ingroup, is the distinctive feature of my account. ...a political dogwhistle is still a dogwhistle if everyone can hear it.''
+
+\item p.5: We don't want every instance of bi-level meaning in political discourse to count as dogwhistles, because not every instance of political doublespeak is problematic in the way prototypicaly dogwhistles like welfare queen and family values are.
+
+\item p.5: what makes dogwhistles problematic: they harm disadvantaged groups, undermining our ability to have a functioning plural society, and muddle our ability to hold political figures responsible for their actions
+
+\item p.5: we should restrict the category dogwhistle to expressions in which the implicit meaning pejoratively calls attention to politically meaningful social categories, like race, gender, (dis)ability, and religion. Dogwhistles, that is, target groups, not merely individuals, and they target groups who form a politically salient class.
+
+\item p.5: our working definition of dogwhistles is that they have a bi-level meaning, with the implicit, secondary meaning pejoratively calling attention to a politically meaningful social group ... outgroup members can't hold the speaker responsible for violating the norm, because the implicit violation is deniable.
+
+\item p.6: what is essential is not that the outgroup doesn't hear the problematic secondary meaning, just that the outgroup can't sucessfully sanction the speaker for it
+
+\item p.8 FINAL DEFINITION?
+
+Dogwhistle: An act of political communication is a dogwhistle to the extent that:
+
+a. It has a secondary, implicit meaning in addition to its surface meaning.
+
+b. The secondary meaning, but not the surface meaning, calls attention to a politically meaningful social category in a way that violates widely shared egalitarian norms.
+
+c. An ingroup audience approves of violating these norms, while an outgroup audience prefers adherence to them.
+
+d. That norm violation can be successfully denied by the dogwhistle user.
+
+\item p.8: ``The violating secondary content might be lexically encoded in a term used to dogwhistle, or it might be generated in a contextual, one-off way.'' {\bf THIS SEEMS TO CONTRADICT THE ABOVE!}
+
+\item p.11: definition ``allows for graded membership in the category dogwhistle. Norm violations can be recognized and sanctioned to greater or  lesser degrees, meaning that condition (d) of my definition...is graded
+
+\item p.11: some dogwhistles should count as slurs and/or hate speech, which are widely acknowledged to violate egalitarian norms {\bf TAXONOMIC CLAIM! not the kind of taxonomy a linguist would build}
+
+\end{itemize}
+
+\subsection{\citealt{drainville-saul}}
+
+\begin{itemize}
+
+\item ``The exact definition of a dogwhistle is a matter of debate, but -- very roughly -- these are utterances which function by concealing their meaning or intended effects from at least some of the audience.''
+
+\end{itemize}
+
+\section{Towards a taxonomy of content}
+
+
+\begin{itemize}
+
+\item Conventionally-coded / non-deniable
+
+conventional implicatures, ordinary semantic entailments, anaphoric presuppositions, slurs
+
+\item Not conventionally coded / deniable
+
+conversational implicatures, dogwhistles, backhanded compliments, inside jokes, secret codes, parents who spell out C-O-O-K-I-E so their toddler won't understand, anti-semitic tropes
+
+\begin{itemize}
+
+\item implicitness requirement (same as non conventional?)
+
+\item norm of political correctness, fear of being accused a racist
+
+\item dogwhistles are used to persuade (\citealt[104]{hurwitz-peffley2005})
+
+\item dogwhistles have a harmful content, they are problematic: \citealt[5]{santana2021}
+
+\item dogwhistles pejoratively calls attention to politically meaningful groups: \citealt[5]{santana2021}
+
+\item dogwhistles can be positively-valanced (e.g., family values) or negatively-valanced (e.g., welfare) \citealt{santana2021}
+
+\item dogwhistles are used in antagonistic contexts \citealt{santana2021}
+
+\end{itemize}
+
+\end{itemize}
+
+
+\bibliographystyle{cslipubs-natbib}
+\bibliography{/Users/tonhauser.1/Documents/bibliography}
+
+
+\end{document}
+
