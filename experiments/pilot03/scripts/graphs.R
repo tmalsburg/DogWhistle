@@ -68,13 +68,14 @@ table(d$mean.wom.score)
 
 d = d %>%
   mutate(
-    conservative = ifelse(mean.wom.score > .99, "more conservative","less conservative"))
+    conservative = ifelse(mean.wom.score > .99, "more conservative", "less conservative"))
+                          
 
 length(unique(d$subj)) #115 participants
 
 table(d$conservative)
-# less conservative  174 (87 participants)
-# more conservative 56 (28 participants)
+#less conservative more conservative 
+#174                56
 
 d = d %>%
   mutate(subj = fct_reorder(as.factor(subj),mean.wom.score))  

@@ -8,6 +8,8 @@ tryCatch(
 # Load general definitions (also loads standard packages such as
 # tidyverse):
 
+theme_set(theme_bw())
+
 source("../../../scripts/general.R")
 source("../../../scripts/helpers.R")
 
@@ -214,20 +216,20 @@ d$mean.wom.score = (d$wom.refugees.num + d$wom.headscarf.num + d$wom.citizenship
 
 d = d %>%
   mutate(
-    conservative = ifelse(mean.wom.score > .99, "more conservative","less conservative"))
+    conservative = ifelse(mean.wom.score > .99, "more conservative",
+                          ifelse(mean.wom.score < .5, "less conservative", "neutral")))
 
 length(unique(d$subj)) #55 participants
 
 table(d$conservative)
-# less conservative  78 (39 participants)
-# more conservative 32 (16 participants)
+#less conservative more conservative           neutral 
+#50                32                28
 
 d = d %>%
   mutate(subj = fct_reorder(as.factor(subj),mean.wom.score))  
 
 ggplot(d, aes(x=subj, y=mean.wom.score,color=party,fill=party)) +
   geom_point(shape=21, size=3, alpha=1,color="black") +
-  geom_point(d,aes(x=subj,y=wom.asylum.num,shape=20),size=1,color="black") +
   scale_fill_manual(values=colors.party) +
   xlab("Participant") +
   ylab("Mean wom score (higher = more conservative)")
@@ -569,7 +571,7 @@ mean.racism
 ggplot(mean.racism, aes(x=dog.whistle, y=Mean, color = conservative)) +
   geom_point(shape=20, size=3, alpha=1) +
   geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25) +
-  scale_color_manual(values=c("black","blue")) +
+  scale_color_manual(values=c("red","blue","black")) +
   xlab("Condition") +
   ylab("Mean racism rating (higher = more racist)") +
   facet_grid(. ~ sentence.label)
