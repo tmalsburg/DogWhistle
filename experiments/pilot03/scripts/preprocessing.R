@@ -1,3 +1,5 @@
+# pilot 03
+# (graphs.R also imports data from pilot 02, to plot together)
 
 # Set working directory to directory of script:
 
@@ -65,11 +67,16 @@ d %>%
 rbind(d1, d2) %>%
   arrange(subj, sentence) %>%
   mutate(
-    sentence.label = ifelse(sentence==1, "Kampf-fuer-D", "Hilfe-vor-Ort")) -> d
+    sentence.label = ifelse(sentence==1, "Kampf für Deutschland", "Hilfe vor Ort")) -> d
 
 d %>%
   mutate(party = str_squish(party)) %>%
   unique() -> d
+
+# change "keine Angabe" to "no answer"
+table(d$party)
+d = d %>%
+  mutate(party=recode(party, "keine Angabe" = "(no answer)"))
 
 # save the preprocessed data
 write.csv(d, "../generated/data/d-preprocessed.csv")
@@ -77,6 +84,7 @@ nrow(d) #120
 
 length(unique(d$subj)) #60
 # two rows per subject because each subject rated a PDW and another item
+
 
 #View(d)
 

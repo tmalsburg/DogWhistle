@@ -1,10 +1,11 @@
 # pilot 03
+# (imports data from pilot 02 and pilot 03, to plot together)
 
 # Set working directory to directory of script:
 
-tryCatch(
-  setwd(dirname(rstudioapi::getSourceEditorContext()$path)),
-  error = function(e) setwd("experiments/Pilot02/scripts/"))
+# set working directory to directory of script
+this.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
+setwd(this.dir)
 
 # Load general definitions (also loads standard packages such as
 # tidyverse):
@@ -17,7 +18,7 @@ source("../../../scripts/helpers.R")
 d1 = read.csv("../generated/data/d-preprocessed.csv")
 nrow(d1) #120
 length(unique(d1$subj)) #60
-table(d$subj)
+table(d1$subj)
 
 # also load the data from the other pilot (pilot 02)
 d2 = read.csv("../../Pilot02/generated/data/d-preprocessed.csv")
@@ -75,7 +76,7 @@ length(unique(d$subj)) #115 participants
 
 table(d$conservative)
 #less conservative more conservative 
-#174                56
+#174  (= 87 participants)              56 (= 28 participants)
 
 d = d %>%
   mutate(subj = fct_reorder(as.factor(subj),mean.wom.score))  
@@ -83,15 +84,44 @@ d = d %>%
 ggplot(d, aes(x=subj, y=mean.wom.score,color=party,fill=party)) +
   geom_jitter(shape=21, size=3, alpha=1,color="black") +
   scale_fill_manual(values=colors.party) +
-  xlab("Participant") +
-  ylab("Mean wom score (higher = more conservative)")
-ggsave("../generated/plots/mean-response-to-wom-questions-by-participant.pdf",height=4,width=9)
+  theme(axis.text.x=element_blank()) +
+  theme(axis.ticks=element_blank(),panel.grid.major.x=element_blank(),
+        panel.grid.minor.x=element_blank(),plot.background=element_blank()) +
+  labs(fill = "Party selection") +
+  xlab("Participant (n = 115)") +
+  ylab("Mean conservativism score \n (higher = more conservative)")
+ggsave("../generated/plots/mean-conservativism-by-participant.pdf",height=3,width=10)
 
 # highest mean score is 2 (out of 2)!
 
 # plot mean scores by how conservative the participants are----
 
 # age
+table(d$page,d$conservative,d$dog.whistle,d$sentence.label)
+
+# recode politician age as numeric
+d = d %>%
+  mutate(
+    page_num = ifelse(page == "20-39", 0,
+                      ifelse(page == "40-59",1,2)))
+
+mean.age = d %>%
+  group_by(dog.whistle,sentence.label) %>%
+  summarize(Mean = mean(page_num), CILow = ci.low(page_num), CIHigh = ci.high(page_num)) %>%
+  ungroup() %>%
+  mutate(YMin = Mean - CILow, YMax = Mean + CIHigh)  
+mean.age
+
+ggplot(mean.age, aes(x=dog.whistle, y=Mean)) +
+  geom_point(shape=20, size=3, alpha=1) +
+  geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25) +
+  #scale_color_manual(values=c("black","blue")) +
+  xlab("Condition") +
+  ylab("Mean numeric age rating (higher = older)") +
+  facet_grid(. ~ sentence.label)
+ggsave("../generated/plots/age.pdf",height=5,width=5)
+
+# age, by conservative
 table(d$page,d$conservative,d$dog.whistle,d$sentence.label)
 
 # recode politician age as numeric
@@ -119,6 +149,24 @@ ggsave("../generated/plots/age.pdf",height=5,width=5)
 
 # progressive
 mean.prog = d %>%
+  group_by(dog.whistle,sentence.label) %>%
+  summarize(Mean = mean(pprog), CILow = ci.low(pprog), CIHigh = ci.high(pprog)) %>%
+  ungroup() %>%
+  mutate(YMin = Mean - CILow, YMax = Mean + CIHigh)  
+mean.prog
+
+ggplot(mean.prog, aes(x=dog.whistle, y=Mean)) +
+  geom_point(shape=20, size=3, alpha=1) +
+  geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25) +
+  #scale_color_manual(values=c("black","blue")) +
+  theme(legend.position="top") +
+  xlab("Condition") +
+  ylab("Mean progressive rating (higher = more progressive)") +
+  facet_grid(. ~ sentence.label)
+ggsave("../generated/plots/progressive.pdf",height=4,width=8)
+
+# progressive, by conservative
+mean.prog = d %>%
   group_by(conservative,dog.whistle,sentence.label) %>%
   summarize(Mean = mean(pprog), CILow = ci.low(pprog), CIHigh = ci.high(pprog)) %>%
   ungroup() %>%
@@ -135,8 +183,25 @@ ggplot(mean.prog, aes(x=dog.whistle, y=Mean, color = conservative)) +
   facet_grid(. ~ sentence.label)
 ggsave("../generated/plots/progressive.pdf",height=4,width=8)
 
-
 # racist
+mean.racism = d %>%
+  group_by(dog.whistle,sentence.label) %>%
+  summarize(Mean = mean(pracism), CILow = ci.low(pracism), CIHigh = ci.high(pracism)) %>%
+  ungroup() %>%
+  mutate(YMin = Mean - CILow, YMax = Mean + CIHigh)  
+mean.racism
+
+ggplot(mean.racism, aes(x=dog.whistle, y=Mean)) +
+  geom_point(shape=20, size=3, alpha=1) +
+  geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25) +
+  #scale_color_manual(values=c("black","blue")) +
+  theme(legend.position="top") +
+  xlab("Condition") +
+  ylab("Mean racist rating (higher = more racist)") +
+  facet_grid(. ~ sentence.label)
+ggsave("../generated/plots/racist.pdf",height=4,width=8)
+
+# racist, by conservative
 mean.racism = d %>%
   group_by(conservative,dog.whistle,sentence.label) %>%
   summarize(Mean = mean(pracism), CILow = ci.low(pracism), CIHigh = ci.high(pracism)) %>%
@@ -152,8 +217,30 @@ ggplot(mean.racism, aes(x=dog.whistle, y=Mean, color = conservative)) +
   xlab("Condition") +
   ylab("Mean racist rating (higher = more racist)") +
   facet_grid(. ~ sentence.label)
-ggsave("../generated/plots/racist.pdf",height=4,width=8)
 
+
+# racism figure included in grant ----
+table(d$conservative,d$pracism,d$sentence.label,d$dog.whistle) # we always have some ratings
+table(d$sentence.label)
+table(d$dog.whistle)
+
+ggplot(d[d$sentence.label != "Volk",], aes(x=dog.whistle, y=pracism, color = conservative, fill = conservative)) +
+  geom_violin(position=position_dodge(0.5), alpha = 0.3) +
+  scale_color_manual(values=c("black","blue")) +
+  scale_fill_manual(values=c("black","blue")) +
+  stat_summary(position=position_dodge(width = 0.5), fun=median, geom="point", shape=23, size=2) + 
+  theme(legend.position="right") +
+  scale_y_discrete(limits=c("1","2", "3", "4", "5")) +
+  theme(axis.ticks=element_blank(),panel.grid.major.x=element_blank(),
+        panel.grid.minor.x=element_blank(),plot.background=element_blank(),
+        axis.title.x=element_blank()) +
+  theme(strip.background =element_rect(fill="white")) +
+  guides(fill=guide_legend(title="participant group"),color=guide_legend(title="participant group")) +
+  theme(strip.text = element_text(colour = 'black'),strip.text.x = element_text(size = 12)) +
+  xlab("Condition") +
+  ylab("Kernel probability density \n of racism ratings \n (higher ratings = more racist)") +
+  facet_grid(. ~ sentence.label)
+ggsave("../generated/plots/racist.pdf",height=2.5,width=8)
 
 # honest
 mean.honest = d %>%

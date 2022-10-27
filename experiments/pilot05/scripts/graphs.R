@@ -1,9 +1,10 @@
+# Pilot 05
 
 # Set working directory to directory of script:
 
-tryCatch(
-  setwd(dirname(rstudioapi::getSourceEditorContext()$path)),
-  error = function(e) setwd("experiments/Pilot02/scripts/"))
+# set working directory to directory of script
+this.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
+setwd(this.dir)
 
 # Load general definitions (also loads standard packages such as
 # tidyverse):
@@ -14,7 +15,7 @@ source("../../../scripts/helpers.R")
 # load clean data ----
 
 d = read.csv("../generated/data/d-preprocessed.csv")
-nrow(d) #327
+nrow(d) #744
 
 # which ratings did the two controls and the targets receive? ----
 
@@ -71,11 +72,11 @@ d = d %>%
   mutate(
     conservative = ifelse(mean.wom.score > .99, "more conservative","less conservative"))
 
-length(unique(d$subj)) #109 participants
+length(unique(d$subj)) #248 participants
 
 table(d$conservative)
-# less conservative  252 (84 participants)
-# more conservative 75 (25 participants)
+# less conservative  576 (192 participants)
+# more conservative 168 (56 participants)
 
 d = d %>%
   mutate(subj = fct_reorder(as.factor(subj),mean.wom.score))  
@@ -104,10 +105,59 @@ ggplot(means, aes(x=item, y=Mean,group=conservative, color=conservative)) +
   geom_point(shape=20, size=3, alpha=1) +
   geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25) +
   scale_color_manual(values=c("black","blue")) +
-  geom_jitter(data=d,aes(x=item,y=rating,group=conservative),
-              shape=20, size=2, alpha = .5, width = .1, height = height) +
+  #geom_jitter(data=d,aes(x=item,y=rating,group=conservative), shape=20, size=2, alpha = .5, width = .1, height = height) +
   xlab("Item") +
   ylab("Mean contradictoriness rating (higher = more contradictory)") +
   coord_flip()
-ggsave("../generated/plots/plausible-deniability-by-conservative.pdf",height=5,width=10)
+
+# figure included in grant application ----
+table(d$item.type)
+
+t <- d %>%
+  filter(item.type != "control.c") %>%
+  filter(item.type != "control.nc")
+
+table(t$item.type)
+table(t$pair)
+
+table(t$pair,t$conservative,t$item.type)
+# now we have at least 5-7 judgments for each DW
+
+ggplot(t, aes(x=item.type, y=rating, color = conservative, fill = conservative)) +
+  geom_violin(position=position_dodge(0.5), alpha = 0.3) +
+  scale_color_manual(values=c("black","blue")) +
+  scale_fill_manual(values=c("black","blue")) +
+  stat_summary(position=position_dodge(width = 0.5), fun=median, geom="point", shape=23, size=2) + 
+  theme(legend.position="right") +
+  scale_y_discrete(limits=c("1","2", "3", "4", "5")) +
+  theme(axis.ticks=element_blank(),panel.grid.major.x=element_blank(),
+        panel.grid.minor.x=element_blank(),plot.background=element_blank(),
+        axis.title.x=element_blank()) +
+  theme(strip.background =element_rect(fill="white")) +
+  theme(strip.text = element_text(colour = 'black'),strip.text.x = element_text(size = 12)) +
+  guides(fill=guide_legend(title="participant group"),color=guide_legend(title="participant group")) +
+  xlab("Condition") +
+  ylab("Kernel probability density \n of deniability ratings \n (higher ratings = less deniable)") +
+  facet_grid(. ~ pair,scale="free")
+ggsave("../generated/plots/plausible-deniability-by-conservative.pdf",height=2.5,width=8)
+
+
+# plot plausible deniability ----
+
+means = d %>%
+  group_by(item) %>%
+  summarize(Mean = mean(rating), CILow = ci.low(rating), CIHigh = ci.high(rating)) %>%
+  ungroup() %>%
+  mutate(YMin = Mean - CILow, YMax = Mean + CIHigh)  
+means
+
+ggplot(means, aes(x=item, y=Mean)) +
+  geom_point(shape=20, size=3, alpha=1) +
+  geom_errorbar(aes(ymin=YMin,ymax=YMax),width=.25) +
+  #scale_color_manual(values=c("black","blue")) +
+  #geom_jitter(data=d,aes(x=item,y=rating,group=conservative), shape=20, size=2, alpha = .5, width = .1, height = height) +
+  xlab("Item") +
+  ylab("Mean contradictoriness rating (higher = more contradictory)") +
+  coord_flip()
+ggsave("../generated/plots/plausible-deniability.pdf",height=5,width=10)
 
