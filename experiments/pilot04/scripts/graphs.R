@@ -46,23 +46,23 @@ names(d)
 table(d$wom.asylum)
 
 # define numeric values for each position (higher = more conservative)
-d$wom.refugees.num <- ifelse(d$wom.refugees == "Ich stimme zu", 2, 
-                             ifelse(d$wom.refugees == "Neutral", 1, 0))
-d$wom.headscarf.num <- ifelse(d$wom.headscarf == "Ich stimme nicht zu", 2, 
-                              ifelse(d$wom.headscarf == "Neutral", 1, 0))
-d$wom.citizenship.num <- ifelse(d$wom.citizenship == "Ich stimme nicht zu", 2, 
-                                ifelse(d$wom.citizenship == "Neutral", 1, 0))
-d$wom.islam.num <- ifelse(d$wom.islam == "Ich stimme nicht zu", 2, 
-                          ifelse(d$wom.islam == "Neutral", 1, 0))
-d$wom.asylum.num <- ifelse(d$wom.asylum == "Ich stimme zu", 2, 
-                           ifelse(d$wom.asylum == "Neutral", 1, 0))
+d$wom.refugees.num <- ifelse(d$wom.refugees == "Ich stimme zu", 1, 
+                             ifelse(d$wom.refugees == "Neutral", 0, -1))
+d$wom.headscarf.num <- ifelse(d$wom.headscarf == "Ich stimme nicht zu", 1, 
+                              ifelse(d$wom.headscarf == "Neutral", 0, -1))
+d$wom.citizenship.num <- ifelse(d$wom.citizenship == "Ich stimme nicht zu", 1, 
+                                ifelse(d$wom.citizenship == "Neutral", 0, -1))
+d$wom.islam.num <- ifelse(d$wom.islam == "Ich stimme nicht zu", 1, 
+                          ifelse(d$wom.islam == "Neutral", 0, -1))
+d$wom.asylum.num <- ifelse(d$wom.asylum == "Ich stimme zu", 1, 
+                           ifelse(d$wom.asylum == "Neutral", 0, -1))
 
 
 # how conservative is each participant? 
 
 d$mean.wom.score = (d$wom.refugees.num + d$wom.headscarf.num + d$wom.citizenship.num + d$wom.islam.num + d$wom.asylum.num) / 5
-# lowest possible: 0 (least conservative)
-# highest possible: 10/5=2 (most conservative)
+# lowest possible: -1 (least conservative)
+# highest possible: 1 (most conservative)
 table(d$mean.wom.score)
 
 d = d %>%

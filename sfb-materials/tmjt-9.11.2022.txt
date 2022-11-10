@@ -1,0 +1,886 @@
+\documentclass[11pt]{article}
+\usepackage{helvet}
+\usepackage{amsfonts}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{color}
+% TM: I think this is no longer needed in recent versions of TeX live:
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{enumerate}
+% TM: Commented this out because of an option clash:
+% \usepackage[colorlinks=true,linkcolor=blue, urlcolor=blue]{hyperref}
+\usepackage[backend=biber,useprefix=true,style=authoryear,natbib=true,maxbibnames=20,maxcitenames=3]{biblatex}
+
+% all other options in biblatex.cfg
+
+\usepackage{tabularx}
+\usepackage{gb4e}
+
+\noautomath
+
+
+\addbibresource{TMJT.bib}
+
+\sloppy
+
+\def\bad{{\leavevmode\llap{*}}}
+\def\marginal{{\leavevmode\llap{?}}}
+\def\verymarginal{{\leavevmode\llap{??}}}
+\def\swmarginal{{\leavevmode\llap{4}}}
+
+
+% SECTION FOR SWITCHING ON AND OFF THE HINTS FOR FILLING IN INFORMATION
+% show hints by dfg for filling in the template
+%
+% \newcommand{\dfgcomments}[1]{\textcolor{green}{#1}}
+% % un-comment to switch off hints
+% \renewcommand{\dfgcomments}[1]{}
+
+% start section numbering at 3, as in official template
+% needs to be defined here and in main document
+% so we can compile both stand-alone and the full proposal
+\setcounter{section}{3}
+\setcounter{subsection}{0}
+
+% read configuration code that should apply to all projects
+\input{sfb-1596-full-proposal/settings}
+
+% Move text to the left (without changing page-count) to make more
+% space for margin notes.  Comment out to revert to standard layout.
+\geometry{lmargin=1.0cm, rmargin=4.0cm, marginparwidth=3.5cm}
+
+\begin{document}
+\def\infelic{{\leavevmode\llap{\#}}}
+
+\subsection{General information about Project \projTMJT{}}
+
+\subsubsection{Project title}
+DoWi -- Dog whistles in German political discourse
+
+\subsubsection{Research Area(s)}
+
+104-04 Experimental Linguistics, 104-01 General Linguistics
+
+\subsubsection{Project leaders}
+
+\begin{multicols}{2}
+
+  \noindent
+  Jun.-Prof.\ Dr.\ Titus von der Malsburg \\
+  *02.04.1977, nationality: DE  \\
+  Institut für Linguistik \\
+  Keplerstr.\ 17, 70174 Stuttgart \\
+  +49 711 685-84873 \\
+  titus.von-der-malsburg@ling.uni-stuttgart.de
+
+\columnbreak
+
+  \noindent
+  Prof.\ Dr.\ Judith Tonhauser \\
+  *19.11.1974, nationalities: DE, USA \\
+  Institut für Linguistik \\
+  Keplerstr.\ 17, 70174 Stuttgart \\
+  +49 711 685-83121 \\
+  judith.tonhauser@ling.uni-stuttgart.de
+
+\end{multicols}
+
+% See
+% https://docs.google.com/document/d/10NIDFHJPh2ODgSkMEct8_UA9WJdpPLPs2M2XEtAwsD8
+% for instructions on what to include in which section.
+
+\noindent
+Employment is contractually secured for the duration of the proposed funding period?
+
+\vspace{-2ex}
+\begin{itemize}
+ \setlength\itemsep{-0.5em}
+    \item Jun.-Prof.\ Dr.\ Titus von der Malsburg: \sidenote{yes}{fix}
+    \item Prof.\ Dr.\ Judith Tonhauser: yes
+\end{itemize}
+
+%\vspace{-2ex}
+%\noindent
+%PI Name holds a fixed term-position:
+%\vspace{-2ex}
+%\begin{itemize}
+% \setlength\itemsep{-0.5em}
+% \item End date of fixed-term contract: XX.XX.20XX
+% \item Further employment is planned until: XX.XX.20XX
+%\item Funding for the position is covered by XXX
+%\end{itemize}
+
+\subsubsection{Legal issues}
+
+\begin{tabularx}{.9\textwidth}[ht]{|X|p{1.8cm}|}
+  \hline
+  Research on human subjects or human material                                                                            & yes \\\hline
+  % <If applicable:> A copy of the required approval of the responsible ethics committee is included with the proposal    & XX  \\\hline
+  Clinical trials                                                                                                         & no  \\\hline
+  %<If applicable:> A copy of the studies’ registration is included with the proposal                                     & XX  \\\hline
+  Experiments involving vertebrates                                                                                       & no  \\\hline
+  Experiments involving recombinant DNA                                                                                   & no  \\\hline
+  Research involving human embryonic stem cells                                                                           & no  \\\hline
+  % <If applicable:> Legal authorization has been obtained                                                                & XX  \\\hline
+  Research concerning the Convention on Biological Diversity                                                              & no  \\\hline
+  Investigations involving dual use research of concern                                                                   & no  \\\hline
+  % <If applicable:> A copy of the statement by the institution’s research ethics committee is included with the proposal & XX  \\\hline
+\end{tabularx}
+
+\subsection{Summary}
+%\sidenote{}{1 page}
+
+Dog whistles are utterances that convey a controversial content in addition to a benign literal meaning; in contrast to slurs, the controversial content is plausibly deniable and may be perceived only by part of the audience. A much-discussed example is U.S.\ Representative Paul Ryan's utterance {\em ``We have got this tailspin of culture, in our inner cities in particular, of men not working\ldots''}, which was criticized as a racial attack because the expression {\em inner city} may convey a stereotypically racialized view of African American neighborhoods.  As such, dog whistles are a powerful tool for so-called “multivocal” political communication that must appeal to heterogeneous audiences without alienating potential voters \parencite[e.g., by appearing openly racist or xenophobic][]{Albertson2015}.  
+%A German example investigated in our pilot work is the utterance {\em ``Diese Migrationspolitik sorgt für mehr Hilfe vor Ort in Krisenregionen''} (these migration policies increase local assistance in crisis regions), a variant of which was produced by MdL Jan-Phillip Tadsen, a member of the German right-wing populist party AfD.
+%the expression “Hilfe vor Ort” (`help on the ground'), which has been used by right-wing populists to imply that Germany should work toward keeping people affected by war out of the country.  
+The literal content of Paul Ryan's utterance was not racist, but the controversial content can be inferred by interpreters with knowledge of the relevant reference systems, including knowledge of the speaker's identity, their political stance, domain knowledge, the addressed audience, and the local and broader social, cultural, and historical context of the uttered expressions. By investigating the interconnection of reference systems in the interpretation of dog whistles, our project contributes to the overarching goal of this CRC of understanding how discourse is shaped by reference systems.
+
+Dog whistles have been investigated from multiple angles and in multiple disjoint research disciplines, including formal semantics/pragmatics, the philosophy of language, the discourse analysis tradition, and the social and political sciences.  Much of this research studied the use and social effects of dog whistles in particular political discourses \parencite[e.g.,][]{Stanley2016, Akerlund2021, BhatKlein2020, PrestonCaliskan2022, Lonsdale2021, Albertson2015, hurwitz-peffley2005, wetts-willer2019}. There is also a lively discussion of the formal linguistic properties of dog whistles \parencite[e.g.,][]{Stanley2016,khoo2017,henderson-mccready2019,denigot-burnett2020,santana2021,hess2022}. There is, however, no linguistically-motivated experimental research on dog whistles that empirically investigates the properties attributed to dog whistles in literature, or which cognitive process are involved in their interpretation. Rather, contemporary research (except in the social and politican sciences) is based entirely on the authors' intuitions, which is especially problematic since dog whistles are interpreted differently across socially-relevant groups. Further, the vast majority of research on dog whistles has focused on a small set of examples from the U.S.\ American context, which raises the question of whether analyses generalize to dog whistles in other languages and socio-political contexts. 
+
+The overarching goal of this project is to fill these gaps and to improve our understanding of an empirical phenomenon that is heavily implicated in ongoing political discourse in Germany and elsewhere. The specific questions asked in this project are:
+\begin{inparaenum}
+\item What dog whistles are used in German political discourse?
+\item Which reference systems are implicated in the interpretation of these dog whistles?
+\item How does the controversial content conveyed by dog whistles compare to other secondary content (like that of slurs, evaluative language, or conversational implicatures)? 
+\item Which cognitive processes underlie the online interpretation of dog whistle content, and how are reference systems interconnected in the online processing of dog whistle content?
+\end{inparaenum}
+Our project addresses these questions by bringing together expertise in the psycholinguistic investigation of utterance interpretation and in formal and experimental semantics/pragmatics. Specifically, we address these questions by collecting and annotating a corpus of naturally occurring German dog whistles (which will be made freely available), and conducting offline and online behavioral experiments. As dog whistles are perceived and interpreted differently across social groups, our project contributes to the core goal of the CRC of understanding how reference systems are socially stratified and how different levels of meaning emerge from the interconnection of reference systems. Our investigations will benefit from close interactions with other projects in area A that investigate the socially stratified interconnection of reference systems.
+
+%Given this strong interest in this phenomenon, it is perhaps surprising that there is no universally accepted definition of dog whistles...For instance, there is no universally accepted and complete definition of what constitutes a dog whistle, and individual examples investigated in published research, as well as our pilot research, vary along important dimensions such as  the degree of their conventionalization. 
+
+
+%Our project brings together several divergent strands of research on dog whistles -- theory-based, discourse-based, social, and psycholinguistic / experimental.  The results of our research will therefore be disseminated in semantic / pragmatic, psycholinguistic, and more generalist journals.  Our corpus of German dog whistles will be made freely available.
+
+\subsection{Research rationale}
+%\sidenote{}{4--5 pages}
+
+% No text here!
+
+\subsubsection{Current state of research and preliminary work}\label{TMJT-sec-preliminarywork}
+
+The characterization of dog whistles offered by \textcite[][]{santana2021} in (\ref{TMJT-def}) covers many of the linguistic properties ascribed to dog whistles in the literature. Specifically, according to this characterization dog whistles are expressions that have a secondary content (\ref{TMJT-def}a) that is controversial to some audiences (\ref{TMJT-def}b-c), and that is at the same time plausibly deniable (\ref{TMJT-def}d) \parencite[see also, e.g.,][]{Albertson2015, Stanley2016, saul2018, henderson-mccready2019}.
+
+\begin{exe}
+  \ex\label{TMJT-def} \textcite[8]{santana2021}\\
+  An act of political communication is a {\bf dog whistle} to the extent that:
+  \begin{xlist}
+    \ex It has a secondary, implicit meaning in addition to its surface meaning.
+    \ex The secondary meaning, but not the surface meaning, calls attention to a politically meaningful social category in a way that violates widely shared egalitarian norms.
+    \ex An ingroup audience approves of violating these norms, while an outgroup audience prefers adherence to them.
+    \ex That norm violation can be successfully denied by the dog whistle user.
+  \end{xlist}
+\end{exe}
+
+Research on dog whistles across the disciplines have focused on different aspects of this characterization, each from their own discipline-specific vantage points. Research in {\bf formal semantics/pragmatics} and the {\bf philosophy of language} focuses on the question of what kind of secondary content dog whistles give rise to and how this content arises from (in the parlance of our CRC) the various reference systems that are implicated in the perception and interpretation of dog whistles \parencite[e.g.,][]{Mendelberg2001, Stanley2016, saul2018, khoo2017, henderson-mccready2019}. Research in this tradition has developed formal analyses of the phenomenon that make empirically testable predictions \parencite[e.g.,][]{Stanley2016, henderson-mccready2019, denigot-burnett2020} and also identified some fine-grained distinctions between different kinds of dog whistles \parencite[e.g.,][]{saul2018, henderson-mccready2019}.  
+
+Research in the area of {\bf discourse analysis} tradition investigated how dog whistles are used to construct and shape discourses in the service of populist social movements \parencite[e.g.,][]{Akerlund2021, AdamsRoscigno2005, MondonWinter2017, Wodak2015, vandijk1993, filimon2020, BhatKlein2020}. In contrast to other disciplines, examples from outside the U.S.\ American context are considered \parencite[e.g., Sweden in][]{Akerlund2021}. Finally, research in the {\bf social sciences} focuses on the question of how dog whistles influence people’s attitudes about race, policies, and political candidates \parencite[e.g.,][]{Albertson2015, hurwitz-peffley2005, wetts-willer2019}. This research has shown, based on carefully controlled experimental investigations, that dog whistles differ in their impact from expressions that explicitly spell out the controversial content, and also that only particular social groups are influenced by dog whistles \parencite[e.g.,][]{CalfanoDjupe2009, Albertson2015, goodwin-saward2005, hurwitz-peffley2005, wetts-willer2019}.
+
+Our project builds on the methodological and conceptual advances made in research on dog whistles across these disciplines. Against the backdrop of these results, we have identified the following questions that need to be addressed next in linguistic research on dog whistles:
+
+\begin{compactitem}
+
+\item Research on dog whistles to date is primarily based on a handful of English dog whistles in the US American context. Given that societies differ in their politically meaningful social categories and egalitarian norms, what are dog whistles in other languages and societies? Which social categories and norms do they depend on?
+
+\item Given the by-group variation identified in social science research, how does by-group variation play out in linguistic properties ascribed to dog whistles (like plausible deniability) and in the reference systems implicated in dog whistle interpretation?
+
+\item The empirical predictions made by formal linguistic analyses of dog whistles have not yet been subjected to linguistic experimentation. How do such investigations allow us to sharpen these analyses, and thereby our understanding of the phenomenon?
+
+\item There is, to date, no psycholinguistic research on the incremental interpretation of dog whistles. How is a dog whistle detected, and its content inferred?  And how do insights about the processing of dog whistles inform linguistic theory?
+
+\end{compactitem}
+
+\noindent
+Our project aims to address these questions on the basis of empirically grounded and theoretically informed investigations into the comprehension and processing of German dog whistles.  In the following, we provide background on by-group differences in dog whistle comprehension, linguistic properties ascribed to dog whistles, analyses of and taxonomies involving dog whistles, and methods from sentence processing research that can be used to investigate dog whistle interpretation.
+
+\medskip
+\noindent
+{\bf By-group differences in dog whistle interpretation.} Research on dog whistles generally acknowledges that there are by-group differences along relevant social dimensions in the interpretation of dog whistles. Whereas most research assumes a binary social differentiation (see `ingroup' vs `outgroup' in (\ref{TMJT-def})), it is also possible, however, that dog whistle interpretation is sensitive to more nuanced social distinctions and that, therefore, the perception of controversial content is a matter of degree, rather than binary. For instance, to perceive the controversial content of Giorgia Meloni's utterance in (\ref{TMJT-meloni}), interpreters must have knowledge of multiple reference systems, including who the speaker is, her political stance, the linguistic and situational context of (\ref{TMJT-meloni}), and knowledge of the cultural and societal background (e.g., Mussolini’s use of the term {\em financial speculators}).
+
+\begin{exe}
+\ex\label{TMJT-meloni} Giorgia Meloni in 2019 at the World Congress of Families in Italy \\ {\em ``\ldots when I no longer have an identity or roots, then I will be the perfect slave at the mercy of financial speculators\ldots''}
+\end{exe}
+
+While some researchers maintain that dog whistles distinguish themselves by not being perceived by some members of the language community \parencite[that is, by the outgroup; e.g.,][]{GoodinSaward2005, CalfanoDjupe2009}, other researchers do not include such a requirement in the definition of dog whistles \parencite[e.g.,][]{Albertson2015, henderson-mccready2019, denigot-burnett2020, santana2021}. A third position, which we intend to explore in our project, is that dog whistles differ in the extent to which they are perceived by different socially-relevant groups, depending on the interpreters' access to the reference systems that interconnect in the interpretation of a particular dog whistle. As each of these three positions is compatible with the characterization of dog whistles in (\ref{TMJT-def}), our investigation of a broad range of German dog whistles will also serve to sharpen the definition of dog whistles.
+
+%Although research on dog whistles in formal semantics/pragmatics and the philosophy of language considers the importance of by-group differences in the interpretation of dog whistles, the research in this area is based entirely on the researchers' intuitions. Following the lead of research in the social sciences, a next important step in linguistic research on dog whistles is to conduct experimental investigations that elicit judgments from members of different socially-relevant subgroups of the language community.
+
+%\sidenote{}{SR: I wonder if the ingroup argument is valid or should at least be critically questioned: is it really always about "ingroup" secrecy? Or also about more generally recognizable PC language usage?}
+
+\medskip
+\noindent
+{\bf Linguistic properties ascribed to dog whistles.} In semantics/pragmatics and the philosophy of language (e.g., \citealt{saul2018,Stanley2016,khoo2017,henderson-mccready2019,santana2021}), three properties of dog whistles have received particular attention, namely that they i) give rise to a controversial content that is ii) secondary, and iii) plausibly deniable. As mentioned above, there are to date no linguistically-informed experimental investigations into the strength of the inference to the controversial content or into the linguistic and extra-linguistic reference systems implicated in their interpretation. This is one of the gaps our project aims to fill.
+
+There is, however, a lively discussion pertaining to the second property, that the controversial content is secondary. In formal semantics/pragmatics, secondary content is typically analyzed as content that is not `at-issue' \parencite[e.g.,][]{potts2005, tonhauser-sula6}.\footnote{\textcite{khoo2017} argued that the secondary content of dog whistles must be at-issue content because not-at-issue content cannot be plausibly denied. His argument ignores the existence of not-at-issue content that can be plausibly denied, including projective content (\citealt{brst-lang11,degen-tonhauser-language}).} That the controversial content of dog whistles is not at-issue is illustrated on the basis of B's utterance in (\ref{TMJT-nai1}), which gives rise to the literal content that Los Angeles has a lot of crime in the city center. The use of {\em inner city}, however, may give rise to the controversial content that those perpetrating the crime are African Americans \parencite{Stanley2016, khoo2017}. The question/answer diagnostic applied in (\ref{TMJT-nai2}) can be used to identify which content of (\ref{TMJT-nai1}) is at-issue, that is, the main point, and which content is not at-issue, that is, secondary \parencite[e.g.,][]{tonhauser-sula6}. In (\ref{TMJT-nai2}a), B's response to A's question is judged to be acceptable, suggesting that the literal content of (\ref{TMJT-nai1}) is at-issue. In (\ref{TMJT-nai2}b), on the other hand, B's response to A's question is judged to be unacceptable (or at least less acceptable, depending on B's identity), suggesting that the controversial content cannot address questions and is, therefore, not at-issue.
+
+\begin{exe}
+  \ex\label{TMJT-nai1} L.A.\ has a lot of inner-city crime.
+
+%Smith is an inner-city pastor. \hfill (adapted from \citealt{khoo2017})
+  \ex\label{TMJT-nai2}
+  \begin{xlist}
+    \ex
+    \begin{xlist}
+      \exi{A:} Where is there crime in L.A.? \hspace*{1cm} b. \hspace*{.3cm} A: \hspace{1mm} Who lives in the center of a city?
+      \exi{B:} L.A.\ has a lot of inner-city crime. \hspace*{1.3cm} B: \#L.A.\ has a lot of inner-city crime.
+    \end{xlist}
+  \end{xlist}
+\end{exe}
+
+The third property ascribed to dog whistle content is that it is plausibly deniable. As illustrated in (\ref{TMJT-deniable}a), A's use of {\em inner-city} does not commit them to the content that Black people perpetrate crime: A can deflect B's challenge, as shown in A's second turn. By contrast, the controversial secondary content of the slur in (\ref{TMJT-deniable}b) cannot be plausibly denied.
+
+\begin{exe}
+  \ex\label{TMJT-deniable} Examples based on or adapted from \textcite[4]{henderson-mccready2019}
+  \begin{xlist}
+    \ex
+    \begin{xlist}
+    \exi{A:} L.A.\ has a lot of {\bf inner-city} crime.
+    \exi{B:} Why do you think Black people perpetrate crime?
+    \exi{A:} I don't think that at all. Why do you think I might?
+      %\exi{A:} Sam is on {\bf welfare}.
+      %\exi{B:} \sidenote{What do you have against social programs?}{TM: According to Henderson McCready 2019, the dw meaning of “welfare” is “black people are lazy”, not “social programs are bad”.  The latter also doesn’t seem controversial enough to require a dw.  I think the interpretation also crucially depends on whether Sam is black or not, which is not specified.}
+      %\exi{A:} I don't have anything against social programs. Why do you think I might?
+    \end{xlist}
+    \ex
+    \begin{xlist}
+      \exi{A:} Angela Merkel is a {\bf kraut}.
+      \exi{B:} What do you have against Germans?
+      \exi{A:} \infelic I don't have anything against Germans. Why do you think I might?
+    \end{xlist}
+%    \ex
+%    \begin{xlist}
+%      \exi{A:} Kim, {\bf who is on vacation}, hired a cat sitter.
+%      \exi{B:} Why do you claim that Kim is on vacation?
+%      \exi{A:} \infelic I didn?t claim that Kim is on vacation.
+%    \end{xlist}
+  \end{xlist}
+\end{exe}
+
+Neither of these properties (secondary, plausibly deniable) have been investigated on the basis of judgments from a broad and diverse population of non-linguistically trained native speakers. Prior experimental research on different types of not-at-issue content has revealed that at-issueness is a gradient property of utterance content and predictive of the extent to which speakers are taken to be committed to such content when it occurs in questions or conditionals \parencite[e.g.,][]{xue-onea11, tbd-variability}. With respect to dog whistles, these results point to several open questions in our understanding of dog whistles, including: How not-at-issue is the controversial content of dog whistles? Are there differences between individual dog whistles? Is speaker commitment to the controversial content of dog whistles similarly dependent on the context in which the expression occurs, the prior beliefs of the interpreter, and the literal meaning of the dog whistle \parencite[see, e.g.,][]{tbd-variability, mahler2020, degen-tonhauser-language, degen-tonhauser-openmind}?
+
+\medskip \noindent {\bf How conventional is the controversial content?}
+The observation that the secondary content of dog whistles is plausibly deniable is typically taken as evidence that this content is not conventional, that is, it is not part of the conventionally coded content of the uttered expressions \parencite{khoo2017, henderson-mccready2019}. There is, however, also the tendency in the literature on dog whistles to write as if particular expressions contribute the controversial secondary content: the expression {\em inner-city}, for instance, is taken to be ``a dog whistle'', but not {\em center of a city}, even though it has a very similar literal meaning. Such characterizations suggest that the controversial content of dog whistles is not detachable \parencite{Grice1975}, in contrast to conversational implicatures, which are detachable (as a conversational implicature does not depend on particular expressions being used, but arises from any expression with a similar literal content). In addition to {\em inner-city}, the expressions {\em welfare} and {\em Let's go, Brandon!} are candidates for expressions where the controversial content has become at least partially conventionalized \parencite[e.g.,][]{Stanley2016,henderson-mccready2019}. 
+
+These two, seemingly contradictory positions on dog whistles that are observed in the literature can be reconciled under the assumption that the controversial not-at-issue content of dog whistles is conventionalized (or on its way to becoming conventionalized, \cite{Stanley2016}) for particular subgroups of the language community, but not for others. In the parlance of this CRC, this hypothesis amounts to saying that the controversial content is conventionalized in the reference system of one social group, but not in that of another. Given this hypothesis, we expect to observe variation between relevant social groups with respect to whether their members infer the controversial content. Groups that are not aware of the sociolect of the ingroup may not perceive the controversial content, whereas subgroups aware of the sociolect would perceive the controversial content but reject it (see, e.g., \cite{henderson-mccready2019}, and \cite{denigot-burnett2020}, for related remarks).
+%Experimental investigations of plausible deniability are needed to differentiate these positions, and to extend the taxonomy of not-at-issue content developed in \textcite{brst-lang11} to not-at-issue content that is plausibly deniable and/or socially dependent, including dog whistles, slurs, insinuations, and evaluative language \parencite[e.g.,][]{baumgartner-etal2022}.
+
+\medskip \noindent {\bf Formal analyses of and distinctions between dog whistles.} Several formal proposals have been made for how the controversial not-at-issue content of dog whistles arises: as a conventional implicature \parencite{Stanley2016}, as a non-conventional inference that relies on interpreters' stereotypical beliefs \parencite{khoo2017} or on metalinguistic default conditionals \parencite{HendersonMcCready2018}, or as the rational construction of speakers' persona or ideological stance \parencite[e.g.,][]{HendersonMcCready2018, denigot-burnett2020,A4_Asher-EtAl2021}. The latter types of analyses are formulated in a game theoretic or Rational Speech Act frameworks \parencite[e.g.,][]{frankejaeger2016}, which lend themselves particularly well to capturing inferences about speakers' persona or ideological stance as well as by-group interpretative variability. As mentioned above, large-scale experimental investigations like the ones we have planned in this project are needed to evaluate whether these analyses make empirically adequate predictions, for instance whether the interpretation of dog whistles is identity-based \parencite{denigot-burnett2020}.
+%The formal analysis developed in \textcite{denigot-burnett2020}, for instance, predicts that the interpretation of dog whistles is identity-based, such that interpreters' beliefs about the persona of the speaker have an influence on the interpretation of the speaker's utterance. Experimental investigations are needed to show not only that there is by-group variability in the interpretation of the dog whistle, but also that this variability is modulated by prior beliefs about the speaker.
+Such experiments are also needed to investigate distinctions that researchers have postulated between dog whistles, including the distinction between `identifying' and `enriching' dog whistles in \textcite{henderson-mccready2019}, or between `overt' and `covert' dog whistles in \textcite{saul2018}.
+
+%for instance, distinguish between two types of dog whistles: the controversial content of `identifying' dog whistles merely provides information about the speaker's identity (e.g., racist) while that of `enriching' dog whistles also provides information about how the speaker sees the world (e.g., that a certain marginalized group exploits the welfare system). \textcite{saul2018}, on the other hand, proposes a four-way distinction into, on the one hand, overt and covert dog whistles (based on whether the dog whistle is recognized by the wider language community) and, on the other hand, intentional and unintentional ones.
+
+%RH: A mean reviewer might say: isn't that tautological, identifying a dog whistle because it is said by someone suspected to be racist (eg Trump), than deriving that this person is racist bc of this dw
+
+\medskip \noindent {\bf Processing dog whistles.} There is little to no research on the cognitive processes underlying dog whistle interpretation.  As the controversial content of dog whistles is not (fully) conventionalized, it is not likely to be part of the mental lexicon and, as a consequence, does not participate in compositional operations.  Instead, the controversial content is likely inferred on the basis of a complex set of linguistic and extra-linguistic reference systems.  This raises the question of whether dog whistle content is proactively constructed as part of or at least in lock-step with routine language interpretation processes, or whether it is inferred in a dedicated process that is perhaps less robust, less automatized, and more effortful?  Answering these questions will considerably improve our understanding of the place of dog whistles in the architecture of language, their role the arsenal of mechanisms that allow us to infer meaning from discourse.
+
+Psycholinguistic research on sentence processing offers methods for answering such questions.  Two of these methods, which have been used productively for decades, are self-paced reading and eye-tracking \parencite[e.g.][]{LaurinavichyuteMalsburg2022, MorganEtAl2020,MalsburgVasishth2011}.  Particularly relevant are eye-tracking methods that allow researchers to quantitatively evaluate the larger gaze trajectories that go beyond individual words \parencite{MalsburgVasishth2011, MalsburgVasishth2013, MalsburgEtAl2015, ParshinaEtAl2022}.  In our project, we also combine eye-tracking with the visual-world experimental paradigm \parencite{TanenhausEtAl1995} to obtain insight into the time-course of interpretation.  In doing so, our project aims to make first steps in the investigation of the incremental interpretative processes that underlie the perception and interpretation of of dog whistles.
+
+\medskip
+\noindent
+As shown in Fig.~\ref{TMJT-fig:workflow}, our project makes progress towards the open questions identified above by bringing together complementary research foci from formal semantics/pragmatics (PI Tonhauser) and psycholinguistics (PI von der Malsburg) in the investigation of dog whistles. Following the CRC methodology, we establish a reference corpus of German dog whistles, which will allow us to investigate these questions about dog whistle interpretation and processing.
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.8\linewidth, frame]{sfb-1596-full-proposal/figures/workflow-in-projects/A04_DoWi_Figure_1.pdf}
+  \caption{The CRC workflow as instantiated in project \projTMJT{}}
+  \label{TMJT-fig:workflow}
+\end{figure}
+
+\medskip \noindent {\bf Preliminary work.} PI Tonhauser's experiment-based research considers how not-at-issue content emerges through the interconnection of linguistic and extra-linguistic reference systems, and how languages and language varieties differ in conveying not-at-issue content (e.g., \citealt{tonhauser-sula6,brst-lang11,tbd-variability}). Particularly relevant is her research on the influence of interpreter's world knowledge on their inferences \parencite{degen-tonhauser-openmind}. The empirical foundation of PI Tonhauser's research are both constructed examples, for the investigation of specific hypotheses, as well as naturally occurring data, to evaluate empirical generalizations in actual language use (e.g., \citealt{tbd-variability,demarneffe-etal-sub23}). PI Tonhauser also has experience in constructing taxonomies of not-at-issue content and investigating taxonomic distinctions through carefully controlled experiments (e.g., \citealt{brst-lang11}), expertise that we build on in our WPs 1--3.
+
+PI von der Malsburg’s is an expert for incremental sentence interpretation and experimental / statistical methods.  His research investigates how different sources of knowledge, linguistic and otherwise, jointly inform language interpretation and how cognitive constraints (e.g., working memory) shape this process.  One illustration is von der Malsburg’s research on how up-to-date beliefs about the world, social knowledge, and linguistic knowledge jointly shaped the use and comprehension of gendered references during the 2016 Trump / Clinton U.S. presidential campaign (\cite{MalsburgEtAl2020}; New York Times reporting: \cite{Bennett2020}).  PI von der Malsburg uses experimental methods such as eye-tracking \parencite[e.g.,][]{MalsburgVasishth2013, MalsburgEtAl2015}, event-related brain potentials \parencite{MetznerEtAl2015N400, MetznerEtAl2016}, and large-scale crowdsourcing methods \parencite[e.g.,][]{MalsburgEtAl2020, LaurinavichyuteMalsburg2022}.  Von der Malsburg also published on statistical analysis methods \parencite{MalsburgVasishth2011, MalsburgEtAl2012Coling, MalsburgAngele2017} and computational cognitive models of language processing \parencite[e.g.,][]{LaurinavichyuteMalsburg2022}.
+
+% \sidenote{}{Let's talk about this. TODO: Foreshadow WP1: that's why we crowdsource in judgements.}
+
+The PIs jointly conducted several studies in preparation for this proposal. First, in the context of an undergraduate thesis, a small corpus of German dog whistles was collected and the examples were evaluated against the contemporary literature on dog whistles and not-at-issue content.  This work showed that dog whistles cannot be reliably identified based just on researcher intuition, an expected consequence of the labile nature of dog whistle meaning and its dependence on the comprehender’s knowledge, beliefs, and assumptions.  A more objective experimental approach to dog whistle content is therefore desirable.  Second, we observed variability in the dog whistles’ properties, in particular in their degree of conventionalization and plausible deniability.
+%\sidenote{}{That's why a better definition is needed, WP5.} Third, it was found that sentences with dog whistle content often had an \sidenote{impoverished literal meaning}{This is not something I can live with :)}, i.e. a literal meaning which on its own was not enough to justify the utterance.  This property of dog whisles has, to our knowledge, not yet been described in the literature and may reflect a communication strategy in which an impoverished meaning signals the presence of a secondary non-literal meaning that needs to be inferred. We are currently expanding this corpus of potential German dog whistles together with a student research assistant, in preparation for our WP1.
+
+% \begin{compactitem}
+% \item “Globalisten” is probably at least a bit conventionalized.  I think it needs a prior history of a certain use in a certain context to be understood.
+% \item “Ein vernünftiges Verhältnis zu Russland” on the ther hand was made-up on the fly and works out of the box.
+% \item “Aber [die Leute] wollen einen Boateng nicht als Nachbarn”.  Not even clear what \textit{the} dog whistle expression is, but it certainly checks most if not all of the boxes.  “einen Boateng” is also not conventionalized, and “einen X” neither.  This example is also interesting because the speaker (Gauland) can deny any specific implied meaning but not really that there \textit{is} an implied meaning.
+% \item “Man muss es wohl immer wieder sagen: Das [= Pille danach] sind keine Smarties.” (Jens Spahn)  Implied meaning (?): Women are not able to use these pills responsibly similar to how children cannot be assumed to consume sweets with restraint.  Tbh, I’m not sure this is a dog whistle.  Plausible deniability is not really given.  However, this might be a useful “counter-example” / border-line phenomenon.
+% \item “Volk” probably conventionalized because there is a long history of using this word by certain people and in certain contexts.  However, I’m not sure that the non-literal meaning of the word is only conventionalized within the in-group.  The connotation of volk is well-known also by many members of the out-group.  But note that there is also “Wir sind das Volk” which doesn’t connect to right-wing populist ideas.
+% \end{compactitem}
+
+Second, we conducted two pilot experiments, to establish relevant social variation among interpreters (pilots 1 and 2), and to demonstrate the feasibility of our experimental approach into dog whistle content (pilot 1) and its plausible deniability (pilot 2). 
+In pilot 1 (n=115), we used (pre-tested) evaluation scales (like `How [old/racist/progressive/\ldots] is the speaker?'), 
+%In pilot 1 (n=60), we asked participants to provide us with attributes of speakers who utter dog whistle like (\ref{TMJT-dw}); this served to establish suitable evaluation scales (like `How [old/racist/progressive/\ldots] is the speaker?'). 
+%These scales were used in pilot 2 (n=115) 
+to investigate interpreters' inferences about about speakers who utter dog whistles; participants were only told that the speakers are politicians. To investigate whether the inference is contributed by a particular expression in the utterance (see the discussion about detachability above), we implemented a minimal pair methodology, that is, we collected inference ratings for the dog whistle utterances as well as for minimal control variants in which the ``dog whistle expressions'' were replaced by expressions with an identical literal meaning. Pilot 3 (n=250) investigated the plausible deniability of the controversial content contributed by dog whistles, again using the minimal pair methodology.
+
+%\sidenote{}{RH: Again, assuming a mean reviewer: this [Deutsches Staatsvolk] is a technical, legal term. Is it a dw because the AfD says so? Then the context seems extremely important, but the finding also somewhat arbitrary (only populists use dw?)}
+
+\begin{exe}
+  \ex\label{TMJT-dw} Dog whistles from the AfD platform (with ``dog whistle expressions'' in bold face)
+  \begin{xlist}
+    % \ex Kinder sind die Zukunft unseres {\bf Volk}. `Children are the future of our people.'
+    \ex Die {\bf Aufnahme in das deutsche Staatsvolk} ist an strenge Bedingungen geknüpft.\\
+    `Inclusion into the state of German people is tied to strict requirements.'
+    \\ Control variant: {\em Der Erwerb der deutschen Staatsb\"urgerschaft ist\ldots}
+    \ex Diese Migrationspolitik sorgt für mehr {\bf Hilfe vor Ort} in Krisenregionen.\\
+    `These migration policies ensure more local assistance in crisis regions.'
+    \\ Control variant: {\em Diese Migrationspolitik sorgt f\"ur mehr lokale Unterst\"utzung in \ldots}
+    \ex Auch 2022 geht unser {\bf Kampf für Deutschland} weiter.\\
+    `Our fight for Germany will continue in 2022 as well.'
+    \\ Control variant: {\em Auch 2022 setzen wir uns weiter f\"ur Deutschland ein.}
+  \end{xlist}
+\end{exe}
+
+To be able to investigate by-interpreter variation, participants in pilots 1 and 2 were asked to indicate the party they would vote for if there were elections next Sunday as well as their position on five issues pertaining to immigrants, such as whether family members of refugees should be allowed to come to Germany. 
+%Participants' positions were coded with the numeric values -1 (pro-immigrant position), 0 (neutral), and 1 (anti-immigrant position). %Figure \ref{TMJT-fig:pilot2-participants} plots each participant's mean anti-immigrant score, calculated from their position on the five issues, by the party they said they would vote for.  
+We observe expected correlations between participants' stances towards immigrants and party selections (e.g., Green party voters tend to be more pro-immigrant), but party selection is not deterministic of a participant's position on issues concerning immigrants (e.g., there are Green party voters that are more anti-immigrant). These results suggest that there is by-participant variation in stances towards immigrants, allowing us to investigate by-participant differences in dog whistles; they also suggest that measures more fine-grained than party affiliation  provide better insight into an interpreter's position in the German socio-political landscape. 
+%\begin{figure}[h!]
+%  \centering
+%\includegraphics[width=1\linewidth]{sfb-1596-full-proposal/projects/TMJT/figures/mean-conservativism-by-participant.pdf}
+%  \caption{Mean anti-immigrant score by participant in pilot 1, color coding indicates party selection.}
+%\label{TMJT-fig:pilot2-participants}
+%\end{figure}
+
+We highlight some pertinent results from pilots 1 and 2 in Figs.~\ref{TMJT-fig:pilot2-racism} and \ref{TMJT-fig:pilot3}. These figures plot participants' racism ratings (Fig.~\ref{TMJT-fig:pilot2-racism}) and participants' plausible deniability ratings (Fig.~\ref{TMJT-fig:pilot3}) against their mean anti-immigrant scores for the three dog whistle utterances in (\ref{TMJT-dw}) and the control variants. The negative correlation observed in Figure \ref{TMJT-fig:pilot2-racism} for the dog whistle utterance in (\ref{TMJT-dw}a) with {\em Aufnahme in das deutsches Staatsvolk} `inclusion into the state of German people' suggests that the more anti-immigrant a participant is, the less racist they take the speaker of (\ref{TMJT-dw}a) to be. Similarly, the negative correlation observed in in Figure \ref{TMJT-fig:pilot3} for the same utterance suggests that the more anti-immigrant a participant is, the more deniable they take the controversial content to be. Both results are compatible with an analysis of (\ref{TMJT-dw}a) as a German dog whistle.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=.8\linewidth]{sfb-1596-full-proposal/projects/TMJT/figures/racist.pdf}
+  \caption{Racism ratings in pilot 1 for dog whistle sentences and non-dog whistle controls by mean anti-immigrant score, with linear smoothers overlaid.}
+  \label{TMJT-fig:pilot2-racism}
+\end{figure}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=.8\linewidth]{sfb-1596-full-proposal/projects/TMJT/figures/plausible-deniability-by-conservative.pdf}
+  \caption{Deniability ratings in pilot 2 for dog whistle sentences and non-dog whistle controls by mean anti-immigrant score, with linear smoothers overlaid.}
+  \label{TMJT-fig:pilot3}
+\end{figure}
+
+Our pilots also raised questions that we intend to investigate in our project. The first concerns the question of where and how to draw the line between dog whistles and conversational implicatures. This question is motivated, for instance, by the observation that there is a negative correlation in pilots 2 and 3 not just for the dog whistle utterance in (\ref{TMJT-dw}a) but also for the control variant (this pattern is different than the one observed for (\ref{TMJT-dw}b) and its control variant). A second question is where and how to draw the line between dog whistles and slurs. This question arises from the observation that the racism ratings for (\ref{TMJT-dw}c) with {\em Kampf f\"ur Deutschland} `fight for Germany' are relatively high, regardless of the participants' anti-immigrant score. A relevant consideration is that the plausible deniability ratings for (\ref{TMJT-dw}c) are relatively low compared to non-deniable controls (not plotted), suggesting plausible deniability, whereas the controversial content of slurs is generally taken to not be plausibly deniable. Experimental investigations of a broad range of potential German dog whistles and utterances that give rise to other not-at-issue content are needed to sharpen our understanding of the dog whistle phenomenon.
+
+\subsubsection{Project-related publications by participating researchers}
+
+%\textbf{List only publications by the participating researchers whose topics are directly related to the proposed individual project and which are publicly available. max 10 total}
+
+\dfgcomments{\begin{enumerate}[a)]
+  \item articles which at the time of draft proposal submission have been published or officially accepted  by  publication  outlets  with  scientific  quality  assurance,  and  book  publications;
+  \item other publications;
+  \item patents (subdivided into pending and issued).
+  \end{enumerate}}
+
+\dfgcomments{The total number of works listed under a) and b) combined may not exceed ten. When listing papers that have been officially accepted for publication but not yet published, the manuscript  and  the  publisher’s  dated  acknowledgement  of  acceptance  must  be  submitted  via  elan. The DFG will forward an electronic copy of the draft proposal -- and a print copy upon request -- to the consultation panel.}
+
+\medskip \noindent {\bf a) Peer-reviewed published or accepted articles}
+% This bibliography will list only publications that have own as a
+% keywords entry in the .bib file (see example in template)
+% publications that have not been cited already above can be inserted
+% by: \nocite{Scientist/Researcher:2019} redundant if they have been
+% cited in the preliminary work session above
+\AtNextBibliography{\small}
+
+\printbibliography[heading=none,keyword={TMJT-own}]
+
+%\medskip \noindent {\bf b) Other publications}
+% this bibliography will list only publications that have
+% own-other as a keywords entry in the .bib file (see example in template)
+% publications that have not been cited already above can be inserted by:
+% \nocite{Mohler:2001}
+% redundant if they have been cited in the preliminary work session above
+%\nocite{Scientist:2018}
+%\printbibliography[heading=none,keyword={TMJT-own-other}]
+
+\subsection{Project plan}
+% \sidenote{}{7 pages}
+
+%As outlined above, dog whistles have been studied from various different theoretical angles, with different research questions in mind, and with different research methods.  The overarching goal of this project is to investigate dog whistles from the (psycho)linguistic perspective with the goal to develop a unifying theoretical framework that can serve as a platform for bringing the various research strands together and integrating them. 
+%\sidenote{The concept of reference systems will play a central role}{SR: It seems absolutely plausible to create a basis for this; but there seems to be a gap between what can be done and the transfer into the big picture (across languages, cultures etc...) in the concrete work packages. All in all, the undertaking seems complex and challenging enough on the planned level (corpus of German DW)...} in this enterprise as it will allow us to abstract away from the properties of individual dog whistles and to develop a more general theory that covers the full breadth of the dog whistle phenomenon across speakers, political issues, cultures, and languages.  Crucially, we hypothesize that a proper understanding of the use, recognition, and interpretation of dog whistles involves the identification of the relevant references systems (linguistic, socio-cultural, knowledge of the speaker’s stance, etc.), their interconnection, and ultimately also their transformation when the comprehenders views are changed through exposure to dog whistle content.  Differences in references systems across speakers, will also play a crucial role in explaining why some audience are receptive to a particular dog whistles while others are not.
+
+%The empirical focus of our project is on dog whistles in German political discourse.  This is motivated by the scarcity of research on dog whistles outside the highly polarized political environment of the U.S.  The use of German also has the practical benefit that we will be able to share resources and method with other project in the CRC which also investigate German data sets.  However, we will also verify our ideas and methods using some of the classic examples from the literature on U.S.-English dog whistles.
+
+Reference systems play a central role in our investigation of dog whistles in German political discourse, as our project aims to investigate which reference systems interconnect in the interpretation of dog whistle and how this interconnection is socially stratified. We address the following research questions in five work packages (WP):
+
+\medskip
+\begin{compactitem}
+\item[\textbf{\WPcorpus}] What are dog whistles used in German political discourse?\\
+    We will compile an annotated corpus of naturally occurring dog whistles found in German political discourse that forms the empirical foundation for work in the other WPs.
+
+\item[\textbf{\WPrefsystems}] Which reference systems are implicated in the interpretation of dog whistles, and how are they constituted?\\
+    We will investigate the reference systems implicated in a subset of our reference corpus, and develop a taxonomy of reference systems.
+
+\item[\textbf{\WPtaxonomy}] How do dog whistles compare to other not-at-issue content? \\
+    We extend the taxonomy of not-at-issue content \parencite{brst-lang11} based on experimental investigations of dog whistles and other not-at-issue content.
+
+\item[\textbf{\WPprocessing}] Which cognitive processes underlie incremental dog whistle interpretation?\\
+    We will conduct a series of psycholinguistic experiments using methods such as self-paced reading and eye-tracking during reading.
+
+\item[\textbf{\WPsynthesis}] How do reference systems interconnect in the perception, interpretation, and processing of dog whistles?\\ We synthesize our results from WPs 2--4, to arrive at an empirically-grounded definition of dog whistles and a model of reference system interconnection.
+ 
+\end{compactitem}
+
+\medskip
+\noindent
+The work on these WPs will be carried out by the PIs and two doctoral researchers.  The PIs will hire researchers with a Master's degree in psycholinguistics, general or computational linguistics, who will receive training in formal pragmatics, psycholinguistics, experimental methods, and data analysis, as needed.
+
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.8\linewidth, frame]{sfb-1596-full-proposal/figures/Figure_2/A04_Figure_2.pdf}
+\caption{The role of the reference corpus and of how project \projTMJT{} operationalizes reference system theory. The blue box (bottom left) shows sample reference systems activated in the interpretation of dog whistles.  The red box (bottom right) shows the experiments designed to investigate the constitution and interconnection of these reference systems.  The gray cylinder (top) represents the reference data set and shows a concrete example with illustrative annotation.}
+\label{TMJT-fig:figure2}
+\end{figure}
+
+\subsubsection*{\WPcorpus[]: Reference corpus}
+
+% \sidenote{}{RH: Naturally, I love this aspect (by-group differences). However, I wonder how much variation you will see in a sample of 200...and how do you code target groups? Maybe it would be nice to focus on 2-3 social dimensions to keep it doable?}
+
+% For a sample illustration of the annotation task see Figure \ref{TMJT-fig:figure2}.\sidenote{}{flesh out}
+
+The goal of this WP is to compile an annotated corpus of naturally occurring dog whistles in German political discourse.  The role of this corpus in the project and subsequent WPs is illustrated in Figure~\ref{TMJT-fig:figure2}.  Based on the corpus, we will indentifiy relevant reference systems which will then be experimentally investigated in WPs 2--4.  The work on this WP will be carried out jointly by the two PIs and their doctoral researchers. This corpus will constitute the empirical basis for WPs2-4.
+
+%It addresses two main challenges: \begin{inparaenum} \item Dog whistle meaning is not conventionalized but must be inferred by the comprehender, and depends on who produced it, in what context, and to which audience (among other things).  Thus, research on dog whistles needs to work with naturally occurring examples that are firmly anchored in their context.  \item Prior research on dog whistles has focused on the careful analysis of a small number of classic examples such as {\em inner city crime} \parencite[e.g.,][]{hurwitz-peffley2005}.  However, a linguistic theory of dog whistles needs to be tested with data reflecting the full breadth of the phenomenon.  \end{inparaenum}
+
+The reference corpus we will establish as part of the project will consist of about 250 instances of potential German dog whistles. We focus on topics that have been particularly polarizing in German political discourse, including refugees/migration, climate change, corona, and gender. Texts containing potential dog whistles will be sourced from: \begin{inparaenum} \item the platforms of the parties in the German federal parliament, \item the German parliamentary corpus, \item social media platforms such as Reddit and Twitter, and \item newspaper articles\end{inparaenum}.  These sources differ along various theoretically relevant reference systems such as author identity, composition of the audience, and communicative function.  We will also use Google searches to identify additional instances of particularly interesting dog whistles \parencite[see][for a critical discourse analysis using a similar approach]{Akerlund2021}. Some examples already included in our reference corpus are shown in (\ref{TMJT-ex-afd}): (\ref{TMJT-ex-afd}a) is a short excerpt from a discourse in the Bundestag by a member of the AfD, (\ref{TMJT-ex-afd}b) is a tweet by an AfD politician, and (\ref{TMJT-ex-afd}c) is an excerpt from the party platform of the AfD:\sidenote{}{Judith fill in better examples with Xenia}
+
+\begin{exe}
+\ex\label{TMJT-ex-afd} Sample potential dog whistles in the reference corpus
+
+\begin{xlist}
+
+\ex Oral contribution by Gerold Otten (AfD), Member of the German Parliament, on November 21, 2017:\\
+“In ihrem Grundsatzprogramm bekennt sich die AfD zu den Werten der Charta der Vereinten Nationen und des Völkerrechts.
+In diesem Programm sprechen wir uns unter anderem dafür aus, Fluchtursachen zu bekämpfen und Entwicklungsländern Hilfe zur Selbsthilfe zu leisten.”\\[0.5em]
+\textit{In its basic program, the AfD is committed to the values of the United Nations Charter and international law.  In this program, we advocate, among other things, combating the causes of flight and helping developing countries to help themselves.}
+
+\ex Tweet by Stephan Brandner (AfD, MdB) on July 23, 2022:\\
+\includegraphics[width=0.8\linewidth, frame]{sfb-1596-full-proposal/projects/TMJT/figures/tweet.png}\\[0.5em]
+% Bundesregierung muss endlich gegen migrierte Gewalt entschlossen vorgehen!
+\textit{The federal government must finally take decisive action against migrated violence!}
+
+\ex Excerpt from basic program (\url{https://www.afd.de/grundsatzprogramm/#9}, retrieved July 26, 2022):\\
+\includegraphics[width=0.8\linewidth, frame]{sfb-1596-full-proposal/projects/TMJT/figures/afd-written.png}\\[0.5em]
+% Deutschland ist aufgrund seiner geographischen Lage, seiner Geschichte, Bevölkerung, und dichten Besiedelung kein klassisches Einwanderungsland.  Es ist notwendig, zwischen politisch Verfolgten und Kriegsflüchtlingen einerseits und irregulären Migranten andererseits zu unterscheiden.  Die AfD setzt sich daher unter anderem für die Umsetzung folgender Maßnahmen ein:
+\textit{Germany is not a classic immigration country due to its geographical location, history, population, and dense settlement.  It is necessary to distinguish between politically persecuted persons and war refugees on the one hand and irregular migrants on the other.  The AfD therefore advocates, among other things, the implementation of the following measures:}
+
+\end{xlist}
+\end{exe}
+
+Work on this WP is divided up into four tasks, as shown in Fig.~\ref{TMJT-fig:gantt}.
+{\bf Task 1:} The first task is the identification of the roughly 250 potential dog whistles in German political discourse. In our identification of potential dog whistles, we follow the characterization in (\ref{TMJT-def}); in particular, we ask ourselves whether the literal content is benign, whether a controversial content can be inferred, and whether that content is plausibly deniable. Each example will be annotated with information about linguistic and extra-linguistic reference systems that might be implicated in dog whistle interpretation, such as expression type, source (e.g., public discourse, article, party platform), speaker, audience, date, topic. As mentioned above, we have already begun compiling this reference corpus: \url{https://github.com/tmalsburg/DogWhistle}.
+%\footnote{\textcite{santana2021} assumes that dog whistles are not at-issue, but this has been called into question by \textcite{henderson-mccready2019}.  At-issueness will therefore not be a selection criterion.  In general, we will use permissive critera in the first corpus search and will tighten them as needed in later stages based on the outcomes of \WPtaxonomy{}.}
+%We will also rely the glossary of the “Neue Deutsche Medienmacher*innen”, a glossary compiled by professional journalists and which lists \sidenote{dog whistles commonly used in German mainstream media}
+%\sidenote{}{RH: sorry, aber ich kann wieder nicht folgen. wieso ist "clankriminalität" ein dw? staatsanwaltschaften und polizei benutzen das als terminus, wenn ich mich nicht täusche.\newline TM: Unsere Beispiele erwecken den falschen Eindruck, dass nur AfD-Mitglieder Dog Whistles benutzen und dass DW immer bewusst und zielgerichtet verwendet werden.}
+%As an example, consider the following statement by Alexander Gauland, a politician with the far-right populist AfD party, about Jerome Boateng, a German soccer player who was on the national team at the time (FAZ, 29.05.2016):
+%\begin{exe}
+%  \ex\label{TMJT-ex-boateng}
+%  Die Leute finden ihn als Fußballspieler gut. Aber sie wollen \textbf{einen Boateng} nicht als Nachbarn haben. `People like him as a soccer player. But they don't want a Boateng as their neighbor.'
+%\end{exe}
+%This statement is \sidenote{not overtly xenophobic}{SR: What would be the non-controversial meaning of this sentence? What would "ein Boateng" stand for? Seems to be quite a tricky example.}, but there is clearly room for a \sidenote{implicit controversial meaning}{TM: Judith, would you say that the implicit meaning of “a Boateng” is at-issue?  If yes, “a Boateng” may actually not be a dog whistle according to Santana, Stanley.  But it may still be one according to Henderson and McCready 2019 who say that dw content can be at-issue or not-at-issue.}.  This meaning, however, may differ depending on prior knowledge and assumptions (’a Muslim’, ’a black person’, ’decendant of immigrants’, etc.).  Gauland, however, can deny any of these interpretations.  While this example satisfies the criteria by Santana (\ref{TMJT-def}), it also differs from classic examples in that “ein Boateng” is likely not conventionalized (within the ingroup) the same way “inner city” and other examples are.  It is also easy to see for anyone that there \textit{is} an implied meaning, and therefore the implied content doesn’t fly under outgroup’s radar the way it does in the case of other dog whistles.  Examples like this illustrate that dog whistles may come in more shapes and forms than is apparent from the limited number of examples considered so far (which is a part of the motivation for \WPtaxonomy{}).
+{\bf Task 2:} Next, we collect annotations from a broad range of native speakers of German about two central properties of dog whistles, namely that they give rise to a controversial content that is plausibly deniable. We crowd-source these annotations using the methods illustrated in \citealt{demarneffe-etal-sub23} and our pilot experiments (see section \ref{TMJT-sec-preliminarywork}). Collecting annotations from a broad range of native speakers is essential, to prevent researcher bias and because the results of our pilot experiments have revealed by-interpreter variation in both properties. {\bf Task 3:} Based on these annotations, as well as the information we collect about the annotators, we will analyze the examples in our reference corpus with respect to whether they fit the various characterizations of dog whistles in the literature. We will jointly write a manuscript that describes our annotated reference corpus and presents the results of our analysis. {\bf Task 4:} The final task in this WP is the release of the reference corpus.
+
+% \WPcorpus[] allows us to address these challenges by providing a rich corpus of naturally occurring dog whistles from German political discourse.  \WPrefsystems{} is going to use this corpus to identify the reference systems that are relevant for the interpretation of dog whistles.  \WPtaxonomy{} is going to use the examples found in the corpus as test cases for the hypothesized formal properties of dog whistles.  \WPprocessing{} will use examples from the corpus as raw material for experimental stimuli used in the behavioral experiments.
+
+\medskip
+\noindent
+{\bf Tangible outcomes of \WPcorpus{}:}
+
+\begin{compactitem}
+
+\item Annotated reference corpus of about 250 potential German dog whistles.  This corpus will be freely available on GitHub or Open Science Framework.
+
+\item Analysis of examples in our reference corpus in light of existing characterizations. These results will be presented in a manuscript, for publication in a journal such as such as {\em Information, Communication and Society}.
+%\sidenote{}{JT: Titus, ist das ein journal das du kennst?  TM: Nein, aber wir hatten das Journal genommen, weil Ackerlund 2021 da publiziert ist.}
+
+\end{compactitem}
+
+\subsection*{\WPrefsystems[]: Taxonomy of reference systems}
+
+The goal of this WP is to develop a taxonomy of reference systems that are implicated in the interpretation of dog whistles. The work on this WP will be carried out jointly by the two PIs and their doctoral researchers.
+
+The taxonomy will categorize reference systems based on several properties that emerge from existing literature on dog whistles, as well as our investigation in this WP. Relevant properties on which reference systems will be classified include type (e.g., linguistic, extra-linguistic), stability (e.g., adhoc, generational), domain (e.g., migration, gender), and chronology (e.g., WW2, contemporary). For instance, knowledge of German history, including the refugee crisis in 2015, and of the platforms of contemporary German political parties, especially the AfD, are relevant for (\ref{TMJT-dw}b):
+
+\begin{exe}
+\exi{(\ref{TMJT-dw}b)} Diese Migrationspolitik sorgt für mehr {\bf Hilfe vor Ort} in Krisenregionen.\\
+    `These migration policies ensure more local assistance in crisis regions.'
+\end{exe}
+The development of this taxonomy will force us to carefully consider the constitution of the reference systems implicated in dog whistles. We expect the taxonomy to allow us to pinpoint which reference systems obligatorily interconnect in the interpretation of dog whistles, and which ones are particular to specific examples. We also expect the taxonomy of reference systems developed in this WP to facilitate a comparison to the reference systems implicated in other phenomena investigated in this CRC, such as A05 `Social meaning of irony'.
+
+The taxonomy will be developed on the basis of a subset about 50 examples from our reference corpus, to be selected after the reference corpus has been annotated for controversial inferences and plausible deniability. The selected subset will include relevant passages from the German parliamentary corpus, the shared use case of Area A, allowing us to coordinate annotation schemes across projects and to compare annotations with respect to the project-specific research questions. 
+
+Work on this WP is divided up into four tasks. {\bf Task 1:} We first develop annotation guidelines for reference systems. The development of these guidelines will be informed by existing literature on dog whistles from across the disciplines, as well as our intuitions about the reference systems that German interpreters draw on in comprehending the meaning of German dog whistles. {\bf Task 2:} Next, we annotate the reference systems implicated in the instances of dog whistles in our subcorpus. Our weekly project meetings serve to develop the taxonomy of reference systems, by synthesizing the results of our corpus annotation and by evaluating our results against existing literature. {\bf Task 3:} We synthesize our results in a joint manuscript, with the two doctoral students as lead authors. This manuscript will present the taxonomy and illustrate how reference systems interconnect in the comprehension of dog whistles. {\bf Task 4:} Finally, we will compare the results of our investigation in this WP with those of projects A05 and C01. Both of these projects also investigate natural language expressions that may invoke meanings beyond their literal meanings, namely the social meaning of irony (A05) and referential ambiguities in Sherlock Holmes stores (C01). By comparing the reference systems implicated in these phenomena and how they interconnect in deriving the additional meanings, we hope to arrive at a more refined understanding of which reference systems are phenomenon-specific and which interconnections generalize across phenomena.
+
+\medskip
+\noindent
+{\bf Tangible outcomes of \WPrefsystems{}:}
+
+\begin{compactitem}
+
+\item Annotation guidelines for reference systems implicated in the interpretation of dog whistles.
+
+\item Reference system annotations for about 50 examples in our reference corpus.
+
+\item A taxonomy of reference systems implicated in the dog whistles, presented in a manuscript co-authored by the project members, for publication in a journal like {\em Language}.
+
+\item A comparison of the constitution and interconnection of reference systems across the phenomena investigated in projects A04, A05, and C01, presented in a co-authored manuscript, for publication in a journal like {\em Journal of Linguistics and Literature}.
+
+%\item Data, code, etc. on GitHub or Open Science Framework (OSF).
+
+\end{compactitem}
+
+\subsection*{\WPtaxonomy[]: Dog whistles in a taxonomy of not-at-issue content}
+
+The goal of WP3 is to situate dog whistles in a taxonomy of not-at-issue content. The work on this WP will be primarily carried out by PI Tonhauser and her doctoral researcher. The taxonomic classification of dog whistle contents will be based on the results of three sets of comprehension experiments in which dog whistles are compared to one another as well as to other not-at-issue contents (these three experiments constitute tasks 1-3, respectively; task 4 is the dissemination of the results). The former comparison will allow us to evaluate existing proposals for differences between dog whistles and to develop an empirically grounded analysis of different types of dog whistles. The latter comparison provides us with a better empirical foundation for the evaluation and development of formal analyses of dog whistles. 
+
+\medskip
+\noindent
+{\bf Methods.} The three sets of comprehension experiments are designed to investigate four properties on which not-at-issue contents may differ from one another, namely the extent to which the content is at-issue and projects (Exps.~1), the inferences drawn and their strength (Exps.~2), and the extent to which the content is plausibly deniable (Exps.~3). The participants for Exps.~1-3 will be recruited on Prolific. To investigate how the interpretation of a dog whistle is modulated by the interpreters' social groups, we will collect relevant demographic information (age, gender, education level) as well as information that allows us to understand the interpreters' position in the relevant socio-political landscape (such as voting behavior, position on particular social issues, as in the pilots in section \ref{TMJT-sec-preliminarywork}). The experiments will follow the workflow and best practices described in \textcite{degen-tonhauser2022} with respect to experiment preregistration, reproducibility of the experimental methodology and data analysis, and replicability of the results.
+
+The design of Exp.~1 is based on that of the experiments reported on in \textcite{tbd-variability}; that of Exps.~2 and 3 is informed by the results of our pilots. Exps.~1-3 will focus on approximately 50 dog whistles selected from the corpus developed in \WPcorpus. Our selection of these 50 dog whistles will be guided by the annotations collected in WP1 and WP2. Our aim is to select dog whistles whose interpretation exhibits some variety with respect to these three properties, so as to be able to understand both similarities and differences between dog whistles. In contrast to WP1, where we collect ratings about naturally occurring dog whistles, the materials in our experiments may be modified to be able to apply the linguistic diagnostics. The 50 dog whistles will be compared to a range of other not-at-issue contents, including that of non-restrictive relative clauses, embedded clauses, slurs, insinuations, and conversational implicatures.
+
+%\medskip
+%\noindent
+%{\bf Exps.~1: Projection and at-issueness}
+%\\ \noindent
+%Exp.~1 is designed to investigate the projection and at-issueness of the contents of the selected dog whistles and compare it to the projection and at-issueness of other not-at-issue content, including that of appositives, factive and non-factive clause-embedding predicates, slurs, and conversational implicatures.\sidenote{}{need to make clear in 3.2 that there is variation among projective and nai. and include pointers to prior work on Gradien Projection Principle: the more nai, the more it projects} We will use response tasks used in prior work on at-issueness, namely the question/answer diagnostic and the asking-whether diagnostic, and on projection, namely the certain that diagnostic \parencite[e.g.,][]{tonhauser-sula6, tbd-variability, degen-tonhauser-openmind, degen-tonhauser-language}.
+
+%\begin{exe}
+%\ex Response tasks for nai
+%\begin{xlist}
+%\ex
+%\begin{xlist}
+%\exi{Gudrun:} Wie ist Frank eingestellt gegen\"uber Fl\"uchtlingen? (Which attitude does Frank have about refugees?)
+%\exi{Michaela:} Frank ist f\"ur Hilfe vor Ort. (Does Frank prefer local assistance?)
+%\end{xlist}
+
+%\ex Michaela: Ist Frank f\"ur Hilfe vor Ort? (Does Frank prefer local assistance?)
+%\\ Is Michaela asking whether Frank is a right wing person?
+%\end{xlist}
+%\end{exe}
+
+
+%\begin{exe}
+%\ex Response task for projection
+%\begin{xlist}
+%\ex Michaela: Ist Frank f\"ur Hilfe vor Ort? (Does Frank prefer local assistance?)
+%\\ Is Michaela certain that Frank is a right wing person?
+%\end{xlist}
+%\end{exe}
+
+%\medskip
+%\noindent
+%{\bf Exp.~2: Speaker persona}
+%\\ \noindent
+%Exp.~2 is designed to investigate which information dog whistle content conveys about the speaker/author persona and to compare that to other relevant contents: slurs, insinuations.
+
+%The results of this experiment will also allow us to understand whether dog whistle content is perceived only by an ingroup or by in- and outgroup.  We hypothesize that both groups may be right, that is, that dog whistles may differ in terms of whether only an ingroup or all speakers perceive the dog whistle.
+
+%The response task we will use is the one we already used in our pilot experiments (see section 3.2). Participants are presented with utterances by named speakers and asked to rate various properties of the speaker, including their political party affiliation, etc.\sidenote{}{check what we did in pilots}
+
+%\begin{exe}
+%\ex
+%\exi{Michaela:} Ich bin f\"ur Hilfe vor Ort? (I prefer local assistance)
+%\end{exe}
+
+%The results of this experiment will bear on the distinctions made by Sault 2018 and Henderson/McCready between overt/covert dog whistles and identifying and enriching dog whistles.
+
+%\medskip
+%\noindent
+%{\bf Exp.~3: Plausible deniability}
+%\\ \noindent
+%Exp.~3 is designed to investigate the extent to which dog whistle content is plausibly deniable and to compare it to the extent to which other content is plausibly deniable, including at-issue/entailments (which we expect to not be plausibly deniable) and other not-ati-issue content, such as the content of non-restrictive relative clauses (not plausibly deniable, because entailed), CC of clause-embedding predicates (varying plausible deniability), slurs, insinuations, and conversational implicatures.
+
+%\begin{exe}
+%\ex
+%\begin{xlist}
+%\exi{Michaela:} Ich bin für Hilfe vor Ort? (I prefer local assistance)
+%\exi{Gudrun:} What do you have against refugees?
+%\exi{Michaela:} I don't have anything against refugees. Why do you think I might?
+%\end{xlist}
+%\exi{} Is Michaela contradicting herself?\sidenote{}{fix to what we actually did, perhaps need some more pilots first}
+%\end{exe}
+
+
+%\begin{notebox}
+% Another relevant distinction: Dog whistles whose function is covert communication with ingroup members vs. dog whistles whose function it is to covertly influence the views of outgroup members.
+%\end{notebox}
+
+\medskip
+\noindent
+{\bf Expected results.} In Exps.~1, existing analyses of dog whistle contents as well as existing experimental results \parencite[e.g.,][]{tbd-variability} lead us to expect that dog whistles are as highly not-at-issue as that of conventional implicatures (and therefore also as projective). We do, however, also expect to find variation among dog whistles, depending on how conventionalized the dog whistle is. The results of Exps.~1 will serve to expand the taxonomy of not-at-issue content to dog whistles and other plausibly deniable not-at-issue contents investigated.
+
+In Exps.~2, we expect to find that dog whistles differ in the kinds of controversial contents that interpreters infer, and that these inferences systematically vary by the social groups relevant to the example. In Exps.~3, we expect to find variation in the extent to which the dog whistles are plausibly deniable and, again, that differences vary with the social groups relevant to the example. The results of these experiments will be used to evaluate existing taxonomies of dog whistle contents and to develop a more empirically grounded taxonomy. 
+
+\medskip
+\noindent
+{\bf Tangible outcomes of \WPtaxonomy:}
+
+\begin{compactitem}
+
+%\item Presentations at relevant conferences such as CogSci, HSP (formerly CUNY), AMLaP, XPrag, Sinn und Bedeutung.
+
+\item Crowd-sourced annotations of dog whistles (and minimal variants) for at-issueness, projection, controversial inferences, and plausible deniability; these data will be released via GitHub \parencite[see][]{degen-tonhauser2022}.
+
+\item A taxonomy of not-at-issue content, extended to dog whistles; this taxonomy will be presented in a manuscript (lead author is PI Tonhauser's doctoral student) to be submitted to a journal like {\em Journal of Semantics}.
+
+\item A taxonomy of dog whistles; this taxonomy will be presented in a manuscript (lead author is PI Tonhauser's doctoral student) to be submitted to a journal like {\em Semantics \& Pragmatics}.
+
+\end{compactitem}
+
+\subsection*{\WPprocessing[]: Online processing of dog whistles}
+
+\WPprocessing[] uses state-of-the-art psycholinguistic methods to investigate the online processing of dog whistles and paves the way toward a cognitive processing model of dog whistle interpretation (to be spelled out and tested in the second phase of the CRC).  This WP will be primarily carried out by PI von der Malsburg and his doctoral researcher.
+
+The central assumption in this WP is that dog whistle content must be inferred since it is not fully conventionalized and since it depends on access to multiple linguistic and extra-linguistic reference systems (to be identified in \WPrefsystems).  This interconnection of reference systems is further assumed to cause cognitive effort measurable in processing times.
+
+\medskip
+\noindent
+{\bf Experiments.}  In the experiments described below, we will compare dog whistles adapted from materials collected in \WPcorpus[] with reference sentences that have the same literal meaning but no dog whistle content.  In a second reference condition, the dog whistle content will be made explicit thus removing the cost of dog whistle inference.  Four sets of experiments will then be conducted:
+
+First, web-based \textit{self-paced reading} (SPR) will be conducted to estimate the nature and magnitude of reading time effects elicited by dog whistle content \parencite{MalsburgEtAl2020, LaurinavichyuteMalsburg2022}.
+
+Second, we will conduct reading-time experiments to investigate the role of the reference systems identified in \WPrefsystems{} such as the identity of the speaker, the audience, the setting of the utterance (e.g., press conference, political rally, discourse in the parliament), and the political beliefs of the participant him-/herself.
+
+Third, to obtain a more comprehensive picture of the reading processes triggered by dog whistle content we will conduct some of the experiments described above (depending on SPR outcomes) but with \textit{eye-tracking} during free reading \parencite{Rayner1998, CliftonEtAl2007}.
+
+Fourth, reading times inform us about processing effort but not directly about when and what meaning is inferred.  To address this, we will conduct experiments using the \textit{visual world paradigm} \parencite{HuettigEtAl2011}.  In these experiments, participants will hear a quote by an unnamed politician (spoken by the experimenter to avoid voice-related cues) while simultaneously seeing photos of four well-known German politicians with different political orientations of which only one is compatible with the dog whistle.   Eye movements will then be analyzed to track the time course of the interpretation process in the dog whistle condition vs.\ the two reference conditions.
+
+\medskip
+\noindent
+\textbf{Expected results.} We expect the interpretation of dog whistle content to be associated with measurable processing cost.  This cost may arise rapidly if dog whistle content is constructed as part of routine sentence interpretation.  However, it may also appear delayed, for instance, it may emerge during a second pass over the sentence in free reading (eye-tracking).  If the cost associated with dog whistle content is delayed, this would speak in favor of an account under which dog whistle content does not participate in routine compositional processing.  We further expect the cost of dog whistle interpretation to be modulated by the various reference systems identified in \WPrefsystems{}.  For instance, dog whistle effects should be larger when the participant has access to the relevant reference system (e.g., holds particular political ideologies).  The results will therefore also help validate and further support the findings from \WPrefsystems{}.
+
+\medskip
+\noindent {\bf Data analysis.}  Data will be analyzed using Bayesian generalized linear mixed models \parencite{NicenboimVasishth2016}.  Analyses of the canonical word-based eye-tracking measures \parencite{MalsburgAngele2017} will be complemented with holistic analyses of interpretation strategies as reflected in the overall gaze trajectories \parencite[e.g.,]{MalsburgVasishth2011}.  Visual-world experiments will be analyzed using Bayesian logistic models with polynomial effects of time \parencite{MorganEtAl2020}.
+
+\medskip
+\noindent
+{\bf Tangible outcomes of \WPprocessing{}}
+
+\begin{compactitem}
+
+\item Estimates of the processing cost associated with dog whistle content as measured by self-paced reading and their modulation by relevant reference systems.  Article in a journal such as \textit{Glossa Psycholinguistics} (lead author: PI von der Malsburg’s PhD student).
+
+\item Identification of the processes subserving dog whistle interpretation in free reading using eye-tracking.  Article in a journal such as \textit{Journal of Memory and Language} (lead author: PI von der Malsburg’s PhD student).
+
+\item Visual world eye-tracking evidence for the time-course of dog whistle interpretation and underlying interpretative mechanisms.  Article in a journal such as \textit{Language, Cognition, and Neuroscience} (lead author: PI von der Malsburg’s PhD student).
+
+\end{compactitem}
+
+\subsection*{\WPsynthesis[]: Interconnection}
+
+The overarching goal of WP5 is to synthesize the results from WP2, WP3, and WP4, by investigating how reference systems interconnect in the perception, interpretation, and processing of dog whistles. Research on this WP is divided into three tasks, which will be carried out jointly by the two PIs and their doctoral researchers, as shown in Fig.~\ref{TMJT-fig:gantt}.
+
+\noindent\textbf{Task 1:} The first task is to continuously evaluate existing definitions of dog whistles against the results of our WPs 2--4. Accordingly, work on this task will be carried out in our weekly project meetings starting in the middle of year 1. The ultimate goal is to arrive at an empirically adequate definition of dog whistles that builds on already existing definitions in the literature, but refines them based on the results of our research in WPs 2--4. This definition should capture what is common to all dog whistles (thereby distinguishing dog whistles from other phenomena) as well as distinctions between types of dog whistles. This definition will serve as a starting point for the development of a processing model of dog whistles in the second phase of the CRC.
+
+\noindent\textbf{Task 2:} The second task is to develop a formal model that captures which reference systems interconnect in the perception, interpretation, and processing of dog whistles, and how they interconnect. This model will be informed by the corpus study in WP2 as well as the results of the offline and online results obtained in WP3 and WP4. Accordingly, the development of this formal model will begin in year 3, once we can take into consideration first results from WPs 3--4.
+
+%The purpose of \WPsynthesis[] is 1. to synthesize the findings obtained in the other WPs, and 2. to apply the theoretical insights that we gained to a new problem domain namely the representation of dog whistles in transformer language models (collaboration with project \projAFRH).
+
+
+\noindent\textbf{Task 3:} In collaboration with project \projAFRH{}, we will investigate which reference systems interconnect in transformer models' perception and interpretation of dog whistles. 
+%Specifically, we will use methods developed in \projAFRH{} to test 1. whether transformer models are sensitive to dog whistle content, and 2. which of the reference systems identified in \WPrefsystems{} influence dog whistle interpretation in transformer models and how.  
+To this end, we will run experiments similar to those of WPs 3--4, but with transformer models instead of human participants.  For instance, we will present the model with an utterance from a hypothetical politician (dog whistle or control) and use a question answering task to probe the inferences the model draws about the politician \parencite{RogersEtAl2022, DzendzikEtAl2021}. The results of these experiments will inform possible collaborations in the second phase of the CRC, for instance about whether transformer models can  capture the online processing profiles observed in WP4 (e.g., via a surprisal link to reading times).
+
+\medskip
+\noindent
+{\bf Tangible outcomes of \WPsynthesis{}}
+
+\begin{compactitem}
+
+\item An empirically adequate definition of dog whistles, which we will rely on in our research in WPs 3--4 and the tangible outcomes in those WPs.
+
+\item A formal model of the interconnection of reference systems in the perception, interpretation, and processing of dog whistles, as a basis for a proposal for the second phase of the CRC.
+
+\item Empirical results regarding the interconnection of reference systems in transformer language models' perception and interpretation of dog whistles. We plan to submit these results to a conference such as ACL, Coling, or EMNLP.
+
+\end{compactitem}
+
+% Gantt chart:
+
+\begin{figure}[th!]
+ \centering
+ \definecolor{Afull}{rgb}{0.52, 0.2, 1.0}
+ \definecolor{Ahalf}{rgb}{0.82, 0.7, 1.0}
+ \definecolor{Bfull}{rgb}{0.32, 0.66, 0.22}
+ \definecolor{Bhalf}{rgb}{0.70, 0.86, 0.62}
+
+ \newcommand{\Afullbar}[3]{\ganttbar[bar/.append style={fill=Afull}]{#1}{#2}{#3}}
+ \newcommand{\Ahalfbar}[3]{\ganttbar[bar/.append style={fill=Ahalf}]{#1}{#2}{#3}}
+ \newcommand{\Bfullbar}[3]{\ganttbar[bar/.append style={fill=Bfull}]{#1}{#2}{#3}}
+ \newcommand{\Bhalfbar}[3]{\ganttbar[bar/.append style={fill=Bhalf}]{#1}{#2}{#3}}
+
+ \resizebox{\textwidth}{!}{
+     \begin{ganttchart}[vgrid, %hgrid={*1{thin}, *1{dashed}},
+       bar/.style={fill=blue!50},y unit
+       chart=0.3cm,x unit=2.4mm,
+       group label font=\footnotesize\bf,
+       bar label font=\footnotesize, %bar label node/.append style={align=left},
+       milestone label font=\footnotesize\em
+    ]{1}{48}
+    
+    \gantttitle{Year 1}{12}\gantttitle{Year 2}{12}\gantttitle{Year 3}{12}\gantttitle{Year 4}{12}\\
+    
+    %%% WP1:
+    \ganttgroup{\WPcorpus}                                {1} {15}\\
+    \ganttnewline % ---------------------
+    \Afullbar  {T1: Compilation of reference corpus}      {1} {3}\\
+    \Bfullbar  {}                                         {1} {3}\\
+    \ganttnewline % ---------------------
+    \Afullbar  {T2: Crowdsourced annotation}              {4} {6}\\
+    \Bfullbar  {}                                         {4} {6}\\
+    \ganttnewline % ---------------------
+    \Afullbar  {T3: Analysis, dissemination}              {7}{15}\\
+    \Bfullbar  {}                                         {7}{15}\\
+    \ganttnewline % ---------------------
+    \Afullbar  {T4: Release of reference corpus}          {13}{15}\\
+    \Bfullbar  {}                                         {13}{15}\\
+    
+    %%% WP2:
+    \ganttnewline[thin]
+    \ganttgroup{\WPrefsystems}                            {1} {24}\\
+    \ganttnewline % ---------------------
+    
+    \Afullbar  {T1: Development of annotation guidelines} {1} {6}\\
+    \Bfullbar  {}                                         {1} {6}\\
+    \ganttnewline % ---------------------
+    
+    \Afullbar  {T2: Annotation, taxonomy development}     {7} {12}\\
+    \Bfullbar  {}                                         {7} {12}\\
+    \ganttnewline % ---------------------
+    
+    \Afullbar  {T3: Dissemination}             {13}{18}\\
+    \Bfullbar  {}                                         {13}{18}\\
+    \ganttnewline % ---------------------
+    
+    \Afullbar  {T4: Cross-project comparison (A04, A05, C01)}             {19}{24}\\
+    \Bfullbar  {}                                         {19}{24}\\
+    \ganttnewline % ---------------------
+    
+    %\ganttnewline % ---------------------
+    
+    %%% WP3:
+    \ganttnewline[thin]
+    \ganttgroup{\WPtaxonomy}                              {19}{48}\\
+    \ganttnewline % ---------------------
+    \Ahalfbar  {T1: Exps.~1 (projection / at-issueness)}  {19}{27}\\
+    \Bfullbar  {}                                         {19}{27}\\
+    \ganttnewline % ---------------------
+    \Ahalfbar  {T2: Exps.~2 (controversial content)}      {25}{33}\\
+    \Bfullbar  {}                                         {25}{33}\\
+    \ganttnewline % ---------------------
+    \Ahalfbar  {T3: Exps.~3 (plausible deniability)}      {31}{39}\\
+    \Bfullbar  {}                                         {31}{39}\\
+    
+    \ganttnewline % ---------------------
+    \Ahalfbar  {T4: Dissemination}                        {28}{48}\\
+    \Bfullbar  {}                                         {28}{48}\\
+    
+    %%% WP4:
+    \ganttnewline[thin]
+    \ganttgroup{\WPprocessing}                            {07}{48}\\
+    \ganttnewline % ---------------------
+    \Afullbar  {T1: Self-paced reading experiments}       {07}{20}\\
+    \Bhalfbar  {}                                         {07}{20}\\
+    \ganttnewline % ---------------------
+    \Afullbar  {T2: Eye-tracking experiments}             {21}{40}\\
+    \Bhalfbar  {}                                         {21}{40}\\
+    \ganttnewline % ---------------------
+    \Afullbar  {T3: Dissemination}                        {21}{48}\\
+    \Bhalfbar  {}                                         {21}{48}\\
+    
+    %%% WP5:
+    \ganttnewline[thin]
+    \ganttgroup{\WPsynthesis}                             {7}{48}\\
+    \ganttnewline % ---------------------
+    \Afullbar  {T1: Dog whistle definition}        {7}{48}\\
+    \Bfullbar  {}                                         {7}{48}\\
+    \ganttnewline % ---------------------
+    \Afullbar  {T2: Model of interconnection}        {25}{48}\\
+    \Bfullbar  {}                                         {25}{48}\\
+    \ganttnewline % ---------------------
+    \Afullbar  {T3: Transformer experiments with A02}              {37}{48}\\
+    \Bfullbar  {}                                         {37}{48}\\
+    
+    \end{ganttchart}
+}
+
+\caption{Gantt chart showing the work packages and included tasks over the 48 month period of the project. Color coding of the two DFG-funded researchers’ contribution: \textcolor{Afull}{Psycholinguistics doctoral researcher} (\textcolor{Afull}{lead role}/\textcolor{Ahalf}{contributing role}), \textcolor{Bfull}{Semantics/pragmatics doctoral researcher} (semantics/pragmatics; \textcolor{Bfull}{lead role}/\textcolor{Bhalf}{contributing role})}
+ \label{TMJT-fig:gantt}
+\end{figure}
+
+\subsection{Role within the Collaborative Research Center}
+%\sidenote{}{½–¾ page}
+
+Dog whistles illustrate in a compelling way how utterance interpretation depends  on the interconnection of multiple reference systems and how by-interpreter variation in access to relevant reference systems can result in dramatically different utterance interpretations. Our project is ideally situated in Area A, as dog whistles critically depend on the interconnection of social and linguistic reference systems, as well as domain knowledge, among others. A point of contact with all of the other projects in area A is political discourse, which is particularly prone to bring about dog whistles. As such, our project contributes a unique perspective on the central question of Area A of our CRC, of how social structure shapes the constitution and interconnection of reference systems.
+
+%, socially stratified reference systems, including reference systems pertaining to social knowledge, domain knowledge, and linguistic knowledge.  As such, project \projTMJT{} directly contributes to the overarching goals of the CRC and specifically with the question of area A of how social structure shapes the constitution and interconnection of reference systems.
+
+Our project thematically connects with other projects that investigate social meaning and secondary levels of meaning (e.g., \projSRJT{}, B03, \projSBMR{}) and by-interlocutor variation (e.g., \projABSPRK{}, \projVAPD{}). Our contribution to the shared use case of Area A will be the annotation of information from which secondary levels of meaning may arise. Furthermore, as described above, we have planned a joint task together with projects A05 and C01, both of which also investigate secondary levels of meaning, albeit on the basis of different empirical phenomena. Our joint task will further contribute to our understanding of how reference systems interconnect in deriving such secondary meanings. Finally, together with the PIs of \projAFRH{} (BIASed Language) we will make initial steps to investigating whether and how large-scale transformer models represent dog whistles, which will pave the way for more in-depth investigations in the second phase of the CRC. 
+
+\subsection{Differentiation from other funded projects}
+
+Neither of the PIs has funded projects that overlap with the project proposed here.
+
+\subsection{Relevance of sex, gender and/or diversity}
+% \sidenote{}{¼–½ page}
+
+% DFG instructions for this section: <Bitte legen Sie – soweit einschlägig – dar, ob und, wenn ja, inwiefern das Geschlecht
+% • der forschenden Personen,
+% • der untersuchten Personen,
+% • der von einer Umsetzung der Forschungsergebnisse betroffenen Personen,
+% • der untersuchten Tiere,
+% Teilprojekt <Kennziffer>
+% 23
+% • bei von Menschen oder Tieren entnommenem Material
+% • oder in anderer Hinsicht
+% für das Forschungsvorhaben (Methoden, Arbeitsprogramm, Ziele, etc.) relevant ist.
+% Legen Sie bitte ebenfalls – soweit einschlägig – dar, ob und, wenn ja, inwiefern Vielfältigkeit unter Gesichtspunkten wie beispielsweise Gesundheitszustand, Herkunft oder Kultur
+% • der forschenden Personen,
+% • der untersuchten Personen,
+% • der von einer Umsetzung der Forschungsergebnisse betroffenen Personen
+% • oder in anderer Hinsicht
+% für das Forschungsvorhaben (Methoden, Arbeitsprogramm, Ziele, etc.) bedeutsam sein kann. Bitte erläutern
+% Sie, inwiefern diese oder vergleichbare Gesichtspunkte gegebenenfalls auch für die untersuchten Tiere oder
+% für von Menschen oder von Tieren entnommenem Material relevant sind. Weitere Informationen finden Sie
+% unter:
+% www.dfg.de/vielfaeltigkeitsdimensionen
+
+Dog whistles are commonly used to discriminate against marginalized and particularly vulnerable groups, for instance, in discourses about race, gender diversity, or sexual orientation.  Sex, gender, and other dimensions of diversity therefore constitute crucial references systems for the investigation of dog whistles.  We therefore may take participants’ gender or migration background into consideration in our investigations.  Relevant ethics and privacy regulations will be strictly followed. In recruiting our doctoral students, we will give special consideration to members of marginalized groups and encourage members of these groups to apply.  Both PIs have a record or working with members of these groups. In the analysis of the results of our research, we will consider possible impacts on or implications for members of marginalized groups.
+
+%Given the theoretical nature of our research, we do not expect the results of our research to have an immediate impact on members of marginalized groups.
+
+% An example is the case of a German court that denied a lesbian refugee from Iran asylum on the grounds that it would be safe for her to return to Iran, where homosexuality can be punished by death, if she lived a restrained lifestyle there (“bei \textit{zurückhaltendem Lebensstil} … keine Verfolgungsmaßnahmen zu befürchten”, ZEIT Online, 26.06.2012).
+
+% ZEIT Artikel:
+% https://www.zeit.de/gesellschaft/zeitgeschehen/2012-07/homosexuelle-verfolgung-fluechtlinge
+
+\subsection{Project funding}
+%\sidenote{}{½–¾ page}
+
+\subsubsection{Previous funding}
+
+\dfgcomments{Is the project currently being funded by the DFG or other institution? Describe the CRC’s proposed budget with regard to personnel and larger-scale instrumentation.}
+
+\subsubsection{Requested funding}
+
+\newpage
+% \subsubsection{External references}
+%\printbibliography[heading=none,keyword={TMJT-external}]
+
+% \begin{notebox}
+% Re Fig. \ref{TMJT-fig:pilot2-participants}:\\
+%   1. This plot validates the anti-immigration score.  I’m not sure this is important enough to justify the space.  I’d propose that we include just one plot, one that directly speaks to our research questions.
+
+%   2. I suggest we drop small parties in Fig 2 (Die Partei, Humanisten, Volt, keine Angabe)?  It’s otherwise difficult to  distinguish the colors.
+
+%   3. Need to rename “conservativm” to “anit-immigration” in the plot.
+
+%   4. The dots overlap which makes it harder to read this plot.  I suggest plotting a histogram that shows each participant as a dot colored by party.  Example code:
+
+% \begin{verbatim}
+% library(ggplot2)
+
+% mpg |>
+%   ggplot(aes(hwy, fill=class, color=class)) +
+%   geom_dotplot(stackgroups=TRUE, binwidth=1, dotsize=1) +
+%   theme_bw()
+% \end{verbatim}
+% \includegraphics[width=1\linewidth]{sfb-1596-full-proposal/projects/TMJT/figures/dotplot_example.png}
+% \end{notebox}
+
+\end{document}

@@ -48,23 +48,23 @@ names(d)
 table(d$wom.asylum)
 
 # define numeric values for each position (higher = more conservative)
-d$wom.refugees.num <- ifelse(d$wom.refugees == "Ich stimme zu", 2, 
-                             ifelse(d$wom.refugees == "Neutral", 1, 0))
-d$wom.headscarf.num <- ifelse(d$wom.headscarf == "Ich stimme nicht zu", 2, 
-                              ifelse(d$wom.headscarf == "Neutral", 1, 0))
-d$wom.citizenship.num <- ifelse(d$wom.citizenship == "Ich stimme nicht zu", 2, 
-                                ifelse(d$wom.citizenship == "Neutral", 1, 0))
-d$wom.islam.num <- ifelse(d$wom.islam == "Ich stimme nicht zu", 2, 
-                          ifelse(d$wom.islam == "Neutral", 1, 0))
-d$wom.asylum.num <- ifelse(d$wom.asylum == "Ich stimme zu", 2, 
-                           ifelse(d$wom.asylum == "Neutral", 1, 0))
+d$wom.refugees.num <- ifelse(d$wom.refugees == "Ich stimme zu", 1, 
+                             ifelse(d$wom.refugees == "Neutral", 0, -1))
+d$wom.headscarf.num <- ifelse(d$wom.headscarf == "Ich stimme nicht zu", 1, 
+                              ifelse(d$wom.headscarf == "Neutral", 0, -1))
+d$wom.citizenship.num <- ifelse(d$wom.citizenship == "Ich stimme nicht zu", 1, 
+                                ifelse(d$wom.citizenship == "Neutral", 0, -1))
+d$wom.islam.num <- ifelse(d$wom.islam == "Ich stimme nicht zu", 1, 
+                          ifelse(d$wom.islam == "Neutral", 0, -1))
+d$wom.asylum.num <- ifelse(d$wom.asylum == "Ich stimme zu", 1, 
+                           ifelse(d$wom.asylum == "Neutral", 0, -1))
 
 
 # how conservative is each participant? 
 
 d$mean.wom.score = (d$wom.refugees.num + d$wom.headscarf.num + d$wom.citizenship.num + d$wom.islam.num + d$wom.asylum.num) / 5
-# lowest possible: 0 (least conservative)
-# highest possible: 10/5=2 (most conservative)
+# lowest possible: -1 (least conservative)
+# highest possible: 1 (most conservative)
 table(d$mean.wom.score)
 
 d = d %>%
@@ -78,8 +78,16 @@ table(d$conservative)
 #less conservative more conservative 
 #174  (= 87 participants)              56 (= 28 participants)
 
+# plot mean anti-immigrant score by party selection (grant) ----
+
 d = d %>%
   mutate(subj = fct_reorder(as.factor(subj),mean.wom.score))  
+
+# remove minor parties or (no answer)
+table(d$party)
+d = d %>%
+  filter(party == "CDU" | party == "FDP" | party == "SPD" | party == "AfD" | party == "Grüne"
+         | party == "Linke" | party == "Die Partei" | party == "Volt")
 
 ggplot(d, aes(x=subj, y=mean.wom.score,color=party,fill=party)) +
   geom_jitter(shape=21, size=3, alpha=1,color="black") +
@@ -88,8 +96,8 @@ ggplot(d, aes(x=subj, y=mean.wom.score,color=party,fill=party)) +
   theme(axis.ticks=element_blank(),panel.grid.major.x=element_blank(),
         panel.grid.minor.x=element_blank(),plot.background=element_blank()) +
   labs(fill = "Party selection") +
-  xlab("Participant (n = 115)") +
-  ylab("Mean conservativism score \n (higher = more conservative)")
+  xlab("Participant") +
+  ylab("Mean anti-immigrant score \n (higher = more anti-immigrant)")
 ggsave("../generated/plots/mean-conservativism-by-participant.pdf",height=3,width=10)
 
 # highest mean score is 2 (out of 2)!
@@ -241,6 +249,25 @@ ggplot(d[d$sentence.label != "Volk",], aes(x=dog.whistle, y=pracism, color = con
   ylab("Kernel probability density \n of racism ratings \n (higher ratings = more racist)") +
   facet_grid(. ~ sentence.label)
 ggsave("../generated/plots/racist.pdf",height=2.5,width=8)
+
+# racism against anti-immigrant score ----
+ggplot(d[d$sentence.label != "Volk",], aes(x=mean.wom.score, y=pracism)) +
+  geom_jitter() +
+  geom_smooth(method='lm') +
+  theme(legend.position="right") +
+  scale_y_discrete(limits=c("1","2", "3", "4", "5")) +
+  xlim(-1,1) +
+  #scale_x_discrete(limits=c("-1.0","0","1.0")) +
+  #theme(axis.ticks=element_blank(),panel.grid.major.x=element_blank(),
+  #      panel.grid.minor.x=element_blank(),plot.background=element_blank(),
+  #      axis.title.x=element_blank()) +
+  theme(strip.background =element_rect(fill="white")) +
+  theme(strip.text = element_text(colour = 'black'),strip.text.x = element_text(size = 12)) +
+  xlab("Mean anti-immigrant score \n (higher ratings = more anti-immigrant)") +
+  ylab("Racism ratings \n (higher ratings = more racist)") +
+  facet_grid(dog.whistle ~ sentence.label,scale="free")
+ggsave("../generated/plots/racist.pdf",height=3,width=8)
+
 
 # honest
 mean.honest = d %>%
