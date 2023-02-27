@@ -266,7 +266,7 @@ ggplot(d[d$sentence.label != "Volk",], aes(x=mean.wom.score, y=pracism)) +
   xlab("Mean anti-immigrant score \n (higher ratings = more anti-immigrant)") +
   ylab("Racism ratings \n (higher ratings = more racist)") +
   facet_grid(dog.whistle ~ sentence.label,scale="free")
-ggsave("../generated/plots/racist.pdf",height=3,width=8)
+ggsave("../generated/plots/racist.pdf",height=3,width=6)
 
 
 # honest
