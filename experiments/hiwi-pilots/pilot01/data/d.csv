@@ -1,0 +1,57 @@
+participantID,age,gender,education,migration,ethnicity,party,womNachzug,womKopftuch,womStaatsangehörigkeit,womIslam,womAsyl,response,item
+3,28,Weiblich,Studium,"Ja, ich bin nach Deutschland migriert.",Wei<a0>,afd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,1,rechspopulistisch
+3,28,Weiblich,Studium,"Ja, ich bin nach Deutschland migriert.",Wei<a0>,gruen,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,2,neuzugezogen
+3,28,Weiblich,Studium,"Ja, ich bin nach Deutschland migriert.",Wei<a0>,spd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,1,mutter
+3,28,Weiblich,Studium,"Ja, ich bin nach Deutschland migriert.",Wei<a0>,afd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,4,rechstreu
+3,28,Weiblich,Studium,"Ja, ich bin nach Deutschland migriert.",Wei<a0>,gruen,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,1,asylindustrie
+3,28,Weiblich,Studium,"Ja, ich bin nach Deutschland migriert.",Wei<a0>,spd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,5,fachkraeftemangel
+3,28,Weiblich,Studium,"Ja, ich bin nach Deutschland migriert.",Wei<a0>,afd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,3,fluchtursachen
+3,28,Weiblich,Studium,"Ja, ich bin nach Deutschland migriert.",Wei<a0>,gruen,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,3,heimat
+3,28,Weiblich,Studium,"Ja, ich bin nach Deutschland migriert.",Wei<a0>,afd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,2,fatal
+3,28,Weiblich,Studium,"Ja, ich bin nach Deutschland migriert.",Wei<a0>,spd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,1,kriminell
+3,28,Weiblich,Studium,"Ja, ich bin nach Deutschland migriert.",Wei<a0>,gruen,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,3,inlaenderfreundlich
+3,28,Weiblich,Studium,"Ja, ich bin nach Deutschland migriert.",Wei<a0>,afd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,2,nationalstaat
+3,28,Weiblich,Studium,"Ja, ich bin nach Deutschland migriert.",Wei<a0>,gruen,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,2,renten
+3,28,Weiblich,Studium,"Ja, ich bin nach Deutschland migriert.",Wei<a0>,spd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,5,mehrwert
+4,25,Weiblich,Abitur,"Ja, meine Eltern sind nach Deutschland migriert.",Asiatisch,afd,Neutral,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,1,rechspopulistisch
+4,25,Weiblich,Abitur,"Ja, meine Eltern sind nach Deutschland migriert.",Asiatisch,gruen,Neutral,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,2,neuzugezogen
+4,25,Weiblich,Abitur,"Ja, meine Eltern sind nach Deutschland migriert.",Asiatisch,spd,Neutral,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,1,mutter
+4,25,Weiblich,Abitur,"Ja, meine Eltern sind nach Deutschland migriert.",Asiatisch,afd,Neutral,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,3,rechstreu
+4,25,Weiblich,Abitur,"Ja, meine Eltern sind nach Deutschland migriert.",Asiatisch,gruen,Neutral,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,3,asylindustrie
+4,25,Weiblich,Abitur,"Ja, meine Eltern sind nach Deutschland migriert.",Asiatisch,spd,Neutral,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,4,fachkraeftemangel
+4,25,Weiblich,Abitur,"Ja, meine Eltern sind nach Deutschland migriert.",Asiatisch,afd,Neutral,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,3,fluchtursachen
+4,25,Weiblich,Abitur,"Ja, meine Eltern sind nach Deutschland migriert.",Asiatisch,gruen,Neutral,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,3,heimat
+4,25,Weiblich,Abitur,"Ja, meine Eltern sind nach Deutschland migriert.",Asiatisch,afd,Neutral,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,2,fatal
+4,25,Weiblich,Abitur,"Ja, meine Eltern sind nach Deutschland migriert.",Asiatisch,spd,Neutral,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,1,kriminell
+4,25,Weiblich,Abitur,"Ja, meine Eltern sind nach Deutschland migriert.",Asiatisch,gruen,Neutral,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,2,inlaenderfreundlich
+4,25,Weiblich,Abitur,"Ja, meine Eltern sind nach Deutschland migriert.",Asiatisch,afd,Neutral,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,2,nationalstaat
+4,25,Weiblich,Abitur,"Ja, meine Eltern sind nach Deutschland migriert.",Asiatisch,gruen,Neutral,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,2,renten
+4,25,Weiblich,Abitur,"Ja, meine Eltern sind nach Deutschland migriert.",Asiatisch,spd,Neutral,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Ich stimme nicht zu,5,mehrwert
+9,33,M?nnlich,Studium,"Ja, ich bin nach Deutschland migriert.",J<81>disch,afd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Neutral,Ich stimme nicht zu,2,rechspopulistisch
+9,33,M?nnlich,Studium,"Ja, ich bin nach Deutschland migriert.",J<81>disch,gruen,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Neutral,Ich stimme nicht zu,2,neuzugezogen
+9,33,M?nnlich,Studium,"Ja, ich bin nach Deutschland migriert.",J<81>disch,spd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Neutral,Ich stimme nicht zu,1,mutter
+9,33,M?nnlich,Studium,"Ja, ich bin nach Deutschland migriert.",J<81>disch,afd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Neutral,Ich stimme nicht zu,5,rechstreu
+9,33,M?nnlich,Studium,"Ja, ich bin nach Deutschland migriert.",J<81>disch,gruen,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Neutral,Ich stimme nicht zu,3,asylindustrie
+9,33,M?nnlich,Studium,"Ja, ich bin nach Deutschland migriert.",J<81>disch,spd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Neutral,Ich stimme nicht zu,5,fachkraeftemangel
+9,33,M?nnlich,Studium,"Ja, ich bin nach Deutschland migriert.",J<81>disch,afd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Neutral,Ich stimme nicht zu,3,fluchtursachen
+9,33,M?nnlich,Studium,"Ja, ich bin nach Deutschland migriert.",J<81>disch,gruen,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Neutral,Ich stimme nicht zu,3,heimat
+9,33,M?nnlich,Studium,"Ja, ich bin nach Deutschland migriert.",J<81>disch,afd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Neutral,Ich stimme nicht zu,3,fatal
+9,33,M?nnlich,Studium,"Ja, ich bin nach Deutschland migriert.",J<81>disch,spd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Neutral,Ich stimme nicht zu,2,kriminell
+9,33,M?nnlich,Studium,"Ja, ich bin nach Deutschland migriert.",J<81>disch,gruen,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Neutral,Ich stimme nicht zu,4,inlaenderfreundlich
+9,33,M?nnlich,Studium,"Ja, ich bin nach Deutschland migriert.",J<81>disch,afd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Neutral,Ich stimme nicht zu,3,nationalstaat
+9,33,M?nnlich,Studium,"Ja, ich bin nach Deutschland migriert.",J<81>disch,gruen,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Neutral,Ich stimme nicht zu,2,renten
+9,33,M?nnlich,Studium,"Ja, ich bin nach Deutschland migriert.",J<81>disch,spd,Ich stimme nicht zu,Ich stimme zu,Ich stimme zu,Neutral,Ich stimme nicht zu,5,mehrwert
+10,20,M?nnlich,Abitur,Nein,Wei<a0>,afd,Ich stimme nicht zu,Neutral,Neutral,Neutral,Ich stimme zu,2,rechspopulistisch
+10,20,M?nnlich,Abitur,Nein,Wei<a0>,gruen,Ich stimme nicht zu,Neutral,Neutral,Neutral,Ich stimme zu,1,neuzugezogen
+10,20,M?nnlich,Abitur,Nein,Wei<a0>,spd,Ich stimme nicht zu,Neutral,Neutral,Neutral,Ich stimme zu,1,mutter
+10,20,M?nnlich,Abitur,Nein,Wei<a0>,afd,Ich stimme nicht zu,Neutral,Neutral,Neutral,Ich stimme zu,5,rechstreu
+10,20,M?nnlich,Abitur,Nein,Wei<a0>,gruen,Ich stimme nicht zu,Neutral,Neutral,Neutral,Ich stimme zu,1,asylindustrie
+10,20,M?nnlich,Abitur,Nein,Wei<a0>,spd,Ich stimme nicht zu,Neutral,Neutral,Neutral,Ich stimme zu,4,fachkraeftemangel
+10,20,M?nnlich,Abitur,Nein,Wei<a0>,afd,Ich stimme nicht zu,Neutral,Neutral,Neutral,Ich stimme zu,3,fluchtursachen
+10,20,M?nnlich,Abitur,Nein,Wei<a0>,gruen,Ich stimme nicht zu,Neutral,Neutral,Neutral,Ich stimme zu,3,heimat
+10,20,M?nnlich,Abitur,Nein,Wei<a0>,afd,Ich stimme nicht zu,Neutral,Neutral,Neutral,Ich stimme zu,2,fatal
+10,20,M?nnlich,Abitur,Nein,Wei<a0>,spd,Ich stimme nicht zu,Neutral,Neutral,Neutral,Ich stimme zu,2,kriminell
+10,20,M?nnlich,Abitur,Nein,Wei<a0>,gruen,Ich stimme nicht zu,Neutral,Neutral,Neutral,Ich stimme zu,2,inlaenderfreundlich
+10,20,M?nnlich,Abitur,Nein,Wei<a0>,afd,Ich stimme nicht zu,Neutral,Neutral,Neutral,Ich stimme zu,3,nationalstaat
+10,20,M?nnlich,Abitur,Nein,Wei<a0>,gruen,Ich stimme nicht zu,Neutral,Neutral,Neutral,Ich stimme zu,2,renten
+10,20,M?nnlich,Abitur,Nein,Wei<a0>,spd,Ich stimme nicht zu,Neutral,Neutral,Neutral,Ich stimme zu,5,mehrwert
