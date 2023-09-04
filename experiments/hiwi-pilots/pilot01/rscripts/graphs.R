@@ -111,19 +111,31 @@ t = d %>%
   filter(party != "spd")
 table(t$party)
 
+table(t$party,t$dw,t$item)
+
 # calculate mean response for each target item
 means = t %>%
-  group_by(item, party) %>%
+  group_by(item, party, dw) %>%
   summarize(Mean = mean(response)) %>%
-  ungroup()   
+  ungroup 
 means
+
+means = means %>%
+  mutate(item = fct_relevel(item,levels(means$Mean)))
+t = t %>%
+  mutate(item = fct_relevel(item,levels(means$Mean)))
+
 
 # make a boxplot, add the mean response
 ggplot(t, aes(x=party, y=response)) +
   geom_boxplot() + 
-  facet_wrap(. ~ item, ncol = 5) +
+  facet_wrap(item ~ dw, ncol = 5) +
   geom_point(data = means, aes(x=party, y=Mean), shape=20, size=3, alpha=1, color = "blue") +
   xlab("Item") +
   ylab("Mean response \n (1 = pro migration, 5 = against migration)") 
 ggsave("../graphs/response-by-item-and-party.pdf",height=5,width=8)
+
+# further questions to ask:
+# how should the participants demographic information enter the model? (predictor or random effect?)
+# what can we say about how the ingroup vs outgroup responds to the items?
 
