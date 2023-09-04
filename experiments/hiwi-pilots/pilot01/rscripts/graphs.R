@@ -11,7 +11,7 @@ cbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00",
 
 # load clean data ----
 d = read.csv("../data/d.csv")
-nrow(d) #56
+nrow(d) #1456
 
 # which properties do the participants have?
 
@@ -68,8 +68,8 @@ d$womNachzug.num <- ifelse(d$womNachzug == "Ich stimme zu", 1,
                              ifelse(d$womNachzug == "Neutral", 0, -1))
 d$womKopftuch.num <- ifelse(d$womKopftuch == "Ich stimme nicht zu", 1, 
                               ifelse(d$womKopftuch == "Neutral", 0, -1))
-d$womStaatsangehörigkeit.num <- ifelse(d$womStaatsangehörigkeit == "Ich stimme nicht zu", 1, 
-                                ifelse(d$womStaatsangehörigkeit == "Neutral", 0, -1))
+d$womStaatsangehoerigkeit.num <- ifelse(d$womStaatsangehoerigkeit == "Ich stimme nicht zu", 1, 
+                                ifelse(d$womStaatsangehoerigkeit == "Neutral", 0, -1))
 d$womIslam.num <- ifelse(d$womIslam == "Ich stimme nicht zu", 1, 
                           ifelse(d$womIslam == "Neutral", 0, -1))
 d$womAsyl.num <- ifelse(d$womAsyl == "Ich stimme zu", 1, 
@@ -78,7 +78,7 @@ d$womAsyl.num <- ifelse(d$womAsyl == "Ich stimme zu", 1,
 
 # how conservative is each participant? 
 
-d$mean.wom.score = (d$womNachzug.num + d$womKopftuch.num + d$womStaatsangehörigkeit.num + d$womIslam.num + d$womAsyl.num) / 5
+d$mean.wom.score = (d$womNachzug.num + d$womKopftuch.num + d$womStaatsangehoerigkeit.num + d$womIslam.num + d$womAsyl.num) / 5
 # lowest possible: -1 (least conservative)
 # highest possible: 1 (most conservative)
 
@@ -90,10 +90,15 @@ d %>%
 d = d %>%
   mutate(participantID = fct_reorder(as.factor(participantID),mean.wom.score))  
 
+# merge partyChoice to sensible categories: AfD (blau), FDP, Grüne, Linke, SPD, CDU, other
+table(d$partyChoice)
+d$partyChoice <- as.factor(d$partyChoice)
+levels(d$partyChoice)
+
 # plot participants by their mean.wom.score, color code by party
-ggplot(d, aes(x=participantID, y=mean.wom.score,color=party,fill=party)) +
+ggplot(d, aes(x=participantID, y=mean.wom.score,color=party,fill=partyChoice)) +
   geom_point(shape=21, size=3, alpha=1,color="black") +
-  scale_fill_manual(values=cbPalette) +
+  scale_fill_manual(values=c("#56B4E9", "black", "yellow","#009E73","#E69F00", "#56B4E9", "#009E73","#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")) +
   xlab("Participant") +
   ylab("Mean wom score (higher = more conservative)")
 ggsave("../graphs/mean-response-to-wom-questions-by-participant.pdf",height=4,width=9)
