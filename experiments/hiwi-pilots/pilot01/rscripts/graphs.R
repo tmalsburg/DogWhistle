@@ -120,20 +120,41 @@ means = t %>%
   ungroup 
 means
 
+# get mean response for afd/dw variant
+means.afdDw = means %>%
+  filter(party == "afd" & dw == "dw") %>%
+  mutate(item = fct_reorder(as.factor(item),Mean)) 
+means.afdDw
+levels(means.afdDw$item)
+
+# order items based on mean response for afd/dw variant
 means = means %>%
-  mutate(item = fct_relevel(item,levels(means$Mean)))
+  mutate(item = fct_relevel(item,levels(means.afdDw$item))) %>%
+  mutate(dw = fct_relevel(dw,"ndw")) %>%
+  mutate(party = fct_relevel(party, "afd"))
 t = t %>%
-  mutate(item = fct_relevel(item,levels(means$Mean)))
+  mutate(item = fct_relevel(item,levels(means.afdDw$item))) %>%
+  mutate(dw = fct_relevel(dw,"ndw")) %>%
+  mutate(party = fct_relevel(party, "afd"))
+levels(means$item)
+levels(t$item)
+levels(means$party)
+levels(t$party)
 
-
-# make a boxplot, add the mean response
-ggplot(t, aes(x=party, y=response)) +
-  geom_boxplot() + 
-  facet_wrap(item ~ dw, ncol = 5) +
-  geom_point(data = means, aes(x=party, y=Mean), shape=20, size=3, alpha=1, color = "blue") +
-  xlab("Item") +
-  ylab("Mean response \n (1 = pro migration, 5 = against migration)") 
-ggsave("../graphs/response-by-item-and-party.pdf",height=5,width=8)
+# boxplot of responses, with mean response
+ggplot(t, aes(x=dw, y=response, fill = party)) +
+  geom_violin(alpha=1) +
+  scale_fill_manual(values=c("#56B4E9","#009E73"))  +
+  facet_wrap(. ~ item, ncol = 1, strip.position = "right") +
+  theme(strip.background = element_rect(fill="gray90"), 
+        strip.text.y = element_text(angle = 0)) +
+  geom_point(data = means, aes(x=dw, y=Mean), shape=20, size=3, 
+             alpha=1, color = "black", position = position_dodge(width=.85)) +
+  theme(legend.position = "top") +
+  xlab("") +
+  ylab("Response \n (1 = against migration, 5 = pro migration)") + 
+  coord_flip()
+ggsave("../graphs/response-by-item-and-party-and-type.pdf",height=10,width=8)
 
 # further questions to ask:
 # how should the participants demographic information enter the model? (predictor or random effect?)
