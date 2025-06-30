@@ -5,7 +5,6 @@
 this.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
 setwd(this.dir)
 
-
 # load relevant packages and set background color
 library(tidyverse)
 theme_set(theme_bw())
@@ -67,10 +66,6 @@ colnames(d1)[26] ="womAsyl"
 colnames(d1)
 
 # get the data from wide into long format
-
-# identify the columns that need to be pivoted (responses to trials, not info about age etc)
-colnames(d1)[1:26] #which number goes here?
-
 d1 = d1 %>%
   pivot_longer(cols = "afd-rechspopulistisch-dw":"spd-mehrwert",
                names_to = "question", 
@@ -97,7 +92,7 @@ table(d1$party,d1$item)
 d1 = d1 %>% 
   mutate(dw = case_when(grepl("-dw", question) ~ "dw",
                            grepl("-ndw", question) ~ "ndw",
-                           TRUE ~ "ERROR"))
+                           TRUE ~ "control"))
 table(d1$dw)
 
 # remove the question column 
@@ -162,10 +157,6 @@ colnames(d2)[26] ="womAsyl"
 colnames(d2)
 
 # get the data from wide into long format 
-
-# identify the columns that need to be pivoted (responses to trials, not info about age etc)
-colnames(d2)[1:26] #2-15
-
 d2 = d2 %>%
   pivot_longer(cols = "gruen-rechspopulistisch-dw":"spd-mehrwert",
                names_to = "question", 
@@ -192,7 +183,7 @@ table(d2$party,d2$item)
 d2 = d2 %>% 
   mutate(dw = case_when(grepl("-dw", question) ~ "dw",
                         grepl("-ndw", question) ~ "ndw",
-                        TRUE ~ "ERROR"))
+                        TRUE ~ "control"))
 table(d2$dw)
 
 # remove the question column 
@@ -256,10 +247,6 @@ colnames(d3)[26] ="womAsyl"
 colnames(d3)
 
 # get the data from wide into long format
-
-# identify the columns that need to be pivoted (responses to trials, not info about age etc)
-colnames(d3)[1:26] #2-15
-
 d3 = d3 %>%
   pivot_longer(cols = "afd-rechspopulistisch-ndw":"spd-mehrwert",
                names_to = "question", 
@@ -286,7 +273,7 @@ table(d3$party,d3$item)
 d3 = d3 %>% 
   mutate(dw = case_when(grepl("-dw", question) ~ "dw",
                         grepl("-ndw", question) ~ "ndw",
-                        TRUE ~ "ERROR"))
+                        TRUE ~ "control"))
 table(d3$dw)
 
 # remove the question column 
@@ -350,10 +337,6 @@ colnames(d4)[26] ="womAsyl"
 colnames(d4)
 
 # get the data from wide into long format
-
-# identify the columns that need to be pivoted (responses to trials, not info about age etc)
-colnames(d4)[1:26] #2-15
-
 d4 = d4 %>%
   pivot_longer(cols = "gruen-rechspopulistisch-ndw":"spd-mehrwert",
                names_to = "question", 
@@ -380,7 +363,7 @@ table(d4$party,d4$item)
 d4 = d4 %>% 
   mutate(dw = case_when(grepl("-dw", question) ~ "dw",
                         grepl("-ndw", question) ~ "ndw",
-                        TRUE ~ "ERROR"))
+                        TRUE ~ "control"))
 table(d4$dw)
 
 # remove the question column 
@@ -414,48 +397,60 @@ ggplot(controls, aes(x=participantID,y=response)) +
   facet_wrap(. ~ item)
 
 controls.good <- subset(controls, controls$item == "mehrwert"| controls$item == "fachkraeftemangel" )
-controls.bad<- subset(controls, controls$item == "kriminell"| controls$item == "mutter" )
+controls.bad <- subset(controls, controls$item == "kriminell"| controls$item == "mutter" )
 
+# the original plan was toexclude participants' data if they gave responses below 4 to the controls 
+# that are not anti-migration or above 2 to controls that are anti-migration
 exclude.good <- subset(controls.good, controls.good$response < 4)
-exclude.bad <- subset(controls.bad, controls.bad$response >2)
-exclude.bad
+nrow(exclude.good) #24 cases
+exclude.bad <- subset(controls.bad, controls.bad$response > 2)
+nrow(exclude.bad) #52 cases
+
 # plot the controls data
 ggplot(exclude.good, aes(x=participantID,y=response)) +
   geom_point() +
   facet_wrap(. ~ item)
 
-# plot the controls data
 ggplot(exclude.bad, aes(x=participantID,y=response)) +
   geom_point() +
   facet_wrap(. ~ item)
 
-# investigation of WOM score of exclude.bad people (who perhaps are more migration unfriendly)
+# of the 154 participants, 50 did not respond as expected to the controls (so almost 1/3!)
+# instead of excluding participants' data based on the controls, we use the controls to 
+# get to know our participants better in the graphs.R file
 
-#exclude the participants who got the controls wrong
+# # exclude the participants who got the controls wrong
+# length(unique(d$participantID)) #154 participants
+# d <- droplevels(subset(d, !(d$participantID %in% exclude.good$participantID)))
+# d <- droplevels(subset(d, !(d$participantID %in% exclude.bad$participantID)))
+# length(unique(d$participantID)) #104 participants
 
-d <- droplevels(subset(d, !(d$participantID %in% exclude.good$participantID)))
-d <- droplevels(subset(d, !(d$participantID %in% exclude.bad$participantID)))
-length(unique(d$participantID)) #104 participants
+nrow(d) #2156
 
-nrow(d) #1456
-
-# age and gender of remaining participants
-table(d$age) #??
+# age 
+table(d$age) 
 str(d$age)
 # fix participants weird age
 d[d$age == "1 8",]$age = "18"
 str(d$age)
 d$age<- as.numeric(d$age)
-mean(d$age) #31.1
-table(d$gender)
-#Divers Keine der oben genannten Optionen 
-#70                                14 
-#Männlich                          Weiblich 
-#616                               756
+table(d$age) #ages 18-71
+mean(d$age) #31
 
-length(unique(d$participantID))
+# gender
+d %>% 
+  select(gender, participantID) %>% 
+  unique() %>% 
+  group_by(gender) %>% 
+  summarize(count=n())
+# gender                            count
+# 1 Divers                                6
+# 2 Keine der oben genannten Optionen     1
+# 3 Männlich                             76
+# 4 Weiblich                             71
 
 # get rid of space between "Ja,  mindestens"
+table(d$migration)
 d$migration = gsub("Ja,  mindestens", "", d$migration)
 d$migration = gsub("Ja, mindestens", "", d$migration )
 table(d$migration)

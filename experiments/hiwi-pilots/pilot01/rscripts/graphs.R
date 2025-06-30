@@ -6,12 +6,15 @@
 this.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
 setwd(this.dir)
 
+# load helper functions
+source('helpers.R')
+
 # color-blind-friendly palette
 cbPalette <- c("#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 
 # load clean data ----
 d = read.csv("../data/d.csv")
-nrow(d) #1456
+nrow(d) #2156
 
 # which properties do the participants have?
 
@@ -23,11 +26,8 @@ d %>%
   summarize(count=n())
 
 # age
-d %>% 
-  select(age, participantID) %>% 
-  unique() %>% 
-  group_by(age) %>% 
-  summarize(count=n())
+table(d$age) #ages 18-71
+mean(d$age) #31
 
 # ethnicity
 d %>% 
@@ -50,7 +50,24 @@ d %>%
   group_by(migration) %>% 
   summarize(count=n())
 
-# how did the participants answer the 5 WOM questions? ----
+# which party did they say they would vote for?
+d %>% 
+  select(partyChoice, participantID) %>% 
+  unique() %>% 
+  group_by(partyChoice) %>% 
+  summarize(count=n())
+
+# create "other" category for minor choices
+d = d %>%
+  mutate(partyChoice = case_when(partyChoice == "AfD" ~ "AfD",
+                                 partyChoice == "CDU" ~ "CDU",
+                                 partyChoice == "FDP" ~ "FDP",
+                                 partyChoice == "Grüne" ~ "Grüne",
+                                 partyChoice == "Linke" ~ "Linke",
+                                 partyChoice == "SPD" ~ "SPD",
+                                 TRUE ~ "other"))
+
+# responses to 5 WOM questions ----
 
 names(d)
 # what does "ich stimme zu" mean for the different questions?
@@ -60,8 +77,6 @@ names(d)
 # [10] "womStaatsangehörigkeit" "ich stimme zu" = freundlich
 # [11] "womIslam" "ich stimme zu" = freundlich
 # [12] "womAsyl" "ich stimme zu" = feindlich
-
-table(d$womNachzug)
 
 # define numeric values for each position (higher = more feindlich)
 d$womNachzug.num <- ifelse(d$womNachzug == "Ich stimme zu", 1, 
@@ -76,11 +91,11 @@ d$womAsyl.num <- ifelse(d$womAsyl == "Ich stimme zu", 1,
                            ifelse(d$womAsyl == "Neutral", 0, -1))
 
 
-# how conservative is each participant? 
+# how migration (un)friendly is each participant? 
 
 d$mean.wom.score = (d$womNachzug.num + d$womKopftuch.num + d$womStaatsangehoerigkeit.num + d$womIslam.num + d$womAsyl.num) / 5
-# lowest possible: -1 (least conservative)
-# highest possible: 1 (most conservative)
+# lowest possible: -1 (least friendly)
+# highest possible: 1 (most friendly)
 
 d %>%
   group_by(participantID,mean.wom.score) %>% 
@@ -98,28 +113,29 @@ levels(d$partyChoice)
 # plot participants by their mean.wom.score, color code by party
 ggplot(d, aes(x=participantID, y=mean.wom.score,color=party,fill=partyChoice)) +
   geom_point(shape=21, size=3, alpha=1,color="black") +
-  scale_fill_manual(values=c("#56B4E9", "black", "yellow","#009E73","#E69F00", "#56B4E9", "#009E73","#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")) +
+  scale_fill_manual(values=c("#56B4E9", "black", "yellow","#009E73","red", "white", "purple")) +
   xlab("Participant") +
   ylab("Mean wom score (higher = more conservative)")
 ggsave("../graphs/mean-response-to-wom-questions-by-participant.pdf",height=4,width=9)
 
-# does the politician's party modulate the response? ----
+# anti-migration responses by item, expression and politician's party ----
 
-table(d$party)
-# only consider the target data
+# reduce data to target data
 t = d %>%
   filter(party != "spd")
 table(t$party)
 
 table(t$party,t$dw,t$item)
 
-# calculate mean response for each target item
 means = t %>%
-  group_by(item, party, dw) %>%
-  summarize(Mean = mean(response)) %>%
-  ungroup 
+  group_by(item, dw, party) %>%
+  summarize(Mean = mean(response),CILow=ci.low(response),CIHigh=ci.high(response)) %>%
+  ungroup() %>%
+  mutate(YMin=Mean-CILow,YMax=Mean+CIHigh) %>%
+  select(-c(CILow, CIHigh))
 means
 
+# order items based on mean response for afd/dw variant
 # get mean response for afd/dw variant
 means.afdDw = means %>%
   filter(party == "afd" & dw == "dw") %>%
@@ -142,17 +158,18 @@ levels(means$party)
 levels(t$party)
 
 # boxplot of responses, with mean response
-ggplot(t, aes(x=dw, y=response, fill = party)) +
-  geom_violin(alpha=1) +
+ggplot() +
+  geom_violin(data=t, aes(x=dw, y=response, fill = party), alpha=1) +
   scale_fill_manual(values=c("#56B4E9","#009E73"))  +
   facet_wrap(. ~ item, ncol = 1, strip.position = "right") +
   theme(strip.background = element_rect(fill="gray90"), 
         strip.text.y = element_text(angle = 0)) +
-  geom_point(data = means, aes(x=dw, y=Mean), shape=20, size=3, 
+  geom_point(data=means, aes(x=dw, y=Mean), shape=20, size=3, 
              alpha=1, color = "black", position = position_dodge(width=.85)) +
+  geom_errorbar(data=means, aes(ymin=YMin, ymax=YMax)) +
   theme(legend.position = "top") +
   xlab("") +
-  ylab("Response \n (1 = against migration, 5 = pro migration)") + 
+  ylab("Response \n (1 = unfriendly towards migration, 5 = friendly towards migration)") + 
   coord_flip()
 ggsave("../graphs/response-by-item-and-party-and-type.pdf",height=10,width=8)
 

@@ -29,3 +29,6 @@ t = t %>%
 # fit ordinal model
 m = clmm(response ~ dw*party + (1|participantID) + (1|item), data = t)
 summary(m)
+m.1 = clmm(response ~ dw+party + (1|participantID) + (1|item), data = t)
+summary(m.1)
+anova(m,m.1) # more complex model is not better
