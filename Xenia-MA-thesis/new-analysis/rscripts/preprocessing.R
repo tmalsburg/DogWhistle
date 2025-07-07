@@ -87,185 +87,170 @@ colnames(d)[24] <- "participantSexualOrientation"
 colnames(d)[25] <- "participantGender"
 colnames(d)[26] <- "participantCisOrTrans"
 
-# convert all columns to character so that we can pivot long
+# # convert all columns to character so that we can pivot long
+# d <- d %>%
+#   mutate(across(1:29, as.character)) 
+# 
+# # reorder the columns in preparation for pivoting
+# d = d[,c(1,29,2:ncol(d))]
+# names(d)
+#            
+# # pivot the data
+# d <- d %>%
+#   pivot_longer(
+#     cols = 4:23,
+#     names_to = "question",
+#     values_to = "response"
+#   )
+
+
+# recode, following H&P, the response to the critical question as a four-point scale
 d <- d %>%
-  mutate(across(1:29, as.character)) 
-
-# reorder the columns in preparation for pivoting
-d = d[,c(1,29,3:ncol(d))]
-           
-# pivot the data
-tmp <- d %>%
-  pivot_longer(
-    cols = 2:22,
-    names_to = "question",
-    values_to = "response"
-  )
-
-### end code for now
-
-# View the reshaped data
-print(data1_long)
-head(data1_long)
-sum(is.na(data1_long$response))
-unique(data1_long$question)
-
-
-# now that we see that tmp works, make d = tmp
-ls()
-tmp1 <- data1
-
-
-#assigning value to the target stimulus
-data1 <- data1 %>%
-  mutate(targetStimuli = case_when(
-    prisonVSeducationprogram == "Building new prisons" & `feel-strongly` == "I feel very strongly about this." ~ 1,
-    prisonVSeducationprogram == "Building new prisons" & `feel-strongly` == "I feel not very strongly about this." ~ 2,
-    prisonVSeducationprogram == "Education programs" & `feel-strongly` == "I feel not very strongly about this." ~ 3,
-    prisonVSeducationprogram == "Education programs" & `feel-strongly` == "I feel very strongly about this." ~ 4,
-    TRUE ~ NA_real_ # Assign NA for any unmatched cases
+  mutate(targetResponse = case_when(
+    criticalQuestion == "Building new prisons" & feelStrongly == "I feel very strongly about this." ~ 1,
+    criticalQuestion == "Building new prisons" & feelStrongly == "I feel not very strongly about this." ~ 2,
+    criticalQuestion == "Education programs" & feelStrongly == "I feel not very strongly about this." ~ 3,
+    criticalQuestion == "Education programs" & feelStrongly == "I feel very strongly about this." ~ 4,
+    TRUE ~ 666 # Assign NA for any unmatched cases
   ))
 
-# Print all column names to confirm exact names
-colnames(data1)
+d %>% 
+  select(participantID,criticalQuestion) %>% 
+  unique() %>% 
+  group_by(criticalQuestion) %>% 
+  summarize(count=n())
+
+# criticalQuestion     count
+# 1 Building new prisons    31
+# 2 Education programs     109
+
+d %>% 
+  select(participantID,targetResponse) %>% 
+  unique() %>% 
+  group_by(targetResponse) %>% 
+  summarize(count=n())
+
+# targetResponse count
+# 1              1    16
+# 2              2    15
+# 3              3    42
+# 4              4    67
+
+str(d)
+
+# # Convert trans-stereotypes columns to numeric
+# data1 <- data1 %>%
+#   mutate(across(c(`trans-stereotypes-confused`, 
+#                   `trans-stereotypes-mentally-ill`, 
+#                   `trans-stereotypes-dangerous`, 
+#                   `trans-stereotypes-frauds`, 
+#                   `trans-stereotypes-unnatural`), 
+#                 as.numeric))
 
 
-# Filter for participants with targetStimuli 1 count them
-targetStimuli_counts <- data1 %>%
-  filter(targetStimuli %in% c(1)) %>%
-  summarise(count = n())
+# calculate each participant's trans stereotype index (following H&P's black stereotype index from 5 to 35) 
+d <- d %>%
+  mutate(transStereotypeIndex = rowSums(select(., 
+                                            transConfused,
+                                            transMentallyIll,
+                                            transDangerous,
+                                            transFrauds,
+                                            transUnnatural)))
 
-# Print the result
-print(targetStimuli_counts)
-
-# Filter for participants with targetStimuli 2 count them
-targetStimuli_counts <- data1 %>%
-  filter(targetStimuli %in% c(2)) %>%
-  summarise(count = n())
-
-# Print the result
-print(targetStimuli_counts)
-
-# Filter for participants with targetStimuli 3 and count them
-targetStimuli_counts <- data1 %>%
-  filter(targetStimuli %in% c(3)) %>%
-  summarise(count = n())
-
-# Print the result
-print(targetStimuli_counts)
-
-# Filter for participants with targetStimuli 4 count them
-targetStimuli_counts <- data1 %>%
-  filter(targetStimuli %in% c(4)) %>%
-  summarise(count = n())
-
-# Print the result
-print(targetStimuli_counts)
-
-
-# Convert trans-stereotypes columns to numeric
-data1 <- data1 %>%
-  mutate(across(c(`trans-stereotypes-confused`, 
-                  `trans-stereotypes-mentally-ill`, 
-                  `trans-stereotypes-dangerous`, 
-                  `trans-stereotypes-frauds`, 
-                  `trans-stereotypes-unnatural`), 
-                as.numeric))
-
-
-# Sum the responses while handling missing values
-data1 <- data1 %>%
-  mutate(trans_stereotypes = rowSums(select(., 
-                                            `trans-stereotypes-confused`, 
-                                            `trans-stereotypes-mentally-ill`, 
-                                            `trans-stereotypes-dangerous`, 
-                                            `trans-stereotypes-frauds`, 
-                                            `trans-stereotypes-unnatural`), 
-                                     na.rm = TRUE))
-# Confirm the change
-colnames(data1)
-summary(data1$trans_stereotypes)
-
-# Convert cis-stereotypes columns to numeric
-data1 <- data1 %>%
-  mutate(across(c(`cis-stereotypes-confused`, 
-                  `cis-stereotypes-mentally-ill`, 
-                  `cis-stereotypes-dangerous`, 
-                  `cis-stereotypes-frauds`, 
-                  `cis-stereotypes-unnatural`), 
-                as.numeric))
-
-
-# Apply scoring and sum the responses into a new column
-data1 <- data1 %>%
-  mutate(across(`cis-stereotypes-confused`:`cis-stereotypes-unnatural`, as.numeric)) %>%
-  mutate(cisStereotypesControl = rowSums(select(., 
-                                                `cis-stereotypes-confused`, 
-                                                `cis-stereotypes-mentally-ill`, 
-                                                `cis-stereotypes-dangerous`, 
-                                                `cis-stereotypes-frauds`, 
-                                                `cis-stereotypes-unnatural`), na.rm = TRUE))
-# Rename the column trans_stereotypes to transStereotypesScore
-data1 <- data1 %>%
-  rename(transStereotypesScore = trans_stereotypes)
-
-
-#Gender Fairness: part of the trans attitudes test and consists of one yes/no question and 3 questions with a 1-7 scale
-# Assign points for gender-fairness-apartment
-data1 <- data1 %>%
-  mutate(
-    gender_fairness_apartment_score = ifelse(`gender-fairness-apartment` == "Yes", 1, 2)
-  )
-
-# For the reverse coded columns, assign points according to the reverse coding scheme
-data1 <- data1 %>%
-  mutate(
-    gender_fairness_sports_score = 8 - as.numeric(`gender-fairness-sports`),
-    gender_fairness_street_harassment_score = 8 - as.numeric(`gender-fairness-street-harassment`),
-    gender_fairness_bullying_score = 8 - as.numeric(`gender-fairness-bullying`)
-  )
-
-# Combine the four scores into a new column: genderFairnessScore
-data1 <- data1 %>%
-  mutate(
-    genderFairnessScore = gender_fairness_apartment_score +
-      gender_fairness_sports_score +
-      gender_fairness_street_harassment_score +
-      gender_fairness_bullying_score
-  )
-
-
-# Remove specified columns from the dataset
-data1 <- data1 %>%
-  select(-gender_fairness_apartment_score, 
-         -gender_fairness_street_harassment_score, 
-         -gender_fairness_bullying_score,
-         -gender_fairness_sports_score)
+# calculate each participant's cis stereotype index (following H&P's white stereotype index from 5 to 35) 
+d <- d %>%
+  mutate(cisStereotypeIndex = rowSums(select(., 
+                                               cisConfused,
+                                               cisMentallyIll,
+                                               cisDangerous,
+                                               cisFrauds,
+                                               cisUnnatural)))
 
 
 
-#General Fairness:Control
-colnames(data1)
 
-# Combine and code general-fairness-education and general-fairness-healthcare
-# Combine points for general fairness education and healthcare
-data1 <- data1 %>%
-  mutate(
-    generalFairnessScore = rowSums(
-      mutate(
-        select(data1, `general-fairness-education`, `general-fairness-healthcare`),
-        across(everything(), ~ case_when(
-          . == "Strongly agree" ~ 1,
-          . == "Somewhat agree" ~ 2,
-          . == "Somewhat disagree" ~ 3,
-          . == "Strongly disagreee" ~ 4,
-          TRUE ~ 0
-        ))
-      )
-    )
-  )
+# # Apply scoring and sum the responses into a new column
+# data1 <- data1 %>%
+#   mutate(across(`cis-stereotypes-confused`:`cis-stereotypes-unnatural`, as.numeric)) %>%
+#   mutate(cisStereotypesControl = rowSums(select(., 
+#                                                 `cis-stereotypes-confused`, 
+#                                                 `cis-stereotypes-mentally-ill`, 
+#                                                 `cis-stereotypes-dangerous`, 
+#                                                 `cis-stereotypes-frauds`, 
+#                                                 `cis-stereotypes-unnatural`), na.rm = TRUE))
+# # Rename the column trans_stereotypes to transStereotypesScore
+# data1 <- data1 %>%
+#   rename(transStereotypesScore = trans_stereotypes)
+
+# calculate each participant's gender fairness index (following H&P's racial fairness index from 4 to 23)
+# by summing up the relevant columns after changing them to the appropriate values
+str(d$genderFairnessApartment) #chr change yes/no to 1/2
+d <- d %>%
+  mutate(genderFairnessApartmentNum = case_when(
+    genderFairnessApartment == "Yes" ~ 1,
+    genderFairnessApartment == "No" ~ 2,
+    TRUE ~ 666))
+
+str(d$genderFairnessSports) #num change 7-1 to 1-7
+table(d$genderFairnessSports)
+d$genderFairnessSports = 8-d$genderFairnessSports
+table(d$genderFairnessSports)
+
+str(d$genderFairnessStreetHarassment) #num change 7-1 to 1-7
+d$genderFairnessStreetHarassment = 8-d$genderFairnessStreetHarassment
+
+str(d$genderFairnessBullying) #num change 7-1 to 1-7
+d$genderFairnessBullying = 8-d$genderFairnessBullying
+
+d <- d %>%
+  mutate(genderFairnessIndex = rowSums(select(., 
+                                               genderFairnessApartmentNum,
+                                               genderFairnessSports,
+                                               genderFairnessStreetHarassment,
+                                               genderFairnessBullying)))
+
+# calculate general fairness score following H&P's general fairness score
+str(d$generalFairnessEducation)
+d <- d %>%
+  mutate(generalFairnessEducationNum = case_when(
+    generalFairnessEducation == "Strongly agree" ~ 1,
+    generalFairnessEducation == "Somewhat agree" ~ 2,
+    generalFairnessEducation == "Somewhat disagree" ~ 3,
+    generalFairnessEducation == "Strongly disagreee" ~ 4,
+    TRUE ~ 666))
+table(d$generalFairnessEducation)
+table(d$generalFairnessEducationNum)
+
+str(d$generalFairnessHealthcare)
+d <- d %>%
+  mutate(generalFairnessHealthcareNum = case_when(
+    generalFairnessHealthcare == "Strongly agree" ~ 1,
+    generalFairnessHealthcare == "Somewhat agree" ~ 2,
+    generalFairnessHealthcare == "Somewhat disagree" ~ 3,
+    generalFairnessHealthcare == "Strongly disagreee" ~ 4,
+    TRUE ~ 666))
+table(d$generalFairnessHealthcare)
+table(d$generalFairnessHealthcareNum)
+
+d <- d %>%
+  mutate(generalFairnessIndex = rowSums(select(., 
+                                              generalFairnessEducationNum,
+                                              generalFairnessHealthcareNum)))
+table(d$generalFairnessIndex)
+
+# end code here 
+
+# here's some sample code for a graph
+
+ggplot(data=d, aes(x=content, y=Mean)) +
+  geom_point() +
+  theme(legend.position="top") +
+  theme(axis.text.y = element_text(size=10)) +
+  ylab("Mean inference rating") +
+  xlab("Inferences") 
 
 
+# really end code here
 
 # Combine and code the 'fearOfTransPeopleScore' column
 data1 <- data1 %>%
