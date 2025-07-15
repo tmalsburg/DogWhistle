@@ -13,18 +13,18 @@ library(tidyverse)
 theme_set(theme_bw())
 
 # load the data
-ndwlib = read_csv("../data/ndwlib.csv") 
+ndwlib = read_csv(file="../data/ndwlib.csv") 
 nrow(ndwlib) #35
 names(ndwlib)
-ndwcons = read_csv("../data/ndwcons.csv") 
+ndwcons = read_csv(file="../data/ndwcons.csv") 
 nrow(ndwcons) #35
 names(ndwcons)
-dwlib = read_csv("../data/dwlib.csv") 
+dwlib = read_csv(file="../data/dwlib.csv") 
 nrow(dwlib) #35
-dwcons = read_csv("../data/dwcons.csv") 
+dwcons = read_csv(file="../data/dwcons.csv") 
 nrow(dwcons) #35
 
-#view(ndwlib)
+# view(ndwlib)
 
 # add information about the condition to the files
 ndwlib = ndwlib %>%
@@ -209,7 +209,7 @@ d <- d %>%
                                                genderFairnessStreetHarassment,
                                                genderFairnessBullying)))
 
-# calculate general fairness score following H&P's general fairness score
+# calculate general fairness index (following H&P's general fairness score from 2 to 8)
 str(d$generalFairnessEducation)
 d <- d %>%
   mutate(generalFairnessEducationNum = case_when(
@@ -238,16 +238,192 @@ d <- d %>%
                                               generalFairnessHealthcareNum)))
 table(d$generalFairnessIndex)
 
-# end code here 
+# calculate fear of trans people score (following H&P's fear of crime score from 2 to 6)
+# here there's a difference to H&P
+# the impression that the number of trans people increased doesn't mean that one also fears trans people
+# whereas H&P's impression that crime has increased means that the participant fears crime
+# so it might be better to not call this score the "fear of trans people" score, but rather
+# "awareness of trans people and issues"
+str(d$fearNumberTrans) 
+d <- d %>%
+  mutate(fearNumberTransNum = case_when(
+    fearNumberTrans == "The number of trans people increased" ~ 3,
+    fearNumberTrans == "The number of trans people stayed about the same" ~ 2,
+    fearNumberTrans == "The number of trans people decreased" ~ 1,
+    TRUE ~ 666))
+table(d$fearNumberTrans)
+table(d$fearNumberTransNum)
+# 1   2   3 
+# 2  27 111 
+
+str(d$fearComparisonProblems)
+d <- d %>%
+  mutate(fearComparisonProblemsNum = case_when(
+    fearComparisonProblems == "It is the most important problem" ~ 1,
+    fearComparisonProblems == "It is no more important than other problems" ~ 2,
+    fearComparisonProblems == "It is less important than other problems" ~ 3,
+    TRUE ~ 666))
+table(d$fearComparisonProblems)
+table(d$fearComparisonProblemsNum)
+#  1  2  3 
+#  6 75 59
+
+d <- d %>%
+  mutate(fearOfTransPeopleIndex = rowSums(select(., 
+                                            fearNumberTransNum,
+                                            fearComparisonProblemsNum)))
+table(d$fearOfTransPeopleIndex)
+# 3  4  5  6 
+# 2 26 60 52
+
+d$awarenessOfTransPeopleAndIssues = d$fearOfTransPeopleIndex
+
+# calculate equality index (following H&P's equality index from 2 to 8)
+# the higher this index, the more they care about fairness and equality
+
+str(d$equalityEqualChance) #chr change to num 4-1
+d <- d %>%
+  mutate(equalityEqualChanceNum = case_when(
+    equalityEqualChance == "Strongly agree" ~ 4,
+    equalityEqualChance == "Somewhat agree" ~ 3,
+    equalityEqualChance == "Somewhat disagree" ~ 2,
+    equalityEqualChance == "Strongly disagree" ~ 1,
+    TRUE ~ 666))
+table(d$equalityEqualChance)
+table(d$equalityEqualChanceNum)
+# 1  2  3  4 
+# 25 23 38 54 
+
+str(d$equalityShouldntWorry) #chr change to num 1-4
+d <- d %>%
+  mutate(equalityShouldntWorryNum = case_when(
+    equalityShouldntWorry == "Strongly agree" ~ 1,
+    equalityShouldntWorry == "Somewhat agree" ~ 2,
+    equalityShouldntWorry == "Somewhat disagree" ~ 3,
+    equalityShouldntWorry == "Strongly disagree" ~ 4,
+    TRUE ~ 666))
+table(d$equalityShouldntWorry)
+table(d$equalityShouldntWorryNum)
+# 1  2  3  4 
+# 18 23 37 62 
+
+d <- d %>%
+  mutate(equalityIndex = rowSums(select(., 
+                                        equalityEqualChanceNum,
+                                        equalityShouldntWorryNum)))
+table(d$equalityIndex)
+#  2  3  4  5  6  7  8 
+# 11 13 11 19 22 20 44 
+
+# calculate transAttitudeIndex (not in H&P, from 11 to 64)
+d <- d %>%
+  mutate(transAttitudeIndex = rowSums(select(., 
+                                        transStereotypeIndex,
+                                        genderFairnessIndex,
+                                        fearOfTransPeopleIndex)))
+table(d$transAttitudeIndex)
+
+# calculate attitudeControlIndex (not in H&P, from 4 to 16)
+d <- d %>%
+  mutate(attitudeControlIndex = rowSums(select(., 
+                                             generalFairnessIndex,
+                                             equalityIndex)))
+table(d$attitudeControlIndex)
+
+# plot like H&P Fig 1 A ----
+# x-axis: transStereotypeIndex (5...35)
+# y-axis: the propotion of participants who had that transStereotypeIndex score
+# plot the proportion by dogwhistle/no dogwhistle
+
+#table(d$participantID,d$transStereotypeIndex)
+#table(d[d$participantID < 11,]$transStereotypeIndex)
+
+# these are the columns where the information is
+table(d$transStereotypeIndex)
+table(d$criticalQuestion)
+table(d$dw)
+
+# create a new data frame with the relevant information, for participants who got the dw
+A.tmp.dw <- as.data.frame.matrix(table(d[d$dw == "yes",]$transStereotypeIndex,d[d$dw == "yes",]$criticalQuestion))
+A.tmp.dw
+
+# give the first column a name
+A.tmp.dw$transStereotypeIndex <- rownames(A.tmp.dw)
+
+# add a proportion column
+A.tmp.dw$prop = A.tmp.dw$`Building new prisons` / (A.tmp.dw$`Building new prisons` + A.tmp.dw$`Education programs`)
+
+# sort the transStereotypeIndex column by value
+A.tmp.dw$transStereotypeIndex <- factor(A.tmp.dw$transStereotypeIndex, levels = unique(A.tmp.dw$transStereotypeIndex))
+  
+  subjmeans$eventItem <- factor(subjmeans$eventItem, levels = unique(levels(means$eventItem)))
+
+
+# create a new data frame with the relevant information, for participants who didn't get the dw
+A.tmp.ndw <- as.data.frame.matrix(table(d[d$dw == "no",]$transStereotypeIndex,d[d$dw == "no",]$criticalQuestion))
+A.tmp.ndw
+
+# give the first column a name
+A.tmp.ndw$transStereotypeIndex <- rownames(A.tmp.ndw)
+
+# add a proportion column
+A.tmp.ndw$prop = A.tmp.ndw$`Building new prisons` / (A.tmp.ndw$`Building new prisons` + A.tmp.ndw$`Education programs`)
+
+
+ggplot(data=A.tmp.dw, aes(x=transStereotypeIndex, y=prop)) +
+  geom_point() +
+  geom_smooth(method = "loess")
+
++
+  geom_smooth(color = "blue") +
+  geom_point(data=A.tmp.ndw, color = "red")
+
+  geom_point(aes(colour = factor(dw) )) +
+  theme(legend.position="top") +
+  theme(axis.text.y = element_text(size=10)) +
+  ylab("Target response") +
+  xlab("Trans Stereotype Index") 
+
+
+# code ends here 
+
+
+proportion = d %>%
+  group_by(transStereotypeIndex) %>%
+  summarize(n = n()) %>%
+  mutate(prop = n / nrow(d))
+
+
+  mutate(short_trigger = fct_rev(fct_reorder(as.factor(short_trigger),Mean_proj)))
+proj.means
+
+mtcars %>%
+  group_by(am, gear) %>%
+  summarise(n = n()) %>%
+  mutate(freq = n / sum(n))
+
 
 # here's some sample code for a graph
 
-ggplot(data=d, aes(x=content, y=Mean)) +
-  geom_point() +
+ggplot(d, aes(transStereotypeIndex)) +
+  geom_histogram()
+
+ggplot(d, aes(x=targetResponse, fill=dw)) +
+  geom_histogram( color='#e9ecef', alpha=0.6, position='identity')
+
+ggplot(data=d, aes(x=transStereotypeIndex, y=targetResponse)) +
+  geom_point(aes(colour = factor(dw) )) +
   theme(legend.position="top") +
   theme(axis.text.y = element_text(size=10)) +
-  ylab("Mean inference rating") +
-  xlab("Inferences") 
+  ylab("Target response") +
+  xlab("Trans Stereotype Index") 
+
+ggplot(data=d, aes(x=genderFairnessIndex, y=targetResponse)) +
+  geom_violin() +
+  theme(legend.position="top") +
+  theme(axis.text.y = element_text(size=10)) +
+  ylab("Target response") +
+  xlab("Gender Fairness")
 
 
 # really end code here
